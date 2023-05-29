@@ -1,0 +1,22 @@
+uuid: 12b034dc-afc3-49fb-90cb-e82b040a9654
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: basicas
+label: Básicas
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  60f9fb9b-23f1-4baa-9d32-1221b812e08d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 60f9fb9b-23f1-4baa-9d32-1221b812e08d
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

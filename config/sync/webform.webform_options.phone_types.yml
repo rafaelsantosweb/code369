@@ -1,0 +1,17 @@
+uuid: d51974ee-3949-4f2c-8ba8-96a67f3f9046
+langcode: pt-br
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: LkO63Zl2cP_l9YdjzWI8dWoD9uD0pytkPiUiUM2bo9A
+id: phone_types
+label: 'Tipo de telefone'
+category: Demográfico
+likert: false
+options: |
+  Residencial: Residencial
+  Trabalho: Trabalho
+  Celular: Celular

@@ -1,0 +1,22 @@
+uuid: 485a068e-2d40-401f-8ee6-0b11e3a27564
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - observatorio
+_core:
+  default_config_hash: 2L0geP-ixCbCkEpW6BVF6H7vDUZN4ea07_Y9CociQm4
+id: observatorio_secondary_local_tasks
+theme: observatorio
+region: navbar_branding
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Abas secundárias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

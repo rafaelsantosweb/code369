@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: pt-br
+uuid: 4a02164f-6351-42a4-bdb9-c60f33980606
+name: 'Observatório Firjan'
+mail: desenvolvimento9@cityconnect.com.br
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pt-br

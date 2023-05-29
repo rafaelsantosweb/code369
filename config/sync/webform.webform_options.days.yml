@@ -1,0 +1,21 @@
+uuid: 9affee55-2c81-4aa6-ad42-493d3ce42ffb
+langcode: pt-br
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: YNrKbYrWWjeubUUM8AsQ19KnX7cU1elACR14CZJHmdg
+id: days
+label: Dias
+category: 'Data e hora'
+likert: false
+options: |
+  Domingo: Domingo
+  Segunda: Segunda
+  Terça: Terça
+  Quarta: Quarta
+  Quinta: Quinta
+  Sexta: Sexta
+  Sábado: Sábado

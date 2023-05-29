@@ -1,0 +1,22 @@
+uuid: ab95da76-77cb-4fa0-bdb0-8382efa59cea
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - observatorio
+_core:
+  default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
+id: observatorio_messages
+theme: observatorio
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensagens de status'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,13 @@
+uuid: 75eb6ae7-bdb3-46b1-8b68-6f142d090f7a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform
+_core:
+  default_config_hash: n4gTFiUsdp7gw6yWUlDbKFEasZLCgXWWCmm7eJejay0
+id: webform_submission_make_unsticky_action
+label: 'Remover estrela/marcação de submissão'
+type: webform_submission
+plugin: webform_submission_make_unsticky_action
+configuration: {  }

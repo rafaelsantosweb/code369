@@ -1,0 +1,22 @@
+uuid: e4cd137e-7f88-4fd8-b9b6-fc918384d39a
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - observatorio
+_core:
+  default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
+id: observatorio_primary_local_tasks
+theme: observatorio
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Abas primárias'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

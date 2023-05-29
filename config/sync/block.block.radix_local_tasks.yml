@@ -1,0 +1,22 @@
+uuid: 9f535e60-8c46-4544-b5c1-3ea06dd314fc
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - radix
+_core:
+  default_config_hash: T0wbI6qVdThbbIqXDZFg_1VZ3_ittXBdEoUH7d7ux_E
+id: radix_local_tasks
+theme: radix
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Abas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

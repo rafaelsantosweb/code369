@@ -1,0 +1,22 @@
+uuid: 7efee5d7-43a4-4763-9115-b2cdad4fd0a6
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - observatorio
+_core:
+  default_config_hash: NjcxOBrPOiK5-38t56DwFBDVY4yer7YSlbRWXFuHe7A
+id: observatorio_breadcrumbs
+theme: observatorio
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
