@@ -49,3 +49,6 @@ tooling:
     cmd: drush
     env:
       DRUSH_OPTIONS_URI: "http://observatorio.lndo.site"
+  watch:
+    service: node
+    cmd: 'cd /app/web/themes/custom/observatorio;npm run watch'
