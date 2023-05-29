@@ -1,0 +1,51 @@
+name: observatorio
+recipe: drupal10
+config:
+  composer_version: '2'
+  php: '8.2'
+  via: nginx
+  drush: ^11
+  webroot: web
+  xdebug: false
+  index: false
+  edge: false
+  cache: false
+env_file:
+  - .lando/.env
+services:
+  database:
+    portforward: 32771
+    creds:
+      database: drupal10
+      username: drupal10
+      password: drupal10
+      host: database
+      port: 3306
+  cache:
+    type: redis
+    persist: true
+  node:
+    type: node:18
+tooling:
+  dcg:
+    service: appserver
+    cmd: /app/vendor/bin/dcg
+  phpcs:
+    service: appserver
+    cmd: '/app/vendor/bin/phpcs --standard=Drupal,DrupalPractice'
+  composer:
+    service: appserver
+    description: Run composer commands
+    cmd:
+      - php -dmemory_limit=-1 /usr/local/bin/composer
+  redis-cli:
+    service: cache
+  node:
+    service: node
+  npm:
+    service: node
+  dr:
+    service: appserver
+    cmd: drush
+    env:
+      DRUSH_OPTIONS_URI: "http://observatorio.lndo.site"
