@@ -11072,5 +11072,14 @@ body header .block--navegacaoprincipal ul.nav li {
   justify-content: center;
   padding: 0 0.5rem;
 }
+body main {
+  background-color: antiquewhite;
+}
+body main .field--name-field-title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=main.style.css.map*/

@@ -1,10 +1,11 @@
 <?php
 
 // Disable cache
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/dev.services.yml';
-$settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 $config['system.performance']['css']['preprocess'] = false;
 $config['system.performance']['js']['preprocess'] = false;
+
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/dev.services.yml';
+$settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['page'] = 'cache.backend.null';

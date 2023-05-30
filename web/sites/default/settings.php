@@ -89,6 +89,17 @@
  * @endcode
  */
 $databases = [];
+$databases['default']['default'] = array (
+  'database' => getenv('MYSQL_NAME'),
+  'username' => getenv('MYSQL_USER'),
+  'password' => getenv('MYSQL_PASSWORD'),
+  'host' => getenv('MYSQL_HOST') ?? 'localhost',
+  'port' => getenv('MYSQL_PORT') ?? '3306',
+  'prefix' => '',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
 
 /**
  * Customizing database settings.
@@ -830,7 +841,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  */
 #
 
-$settings['memory_limit'] = '256M';
+$settings['memory_limit'] = getenv('PHP_MEMORY') ?? '256M';
 $settings['config_sync_directory'] = '../config/sync';
 
 if (file_exists($local = $app_root . '/' . $site_path . '/settings.local.php')) {
