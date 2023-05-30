@@ -8,8 +8,8 @@ _core:
   default_config_hash: 2L0geP-ixCbCkEpW6BVF6H7vDUZN4ea07_Y9CociQm4
 id: observatorio_secondary_local_tasks
 theme: observatorio
-region: navbar_branding
-weight: 0
+region: header
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

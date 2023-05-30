@@ -11059,4 +11059,18 @@ textarea.form-control-lg {
   padding-left: 0;
 }
 
+body {
+  font-family: "Averta", sans-serif;
+}
+body header .block--navegacaoprincipal ul.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+body header .block--navegacaoprincipal ul.nav li {
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
 /*# sourceMappingURL=main.style.css.map*/

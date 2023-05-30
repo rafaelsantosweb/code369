@@ -1,0 +1,25 @@
+uuid: af53297a-e586-4f11-9102-a6dc5bcdb825
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - observatorio
+id: navegacaoprincipal
+theme: observatorio
+region: navbar_branding
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegação principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

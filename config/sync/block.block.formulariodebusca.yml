@@ -1,0 +1,21 @@
+uuid: 75281653-2f5b-4387-85b6-68e0d3f52b9f
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - observatorio
+id: formulariodebusca
+theme: observatorio
+region: navbar_right
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulário de busca'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
