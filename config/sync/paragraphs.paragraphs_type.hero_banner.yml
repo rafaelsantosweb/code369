@@ -1,0 +1,10 @@
+uuid: 2c9759ee-80df-4a59-b616-e543d38cb546
+langcode: pt-br
+status: true
+dependencies: {  }
+id: hero_banner
+label: 'Hero Banner'
+icon_uuid: null
+icon_default: null
+description: 'O cabeçalho da página'
+behavior_plugins: {  }
