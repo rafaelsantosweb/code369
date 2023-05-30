@@ -1,0 +1,10 @@
+uuid: 22544d5d-1cbc-4438-b425-01a973bba727
+langcode: pt-br
+status: true
+dependencies: {  }
+id: attachments
+label: Anexos
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
