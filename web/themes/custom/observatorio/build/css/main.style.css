@@ -3662,7 +3662,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: #003BD1;
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -11060,26 +11060,123 @@ textarea.form-control-lg {
 }
 
 body {
-  font-family: "Averta", sans-serif;
+  font-family: "Averta", "Allerta", sans-serif;
 }
-body header .block--navegacaoprincipal ul.nav {
-  display: flex;
-  flex-direction: row;
+body .block--navegacaoprincipal ul.nav {
   justify-content: flex-end;
 }
-body header .block--navegacaoprincipal ul.nav li {
-  align-items: center;
-  justify-content: center;
+body .block--navegacaoprincipal ul.nav li {
   padding: 0 0.5rem;
 }
-body main {
-  background-color: antiquewhite;
+body #search-block-form {
+  text-align: right;
 }
-body main .field--name-field-title {
+body #search-block-form > div {
+  float: left;
+}
+body #search-block-form input[type=search] {
+  display: none;
+  width: 95%;
+}
+body #search-block-form:hover input[type=search] {
+  display: block;
+}
+body img.hero-img {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+body main {
   font-weight: 400;
+}
+body main .container > .paragraph {
+  padding: 3rem 0;
+}
+body main .field .field {
+  padding: 0.5rem 0.25rem;
+}
+body main .field--name-field-paragraph-cta .field--name-field-link {
+  border: 1px solid #003BD1;
+  border-radius: 5px;
+  display: inline;
+  text-align: center;
+  padding: 0 0 4px !important;
+}
+body main .field--name-field-paragraph-cta .field--name-field-link a {
+  color: #003BD1;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+body main .field--name-field-paragraph-cta .field--name-field-link a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+}
+body main .paragraph--type--hero-banner {
+  background-color: dodgerblue;
+  color: #FFFFFF;
+}
+body main .paragraph--type--hero-banner .field--name-field-title {
   font-size: 50px;
   line-height: 62px;
+}
+body main .paragraph--type--hero-banner .field--name-field-body {
+  font-size: 18px;
+  line-height: 30px;
+}
+body main .paragraph--type--hero-banner .field--name-field-image {
+  display: none;
+}
+body main .paragraph--type--hero-banner a, body main .paragraph--type--hero-banner:hover {
   color: #FFFFFF;
+}
+body main .paragraph--type--hero-banner a:hover, body main .paragraph--type--hero-banner:hover:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+body main .paragraph--type--image-text {
+  color: #444;
+  background-color: #F0F0F0;
+}
+body main .paragraph--type--image-text .paragraph_left,
+body main .paragraph--type--image-text .paragraph_right {
+  background-color: #F0F0F0;
+  float: left;
+  width: 50%;
+}
+body main .paragraph--type--image-text .field--name-field-image {
+  width: 50%;
+  float: left;
+}
+body main .paragraph--type--image-text .field--name-field-image img {
+  width: 100%;
+  padding: 0 0.3rem;
+}
+body main .paragraph--type--image-text .field--name-field-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+body main .paragraph--type--image-text .field--name-field-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+body main .paragraph--type--image-text .field--name-field-body h2, body main .paragraph--type--image-text .field--name-field-body .h2 {
+  font-size: 28px;
+  line-height: 35px;
+}
+body main .paragraph--type--image-text .field--name-field-body h3, body main .paragraph--type--image-text .field--name-field-body .h3 {
+  font-size: 24px;
+  line-height: 35px;
 }
 
 /*# sourceMappingURL=main.style.css.map*/

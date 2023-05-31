@@ -42,3 +42,23 @@ function observatorio_library_info_build() {
   }
   return $libraries;
 }
+
+function observatorio_preprocess_page(&$vars) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node && $node->hasField('field_content')) {
+    foreach($node->field_content->entity as $item) {
+      $paragraph = $item->entity;
+      if ($paragraph_type = $paragraph?->bundle()) {
+        // foreach ($item->entity as $i)
+          // dpm($i);
+        // dpm($node->field_content);
+        // break;
+        // dpm($item);
+        if ($paragraph_type == 'image') {
+          $vars['hero_img'] = $paragraph->field_media_image;
+          break;
+        }
+      }
+    }
+  }
+}

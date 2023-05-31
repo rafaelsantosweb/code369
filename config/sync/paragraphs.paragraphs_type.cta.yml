@@ -1,0 +1,10 @@
+uuid: ba8ba3b5-78bf-4488-a870-187e5125b677
+langcode: pt-br
+status: true
+dependencies: {  }
+id: cta
+label: CTA
+icon_uuid: null
+icon_default: null
+description: 'Call to Action'
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: eb1a01ea-b973-48cc-b51c-0e080c1db606
+langcode: pt-br
+status: true
+dependencies: {  }
+id: image_text
+label: 'Image Text'
+icon_uuid: null
+icon_default: null
+description: 'Apresenta uma imagem, título, descrição e CTA.'
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: 454cb074-0ae4-4e66-8477-d76ded436380
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_link
+    - paragraphs.paragraphs_type.cta
+  module:
+    - link
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_link:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

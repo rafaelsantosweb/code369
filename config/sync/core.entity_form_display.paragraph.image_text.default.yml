@@ -1,20 +1,20 @@
-uuid: 97e9622b-a0e3-4491-83a5-7d75fc9a9224
+uuid: fa55e6c3-a9aa-4f5a-a4a0-30570d980e7a
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.field.paragraph.hero_banner.field_body
-    - field.field.paragraph.hero_banner.field_image
-    - field.field.paragraph.hero_banner.field_paragraph_cta
-    - field.field.paragraph.hero_banner.field_title
-    - paragraphs.paragraphs_type.hero_banner
+    - field.field.paragraph.image_text.field_body
+    - field.field.paragraph.image_text.field_image
+    - field.field.paragraph.image_text.field_paragraph_cta
+    - field.field.paragraph.image_text.field_title
+    - paragraphs.paragraphs_type.image_text
   module:
     - media_library
     - paragraphs
     - text
-id: paragraph.hero_banner.default
+id: paragraph.image_text.default
 targetEntityType: paragraph
-bundle: hero_banner
+bundle: image_text
 mode: default
 content:
   field_body:
@@ -27,7 +27,7 @@ content:
     third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 1
+    weight: 0
     region: content
     settings:
       media_types: {  }
@@ -52,7 +52,7 @@ content:
     third_party_settings: {  }
   field_title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
