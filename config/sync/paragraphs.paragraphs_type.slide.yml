@@ -1,0 +1,10 @@
+uuid: dd5a16cd-0a83-4277-b387-972e6c689797
+langcode: pt-br
+status: true
+dependencies: {  }
+id: slide
+label: Slide
+icon_uuid: null
+icon_default: null
+description: 'Componente de 1 slide'
+behavior_plugins: {  }

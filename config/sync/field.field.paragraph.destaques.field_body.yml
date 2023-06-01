@@ -1,0 +1,21 @@
+uuid: 94a05064-e15c-4401-ac36-877c428809aa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.destaques
+  module:
+    - text
+id: paragraph.destaques.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: destaques
+label: Corpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: 0628e264-3d98-41ca-b859-7634675cc801
+langcode: pt-br
+status: true
+dependencies: {  }
+id: destaques
+label: Destaques
+icon_uuid: null
+icon_default: null
+description: 'Componente usado na área de Destaques da home'
+behavior_plugins: {  }
