@@ -1,0 +1,10 @@
+uuid: 0f655a9f-d947-44b5-8c30-ef5ff589194c
+langcode: pt-br
+status: true
+dependencies: {  }
+id: views
+label: Views
+icon_uuid: null
+icon_default: null
+description: 'Permite carregar uma Visão'
+behavior_plugins: {  }
