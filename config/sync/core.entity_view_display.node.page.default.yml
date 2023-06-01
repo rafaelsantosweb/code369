@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_category
     - field.field.node.page.field_content
     - node.type.page
   module:
@@ -14,6 +15,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_content:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -21,7 +30,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   links:
     settings: {  }
