@@ -1,0 +1,10 @@
+uuid: 42aa0b6b-731f-4789-a68e-b931ba1927a4
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.destaques
+label: Destaques
+targetEntityType: paragraph
+cache: true

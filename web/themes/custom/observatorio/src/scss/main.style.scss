@@ -42,18 +42,31 @@ body {
   }
 
   // big hero image
-  img.hero-img {
+  #hero-banner {
     top: 0;
     left: 0;
     right: 0;
     position: absolute;
     width: 100%;
-    object-fit: cover;
     z-index: -1;
+
+    img {
+      object-fit: cover;
+    }
+
+    .faixa {
+      top: -119px;
+      position: relative;
+      // transform: scaleX(-1);
+    }
   }
 
   main {
     font-weight: 400;
+
+    .paragraph {
+      clear: both;
+    }
 
     .container > .paragraph {
       padding: 3rem 0;
@@ -63,32 +76,38 @@ body {
       padding: .5rem .25rem;
     }
 
-    .field--name-field-paragraph-cta .field--name-field-link {
-      border: 1px solid $button-border-color;
-      border-radius: 5px;
-      display: inline;
-      text-align: center;
-      padding: 0 0 4px !important;
+    .field--name-field-paragraph-cta {
+      display: flex;
+      justify-content: center;
 
-      a {
-        color: $nav-link-color;
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 14px;
-        text-decoration: none;
-        padding: 10px 15px;
+      .button,
+      .field--name-field-link {
+        border: 1px solid $button-border-color;
+        border-radius: 5px;
+        display: inline;
+        text-align: center;
+        padding: 0 0 4px !important;
 
-        &::after {
-          content: '>';
-          display: inline-block;
-          font-size: 14px;
-          margin-left: 10px;
+        a {
+          color: $nav-link-color;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 14px;
+          padding: 10px 2rem;
+          text-decoration: none;
+
+          &::after {
+            content: '>';
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 10px;
+          }
         }
       }
     }
 
     .paragraph--type--hero-banner {
-      background-color: dodgerblue;
+      background-color: #bbbbbb25;
       color: #FFFFFF;
 
       .field--name-field-title {
@@ -100,13 +119,24 @@ body {
       .field--name-field-body {
         font-size: 18px;
         line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
       }
 
       .field--name-field-image {
         display: none;
       }
 
+      .field--name-field-paragraph-cta .field--name-field-link {
+        border-color: $white;
+        display: flex;
+        justify-content: center;
+      }
+
       a,
+      .field--name-field-paragraph-cta .field--name-field-link a,
+      .button a,
       &:hover {
         color: #FFFFFF;
 
@@ -117,13 +147,16 @@ body {
       }
     }
 
+    .paragraph_image_text {
+      background-color: #F0F0F0;
+    }
+
     .paragraph--type--image-text {
       color: #444;
-      background-color: #F0F0F0;
 
       .paragraph_left,
       .paragraph_right {
-        background-color: #F0F0F0;
+        // background-color: #F0F0F0;
         float: left;
         width: 50%;
       }

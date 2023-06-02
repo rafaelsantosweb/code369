@@ -19,10 +19,10 @@
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
       {% for item in items %}
-        {% set item_class = ['field__item'] %}
+        {% set item_class = ['field__item', 'paragraph_' ~ item.content['#paragraph'].bundle] %}
 
-        {# Special code to control who gets the container div class #}
-        {% if item.content['#paragraph'].bundle != 'hero_banner' %}
+        {# Special code to control who gets the div.container class #}
+        {% if item.content['#paragraph'].bundle not in ['XXhero_banner', 'image_text'] %}
           {% set item_class = item_class|merge(['container']) %}
         {% endif %}
 
