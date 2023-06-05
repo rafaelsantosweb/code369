@@ -11120,7 +11120,7 @@ body main .field--name-field-paragraph-cta .field--name-field-link {
   border-radius: 10px;
   color: #003BD1;
   display: inline-block;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 20px;
   margin: 1rem 0;
@@ -11239,9 +11239,10 @@ body main .paragraph--type--image-text .field--name-field-body h3, body main .pa
 }
 body main .paragraph--type--destaques {
   display: block;
-  background-color: #e9ecef;
   color: #444444;
   padding: 80px;
+  background: url("../../images/binary.svg") no-repeat 0 -210px;
+  background-color: #e9ecef;
 }
 body main .paragraph--type--destaques .field--type-string,
 body main .paragraph--type--destaques .field--type-text-long p {
@@ -11265,7 +11266,7 @@ body main .paragraph--type--destaques .button {
   border-radius: 10px;
   color: #003BD1;
   display: inline-block;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 20px;
   margin: 1rem 0;

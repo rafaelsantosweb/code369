@@ -191,9 +191,10 @@ body {
 
     .paragraph--type--destaques {
       display: block;
-      background-color: $gray-200;
       color: $grey-300;
       padding: 80px;
+      background: url('../../images/binary.svg') no-repeat 0 -210px;
+      background-color: $gray-200;
 
       .field--type-string,
       .field--type-text-long p {
