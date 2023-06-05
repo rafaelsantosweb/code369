@@ -47,11 +47,11 @@ body {
     left: 0;
     right: 0;
     position: absolute;
-    width: 100%;
     z-index: -1;
 
     img {
       object-fit: cover;
+      width: 100%;
     }
 
     .faixa {
@@ -66,6 +66,7 @@ body {
 
     .paragraph {
       clear: both;
+      display: flex;
     }
 
     .container > .paragraph {
@@ -82,10 +83,7 @@ body {
 
       .button,
       .field--name-field-link {
-        border: 1px solid $button-border-color;
-        border-radius: 5px;
-        display: inline;
-        text-align: center;
+        @include button;
         padding: 0 0 4px !important;
 
         a {
@@ -95,20 +93,14 @@ body {
           line-height: 14px;
           padding: 10px 2rem;
           text-decoration: none;
-
-          &::after {
-            content: '>';
-            display: inline-block;
-            font-size: 14px;
-            margin-left: 10px;
-          }
         }
       }
     }
 
     .paragraph--type--hero-banner {
       background-color: #bbbbbb25;
-      color: #FFFFFF;
+      color: $white;
+      display: block;
 
       .field--name-field-title {
         font-size: 50px;
@@ -148,11 +140,12 @@ body {
     }
 
     .paragraph_image_text {
-      background-color: #F0F0F0;
+      background-color: $grey-100;
     }
 
     .paragraph--type--image-text {
       color: #444;
+      padding: 5rem 0;
 
       .paragraph_left,
       .paragraph_right {
@@ -186,11 +179,76 @@ body {
         h2 {
           font-size: 28px;
           line-height: 35px;
+          margin: 1.5rem 0;
         }
 
         h3 {
           font-size: 24px;
           line-height: 35px;
+        }
+      }
+    }
+
+    .paragraph--type--destaques {
+      display: block;
+      background-color: $gray-200;
+      color: $grey-300;
+      padding: 80px;
+
+      .field--type-string,
+      .field--type-text-long p {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15%;
+        text-align: center;
+      }
+
+      .field--name-field-title {
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 600;
+      }
+
+      .field--name-field-body {
+        font-size: 15px;
+        line-height: 19px;
+      }
+
+      .button {
+        @include button;
+      }
+
+      .view-content {
+        // 3 columns
+        display: flex;
+        line-height: 22px;
+
+        .views-row {
+          background-color: $white;
+          border-radius: 20px;
+          margin: 0 2%;
+          padding: 35px 40px;
+          width: 32%;
+
+          .views-field-field-image {
+            float: left;
+            margin-right: 30px;
+            height: 100%;
+          }
+
+          .views-field-field-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            padding-bottom: .5rem;
+          }
+
+          .views-field-field-body {
+            font-size: 16px;
+            line-height: 21px;
+            padding-bottom: .5rem;
+          }
         }
       }
     }

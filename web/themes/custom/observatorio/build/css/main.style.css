@@ -11086,12 +11086,12 @@ body #hero-banner {
   left: 0;
   right: 0;
   position: absolute;
-  width: 100%;
   z-index: -1;
 }
 body #hero-banner img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 body #hero-banner .faixa {
   top: -119px;
@@ -11102,6 +11102,7 @@ body main {
 }
 body main .paragraph {
   clear: both;
+  display: flex;
 }
 body main .container > .paragraph {
   padding: 3rem 0;
@@ -11116,10 +11117,43 @@ body main .field--name-field-paragraph-cta {
 body main .field--name-field-paragraph-cta .button,
 body main .field--name-field-paragraph-cta .field--name-field-link {
   border: 1px solid #003BD1;
-  border-radius: 5px;
-  display: inline;
+  border-radius: 10px;
+  color: #003BD1;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 1rem 0;
   text-align: center;
+  transition: all 0.3s ease-in-out;
   padding: 0 0 4px !important;
+}
+body main .field--name-field-paragraph-cta .button:hover,
+body main .field--name-field-paragraph-cta .field--name-field-link:hover {
+  background-color: #003BD1;
+}
+body main .field--name-field-paragraph-cta .button:hover,
+body main .field--name-field-paragraph-cta .button:hover a,
+body main .field--name-field-paragraph-cta .field--name-field-link:hover,
+body main .field--name-field-paragraph-cta .field--name-field-link:hover a {
+  color: #fff;
+}
+body main .field--name-field-paragraph-cta .button a,
+body main .field--name-field-paragraph-cta .field--name-field-link a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 1rem;
+}
+body main .field--name-field-paragraph-cta .button a:hover,
+body main .field--name-field-paragraph-cta .field--name-field-link a:hover {
+  color: #fff;
+}
+body main .field--name-field-paragraph-cta .button::after,
+body main .field--name-field-paragraph-cta .field--name-field-link::after {
+  content: ">";
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 8px;
 }
 body main .field--name-field-paragraph-cta .button a,
 body main .field--name-field-paragraph-cta .field--name-field-link a {
@@ -11130,16 +11164,10 @@ body main .field--name-field-paragraph-cta .field--name-field-link a {
   padding: 10px 2rem;
   text-decoration: none;
 }
-body main .field--name-field-paragraph-cta .button a::after,
-body main .field--name-field-paragraph-cta .field--name-field-link a::after {
-  content: ">";
-  display: inline-block;
-  font-size: 14px;
-  margin-left: 10px;
-}
 body main .paragraph--type--hero-banner {
   background-color: rgba(187, 187, 187, 0.1450980392);
-  color: #FFFFFF;
+  color: #fff;
+  display: block;
 }
 body main .paragraph--type--hero-banner .field--name-field-title {
   font-size: 50px;
@@ -11176,6 +11204,7 @@ body main .paragraph_image_text {
 }
 body main .paragraph--type--image-text {
   color: #444;
+  padding: 5rem 0;
 }
 body main .paragraph--type--image-text .paragraph_left,
 body main .paragraph--type--image-text .paragraph_right {
@@ -11202,10 +11231,94 @@ body main .paragraph--type--image-text .field--name-field-title {
 body main .paragraph--type--image-text .field--name-field-body h2, body main .paragraph--type--image-text .field--name-field-body .h2 {
   font-size: 28px;
   line-height: 35px;
+  margin: 1.5rem 0;
 }
 body main .paragraph--type--image-text .field--name-field-body h3, body main .paragraph--type--image-text .field--name-field-body .h3 {
   font-size: 24px;
   line-height: 35px;
+}
+body main .paragraph--type--destaques {
+  display: block;
+  background-color: #e9ecef;
+  color: #444444;
+  padding: 80px;
+}
+body main .paragraph--type--destaques .field--type-string,
+body main .paragraph--type--destaques .field--type-text-long p {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+  text-align: center;
+}
+body main .paragraph--type--destaques .field--name-field-title {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+}
+body main .paragraph--type--destaques .field--name-field-body {
+  font-size: 15px;
+  line-height: 19px;
+}
+body main .paragraph--type--destaques .button {
+  border: 1px solid #003BD1;
+  border-radius: 10px;
+  color: #003BD1;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 1rem 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+body main .paragraph--type--destaques .button:hover {
+  background-color: #003BD1;
+}
+body main .paragraph--type--destaques .button:hover,
+body main .paragraph--type--destaques .button:hover a {
+  color: #fff;
+}
+body main .paragraph--type--destaques .button a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 1rem;
+}
+body main .paragraph--type--destaques .button a:hover {
+  color: #fff;
+}
+body main .paragraph--type--destaques .button::after {
+  content: ">";
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 8px;
+}
+body main .paragraph--type--destaques .view-content {
+  display: flex;
+  line-height: 22px;
+}
+body main .paragraph--type--destaques .view-content .views-row {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 2%;
+  padding: 35px 40px;
+  width: 32%;
+}
+body main .paragraph--type--destaques .view-content .views-row .views-field-field-image {
+  float: left;
+  margin-right: 30px;
+  height: 100%;
+}
+body main .paragraph--type--destaques .view-content .views-row .views-field-field-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  padding-bottom: 0.5rem;
+}
+body main .paragraph--type--destaques .view-content .views-row .views-field-field-body {
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=main.style.css.map*/

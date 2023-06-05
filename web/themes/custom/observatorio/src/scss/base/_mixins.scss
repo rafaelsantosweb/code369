@@ -1,2 +1,41 @@
 // Define your custom mixins here.
 // -----------------------------------------------------------------------------
+
+@mixin button {
+  border: 1px solid $button-border-color;
+  border-radius: 10px;
+  color: $nav-link-color;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 1rem 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $nav-link-color;
+
+    &,
+    a {
+      color: $white;
+    }
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 1rem;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &::after {
+    content: '>';
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+}
