@@ -39,6 +39,7 @@
         "drupal/paragraphs_collapsible": "^1.4",
         "drupal/paragraphs_limits": "^1.0@alpha",
         "drupal/pathauto": "^1.11",
+        "drupal/quick_node_clone": "^1.16",
         "drupal/radix": "^5.0",
         "drupal/redis": "^1.6",
         "drupal/seckit": "^2.0",
