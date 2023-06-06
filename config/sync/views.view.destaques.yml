@@ -13,6 +13,7 @@ dependencies:
     - node
     - paragraphs
     - text
+    - tiny_slider
     - user
 id: destaques
 label: Destaques
@@ -337,10 +338,9 @@ display:
           output_url_as_text: false
           absolute: false
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -360,6 +360,22 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: minute
         created:
           id: created
           table: node_field_data
@@ -435,7 +451,33 @@ display:
           value:
             page: page
       style:
-        type: default
+        type: tiny_slider
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          items: '3'
+          margin: '1'
+          nav: 1
+          navPosition: bottom
+          autoplay: 1
+          autoplayHoverPause: 1
+          autoplayButtonOutput: 0
+          autoplayPosition: top
+          autoplayTextStart: start
+          autoplayTextStop: stop
+          controls: 0
+          controlsPosition: bottom
+          controlsTextPrev: prev
+          controlsTextNext: next
+          arrowKeys: 1
+          mouseDrag: 0
+          loop: 1
+          speed: '350'
+          dimensionMobile: ''
+          itemsMobile: '1'
+          dimensionDesktop: ''
+          itemsDesktop: '3'
       row:
         type: fields
       query:

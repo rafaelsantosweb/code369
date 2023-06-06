@@ -1,0 +1,25 @@
+uuid: 1cf93c07-3b11-4412-8db4-2dcc40af6176
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - observatorio
+id: rodape
+theme: observatorio
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Menu
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

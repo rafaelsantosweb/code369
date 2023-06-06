@@ -11,6 +11,10 @@
 body {
   font-family: 'Averta', 'Allerta', sans-serif;
 
+  .page {
+    position: relative;
+  }
+
   .block--navegacaoprincipal {
     ul.nav {
       justify-content: flex-end;
@@ -24,7 +28,7 @@ body {
     }
   }
 
-  #search-block-form {
+  .main #search-block-form {
     text-align: right;
 
     > div {
@@ -38,6 +42,20 @@ body {
 
     &:hover input[type='search'] {
       display: block;
+    }
+  }
+
+  // Altera as abas para ficarem fixas no fim da tela
+  .block--observatorio-primary-local-tasks {
+    background-color: #FFFFFFAA;
+    bottom: 0;
+    font-size: 15px;
+    position: fixed;
+    right: 5px;
+    z-index: 999;
+
+    a {
+      color: black;
     }
   }
 
@@ -97,10 +115,11 @@ body {
       }
     }
 
-    .paragraph--type--hero-banner {
+    .container .paragraph--type--hero-banner {
       background-color: #bbbbbb25;
       color: $white;
       display: block;
+      padding: 0;
 
       .field--name-field-title {
         font-size: 50px;
@@ -221,16 +240,33 @@ body {
       }
 
       .view-content {
-        // 3 columns
-        display: flex;
-        line-height: 22px;
+        #tns1 {
+          display: flex;
+        }
 
-        .views-row {
+        .tns-nav {
+          button {
+            background: $white;
+            border: 1px solid #F7F7F7;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+            &.tns-nav-active {
+              background-color: #3F75FF;
+              border: 2px solid $white;
+            }
+          }
+        }
+
+        .views-row,
+        .tns-item {
           background-color: $white;
           border-radius: 20px;
-          margin: 0 2%;
+          margin: 0 20px;
           padding: 35px 40px;
-          width: 32%;
+          // width: 32%;
+
+          min-width: 490px;
+          flex: 1;
 
           .views-field-field-image {
             float: left;

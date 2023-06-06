@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c097777d2128e2d495385f397fe12d3",
+    "content-hash": "b1f45358da271345ad5ebb5641768300",
     "packages": [
         {
             "name": "arthurkirkosa/guzzle-description-loader",
@@ -3879,6 +3879,64 @@
             "homepage": "https://www.drupal.org/project/tagclouds",
             "support": {
                 "source": "https://git.drupalcode.org/project/tagclouds"
+            }
+        },
+        {
+            "name": "drupal/tiny_slider",
+            "version": "1.1.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tiny_slider.git",
+                "reference": "1.1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tiny_slider-1.1.0-rc1.zip",
+                "reference": "1.1.0-rc1",
+                "shasum": "d5d9d5c57e7f2a8b25dce6d441d7fd9d32d07079"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.0-rc1",
+                    "datestamp": "1680276128",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Hebl",
+                    "homepage": "https://www.drupal.org/user/3688118"
+                },
+                {
+                    "name": "ipwa",
+                    "homepage": "https://www.drupal.org/user/130909"
+                },
+                {
+                    "name": "xiwar",
+                    "homepage": "https://www.drupal.org/user/3309931"
+                }
+            ],
+            "description": "Drupal integration for Tiny Slider",
+            "homepage": "https://www.drupal.org/project/owlcarousel",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tiny_slider",
+                "issues": "https://www.drupal.org/project/owlcarousel"
             }
         },
         {
@@ -9713,6 +9771,7 @@
         "drupal/context": 5,
         "drupal/mask": 15,
         "drupal/paragraphs_limits": 15,
+        "drupal/tiny_slider": 10,
         "drupal/views_field_view": 10,
         "drupal/viewsreference": 10,
         "drupal/webform": 10

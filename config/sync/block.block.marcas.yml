@@ -1,0 +1,25 @@
+uuid: cb20c727-f023-4a57-97de-7db9392564b1
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:block:60e3afe5-2551-4c65-ac19-78e6d5e24888'
+  module:
+    - block_content
+  theme:
+    - observatorio
+id: marcas
+theme: observatorio
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:60e3afe5-2551-4c65-ac19-78e6d5e24888'
+settings:
+  id: 'block_content:60e3afe5-2551-4c65-ac19-78e6d5e24888'
+  label: Marcas
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

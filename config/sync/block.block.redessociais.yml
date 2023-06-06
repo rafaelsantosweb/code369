@@ -1,0 +1,25 @@
+uuid: b0234ed3-a5fa-42f7-9a02-65577223ff2a
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:block:a3777b11-703f-4fb0-bf8d-a201a11fe4dd'
+  module:
+    - block_content
+  theme:
+    - observatorio
+id: redessociais
+theme: observatorio
+region: footer
+weight: -3
+provider: null
+plugin: 'block_content:a3777b11-703f-4fb0-bf8d-a201a11fe4dd'
+settings:
+  id: 'block_content:a3777b11-703f-4fb0-bf8d-a201a11fe4dd'
+  label: 'Siga as redes da Firjan'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

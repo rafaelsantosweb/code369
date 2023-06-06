@@ -11062,24 +11062,38 @@ textarea.form-control-lg {
 body {
   font-family: "Averta", "Allerta", sans-serif;
 }
+body .page {
+  position: relative;
+}
 body .block--navegacaoprincipal ul.nav {
   justify-content: flex-end;
 }
 body .block--navegacaoprincipal ul.nav li {
   padding: 0 0.5rem;
 }
-body #search-block-form {
+body .main #search-block-form {
   text-align: right;
 }
-body #search-block-form > div {
+body .main #search-block-form > div {
   float: left;
 }
-body #search-block-form input[type=search] {
+body .main #search-block-form input[type=search] {
   display: none;
   width: 95%;
 }
-body #search-block-form:hover input[type=search] {
+body .main #search-block-form:hover input[type=search] {
   display: block;
+}
+body .block--observatorio-primary-local-tasks {
+  background-color: rgba(255, 255, 255, 0.6666666667);
+  bottom: 0;
+  font-size: 15px;
+  position: fixed;
+  right: 5px;
+  z-index: 999;
+}
+body .block--observatorio-primary-local-tasks a {
+  color: black;
 }
 body #hero-banner {
   top: 0;
@@ -11164,38 +11178,39 @@ body main .field--name-field-paragraph-cta .field--name-field-link a {
   padding: 10px 2rem;
   text-decoration: none;
 }
-body main .paragraph--type--hero-banner {
+body main .container .paragraph--type--hero-banner {
   background-color: rgba(187, 187, 187, 0.1450980392);
   color: #fff;
   display: block;
+  padding: 0;
 }
-body main .paragraph--type--hero-banner .field--name-field-title {
+body main .container .paragraph--type--hero-banner .field--name-field-title {
   font-size: 50px;
   line-height: 62px;
 }
-body main .paragraph--type--hero-banner .field--name-field-body {
+body main .container .paragraph--type--hero-banner .field--name-field-body {
   font-size: 18px;
   line-height: 30px;
   margin: 0 auto;
   text-align: center;
   width: 70%;
 }
-body main .paragraph--type--hero-banner .field--name-field-image {
+body main .container .paragraph--type--hero-banner .field--name-field-image {
   display: none;
 }
-body main .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link {
+body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link {
   border-color: #fff;
   display: flex;
   justify-content: center;
 }
-body main .paragraph--type--hero-banner a,
-body main .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
-body main .paragraph--type--hero-banner .button a, body main .paragraph--type--hero-banner:hover {
+body main .container .paragraph--type--hero-banner a,
+body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
+body main .container .paragraph--type--hero-banner .button a, body main .container .paragraph--type--hero-banner:hover {
   color: #FFFFFF;
 }
-body main .paragraph--type--hero-banner a:hover,
-body main .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover,
-body main .paragraph--type--hero-banner .button a:hover, body main .paragraph--type--hero-banner:hover:hover {
+body main .container .paragraph--type--hero-banner a:hover,
+body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover,
+body main .container .paragraph--type--hero-banner .button a:hover, body main .container .paragraph--type--hero-banner:hover:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -11294,29 +11309,42 @@ body main .paragraph--type--destaques .button::after {
   font-size: 14px;
   margin-right: 8px;
 }
-body main .paragraph--type--destaques .view-content {
+body main .paragraph--type--destaques .view-content #tns1 {
   display: flex;
-  line-height: 22px;
 }
-body main .paragraph--type--destaques .view-content .views-row {
+body main .paragraph--type--destaques .view-content .tns-nav button {
+  background: #fff;
+  border: 1px solid #F7F7F7;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+body main .paragraph--type--destaques .view-content .tns-nav button.tns-nav-active {
+  background-color: #3F75FF;
+  border: 2px solid #fff;
+}
+body main .paragraph--type--destaques .view-content .views-row,
+body main .paragraph--type--destaques .view-content .tns-item {
   background-color: #fff;
   border-radius: 20px;
-  margin: 0 2%;
+  margin: 0 20px;
   padding: 35px 40px;
-  width: 32%;
+  min-width: 490px;
+  flex: 1;
 }
-body main .paragraph--type--destaques .view-content .views-row .views-field-field-image {
+body main .paragraph--type--destaques .view-content .views-row .views-field-field-image,
+body main .paragraph--type--destaques .view-content .tns-item .views-field-field-image {
   float: left;
   margin-right: 30px;
   height: 100%;
 }
-body main .paragraph--type--destaques .view-content .views-row .views-field-field-title {
+body main .paragraph--type--destaques .view-content .views-row .views-field-field-title,
+body main .paragraph--type--destaques .view-content .tns-item .views-field-field-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
   padding-bottom: 0.5rem;
 }
-body main .paragraph--type--destaques .view-content .views-row .views-field-field-body {
+body main .paragraph--type--destaques .view-content .views-row .views-field-field-body,
+body main .paragraph--type--destaques .view-content .tns-item .views-field-field-body {
   font-size: 16px;
   line-height: 21px;
   padding-bottom: 0.5rem;

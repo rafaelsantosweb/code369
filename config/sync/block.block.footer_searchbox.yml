@@ -1,0 +1,21 @@
+uuid: 0cf60c61-d1d4-4701-bf7e-584a18844885
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - observatorio
+id: footer_searchbox
+theme: observatorio
+region: footer
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Faça sua busca'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

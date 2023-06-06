@@ -1,0 +1,23 @@
+uuid: 7f267dc8-ed67-400d-a65a-630714ce508a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.block.body
+field_name: body
+entity_type: block_content
+bundle: block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

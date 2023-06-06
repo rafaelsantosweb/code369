@@ -1,7 +1,9 @@
 uuid: 19f51984-34d9-4ed9-8ff1-c09e6a718935
 langcode: pt-br
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
 name: HTML
 format: html
 weight: 0
@@ -12,7 +14,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2> <h3> <h4> <h5> <h6> <strong> <em>'
+      allowed_html: '<br> <p> <h2> <h3> <h4> <h5> <h6> <strong> <em> <a href> <img src alt height width data-caption> <drupal-media data-entity-type data-entity-uuid alt data-caption>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_url:
@@ -28,3 +30,12 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }
