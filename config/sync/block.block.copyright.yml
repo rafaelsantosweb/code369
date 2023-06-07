@@ -1,0 +1,25 @@
+uuid: 6164d453-ebea-44c8-bf6d-48afc94f45e9
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:block:530fb51f-ccdd-44a6-9007-2a2f4f661fc6'
+  module:
+    - block_content
+  theme:
+    - observatorio
+id: copyright
+theme: observatorio
+region: copyright
+weight: -7
+provider: null
+plugin: 'block_content:530fb51f-ccdd-44a6-9007-2a2f4f661fc6'
+settings:
+  id: 'block_content:530fb51f-ccdd-44a6-9007-2a2f4f661fc6'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

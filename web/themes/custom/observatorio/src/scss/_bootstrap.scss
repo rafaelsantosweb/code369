@@ -74,8 +74,6 @@
 
 // Add additional custom code here
 // ------------------------------------------------------------------------------
-@import "base/mixins";
-@import "base/functions";
-@import "base/helpers";
-@import "base/elements";
-@import "base/typography";
+@import "base/mixins", "base/functions", "base/helpers",
+"base/elements", "base/typography";
+@import "page/footer";

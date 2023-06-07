@@ -18,6 +18,7 @@ regions:
   content: Content
   page_bottom: Page bottom
   footer: Footer
+  copyright: Copyright
 
 libraries:
   - observatorio/style
