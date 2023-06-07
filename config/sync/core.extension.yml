@@ -31,6 +31,9 @@ module:
   google_tag: 0
   image: 0
   inline_form_errors: 0
+  jquery_ui: 0
+  jquery_ui_autocomplete: 0
+  jquery_ui_menu: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
@@ -40,6 +43,7 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  module_filter: 0
   mysql: 0
   node: 0
   page_cache: 0
@@ -47,6 +51,7 @@ module:
   paragraphs_limits: 0
   path: 0
   path_alias: 0
+  permissions_filter: 0
   quick_node_clone: 0
   redis: 0
   responsive_image: 0
