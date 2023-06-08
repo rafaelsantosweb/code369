@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Template for a Block component.
+ *
+ * Available config:
+ * - html_tag: The HTML tag for the block.
+ * - utility_classes: An array of utility classes.
+ */
+#}
+{{ attach_library('observatorio/block') }}
+{% set classes = [
+  'block',
+  'container',
+  bundle ? 'block--' ~ bundle|clean_class,
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : [])
+%}
+{% set html_tag = 'div' %}
+
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+  <div class="block-left">
+    <img src='{{ base_path ~ directory }}/images/bigdata.png'/>
+  </div>
+
+  <div class="block-right">
+    {{ title_prefix }}
+    {% if label %}
+      {% block label %}
+        <h2{{ title_attributes }}>{{ label }}</h2>
+      {% endblock %}
+    {% endif %}
+    {{ title_suffix }}
+
+    <h3>Clique nas tags e acesse os estudos relacionados a cada uma.</h3>
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}

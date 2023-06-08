@@ -1,6 +1,16 @@
 // Define your custom mixins here.
 // -----------------------------------------------------------------------------
 
+@mixin link($color, $hColor) {
+  color: $color;
+  // font-size: 18px;
+
+  &:hover {
+    color: $hColor;
+    text-decoration: underline;
+  }
+}
+
 @mixin button {
   border: 1px solid $button-border-color;
   border-radius: 10px;

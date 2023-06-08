@@ -289,6 +289,69 @@ body {
         }
       }
     }
+
+    .block--tagclouds-block-categoria {
+      text-align: center;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+      }
+
+      h3 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18.5px;
+
+        &::after {
+          content: '';
+          display: block;
+          margin-top: 1rem;
+          border-bottom: 1px solid $gray-300;
+        }
+      }
+
+      div.block-left,
+      div.block-right {
+        display: inline-block;
+        width: 49%;
+      }
+
+      span {
+        display: flex;
+
+        .tagclouds {
+          @include link($black, $grey-300);
+          padding: 5px 0;
+
+          &.level6 {
+            font-weight: 600;
+          }
+
+          &.level5 {
+            font-weight: 500;
+          }
+
+          &.level4 {
+            font-weight: 400;
+          }
+
+          &.level3 {
+            font-weight: 300;
+          }
+
+          &.level2 {
+            font-weight: 200;
+          }
+
+          &.level1 {
+            font-weight: 100;
+          }
+        }
+      }
+
+    }
   }
 
 }
