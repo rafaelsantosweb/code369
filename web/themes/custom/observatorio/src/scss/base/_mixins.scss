@@ -24,11 +24,10 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: $nav-link-color;
+    background-color: $white;
 
-    &,
-    a {
-      color: $white;
+    &::after {
+      color: $black;
     }
   }
 
@@ -38,7 +37,12 @@
     padding: 10px 1rem;
 
     &:hover {
-      color: $white;
+      color: $black;
+      background-color: $white;
+
+      &::after {
+        color: $black;
+      }
     }
   }
 
@@ -46,6 +50,6 @@
     content: '>';
     display: inline-block;
     font-size: 14px;
-    margin-right: 8px;
+    margin: 5px 8px 0;
   }
 }

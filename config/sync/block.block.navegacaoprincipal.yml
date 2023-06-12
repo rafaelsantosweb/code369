@@ -10,8 +10,8 @@ dependencies:
     - observatorio
 id: navegacaoprincipal
 theme: observatorio
-region: navbar_branding
-weight: -3
+region: header
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

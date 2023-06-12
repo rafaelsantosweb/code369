@@ -15,20 +15,35 @@ body {
     position: relative;
   }
 
+  .block--system-branding {
+    float: left;
+  }
+
   .block--navegacaoprincipal {
+
     ul.nav {
+      background-color: $white;
+      flex-direction: row;
       justify-content: flex-end;
+      right: 10%;
+      position: absolute;
+      z-index: 10;
 
       li {
         // flexbox side by side
         // align-items: center;
         // justify-content: center;
+        display: inline;
         padding: 0 .5rem;
+
+        a {
+          // color: $white;
+        }
       }
     }
   }
 
-  .main #search-block-form {
+  #search-block-form {
     text-align: right;
 
     > div {
@@ -145,15 +160,17 @@ body {
         justify-content: center;
       }
 
-      a,
-      .field--name-field-paragraph-cta .field--name-field-link a,
-      .button a,
-      &:hover {
-        color: #FFFFFF;
+      .field--name-field-paragraph-cta .field--name-field-link,
+      .button {
+        @include button;
+        border-color: $white;
 
-        &:hover {
-          color: #FFFFFF;
-          text-decoration: none;
+        a {
+          color: $white;
+        }
+
+        &::after {
+          color: $white;
         }
       }
     }
@@ -257,13 +274,11 @@ body {
           }
         }
 
-        // .views-row,
         .tns-item {
           background-color: $white;
           border-radius: 20px;
           margin: 0 20px;
           padding: 35px 40px;
-          // width: 32%;
 
           min-width: 490px;
           flex: 1;
