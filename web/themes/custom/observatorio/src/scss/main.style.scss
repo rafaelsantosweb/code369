@@ -300,6 +300,10 @@ body {
             font-size: 16px;
             line-height: 21px;
             padding-bottom: .5rem;
+
+            p {
+              text-align: justify;
+            }
           }
         }
       }
@@ -319,10 +323,22 @@ body {
         font-weight: 400;
         line-height: 18.5px;
 
+        &::before {
+          content: '';
+          background: url('../../images/tagcloud-arrow.svg') no-repeat center $white;
+          display: block;
+          position: relative;
+          padding: 0 1.5rem;
+          height: 20px;
+          left: 45%;
+          top: 3.1rem;
+          width: 20px;
+        }
+
         &::after {
           content: '';
           display: block;
-          margin-top: 1rem;
+          margin-top: 1.5rem;
           border-bottom: 1px solid $gray-300;
         }
       }

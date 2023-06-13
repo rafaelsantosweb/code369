@@ -11468,6 +11468,9 @@ body main .paragraph--type--destaques .view-content .tns-item .views-field-field
   line-height: 21px;
   padding-bottom: 0.5rem;
 }
+body main .paragraph--type--destaques .view-content .tns-item .views-field-field-body p {
+  text-align: justify;
+}
 body main .block--tagclouds-block-categoria {
   text-align: center;
 }
@@ -11481,10 +11484,21 @@ body main .block--tagclouds-block-categoria h3, body main .block--tagclouds-bloc
   font-weight: 400;
   line-height: 18.5px;
 }
+body main .block--tagclouds-block-categoria h3::before, body main .block--tagclouds-block-categoria .h3::before {
+  content: "";
+  background: url("../../images/tagcloud-arrow.svg") no-repeat center #ffffff;
+  display: block;
+  position: relative;
+  padding: 0 1.5rem;
+  height: 20px;
+  left: 45%;
+  top: 3.1rem;
+  width: 20px;
+}
 body main .block--tagclouds-block-categoria h3::after, body main .block--tagclouds-block-categoria .h3::after {
   content: "";
   display: block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   border-bottom: 1px solid #dee2e6;
 }
 body main .block--tagclouds-block-categoria div.block-left,
