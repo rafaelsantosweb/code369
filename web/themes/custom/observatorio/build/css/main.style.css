@@ -11172,7 +11172,6 @@ body .block--observatorio-primary-local-tasks a {
   color: black;
 }
 body #hero-banner {
-  top: 0;
   left: 0;
   right: 0;
   position: absolute;
@@ -11184,8 +11183,10 @@ body #hero-banner img {
   width: 100%;
 }
 body #hero-banner .faixa {
-  top: -119px;
-  position: relative;
+  bottom: 83px;
+  left: 0;
+  position: absolute;
+  height: 30%;
 }
 body main {
   font-weight: 400;

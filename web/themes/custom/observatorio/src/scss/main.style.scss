@@ -76,7 +76,6 @@ body {
 
   // big hero image
   #hero-banner {
-    top: 0;
     left: 0;
     right: 0;
     position: absolute;
@@ -88,9 +87,10 @@ body {
     }
 
     .faixa {
-      top: -119px;
-      position: relative;
-      // transform: scaleX(-1);
+      bottom: 83px;
+      left: 0;
+      position: absolute;
+      height: 30%;
     }
   }
 
