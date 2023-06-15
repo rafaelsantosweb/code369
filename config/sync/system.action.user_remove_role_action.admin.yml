@@ -1,0 +1,14 @@
+uuid: e0ed7896-1eb5-46f6-a555-8eb977a063c3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.admin
+  module:
+    - user
+id: user_remove_role_action.admin
+label: 'Remover o papel Admin dos usuários selecionados'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: admin

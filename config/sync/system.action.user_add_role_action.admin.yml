@@ -1,0 +1,14 @@
+uuid: 2bb4fb41-8b7a-4cb2-a382-b55b1458c685
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.admin
+  module:
+    - user
+id: user_add_role_action.admin
+label: 'Adiciona o papel Admin para o(s) usuário(s) selecionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: admin
