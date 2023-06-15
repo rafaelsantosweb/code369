@@ -3,6 +3,7 @@ _core:
 langcode: pt-br
 settings:
   default_status: open
+  default_categories: {  }
   default_page: true
   default_page_base_path: /form
   default_ajax: false
@@ -46,6 +47,7 @@ settings:
   default_draft_pending_multiple_message: 'Você tem rascunhos pendentes para este formulário. <a href="#">Veja seus rascunhos pendentes</a>.'
   default_confirmation_message: 'Novas submissões foram adicionadas ao [webform:title].'
   default_confirmation_back_label: 'Voltar ao formulário'
+  default_confirmation_noindex: true
   default_limit_total_message: 'Não são permitidas novas submissões.'
   default_limit_user_message: 'Não são permitidas novas submissões.'
   default_submission_label: '[webform_submission:submitted-to]: Submissão #[webform_submission:serial]'

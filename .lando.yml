@@ -23,7 +23,7 @@ services:
       port: 3306
   cache:
     type: redis
-    persist: true
+    persist: false
   node:
     type: node:18
 tooling:

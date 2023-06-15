@@ -1,0 +1,11 @@
+uuid: 3d7df99f-df23-48e0-9d04-03be88933627
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acesso
+id: taxonomy_term.acesso
+target_entity_type_id: taxonomy_term
+target_bundle: acesso
+default_langcode: site_default
+language_alterable: false

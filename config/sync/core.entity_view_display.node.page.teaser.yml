@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_access
     - field.field.node.page.field_category
     - field.field.node.page.field_content
     - node.type.page
@@ -30,6 +31,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_access: true
   field_category: true
   field_content: true
   langcode: true

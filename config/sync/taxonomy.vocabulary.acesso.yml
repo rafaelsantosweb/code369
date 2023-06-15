@@ -1,0 +1,8 @@
+uuid: 6033c10e-6369-4ba1-894f-5b2f4240bf88
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Acesso
+vid: acesso
+description: 'Permite controlar o acesso publico ou privado às páginas'
+weight: 0
