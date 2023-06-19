@@ -1,0 +1,11 @@
+uuid: eb1513c2-1889-49df-89ca-5721f345819d
+langcode: pt-br
+status: true
+dependencies: {  }
+machine: local
+description: null
+name: Local
+weight: '0'
+url: 'http://observatorio.lndo.site'
+fg_color: '#d0d0d0'
+bg_color: '#0d0d0d'

@@ -1,0 +1,11 @@
+uuid: 5b6fe00e-a478-48f1-82eb-ed2af11ef702
+langcode: pt-br
+status: true
+dependencies: {  }
+machine: dev
+description: null
+name: Dev
+weight: ''
+url: 'https://observatorio-firjan.cityconnect.com.br'
+fg_color: '#d0d0d0'
+bg_color: '#a51d2d'

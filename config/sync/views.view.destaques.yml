@@ -482,6 +482,7 @@ display:
           admin_label: 'field_content: Parágrafo'
           plugin_id: standard
           required: false
+      css_class: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -538,9 +539,11 @@ display:
         type: fields
         options: {  }
       defaults:
+        css_class: false
         pager: false
         style: false
         row: false
+      css_class: pilares
       display_description: ''
       display_extenders: {  }
     cache_metadata:

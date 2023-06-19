@@ -1,0 +1,11 @@
+uuid: 9760b298-ee66-490e-8f18-80dd6cb14a24
+langcode: pt-br
+status: true
+dependencies: {  }
+machine: prod
+description: null
+name: Prod
+weight: ''
+url: 'https://observatorio.firjan.com.br'
+fg_color: '#d0d0d0'
+bg_color: '#26a269'
