@@ -11161,12 +11161,17 @@ body #search-block-form:hover input[type=search] {
   display: block;
 }
 body .block--observatorio-primary-local-tasks {
-  background-color: rgba(255, 255, 255, 0.6666666667);
+  background-color: rgba(204, 204, 204, 0.7058823529);
   bottom: 0;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   font-size: 15px;
+  height: 40px;
   position: fixed;
-  right: 5px;
+  right: 1rem;
   z-index: 999;
+}
+body .block--observatorio-primary-local-tasks .mb-3 {
+  border-bottom: 0;
 }
 body .block--observatorio-primary-local-tasks a {
   color: black;
@@ -11259,7 +11264,6 @@ body main .field--name-field-paragraph-cta .field--name-field-link a {
   text-decoration: none;
 }
 body main .container .paragraph--type--hero-banner {
-  background-color: rgba(187, 187, 187, 0.1450980392);
   color: #ffffff;
   display: block;
   padding: 0;
@@ -11442,7 +11446,7 @@ body main .paragraph--type--destaques .view-content .tns-nav button {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 body main .paragraph--type--destaques .view-content .tns-nav button.tns-nav-active {
-  background-color: #3f75ff;
+  background-color: #3F75FF;
   border: 2px solid #ffffff;
 }
 body main .paragraph--type--destaques .view-content .tns-item {
@@ -11471,6 +11475,63 @@ body main .paragraph--type--destaques .view-content .tns-item .views-field-field
 }
 body main .paragraph--type--destaques .view-content .tns-item .views-field-field-body p {
   text-align: justify;
+}
+body main .pilares .view-content {
+  display: flex;
+}
+body main .pilares .view-content .views-row .views-col {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 1px #3F75FF;
+  margin: 0 1rem;
+  min-height: 426px;
+  padding: 10px;
+  text-align: center;
+  width: 370px !important;
+}
+body main .paragraph_block {
+  background-color: #182c5f;
+  color: #ffffff;
+  max-height: 175px;
+  padding: 40px 5rem;
+}
+body main .paragraph_block fieldset legend {
+  display: none;
+}
+body main .paragraph_block fieldset #edit-description {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 40px;
+}
+body main .paragraph_block fieldset .form-actions,
+body main .paragraph_block fieldset .form-item,
+body main .paragraph_block fieldset .form-item {
+  float: left;
+  max-width: 400px;
+  padding: 0 5px;
+}
+body main .paragraph_block fieldset .form-item input {
+  max-width: 200px;
+}
+body main .paragraph_block fieldset .form-actions input {
+  width: 110px;
+}
+body main .paragraph_block .form-check {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -4rem;
+}
+body main .paragraph_block .form-check input {
+  margin-right: 5px;
+}
+body main .paragraph_block .form-check label {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
 }
 body main .block--tagclouds-block-categoria {
   text-align: center;

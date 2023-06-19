@@ -22,7 +22,7 @@
         {% set item_class = ['field__item', 'paragraph_' ~ item.content['#paragraph'].bundle] %}
 
         {# Special code to control who gets the div.container class #}
-        {% if item.content['#paragraph'].bundle not in ['destaques', 'image_text'] %}
+        {% if item.content['#paragraph'].bundle not in ['destaques', 'image_text', 'block'] %}
           {% set item_class = item_class|merge(['container']) %}
         {% endif %}
 

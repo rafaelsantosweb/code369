@@ -62,12 +62,18 @@ body {
 
   // Altera as abas para ficarem fixas no fim da tela
   .block--observatorio-primary-local-tasks {
-    background-color: #FFFFFFAA;
+    background-color: #ccccccb4;
     bottom: 0;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
     font-size: 15px;
+    height: 40px;
     position: fixed;
-    right: 5px;
+    right: 1rem;
     z-index: 999;
+
+    .mb-3 {
+      border-bottom: 0;
+    }
 
     a {
       color: black;
@@ -131,7 +137,7 @@ body {
     }
 
     .container .paragraph--type--hero-banner {
-      background-color: #bbbbbb25;
+      // background-color: #bbbbbb25;
       color: $white;
       display: block;
       padding: 0;
@@ -268,12 +274,13 @@ body {
             box-shadow: 0px 1px 2px rgba(0, 0, 0, 25%);
 
             &.tns-nav-active {
-              background-color: #3f75ff;
+              background-color: $blue-50;
               border: 2px solid $white;
             }
           }
         }
 
+        // .views-row,
         .tns-item {
           background-color: $white;
           border-radius: 20px;
@@ -308,6 +315,82 @@ body {
         }
       }
     }
+
+    .pilares {
+      .view-content {
+        display: flex;
+
+        .views-row .views-col {
+          background-color: $white;
+          border-radius: 10px;
+          box-shadow: 0px 3px 1px $blue-50;
+          margin: 0 1rem;
+          min-height: 426px;
+          padding: 10px;
+          text-align: center;
+          width: 370px !important;
+
+          .field--name-field-image {}
+        }
+      }
+    }
+
+    .paragraph_block {
+      background-color: $blue-500;
+      color: $white;
+      max-height: 175px;
+      padding: 40px 5rem;
+
+      fieldset {
+        legend {
+          display: none;
+        }
+
+        #edit-description {
+          font-style: normal;
+          font-size: 20px;
+          line-height: 25px;
+          margin: 0 40px;
+        }
+
+        .form-actions,
+        .form-item,
+        .form-item {
+          float: left;
+          max-width: 400px;
+          padding: 0 5px;
+        }
+
+        .form-item input {
+          max-width: 200px;
+        }
+
+        .form-actions input {
+          width: 110px;
+        }
+
+      }
+
+      .form-check {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top: -4rem;
+
+        input {
+          margin-right: 5px;
+        }
+
+        label {
+          font-style: italic;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 22px;
+        }
+      }
+    }
+
 
     .block--tagclouds-block-categoria {
       text-align: center;

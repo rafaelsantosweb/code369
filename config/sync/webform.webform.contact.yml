@@ -18,16 +18,39 @@ title: Contato
 description: 'Webform básico de contato por e-mail.'
 categories: {  }
 elements: |-
-  name:
-    '#title': 'Seu Nome'
-    '#type': textfield
+  campos:
+    '#type': fieldset
+    '#title': Campos
+    '#title_display': invisible
+    im_icon:
+      '#type': processed_text
+      '#text': '<p><img src="/themes/custom/observatorio/images/im.svg">&nbsp;</p>'
+      '#format': html
+    description:
+      '#type': processed_text
+      '#text': "<p>Quer ficar por dentro das novidades?\L&nbsp;&nbsp;&nbsp;<br><strong>Seja o primeiro a saber.</strong></p>"
+      '#format': html
+    name:
+      '#type': textfield
+      '#title': 'Seu Nome'
+      '#title_display': invisible
+      '#placeholder': Nome
+      '#required': true
+      '#default_value': '[current-user:display-name]'
+    email:
+      '#type': email
+      '#title': 'Seu email'
+      '#title_display': invisible
+      '#placeholder': Email
+      '#required': true
+      '#default_value': '[current-user:mail]'
+    actions:
+      '#type': webform_actions
+      '#title': 'Botões de envio'
+  aceito_os_termos:
+    '#type': checkbox
+    '#title': 'Li e aceito os <a target=_blank href=/termos-condicoes>Termos e Condições</a>'
     '#required': true
-    '#default_value': '[current-user:display-name]'
-  email:
-    '#title': 'Seu email'
-    '#type': email
-    '#required': true
-    '#default_value': '[current-user:mail]'
   subject:
     '#type': textfield
     '#title': Assunto
@@ -44,10 +67,6 @@ elements: |-
         ':input[name="message"]':
           filled: true
     '#test': 'Por favor, ignore este email.'
-  actions:
-    '#type': webform_actions
-    '#title': 'Botões de envio'
-    '#submit__label': 'Enviar mensagem'
 css: ''
 javascript: ''
 settings:
