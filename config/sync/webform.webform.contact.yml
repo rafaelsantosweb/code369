@@ -17,7 +17,7 @@ id: contact
 title: Contato
 description: 'Webform básico de contato por e-mail.'
 categories: {  }
-elements: |
+elements: |-
   name:
     '#title': 'Seu Nome'
     '#type': textfield
@@ -29,14 +29,20 @@ elements: |
     '#required': true
     '#default_value': '[current-user:mail]'
   subject:
-    '#title': Assunto
     '#type': textfield
-    '#required': true
+    '#title': Assunto
+    '#states':
+      visible:
+        ':input[name="subject"]':
+          filled: true
     '#test': 'Testando formulário de contato de [site:name]'
   message:
-    '#title': Mensagem
     '#type': textarea
-    '#required': true
+    '#title': Mensagem
+    '#states':
+      visible:
+        ':input[name="message"]':
+          filled: true
     '#test': 'Por favor, ignore este email.'
   actions:
     '#type': webform_actions

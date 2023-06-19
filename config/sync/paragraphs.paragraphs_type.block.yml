@@ -1,0 +1,10 @@
+uuid: c0d4bf1f-85b1-42a1-89a2-c9ea1efa1338
+langcode: pt-br
+status: true
+dependencies: {  }
+id: block
+label: Bloco
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

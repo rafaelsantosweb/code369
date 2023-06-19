@@ -1,0 +1,49 @@
+uuid: 6b4a3bb8-923a-40a7-ad2d-5fd2441309b6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+id: paragraph.block.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: block
+label: Bloco
+description: 'Permite adicionar um bloco do drupal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: categories
+  selection_settings:
+    categories:
+      Bloco: Bloco
+      'Blocos em linha': 'Blocos em linha'
+      'campos Apelido de URL': 'campos Apelido de URL'
+      'campos Arquivo': 'campos Arquivo'
+      'campos Bloco personalizado': 'campos Bloco personalizado'
+      'campos Conteúdo': 'campos Conteúdo'
+      'campos Envio do webform': 'campos Envio do webform'
+      'campos Link do menu personalizado': 'campos Link do menu personalizado'
+      'campos Mensagem de contato': 'campos Mensagem de contato'
+      'campos Mídia': 'campos Mídia'
+      'campos Parágrafo': 'campos Parágrafo'
+      'campos Termo de taxonomia': 'campos Termo de taxonomia'
+      'campos Usuário': 'campos Usuário'
+      core: core
+      Depurando: Depurando
+      Devel: Devel
+      Formulários: Formulários
+      'Listas (Views)': 'Listas (Views)'
+      Menus: Menus
+      Personalizado: Personalizado
+      Sistema: Sistema
+      System: System
+      Tagclouds: Tagclouds
+      Usuário: Usuário
+      Webform: Webform
+field_type: block_field

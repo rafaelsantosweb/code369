@@ -376,22 +376,6 @@ display:
             field_identifier: ''
           exposed: false
           granularity: minute
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
       arguments:
         nid:
           id: nid
@@ -515,10 +499,49 @@ display:
         - 'config:field.storage.paragraph.field_title'
   block_1:
     id: block_1
-    display_title: Block
+    display_title: Destaques
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.paragraph.field_body'
+        - 'config:field.storage.paragraph.field_image'
+        - 'config:field.storage.paragraph.field_title'
+  block_2:
+    id: block_2
+    display_title: '3 Pilares'
+    display_plugin: block
+    position: 1
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options: {  }
+      defaults:
+        pager: false
+        style: false
+        row: false
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
