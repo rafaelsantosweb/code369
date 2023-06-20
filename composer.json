@@ -55,6 +55,7 @@
         "drupal/token": "^1.11",
         "drupal/user_redirect": "^2.0",
         "drupal/views_field_view": "^1.0@beta",
+        "drupal/views_infinite_scroll": "^2.0",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.2@beta",
         "drupal/weight": "^3.4",
