@@ -49,6 +49,7 @@ module:
   mysql: 0
   node: 0
   options: 0
+  page_attributes: 0
   page_cache: 0
   paragraphs_collapsible: 0
   paragraphs_limits: 0
