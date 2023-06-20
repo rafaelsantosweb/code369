@@ -46,6 +46,7 @@ function observatorio_library_info_build() {
 function observatorio_preprocess_page(&$vars) {
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node && $node->hasField('field_content')) {
+    // Look for a hero image.
     foreach($node->field_content->entity as $item) {
       $paragraph = $item->entity;
       if ($paragraph_type = $paragraph?->bundle()) {
@@ -60,5 +61,9 @@ function observatorio_preprocess_page(&$vars) {
         }
       }
     }
+  }
+  // Add a default light blue image as background if none is set from the content.
+  if (!key_exists('hero_img', $vars)) {
+    $vars['default_hero_img'] = '/images/light-blue-bg.png';
   }
 }

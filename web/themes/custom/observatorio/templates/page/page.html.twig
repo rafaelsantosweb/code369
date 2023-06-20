@@ -11,12 +11,14 @@
 
 <div class="page">
 
-  {% if hero_img %}
     <div id='hero-banner'>
+    {% if hero_img %}
       <img src='{{ file_url(hero_img.entity.fileuri) }}' class="hero-img" />
+    {% elseif default_hero_img %}
+      <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
+    {% endif %}
       <img src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' width='100%' class='faixa' />
     </div>
-  {% endif %}
 
   {% embed '@radix/navbar/navbar.twig' with {
     container: 'fixed',
