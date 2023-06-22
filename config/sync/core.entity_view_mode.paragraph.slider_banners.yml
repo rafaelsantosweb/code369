@@ -1,0 +1,10 @@
+uuid: 54a7febd-ff3a-485a-98bd-e128c8655a42
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.slider_banners
+label: 'Slider Banners'
+targetEntityType: paragraph
+cache: true

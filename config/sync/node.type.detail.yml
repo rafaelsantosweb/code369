@@ -1,0 +1,32 @@
+uuid: d805def4-e6d4-4553-b29f-4a7248560751
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_revision_delete
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  node_revision_delete:
+    amount:
+      status: false
+      settings:
+        amount: 0
+    created:
+      status: false
+      settings:
+        age: 1
+    drafts:
+      status: false
+      settings:
+        age: 1
+name: Detalhe
+type: detail
+description: 'Páginas internas de detalhe'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

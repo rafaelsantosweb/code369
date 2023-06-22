@@ -1,0 +1,52 @@
+uuid: 6d54e94b-35c3-4c44-ad0e-7ab5bada684e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.detail
+    - paragraphs.paragraphs_type.slide
+  module:
+    - entity_reference_revisions
+id: node.detail.field_content
+field_name: field_content
+entity_type: node
+bundle: detail
+label: Conteúdo
+description: 'Os módulos para compor o conteúdo da página'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    negate: 1
+    target_bundles_drag_drop:
+      attachments:
+        weight: 9
+        enabled: false
+      block:
+        weight: 10
+        enabled: false
+      cta:
+        weight: 11
+        enabled: false
+      destaques:
+        weight: 12
+        enabled: false
+      hero_banner:
+        weight: 2
+        enabled: false
+      image_text:
+        weight: 14
+        enabled: false
+      slide:
+        weight: 15
+        enabled: true
+      views:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

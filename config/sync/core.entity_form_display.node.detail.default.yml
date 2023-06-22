@@ -1,20 +1,20 @@
-uuid: 9d37b984-a144-49b1-978d-2acc30ae4315
+uuid: 2ba74fa5-01ab-4e1e-90d1-7606f3475572
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_access
-    - field.field.node.page.field_category
-    - field.field.node.page.field_content
-    - node.type.page
+    - field.field.node.detail.body
+    - field.field.node.detail.field_access
+    - field.field.node.detail.field_category
+    - field.field.node.detail.field_content
+    - node.type.detail
   module:
     - paragraphs
     - path
     - text
-id: node.page.default
+id: node.detail.default
 targetEntityType: node
-bundle: page
+bundle: detail
 mode: default
 content:
   body:
@@ -22,7 +22,7 @@ content:
     weight: 3
     region: content
     settings:
-      rows: 6
+      rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
@@ -47,7 +47,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: paragraphs
-    weight: 4
+    weight: 5
     region: content
     settings:
       title: Parágrafo
@@ -55,7 +55,7 @@ content:
       edit_mode: closed
       closed_mode: summary
       autocollapse: all
-      closed_mode_threshold: 2
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
@@ -66,7 +66,7 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 5
+    weight: 4
     region: content
     settings:
       include_locked: true

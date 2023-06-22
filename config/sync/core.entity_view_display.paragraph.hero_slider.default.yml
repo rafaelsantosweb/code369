@@ -1,0 +1,24 @@
+uuid: f52acc72-d461-49b4-b0c4-9b85f62dd1f6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_slider.field_hero_banners
+    - paragraphs.paragraphs_type.hero_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.hero_slider.default
+targetEntityType: paragraph
+bundle: hero_slider
+mode: default
+content:
+  field_hero_banners:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: slider_banners
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

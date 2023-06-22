@@ -1,0 +1,30 @@
+uuid: 26bbb29c-13f7-42f8-bd16-71c84ef8383f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.slider_banners
+    - field.field.paragraph.hero_slider.field_hero_banners
+    - paragraphs.paragraphs_type.hero_slider
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.hero_slider.slider_banners
+targetEntityType: paragraph
+bundle: hero_slider
+mode: slider_banners
+content:
+  field_hero_banners:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: slider_banners
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

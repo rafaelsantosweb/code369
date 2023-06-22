@@ -1,0 +1,55 @@
+uuid: d49ac9cc-9739-4465-8658-f94a4d5f7c19
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_banners
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.hero_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.hero_slider.field_hero_banners
+field_name: field_hero_banners
+entity_type: paragraph
+bundle: hero_slider
+label: Banners
+description: 'Cadastre cada banner à usar no topo da página'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hero_banner: hero_banner
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 10
+        enabled: false
+      block:
+        weight: 11
+        enabled: false
+      cta:
+        weight: 12
+        enabled: false
+      destaques:
+        weight: 13
+        enabled: false
+      hero_banner:
+        weight: 14
+        enabled: true
+      hero_slider:
+        weight: 15
+        enabled: false
+      image_text:
+        weight: 16
+        enabled: false
+      slide:
+        weight: 17
+        enabled: false
+      views:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

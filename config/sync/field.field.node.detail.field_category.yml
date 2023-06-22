@@ -1,0 +1,29 @@
+uuid: 74ad491c-8be6-454b-9f65-48bbd93a1624
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.detail
+    - taxonomy.vocabulary.categoria
+id: node.detail.field_category
+field_name: field_category
+entity_type: node
+bundle: detail
+label: Categoria
+description: 'Selecione a(s) categoria(s) pertinente(s)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria: categoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

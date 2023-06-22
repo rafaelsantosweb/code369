@@ -1,19 +1,19 @@
-uuid: 5a77dd0e-628a-4690-8a06-9b8d5dedbec8
+uuid: 0ee24c59-3cc3-4756-a460-d7f76d70e196
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_access
-    - field.field.node.page.field_category
-    - field.field.node.page.field_content
-    - node.type.page
+    - field.field.node.detail.body
+    - field.field.node.detail.field_access
+    - field.field.node.detail.field_category
+    - field.field.node.detail.field_content
+    - node.type.detail
   module:
     - entity_reference_revisions
     - user
-id: node.page.default
+id: node.detail.default
 targetEntityType: node
-bundle: page
+bundle: detail
 mode: default
 content:
   field_content:
