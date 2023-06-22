@@ -10959,6 +10959,11 @@ footer#copyright {
   width: 100%;
 }
 
+body#inteligencia {
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
 #drupal-off-canvas,
 #drupal-off-canvas-wrapper,
 #drupal-off-canvas:not(.drupal-off-canvas-reset) {
@@ -11135,6 +11140,12 @@ body .page {
 body .block--system-branding {
   float: left;
 }
+body .dark {
+  color: #000000;
+}
+body .bright {
+  color: #ffffff;
+}
 body .block--navegacaoprincipal ul.nav {
   background-color: #ffffff;
   flex-direction: row;
@@ -11264,7 +11275,6 @@ body main .field--name-field-paragraph-cta .field--name-field-link a {
   text-decoration: none;
 }
 body main .container .paragraph--type--hero-banner {
-  color: #ffffff;
   display: block;
   padding: 0;
 }

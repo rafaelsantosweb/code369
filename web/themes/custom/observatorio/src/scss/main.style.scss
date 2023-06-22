@@ -19,6 +19,15 @@ body {
     float: left;
   }
 
+  // Special classes used by the theme for the hero banner image, if dark or bright
+  .dark {
+    color: $black;
+  }
+
+  .bright {
+    color: $white;
+  }
+
   .block--navegacaoprincipal {
 
     ul.nav {
@@ -138,7 +147,7 @@ body {
 
     .container .paragraph--type--hero-banner {
       // background-color: #bbbbbb25;
-      color: $white;
+      // color: $white;
       display: block;
       padding: 0;
 
