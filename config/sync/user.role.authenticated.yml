@@ -7,6 +7,7 @@ dependencies:
     - filter.format.webform_default
     - taxonomy.vocabulary.acesso
   module:
+    - file
     - filter
     - media
     - system
@@ -20,6 +21,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'create terms in acesso'
+  - 'delete own files'
   - 'delete terms in acesso'
   - 'edit terms in acesso'
   - 'use text format html'
