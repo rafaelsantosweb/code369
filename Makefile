@@ -28,3 +28,25 @@ stop:
 
 poweroff:
 	@lando poweroff
+
+# User login
+uli:
+	lando dr uli
+
+# Drush commands
+cr:
+	lando dr cr
+cim:
+	lando dr cim -y
+cex:
+	lando dr cex -y
+st:
+	lando dr st
+sql:
+	lando dr sqlc
+ws:
+	lando dr ws
+wd:
+	lando dr wd-del all --yes
+updb:
+	lando dr updb -y

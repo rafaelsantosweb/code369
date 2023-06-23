@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Contains local development settings.
+ */
+
+error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
+$config['system.logging']['error_level'] = 'verbose';
+
+// Disable Cache, CSS and JS aggregation.
+if (file_exists($nocache = $app_root . '/' . $site_path . '/settings.nocache.php')) {
+  include $nocache;
+}
+
+# If Predis is avaliable
+if (class_exists('Predis\Client')) {
+  $settings['container_yamls'][] = DRUPAL_ROOT . '/modules/contrib/redis/example.services.yml';
+  $settings['redis.connection']['interface'] = 'Predis'; // Can be "Predis".
+  $settings['redis.connection']['host'] = 'cache';
+  $settings['redis.connection']['port'] = '6379';
+  $settings['cache']['default'] = 'cache.backend.redis';
+  $settings['cache_prefix']['default'] = $databases['default']['default']['database'];
+  $conf['cache_class_cache'] = 'Redis_Cache';
+}
