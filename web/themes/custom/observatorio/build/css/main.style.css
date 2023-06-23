@@ -11158,6 +11158,9 @@ body .block--navegacaoprincipal ul.nav li {
   display: inline;
   padding: 0 0.5rem;
 }
+body .block--navegacaoprincipal ul.nav li a {
+  color: #000000;
+}
 body #search-block-form {
   text-align: right;
 }
@@ -11213,6 +11216,7 @@ body main .paragraph {
 }
 body main .container > .paragraph {
   padding: 3rem 0;
+  overflow: hidden;
 }
 body main .field .field {
   padding: 0.5rem 0.25rem;

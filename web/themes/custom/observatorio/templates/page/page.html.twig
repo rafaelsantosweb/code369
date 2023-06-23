@@ -7,14 +7,15 @@
 #}
 {% set page_classes = [
   'py-5',
-  hero_class
+  hero_class[0],
+  'darkx'
 ]|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
 
     <div id='hero-banner'>
     {% if hero_img %}
-      <img src='{{ file_url(hero_img.entity.fileuri) }}' class="hero-img" />
+      <img src='{{ file_url(hero_img.fileuri) }}' class="hero-img" />
     {% elseif default_hero_img %}
       <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
     {% endif %}

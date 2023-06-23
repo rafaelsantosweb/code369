@@ -48,31 +48,48 @@ function observatorio_preprocess_page(&$vars) {
   $theme_path = \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
   $node = \Drupal::routeMatch()->getParameter('node');
   $filepath = '';
-  if ($node && $node->hasField('field_content')) {
-    // Look for a hero image.
-    foreach($node->field_content->entity as $item) {
-      $paragraph = $item->entity;
-      if ($paragraph_type = $paragraph?->bundle()) {
-        // foreach ($item->entity as $i)
-          // dpm($i);
-        // dpm($node->field_content);
-        // break;
-        // dpm($item);
-        if ($paragraph_type == 'image') {
-          $img = $vars['hero_img'] = $paragraph->field_media_image;
-          $filepath = $img->entity->getFileUri();
-          $filepath = \Drupal::service('file_system')->realpath($filepath);
-          break;
-        }
-      }
-    }
-  }
+  $filepath = nested_content($node, $vars);
 
   // Add a default light blue image as background if none is set from the content.
   if (!key_exists('hero_img', $vars)) {
     $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
   }
+  $vars['hero_class'][] = image_brightness($filepath);
+}
 
+/**
+ * Look for the hero_banner (sub)paragraph to get its image
+ * @param mixed $entity
+ * @return string
+ */
+function nested_content($entity, &$vars) {
+  if ($entity?->hasField('field_content')) {
+    return nested_content($entity->field_content->entity, $vars);
+  } else {
+    $filepath = '';
+    // Look for a hero paragraph.
+    foreach($entity as $item) {
+      $paragraph = $item->entity;
+      if (($paragraph_type = $paragraph?->bundle()) && $paragraph_type == 'hero_banner') {
+        if ($paragraph->hasField('field_image')) {
+          $img = $vars['hero_img'] = $paragraph->field_image->entity->field_media_image->entity;
+          $filepath = $img?->getFileUri();
+          $filepath = \Drupal::service('file_system')->realpath($filepath);
+          // dpm($filepath);
+          // break;
+        }
+      }
+    }
+  }
+  return $filepath;
+}
+
+/**
+ * Summary of image_brightness
+ * @param mixed $filepath
+ * @return string
+ */
+function image_brightness($filepath) {
   if ($filepath && $im = @imagecreatefrompng($filepath)) {
     // get the first pixel color from the $filepath image
     $rgb = imagecolorat($im, 0, 0);
@@ -84,10 +101,7 @@ function observatorio_preprocess_page(&$vars) {
     $brightness = sqrt(0.299 * pow($r, 2) + 0.587 * pow($g, 2) + 0.114 * pow($b, 2));
     // if the brightness is greater than 150, we'll set the text color to black
     // otherwise, white
-    $vars['hero_class'] = $brightness > 80 ? 'bright' : 'dark';
-    $vars['brightness'] = $brightness;
-
-    // $text_color = $brightness > 150 ? '#000' : '#fff';
-    // $vars['hero_text_color'] = $text_color;
+    return $brightness > 80 ? 'bright' : 'dark';
   }
+  return 'dark';
 }
