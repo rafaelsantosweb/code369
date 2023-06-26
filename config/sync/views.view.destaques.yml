@@ -548,7 +548,7 @@ display:
         pager: false
         style: false
         row: false
-      css_class: pilares
+      css_class: 'pilares container'
       display_description: ''
       display_extenders: {  }
     cache_metadata:

@@ -16,7 +16,7 @@ content:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: slider_banners
+      view_mode: default
       link: ''
     third_party_settings: {  }
     weight: 0
