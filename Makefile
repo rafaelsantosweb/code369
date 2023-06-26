@@ -29,6 +29,12 @@ stop:
 poweroff:
 	@lando poweroff
 
+watch:
+	lando watch
+
+compile:
+	lando production
+
 # User login
 uli:
 	lando dr uli

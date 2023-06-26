@@ -4,7 +4,7 @@ style:
     theme:
       build/css/main.style.css: {}
       # external font Averta from Google Fonts
-      https://fonts.googleapis.com/css2?family=Allerta:wght@300;400;500;600;700;800;900&display=swap: { type: external, minified: true }
+      # https://fonts.googleapis.com/css2?family=Allerta:wght@300;400;500;600;700;800;900&display=swap: { type: external, minified: true }
   js:
     build/js/main.script.js: {}
   dependencies:

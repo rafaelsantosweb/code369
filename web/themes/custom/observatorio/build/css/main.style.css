@@ -10892,6 +10892,32 @@ textarea.form-control-lg {
   opacity: 0.25;
 }
 
+@font-face {
+  font-family: "Averta";
+  src: url("../../fonts/averta-regular-webfont.woff2") format("woff2"), url("../../fonts/averta-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Averta";
+  src: url("../../fonts/averta-semibolditalic-webfont.woff2") format("woff2"), url("../../fonts/averta-semibolditalic-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Averta";
+  src: url("../../fonts/averta-semibold-webfont.woff2") format("woff2"), url("../../fonts/averta-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Averta";
+  src: url("../../fonts/averta-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/averta-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Averta";
+  src: url("../../fonts/averta-regularitalic-webfont.woff2") format("woff2"), url("../../fonts/averta-regularitalic-webfont.woff") format("woff");
+  font-style: italic;
+}
 footer.page__footer {
   background-color: #182c5f;
   color: #ffffff;
@@ -11132,7 +11158,7 @@ body#inteligencia {
 }
 
 body {
-  font-family: "Averta", "Allerta", sans-serif;
+  font-family: "Averta", sans-serif;
 }
 body .page {
   position: relative;
