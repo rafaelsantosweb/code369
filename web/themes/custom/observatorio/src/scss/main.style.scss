@@ -21,10 +21,12 @@ body {
   }
 
   // Special classes used by the theme for the hero banner image, if dark or bright
+  .dark .paragraph--type--hero-banner,
   .dark .paragraph--type--hero-slider {
     color: $black;
   }
 
+  .bright .paragraph--type--hero-banner,
   .bright .paragraph--type--hero-slider {
     color: $white;
   }
