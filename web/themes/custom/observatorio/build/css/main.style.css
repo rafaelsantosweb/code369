@@ -10986,8 +10986,74 @@ footer#copyright {
 }
 
 body#inteligencia {
-  color: #000000;
   background-color: #f0f0f0;
+}
+body#inteligencia .view {
+  color: #000000;
+}
+body#inteligencia .view-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+body#inteligencia .views-row {
+  background-color: #ffffff;
+  border-radius: 20px;
+  float: left;
+  margin: 40px;
+  height: 336px;
+  padding: 35px 40px;
+  width: 490px;
+}
+body#inteligencia .views-row .button {
+  border: 1px solid #003bd1;
+  border-radius: 10px;
+  color: #003bd1;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 1rem 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+body#inteligencia .views-row .button:hover {
+  background-color: #ffffff;
+}
+body#inteligencia .views-row .button:hover::after {
+  color: #000000;
+}
+body#inteligencia .views-row .button a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 1rem;
+}
+body#inteligencia .views-row .button a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+body#inteligencia .views-row .button a:hover::after {
+  color: #000000;
+}
+body#inteligencia .views-row .button::after {
+  content: ">";
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 8px 0;
+}
+body#inteligencia .views-row .views-field-title {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+body#inteligencia .views-row .views-field-title a {
+  color: #000000;
+  text-decoration: none;
+}
+body#inteligencia .views-row .views-field-field-image {
+  float: left;
+}
+body#inteligencia .views-row .views-field-field-image img {
+  width: 100%;
+  padding-right: 0.5rem;
 }
 
 #drupal-off-canvas,
@@ -11158,6 +11224,7 @@ body#inteligencia {
 }
 
 body {
+  color: #000000;
   font-family: "Averta", sans-serif;
 }
 body .page {
@@ -11166,10 +11233,10 @@ body .page {
 body .block--system-branding {
   float: left;
 }
-body .dark {
+body .dark .paragraph--type--hero-slider {
   color: #000000;
 }
-body .bright {
+body .bright .paragraph--type--hero-slider {
   color: #ffffff;
 }
 body .block--navegacaoprincipal ul.nav {
@@ -11228,7 +11295,7 @@ body #hero-banner img {
   width: 100%;
 }
 body #hero-banner .faixa {
-  bottom: 83px;
+  bottom: -19px;
   left: 0;
   position: absolute;
   height: 30%;
@@ -11529,6 +11596,9 @@ body main .pilares .view-content .views-row .views-col {
   text-align: center;
   width: 370px !important;
 }
+body main .pilares .view-content .views-row .views-col .field--name-field-image {
+  background-color: orange;
+}
 body main .paragraph_block {
   background-color: #182c5f;
   color: #ffffff;
@@ -11545,7 +11615,6 @@ body main .paragraph_block fieldset #edit-description {
   margin: 0 40px;
 }
 body main .paragraph_block fieldset .form-actions,
-body main .paragraph_block fieldset .form-item,
 body main .paragraph_block fieldset .form-item {
   float: left;
   max-width: 400px;
@@ -11636,6 +11705,30 @@ body main .block--tagclouds-block-categoria span .tagclouds.level2 {
 }
 body main .block--tagclouds-block-categoria span .tagclouds.level1 {
   font-weight: 100;
+}
+body.teaser {
+  overflow: hidden;
+}
+
+#teaser {
+  background-color: rgba(204, 204, 204, 0.7333333333);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 9999;
+  height: 60vh;
+}
+#teaser .content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 0 5px 5px #ced4da;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  top: 15%;
+  width: 30%;
 }
 
 /*# sourceMappingURL=main.style.css.map*/

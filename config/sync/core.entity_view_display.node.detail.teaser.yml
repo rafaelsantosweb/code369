@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.detail.field_access
     - field.field.node.detail.field_category
     - field.field.node.detail.field_content
+    - field.field.node.detail.field_teaser
     - node.type.detail
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_access: true
   field_category: true
   field_content: true
+  field_teaser: true
   langcode: true

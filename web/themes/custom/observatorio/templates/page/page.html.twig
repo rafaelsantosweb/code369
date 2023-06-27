@@ -8,7 +8,6 @@
 {% set page_classes = [
   'py-5',
   hero_class[0],
-  'darkx'
 ]|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
@@ -89,4 +88,13 @@
       </div>
     </footer>
   {% endif %}
+
+  {% if teaser %}
+  <div id="teaser" class="wrapper">
+    <div class="container content">
+      Apenas usuários autenticados podem ler todo o conteúdo desta página.
+    </div>
+  </div>
+  {% endif %}
+
 </div>

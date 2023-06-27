@@ -1,0 +1,19 @@
+<?php
+
+  /**
+   * Summary of firj_form_alter
+   * @param mixed $form
+   * @param mixed $form_state
+   * @param mixed $form_id
+   * @return void
+   */
+
+ function firj_form_alter(&$form, $form_state, $form_id) {
+   if (isset($form['field_teaser'])) {
+    $form['field_teaser']['#states'] = [
+      'invisible' => [
+        ':input[name="field_access"]' => ['value' => 5],
+      ],
+    ];
+  }
+}

@@ -1,0 +1,23 @@
+uuid: 3767de39-d344-43b3-b371-c6c08d04643c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.detail
+id: node.detail.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: detail
+label: Teaser
+description: 'Apresenta apenas algumas linhas do artigo para usuários anônimos.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

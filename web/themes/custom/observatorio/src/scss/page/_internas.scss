@@ -1,4 +1,51 @@
 body#inteligencia {
-  color: $black;
   background-color: $grey-100;
+
+  // Use flexbox and show 3 columns per row for .views-row
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+
+  .view {
+    color: $black;
+  }
+
+  .view-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .views-row {
+    // flex-grow: 1;
+    background-color: $white;
+    border-radius: 20px;
+    float: left;
+    margin: 40px;
+    height: 336px;
+    padding: 35px 40px;
+    width: 490px;
+
+    .button {
+      @include button;
+    }
+
+    .views-field-title {
+      margin-bottom: .5rem;
+      font-weight: bold;
+
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+
+    .views-field-field-image {
+      float: left;
+
+      img {
+        width: 100%;
+        padding-right: .5rem;
+      }
+    }
+  }
 }

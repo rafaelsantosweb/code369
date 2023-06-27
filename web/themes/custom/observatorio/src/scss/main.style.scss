@@ -9,6 +9,7 @@
 // Include any custom stylesheets here
 // -----------------------------------------------------------------------------
 body {
+  color: $black;
   font-family: 'Averta', sans-serif;
 
   .page {
@@ -20,11 +21,11 @@ body {
   }
 
   // Special classes used by the theme for the hero banner image, if dark or bright
-  .dark {
+  .dark .paragraph--type--hero-slider {
     color: $black;
   }
 
-  .bright {
+  .bright .paragraph--type--hero-slider {
     color: $white;
   }
 
@@ -102,7 +103,7 @@ body {
     }
 
     .faixa {
-      bottom: 83px;
+      bottom: -19px;
       left: 0;
       position: absolute;
       height: 30%;
@@ -210,7 +211,6 @@ body {
 
       .paragraph_left,
       .paragraph_right {
-        // background-color: #F0F0F0;
         float: left;
         width: 50%;
       }
@@ -349,7 +349,9 @@ body {
           text-align: center;
           width: 370px !important;
 
-          .field--name-field-image {}
+          .field--name-field-image {
+            background-color: orange;
+          }
         }
       }
     }
@@ -373,7 +375,6 @@ body {
         }
 
         .form-actions,
-        .form-item,
         .form-item {
           float: left;
           max-width: 400px;
@@ -483,8 +484,31 @@ body {
           }
         }
       }
-
     }
   }
 
+  &.teaser {
+    overflow: hidden;
+  }
+}
+
+#teaser {
+  background-color: #cccb;
+  position: sticky;
+  bottom: 0;
+  z-index: 9999;
+  height: 60vh;
+
+  .content {
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid $gray-200;
+    box-shadow: 0 0 5px 5px $gray-400;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    top: 15%;
+    width: 30%;
+  }
 }

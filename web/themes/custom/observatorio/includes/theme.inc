@@ -43,18 +43,37 @@ function observatorio_library_info_build() {
   return $libraries;
 }
 
+function observatorio_preprocess(&$vars, $hook) {
+  $user = \Drupal::currentUser();
+  $node = \Drupal::routeMatch()->getParameter('node');
+  switch ($hook) {
+    case 'html':
+      if ($user->id() < 1 && $node?->hasField('field_teaser') && $node?->field_teaser->value) {
+        $vars['attributes']['class'][] = 'teaser';
+      }
+      break;
+  }
+}
+
 function observatorio_preprocess_page(&$vars) {
   // get the current theme folder using D10 api
   $theme_path = \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
   $node = \Drupal::routeMatch()->getParameter('node');
-  $filepath = '';
-  $filepath = nested_content($node, $vars);
-
-  // Add a default light blue image as background if none is set from the content.
   if (!key_exists('hero_img', $vars)) {
-    $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
+    $filepath = nested_content($node, $vars);
+    // Add a default light blue image as background if none is set from the content.
+    if (!key_exists('hero_img', $vars)) {
+      $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
+    }
+    $vars['hero_class'][] = image_brightness($filepath);
+  } else {
+    $vars['hero_class'][] = 'dark';
   }
-  $vars['hero_class'][] = image_brightness($filepath);
+  $user = \Drupal::currentUser();
+  if ($user->id() < 1 && $node?->hasField('field_teaser') && $node?->field_teaser->value) {
+    $vars['teaser'] = 1;
+  }
+  // dpm($vars['hero_class'], 'hero');
 }
 
 /**
@@ -63,20 +82,21 @@ function observatorio_preprocess_page(&$vars) {
  * @return string
  */
 function nested_content($entity, &$vars) {
+  $filepath = '';
   if ($entity?->hasField('field_content')) {
     return nested_content($entity->field_content->entity, $vars);
-  } else {
-    $filepath = '';
+  }
+  elseif($entity) {
     // Look for a hero paragraph.
     foreach($entity as $item) {
       $paragraph = $item->entity;
+      // dpm($paragraph?->bundle());
       if (($paragraph_type = $paragraph?->bundle()) && $paragraph_type == 'hero_banner') {
+        // dpm($paragraph_type);
         if ($paragraph->hasField('field_image')) {
           $img = $vars['hero_img'] = $paragraph->field_image->entity->field_media_image->entity;
           $filepath = $img?->getFileUri();
           $filepath = \Drupal::service('file_system')->realpath($filepath);
-          // dpm($filepath);
-          // break;
         }
       }
     }
