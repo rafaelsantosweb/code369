@@ -9,13 +9,14 @@ label: Básicas
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  60f9fb9b-23f1-4baa-9d32-1221b812e08d:
+  77b7631d-e5bf-41b5-b6f4-d18ca05021c5:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 60f9fb9b-23f1-4baa-9d32-1221b812e08d
+    uuid: 77b7631d-e5bf-41b5-b6f4-d18ca05021c5
     context_mapping:
       node: node
     bundles:
+      detail: detail
       page: page
 selection_logic: and
 weight: -5

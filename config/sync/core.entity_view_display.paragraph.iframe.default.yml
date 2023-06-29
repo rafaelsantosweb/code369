@@ -1,0 +1,36 @@
+uuid: b4247074-1799-4477-941f-d7d05aee0439
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iframe.field_iframe
+    - field.field.paragraph.iframe.field_title
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - link
+id: paragraph.iframe.default
+targetEntityType: paragraph
+bundle: iframe
+mode: default
+content:
+  field_iframe:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

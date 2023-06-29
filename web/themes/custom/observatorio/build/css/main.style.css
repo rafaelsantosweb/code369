@@ -11056,6 +11056,37 @@ body#inteligencia .views-row .views-field-field-image img {
   padding-right: 0.5rem;
 }
 
+.paragraph_iframe .paragraph {
+  display: flex;
+  flex-direction: column;
+}
+.paragraph_iframe .paragraph .field--name-field-title {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 31px;
+  margin: 0 auto 1.5rem;
+  padding: 0 0 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+.paragraph_iframe .paragraph .field--name-field-title::before {
+  content: "";
+  background: url("../../images/target.svg") no-repeat;
+  display: inline-block;
+  height: 52px;
+  left: -2rem;
+  position: relative;
+  top: 16px;
+  width: 50px;
+}
+.paragraph_iframe .paragraph iframe.embed {
+  background-color: #e9ecef;
+  height: 738px;
+  width: 100%;
+}
+
 #drupal-off-canvas,
 #drupal-off-canvas-wrapper,
 #drupal-off-canvas:not(.drupal-off-canvas-reset) {
@@ -11584,6 +11615,9 @@ body main .paragraph--type--destaques .view-content .tns-item .views-field-field
 }
 body main .paragraph--type--destaques .view-content .tns-item .views-field-field-body p {
   text-align: justify;
+}
+body main .pilares .field--name-field-title {
+  margin-bottom: 1rem;
 }
 body main .pilares .view-content {
   display: flex;

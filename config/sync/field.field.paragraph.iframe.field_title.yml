@@ -1,0 +1,21 @@
+uuid: f054c17b-10e4-4c56-b390-bb91c2b2f344
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.iframe
+id: paragraph.iframe.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: iframe
+label: Título
+description: 'O título acima do iframe'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Navegue pelo dashboard utilizando os filtros na tela'
+default_value_callback: ''
+settings: {  }
+field_type: string

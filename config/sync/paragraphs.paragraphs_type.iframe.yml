@@ -1,0 +1,10 @@
+uuid: 8985aac2-87e8-4412-9b71-9c3249a4f568
+langcode: pt-br
+status: true
+dependencies: {  }
+id: iframe
+label: iFrame
+icon_uuid: null
+icon_default: null
+description: 'Este componente permite embutir um <iframe>'
+behavior_plugins: {  }

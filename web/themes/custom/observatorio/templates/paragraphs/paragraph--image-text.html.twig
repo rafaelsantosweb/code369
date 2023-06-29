@@ -49,15 +49,21 @@
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    <div class='paragraph_left'>
-      {% block content_img %}
-        {{ content.field_image[0] }}
-      {% endblock %}
-    </div>
-    <div class='paragraph_right'>
+    {% if content.field_image[0] %}
+      <div class='paragraph_left'>
+        {% block content_img %}
+          {{ content.field_image[0] }}
+        {% endblock %}
+      </div>
+      <div class='paragraph_right'>
+        {% block content_text %}
+          {{ content|without('field_image') }}
+        {% endblock %}
+      </div>
+    {% else %}
       {% block content %}
-        {{ content|without('field_image') }}
+        {{ content }}
       {% endblock %}
-    </div>
+    {% endif %}
   </div>
 {% endblock paragraph %}

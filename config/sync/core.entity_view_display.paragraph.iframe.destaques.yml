@@ -1,0 +1,24 @@
+uuid: 9fb3d52c-0420-40c5-808f-8c9401789dc7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.destaques
+    - field.field.paragraph.iframe.field_iframe
+    - field.field.paragraph.iframe.field_title
+    - paragraphs.paragraphs_type.iframe
+id: paragraph.iframe.destaques
+targetEntityType: paragraph
+bundle: iframe
+mode: destaques
+content:
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_iframe: true
