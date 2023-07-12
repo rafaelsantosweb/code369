@@ -47,6 +47,7 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   module_filter: 0
   mysql: 0
   node: 0
@@ -65,6 +66,9 @@ module:
   redis: 0
   remove_http_headers: 0
   responsive_image: 0
+  robotstxt: 0
+  schema_metatag: 0
+  schema_organization: 0
   search: 0
   seckit: 0
   system: 0

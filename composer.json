@@ -50,6 +50,8 @@
         "drupal/radix": "^5.0",
         "drupal/redis": "^1.6",
         "drupal/remove_http_headers": "^2.0",
+        "drupal/robotstxt": "^1.5",
+        "drupal/schema_metatag": "^3.0",
         "drupal/seckit": "^2.0",
         "drupal/smtp": "^1.2",
         "drupal/stage_file_proxy": "^2.0",
