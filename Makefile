@@ -29,6 +29,9 @@ stop:
 poweroff:
 	@lando poweroff
 
+npmi:
+	@(cd web/themes/custom/observatorio;lando npm i)
+
 watch:
 	lando watch
 

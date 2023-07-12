@@ -52,3 +52,6 @@ tooling:
   watch:
     service: node
     cmd: 'cd /app/web/themes/custom/observatorio;npm run watch'
+  production:
+    service: node
+    cmd: 'cd /app/web/themes/custom/observatorio;npm run production'
