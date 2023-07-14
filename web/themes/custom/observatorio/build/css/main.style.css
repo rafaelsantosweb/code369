@@ -11263,6 +11263,7 @@ body .page {
 }
 body .block--system-branding {
   float: left;
+  z-index: 999;
 }
 body .dark .paragraph--type--hero-banner,
 body .dark .paragraph--type--hero-slider {
@@ -11316,18 +11317,29 @@ body .block--observatorio-primary-local-tasks .mb-3 {
 body .block--observatorio-primary-local-tasks a {
   color: black;
 }
-body #hero-banner {
+body #hero-banners {
   left: 0;
   right: 0;
   position: absolute;
   z-index: -1;
 }
-body #hero-banner img {
+body #hero-banners .hero-banner {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  z-index: 10;
+}
+body #hero-banners .hero-banner img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-body #hero-banner .faixa {
+body #hero-banners .hero-banner .field {
+  position: relative;
+  z-index: 1;
+}
+body #hero-banners .hero-banner .faixa {
   bottom: -19px;
   left: 0;
   position: absolute;

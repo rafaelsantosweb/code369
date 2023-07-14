@@ -26,7 +26,10 @@
           {% set item_class = item_class|merge(['container']) %}
         {% endif %}
 
-        <div{{ item.attributes.addClass(item_class) }}>{{ item.content }}</div>
+        {# Skip if the paragraph is a hero image #}
+        {% if item.content['#paragraph'].bundle not in ['hero_slider', 'hero_banner'] %}
+          <div{{ item.attributes.addClass(item_class) }}>{{ item.content }}</div>
+        {% endif %}
       {% endfor %}
     </div>
 

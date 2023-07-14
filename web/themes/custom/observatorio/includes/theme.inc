@@ -5,6 +5,8 @@
  * Custom theme hooks.
  */
 
+use Drupal\Core\Url;
+
 /**
  * Implements hook_library_info_build().
  * Automatically creates components libraries (Not visible in theme's libraries.yml file)
@@ -59,15 +61,15 @@ function observatorio_preprocess_page(&$vars) {
   // get the current theme folder using D10 api
   $theme_path = \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
   $node = \Drupal::routeMatch()->getParameter('node');
-  if (!key_exists('hero_img', $vars)) {
+  if (!key_exists('heros', $vars)) {
     $filepath = nested_content($node, $vars);
     // Add a default light blue image as background if none is set from the content.
-    if (!key_exists('hero_img', $vars)) {
+    if (!key_exists('heros', $vars)) {
       $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
+      $vars['heros'][]['class'] = image_brightness($filepath);
     }
-    $vars['hero_class'][] = image_brightness($filepath);
   } else {
-    $vars['hero_class'][] = 'dark';
+    // $vars['hero_class'][] = 'dark';
   }
   $user = \Drupal::currentUser();
   if ($user->id() < 1 && $node?->hasField('field_teaser') && $node?->field_teaser->value) {
@@ -77,28 +79,47 @@ function observatorio_preprocess_page(&$vars) {
 }
 
 /**
- * Look for the hero_banner (sub)paragraph to get its image
+ * Look for the hero_banner (sub)paragraph to get its images
  * @param mixed $entity
  * @return string
  */
 function nested_content($entity, &$vars) {
   $filepath = '';
-  if ($entity?->hasField('field_content')) {
-    return nested_content($entity->field_content->entity, $vars);
+  // If the entity has our method
+  if (method_exists($entity, 'hasField')) {
+    // Check if its a node with field_content, or a paragraph with the other 2.
+    if ($entity?->hasField('field_content')) {
+      return nested_content($entity->field_content->entity, $vars);
+    } elseif ($entity?->hasField('field_hero_banners')) {
+      return nested_content($entity->field_hero_banners, $vars);
+    } elseif ($entity?->hasField('field_banner')) {
+      return nested_content($entity->field_banner, $vars);
+    }
   }
-  elseif($entity) {
-    // Look for a hero paragraph.
-    foreach($entity as $item) {
-      $paragraph = $item->entity;
-      // dpm($paragraph?->bundle());
-      if (($paragraph_type = $paragraph?->bundle()) && $paragraph_type == 'hero_banner') {
-        // dpm($paragraph_type);
-        if ($paragraph->hasField('field_image')) {
-          $img = $vars['hero_img'] = $paragraph->field_image->entity->field_media_image->entity;
-          $filepath = $img?->getFileUri();
-          $filepath = \Drupal::service('file_system')->realpath($filepath);
-        }
+
+  foreach ($entity as $item) {
+    $paragraph = $item->entity;
+
+    if ($paragraph && !method_exists($paragraph, 'bundle')) {
+      continue;
+    }
+    elseif ($paragraph && method_exists($paragraph, 'hasField') && $paragraph->hasField('field_image')) {
+      $hero['img'] = $img = $paragraph->field_image->entity->field_media_image->entity;
+      $hero['title'] = $paragraph->field_title->value;
+      $hero['body'] = $paragraph->field_body->value;
+
+      // prepare the field_paragraph_cta to be used in the template
+      if ($cta = $paragraph->field_paragraph_cta->entity) {
+        $hero['cta']['title'] = $cta->field_link?->title;
+        $hero['cta']['url'] = Url::fromUri($cta->field_link?->uri);
       }
+
+      $filepath = $img?->getFileUri();
+      $filepath = \Drupal::service('file_system')->realpath($filepath);
+      $hero['filepath'] = $filepath;
+      $hero['class'] = image_brightness($filepath);
+
+      $vars['heros'][] = $hero;
     }
   }
   return $filepath;

@@ -18,6 +18,7 @@ body {
 
   .block--system-branding {
     float: left;
+    z-index: 999;
   }
 
   // Special classes used by the theme for the hero banner image, if dark or bright
@@ -93,22 +94,35 @@ body {
   }
 
   // big hero image
-  #hero-banner {
+  #hero-banners {
     left: 0;
     right: 0;
     position: absolute;
     z-index: -1;
 
-    img {
-      object-fit: cover;
-      width: 100%;
-    }
-
-    .faixa {
-      bottom: -19px;
+    .hero-banner {
+      top: 0;
       left: 0;
-      position: absolute;
-      height: 30%;
+      right: 0;
+      position: relative;
+      z-index: 10;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .field {
+        position: relative;
+        z-index: 1;
+      }
+
+      .faixa {
+        bottom: -19px;
+        left: 0;
+        position: absolute;
+        height: 30%;
+      }
     }
   }
 
