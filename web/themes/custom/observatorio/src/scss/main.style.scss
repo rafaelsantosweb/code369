@@ -18,7 +18,7 @@ body {
 
   .block--system-branding {
     float: left;
-    z-index: 999;
+    z-index: 99;
   }
 
   // Special classes used by the theme for the hero banner image, if dark or bright
@@ -118,7 +118,7 @@ body {
       }
 
       .faixa {
-        bottom: -19px;
+        bottom: 89px;
         left: 0;
         position: absolute;
         height: 30%;
@@ -128,6 +128,10 @@ body {
 
   main {
     font-weight: 400;
+
+    .page__content {
+      margin-top: 500px;
+    }
 
     .paragraph {
       clear: both;
