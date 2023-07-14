@@ -16,7 +16,7 @@
     {% for hero in heros %}
       <div class='hero-banner'>
       {% if hero.img %}
-        <img src='{{ file_url(hero.img.fileuri) }}' class="hero-img" />
+        <img src='{{ file_url(hero.img.src.fileuri) }}' class="hero-img" />
       {% elseif default_hero.img %}
         <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
       {% endif %}
@@ -27,7 +27,7 @@
           <a class='button' href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
         </div>
 
-        <img src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' width='100%' class='faixa' />
+        <img src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' width='100%' class='faixa' alt='{{ hero.img.alt }}' />
       </div>
     {% endfor %}
   </div>

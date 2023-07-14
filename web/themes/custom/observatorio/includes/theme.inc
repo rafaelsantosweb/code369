@@ -104,11 +104,11 @@ function nested_content($entity, &$vars) {
       continue;
     }
     elseif ($paragraph && method_exists($paragraph, 'hasField') && $paragraph->hasField('field_image')) {
-      $hero['img'] = $img = $paragraph->field_image->entity->field_media_image->entity;
       $hero['title'] = $paragraph->field_title->value;
       $hero['body'] = $paragraph->field_body->value;
+      $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
+      $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
 
-      // prepare the field_paragraph_cta to be used in the template
       if ($cta = $paragraph->field_paragraph_cta->entity) {
         $hero['cta']['title'] = $cta->field_link?->title;
         $hero['cta']['url'] = Url::fromUri($cta->field_link?->uri);
