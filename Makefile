@@ -10,6 +10,8 @@ up:
 start:
 	@lando start
 
+update: composeri deploy compile
+
 composeri:
 	@cp -n .env.example .env || true
 	@lando composer install
@@ -33,29 +35,31 @@ npmi:
 	@(cd web/themes/custom/observatorio;lando npm i)
 
 watch:
-	lando watch
+	@lando watch
 
 compile:
-	lando production
+	@lando production
 
 # User login
 uli:
-	lando dr uli
+	@lando dr uli
 
 # Drush commands
+deploy:
+	@lando dr deploy
 cr:
-	lando dr cr
+	@lando dr cr
 cim:
-	lando dr cim -y
+	@lando dr cim -y
 cex:
-	lando dr cex -y
+	@lando dr cex -y
 st:
-	lando dr st
+	@lando dr st
 sql:
-	lando dr sqlc
+	@lando dr sqlc
 ws:
-	lando dr ws
+	@lando dr ws
 wd:
-	lando dr wd-del all --yes
+	@lando dr wd-del all --yes
 updb:
-	lando dr updb -y
+	@lando dr updb -y
