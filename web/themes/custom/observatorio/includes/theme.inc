@@ -5,6 +5,7 @@
  * Custom theme hooks.
  */
 
+use Drupal\Component\Serialization\Json;
 use Drupal\Core\Url;
 
 /**
@@ -68,14 +69,11 @@ function observatorio_preprocess_page(&$vars) {
       $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
       $vars['heros'][]['class'] = image_brightness($filepath);
     }
-  } else {
-    // $vars['hero_class'][] = 'dark';
   }
   $user = \Drupal::currentUser();
   if ($user->id() < 1 && $node?->hasField('field_teaser') && $node?->field_teaser->value) {
     $vars['teaser'] = 1;
   }
-  // dpm($vars['hero_class'], 'hero');
 }
 
 /**
@@ -118,10 +116,52 @@ function nested_content($entity, &$vars) {
       $filepath = \Drupal::service('file_system')->realpath($filepath);
       $hero['filepath'] = $filepath;
       $hero['class'] = image_brightness($filepath);
-
       $vars['heros'][] = $hero;
     }
   }
+
+  $settings = [
+    // 'row_class' => '',
+    'default_row_class' => true,
+    'uses_fields' => false,
+    'items' => 1,
+    'margin' => 1,
+    'nav' => true,
+    'navPosition' => 'bottom',
+    'autoplay' => true,
+    'autoplayButtonOutput' => false,
+    // 'autoplayTextStart' => 'start',
+    // 'autoplayTextStop' => 'stop',
+    'autoplayHoverPause' => true,
+    'autoplayPosition' => 'top',
+    'controls' => false,
+    // 'controlsTextPrev' => 'prev',
+    // 'controlsTextNext' => 'next',
+    // 'controlsPosition' => 'bottom',
+    'arrowKeys' => true,
+    'mouseDrag' => false,
+    'loop' => true,
+    'speed' => 450,
+    // 'dimensionMobile' => '',
+    // 'itemsMobile' => '1',
+    // 'dimensionDesktop' => '',
+    // 'itemsDesktop' => '1',
+    // 'autoplayText' => [
+    //   '0' => 'start',
+    //   '1' => 'stop',
+    // ],
+    // 'controlsText' => [
+    //   '0' => 'prev',
+    //   '1' => 'next',
+    // ],
+    // 'responsive' => [
+    //   '0' => [
+    //     'items' => 1,
+    //   ],
+    // ],
+  ];
+  $vars['slider_settings'] = json::encode($settings);
+
   return $filepath;
 }
 

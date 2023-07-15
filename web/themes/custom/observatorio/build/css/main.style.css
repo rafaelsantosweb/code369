@@ -11268,14 +11268,6 @@ body .block--system-branding {
   float: left;
   z-index: 99;
 }
-body .dark .paragraph--type--hero-banner,
-body .dark .paragraph--type--hero-slider {
-  color: #000000;
-}
-body .bright .paragraph--type--hero-banner,
-body .bright .paragraph--type--hero-slider {
-  color: #ffffff;
-}
 body .block--navegacaoprincipal ul.nav {
   background-color: #ffffff;
   flex-direction: row;
@@ -11324,7 +11316,14 @@ body #hero-banners {
   left: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
+  max-height: 550px;
+  overflow: hidden;
+}
+body #hero-banners .hero-wrapper.dark {
+  color: #000000;
+}
+body #hero-banners .hero-wrapper.bright {
+  color: #ffffff;
 }
 body #hero-banners .hero-banner {
   top: 0;
@@ -11334,6 +11333,7 @@ body #hero-banners .hero-banner {
   z-index: 10;
 }
 body #hero-banners .hero-banner img {
+  height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -11342,11 +11342,93 @@ body #hero-banners .hero-banner .field {
   position: relative;
   z-index: 1;
 }
-body #hero-banners .hero-banner .faixa {
-  bottom: 89px;
+body #hero-banners img.faixa {
+  bottom: -17px;
   left: 0;
   position: absolute;
-  height: 30%;
+  width: 100%;
+}
+body .paragraph--type--hero-banner {
+  display: block;
+  padding: 0;
+}
+body .paragraph--type--hero-banner .hero-wrapper {
+  margin: 0 auto;
+  position: absolute;
+  padding: 0 20%;
+  top: 190px;
+  width: 100%;
+}
+body .paragraph--type--hero-banner .field--name-field-title {
+  font-size: 50px;
+  line-height: 62px;
+}
+body .paragraph--type--hero-banner .field--name-field-body {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+body .paragraph--type--hero-banner .field--name-field-image {
+  display: none;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link {
+  border-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link,
+body .paragraph--type--hero-banner .button {
+  border: 1px solid #003bd1;
+  border-radius: 10px;
+  color: #003bd1;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 1rem 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-color: #ffffff;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover,
+body .paragraph--type--hero-banner .button:hover {
+  background-color: #ffffff;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover::after,
+body .paragraph--type--hero-banner .button:hover::after {
+  color: #000000;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
+body .paragraph--type--hero-banner .button a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 1rem;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover,
+body .paragraph--type--hero-banner .button a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover::after,
+body .paragraph--type--hero-banner .button a:hover::after {
+  color: #000000;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link::after,
+body .paragraph--type--hero-banner .button::after {
+  content: ">";
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 8px 0;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
+body .paragraph--type--hero-banner .button a {
+  color: #ffffff;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link::after,
+body .paragraph--type--hero-banner .button::after {
+  color: #ffffff;
 }
 body main {
   font-weight: 400;
@@ -11424,73 +11506,6 @@ body main .field--name-field-paragraph-cta .field--name-field-link a::after {
   margin-left: 1px;
   position: relative;
   left: 7px;
-}
-body main .container .paragraph--type--hero-banner {
-  display: block;
-  padding: 0;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-title {
-  font-size: 50px;
-  line-height: 62px;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-body {
-  font-size: 18px;
-  line-height: 30px;
-  margin: 0 auto;
-  text-align: center;
-  width: 70%;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-image {
-  display: none;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link {
-  border-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link,
-body main .container .paragraph--type--hero-banner .button {
-  border: 1px solid #003bd1;
-  border-radius: 5px;
-  color: #003bd1;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 1rem 0;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  border-color: #ffffff;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
-body main .container .paragraph--type--hero-banner .button a {
-  display: block;
-  text-decoration: none;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a::after,
-body main .container .paragraph--type--hero-banner .button a::after {
-  content: ">";
-  display: inline-block;
-  font-size: 11px;
-  margin-left: 20px;
-  position: relative;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover,
-body main .container .paragraph--type--hero-banner .button:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover::after,
-body main .container .paragraph--type--hero-banner .button:hover::after {
-  color: #000000;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
-body main .container .paragraph--type--hero-banner .button a {
-  color: #ffffff;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link::after,
-body main .container .paragraph--type--hero-banner .button::after {
-  color: #ffffff;
 }
 body main .paragraph_image_text {
   background-color: #f0f0f0;

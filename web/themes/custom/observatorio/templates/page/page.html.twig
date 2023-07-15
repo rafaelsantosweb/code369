@@ -7,29 +7,30 @@
 #}
 {% set page_classes = [
   'py-5',
-  heros[0].class[0],
 ]|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
-
   <div id='hero-banners'>
-    {% for hero in heros %}
-      <div class='hero-banner'>
-      {% if hero.img %}
-        <img src='{{ file_url(hero.img.src.fileuri) }}' class="hero-img" />
-      {% elseif default_hero.img %}
-        <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
-      {% endif %}
+    <div id='the-banners' class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}'>
+      {% for hero in heros %}
+        <div class='hero-banner paragraph--type--hero-banner'>
+        {% if hero.img %}
+          <img src='{{ file_url(hero.img.src.fileuri) }}' class="hero-img" />
+        {% elseif default_hero.img %}
+          <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
+        {% endif %}
 
-        <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
-        <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
-        <div class="field field--name-field-link field--type-link field__item button">
-          <a class='button' href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
+          <div class='hero-wrapper {{ hero.class }}'>
+            <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
+            <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
+            <div class="field field--name-field-link field--type-link field__item button">
+              <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
+            </div>
+          </div>
         </div>
-
-        <img src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' width='100%' class='faixa' alt='{{ hero.img.alt }}' />
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
+    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' alt='{{ hero.img.alt }}' />
   </div>
 
   {% embed '@radix/navbar/navbar.twig' with {
