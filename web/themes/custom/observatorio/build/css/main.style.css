@@ -10940,6 +10940,13 @@ footer.page__footer .block {
 footer.page__footer .block.block--marcas {
   min-width: 300px;
 }
+footer.page__footer .block.block--system-menu {
+  padding-left: 2.5rem;
+  max-width: 25%;
+}
+footer.page__footer .block.block--footer-searchbox {
+  margin-right: 2.5rem;
+}
 footer.page__footer .block ul li {
   display: block;
   width: 100%;
@@ -10975,14 +10982,16 @@ footer.page__footer form input[type=search] {
 }
 footer.page__footer form input.btn {
   background-color: transparent;
+  margin-top: 0.5rem;
 }
 
 footer#copyright {
   background-color: #dcdcdc;
   color: #444444;
   font-weight: 400;
-  padding: 25px 5rem;
+  padding: 25px;
   width: 100%;
+  text-align: center;
 }
 
 body#inteligencia {
