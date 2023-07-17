@@ -11015,7 +11015,7 @@ body#inteligencia .views-row {
 }
 body#inteligencia .views-row .button {
   border: 1px solid #003bd1;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #003bd1;
   display: inline-block;
   font-size: 11px;
@@ -11025,29 +11025,23 @@ body#inteligencia .views-row .button {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+body#inteligencia .views-row .button a {
+  display: block;
+  text-decoration: none;
+}
+body#inteligencia .views-row .button a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 20px;
+  position: relative;
+}
 body#inteligencia .views-row .button:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 body#inteligencia .views-row .button:hover::after {
   color: #000000;
-}
-body#inteligencia .views-row .button a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 1rem;
-}
-body#inteligencia .views-row .button a:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-body#inteligencia .views-row .button a:hover::after {
-  color: #000000;
-}
-body#inteligencia .views-row .button::after {
-  content: ">";
-  display: inline-block;
-  font-size: 14px;
-  margin: 5px 8px 0;
 }
 body#inteligencia .views-row .views-field-title {
   margin-bottom: 0.5rem;
@@ -11378,7 +11372,7 @@ body main .field--name-field-paragraph-cta {
 body main .field--name-field-paragraph-cta .button,
 body main .field--name-field-paragraph-cta .field--name-field-link {
   border: 1px solid #003bd1;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #003bd1;
   display: inline-block;
   font-size: 11px;
@@ -11387,10 +11381,26 @@ body main .field--name-field-paragraph-cta .field--name-field-link {
   margin: 1rem 0;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  padding: 0 0 4px !important;
+  width: 110px;
+  height: 34px;
+  padding: 0;
+}
+body main .field--name-field-paragraph-cta .button a,
+body main .field--name-field-paragraph-cta .field--name-field-link a {
+  display: block;
+  text-decoration: none;
+}
+body main .field--name-field-paragraph-cta .button a::after,
+body main .field--name-field-paragraph-cta .field--name-field-link a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 20px;
+  position: relative;
 }
 body main .field--name-field-paragraph-cta .button:hover,
 body main .field--name-field-paragraph-cta .field--name-field-link:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 body main .field--name-field-paragraph-cta .button:hover::after,
@@ -11399,34 +11409,21 @@ body main .field--name-field-paragraph-cta .field--name-field-link:hover::after 
 }
 body main .field--name-field-paragraph-cta .button a,
 body main .field--name-field-paragraph-cta .field--name-field-link a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 1rem;
-}
-body main .field--name-field-paragraph-cta .button a:hover,
-body main .field--name-field-paragraph-cta .field--name-field-link a:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-body main .field--name-field-paragraph-cta .button a:hover::after,
-body main .field--name-field-paragraph-cta .field--name-field-link a:hover::after {
-  color: #000000;
-}
-body main .field--name-field-paragraph-cta .button::after,
-body main .field--name-field-paragraph-cta .field--name-field-link::after {
-  content: ">";
-  display: inline-block;
-  font-size: 14px;
-  margin: 5px 8px 0;
-}
-body main .field--name-field-paragraph-cta .button a,
-body main .field--name-field-paragraph-cta .field--name-field-link a {
   color: #003bd1;
   font-weight: 600;
   font-size: 11px;
   line-height: 14px;
-  padding: 10px 2rem;
   text-decoration: none;
+  padding: 8px 11px 5px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+body main .field--name-field-paragraph-cta .button a::after,
+body main .field--name-field-paragraph-cta .field--name-field-link a::after {
+  margin-left: 1px;
+  position: relative;
+  left: 7px;
 }
 body main .container .paragraph--type--hero-banner {
   display: block;
@@ -11454,7 +11451,7 @@ body main .container .paragraph--type--hero-banner .field--name-field-paragraph-
 body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link,
 body main .container .paragraph--type--hero-banner .button {
   border: 1px solid #003bd1;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #003bd1;
   display: inline-block;
   font-size: 11px;
@@ -11465,35 +11462,27 @@ body main .container .paragraph--type--hero-banner .button {
   transition: all 0.3s ease-in-out;
   border-color: #ffffff;
 }
+body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
+body main .container .paragraph--type--hero-banner .button a {
+  display: block;
+  text-decoration: none;
+}
+body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a::after,
+body main .container .paragraph--type--hero-banner .button a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 20px;
+  position: relative;
+}
 body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover,
 body main .container .paragraph--type--hero-banner .button:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover::after,
 body main .container .paragraph--type--hero-banner .button:hover::after {
   color: #000000;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
-body main .container .paragraph--type--hero-banner .button a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 1rem;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover,
-body main .container .paragraph--type--hero-banner .button a:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover::after,
-body main .container .paragraph--type--hero-banner .button a:hover::after {
-  color: #000000;
-}
-body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link::after,
-body main .container .paragraph--type--hero-banner .button::after {
-  content: ">";
-  display: inline-block;
-  font-size: 14px;
-  margin: 5px 8px 0;
 }
 body main .container .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
 body main .container .paragraph--type--hero-banner .button a {
@@ -11567,7 +11556,7 @@ body main .paragraph--type--destaques .field--name-field-body {
 }
 body main .paragraph--type--destaques .button {
   border: 1px solid #003bd1;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #003bd1;
   display: inline-block;
   font-size: 11px;
@@ -11577,29 +11566,30 @@ body main .paragraph--type--destaques .button {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+body main .paragraph--type--destaques .button a {
+  display: block;
+  text-decoration: none;
+}
+body main .paragraph--type--destaques .button a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 20px;
+  position: relative;
+}
 body main .paragraph--type--destaques .button:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 body main .paragraph--type--destaques .button:hover::after {
   color: #000000;
 }
 body main .paragraph--type--destaques .button a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 1rem;
-}
-body main .paragraph--type--destaques .button a:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-body main .paragraph--type--destaques .button a:hover::after {
-  color: #000000;
-}
-body main .paragraph--type--destaques .button::after {
-  content: ">";
-  display: inline-block;
-  font-size: 14px;
-  margin: 5px 8px 0;
+  display: inline-flex;
+  width: 7rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 body main .paragraph--type--destaques .view-content #tns1 {
   display: flex;

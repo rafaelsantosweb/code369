@@ -13,7 +13,7 @@
 
 @mixin button {
   border: 1px solid $button-border-color;
-  border-radius: 10px;
+  border-radius: 5px;
   color: $nav-link-color;
   display: inline-block;
   font-size: 11px;
@@ -22,34 +22,27 @@
   margin: 1rem 0;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  
+
+  a {
+    display: block;
+    text-decoration: none;
+    
+    &::after{
+      content: '>';
+      display: inline-block;
+      font-size: 11px;
+      margin-left: 20px;
+      position: relative;
+    }
+  }
 
   &:hover {
+    color: $black;
     background-color: $white;
 
     &::after {
       color: $black;
     }
-  }
-
-  a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 1rem;
-
-    &:hover {
-      color: $black;
-      background-color: $white;
-
-      &::after {
-        color: $black;
-      }
-    }
-  }
-
-  &::after {
-    content: '>';
-    display: inline-block;
-    font-size: 14px;
-    margin: 5px 8px 0;
   }
 }

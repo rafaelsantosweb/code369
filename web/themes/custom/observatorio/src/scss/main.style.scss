@@ -154,15 +154,26 @@ body {
       .button,
       .field--name-field-link {
         @include button;
-        padding: 0 0 4px !important;
+        width: 110px;
+        height: 34px;
+        padding: 0;
 
         a {
           color: $nav-link-color;
           font-weight: 600;
           font-size: 11px;
           line-height: 14px;
-          padding: 10px 2rem;
           text-decoration: none;
+          padding: 8px 11px 5px;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+
+          &::after{
+            margin-left: 1px;
+            position: relative;
+            left: 7px;
+          }
         }
       }
     }
@@ -299,6 +310,14 @@ body {
 
       .button {
         @include button;
+
+        a{
+          display: inline-flex;
+          width: 7rem;
+          height: 2rem;
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       .view-content {
