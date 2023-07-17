@@ -249,7 +249,7 @@ body {
           width: 100%;
           text-align: center;
 
-          &::after{
+          &::after {
             margin-left: 1px;
             position: relative;
             left: 7px;
@@ -337,7 +337,7 @@ body {
       .button {
         @include button;
 
-        a{
+        a {
           display: inline-flex;
           width: 7rem;
           height: 2rem;
