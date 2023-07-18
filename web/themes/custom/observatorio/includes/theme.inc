@@ -84,41 +84,32 @@ function observatorio_preprocess_page(&$vars) {
 function nested_content($entity, &$vars) {
   $filepath = '';
   if ($entity) {
-    // If the entity has our method
-    if ($entity && method_exists($entity, 'hasField')) {
-      // Check if its a node with field_content, or a paragraph with the other 2.
-      if ($entity?->hasField('field_content')) {
-        return nested_content($entity->field_content->entity, $vars);
-      } elseif ($entity?->hasField('field_hero_banners')) {
-        return nested_content($entity->field_hero_banners, $vars);
-      } elseif ($entity?->hasField('field_banner')) {
-        return nested_content($entity->field_banner, $vars);
-      }
+    // Check if its a node with field_content, or a paragraph with the other 2.
+    if ($entity->hasField('field_content')) {
+      return nested_content($entity->field_content->entity, $vars);
+    }
+    elseif ($entity->hasField('field_hero_banners')) {
+      return nested_content($entity->field_hero_banners->entity, $vars);
     }
 
-    foreach ($entity as $item) {
-      $paragraph = $item->entity;
+    // We have the desired paragraph, get its image(s).
+    if (($paragraph = $entity) && $paragraph->hasField('field_image')) {
+      $hero['title'] = $paragraph->field_title->value;
+      $hero['body'] = $paragraph->field_body->value;
+      $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
+      $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
 
-      if ($paragraph && !method_exists($paragraph, 'bundle')) {
-        continue;
+      if ($cta = $paragraph->field_paragraph_cta->entity) {
+        $hero['cta']['title'] = $cta->field_link?->title;
+        $hero['cta']['url'] = Url::fromUri($cta->field_link?->uri);
       }
-      elseif ($paragraph && method_exists($paragraph, 'hasField') && $paragraph->hasField('field_image')) {
-        $hero['title'] = $paragraph->field_title->value;
-        $hero['body'] = $paragraph->field_body->value;
-        $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
-        $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
 
-        if ($cta = $paragraph->field_paragraph_cta->entity) {
-          $hero['cta']['title'] = $cta->field_link?->title;
-          $hero['cta']['url'] = Url::fromUri($cta->field_link?->uri);
-        }
-
-        $filepath = $img?->getFileUri();
-        $filepath = \Drupal::service('file_system')->realpath($filepath);
-        $hero['filepath'] = $filepath;
-        $hero['class'] = image_brightness($filepath);
-        $vars['heros'][] = $hero;
-      }
+      $filepath = $img?->getFileUri();
+      $filepath = \Drupal::service('file_system')->realpath($filepath);
+      $hero['filepath'] = $filepath;
+      // Call our custom function to get the brightness of the image.
+      $hero['class'] = image_brightness($filepath);
+      $vars['heros'][] = $hero;
     }
   }
 
