@@ -69,7 +69,50 @@ function observatorio_preprocess_page(&$vars) {
       $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
       $vars['heros'][]['class'] = image_brightness($filepath);
     }
+
+    $settings = [
+      // 'row_class' => '',
+      'default_row_class' => true,
+      'uses_fields' => false,
+      'items' => 1,
+      'margin' => 1,
+      'nav' => true,
+      'navPosition' => 'bottom',
+      'autoplay' => true,
+      'autoplayButtonOutput' => false,
+      // 'autoplayTextStart' => 'start',
+      // 'autoplayTextStop' => 'stop',
+      'autoplayHoverPause' => true,
+      'autoplayPosition' => 'top',
+      'controls' => false,
+      // 'controlsTextPrev' => 'prev',
+      // 'controlsTextNext' => 'next',
+      // 'controlsPosition' => 'bottom',
+      'arrowKeys' => true,
+      'mouseDrag' => false,
+      'loop' => true,
+      'speed' => 450,
+      // 'dimensionMobile' => '',
+      // 'itemsMobile' => '1',
+      // 'dimensionDesktop' => '',
+      // 'itemsDesktop' => '1',
+      // 'autoplayText' => [
+      //   '0' => 'start',
+      //   '1' => 'stop',
+      // ],
+      // 'controlsText' => [
+      //   '0' => 'prev',
+      //   '1' => 'next',
+      // ],
+      // 'responsive' => [
+      //   '0' => [
+      //     'items' => 1,
+      //   ],
+      // ],
+    ];
+    $vars['slider_settings'] = json::encode($settings);
   }
+
   $user = \Drupal::currentUser();
   if ($user->id() < 1 && $node?->hasField('field_teaser') && $node?->field_teaser->value) {
     $vars['teaser'] = 1;
@@ -83,17 +126,23 @@ function observatorio_preprocess_page(&$vars) {
  */
 function nested_content($entity, &$vars) {
   $filepath = '';
-  if ($entity) {
-    // Check if its a node with field_content, or a paragraph with the other 2.
+  // Check if its a node with field_content, or a paragraph with the other 2.
+  if (method_exists($entity, 'hasField')) {
     if ($entity->hasField('field_content')) {
-      return nested_content($entity->field_content->entity, $vars);
+      return nested_content($entity->field_content, $vars);
     }
     elseif ($entity->hasField('field_hero_banners')) {
-      return nested_content($entity->field_hero_banners->entity, $vars);
+      return nested_content($entity->field_hero_banners, $vars);
     }
+  }
 
-    // We have the desired paragraph, get its image(s).
-    if (($paragraph = $entity) && $paragraph->hasField('field_image')) {
+  // We have the desired paragraph, get its image(s).
+  foreach ($entity as $item) {
+    $paragraph = $item->entity;
+    if ($paragraph->bundle() == 'hero_slider') {
+      nested_content($paragraph, $vars);
+    }
+    if ($paragraph->bundle() == 'hero_banner') {
       $hero['title'] = $paragraph->field_title->value;
       $hero['body'] = $paragraph->field_body->value;
       $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
@@ -112,48 +161,6 @@ function nested_content($entity, &$vars) {
       $vars['heros'][] = $hero;
     }
   }
-
-  $settings = [
-    // 'row_class' => '',
-    'default_row_class' => true,
-    'uses_fields' => false,
-    'items' => 1,
-    'margin' => 1,
-    'nav' => true,
-    'navPosition' => 'bottom',
-    'autoplay' => true,
-    'autoplayButtonOutput' => false,
-    // 'autoplayTextStart' => 'start',
-    // 'autoplayTextStop' => 'stop',
-    'autoplayHoverPause' => true,
-    'autoplayPosition' => 'top',
-    'controls' => false,
-    // 'controlsTextPrev' => 'prev',
-    // 'controlsTextNext' => 'next',
-    // 'controlsPosition' => 'bottom',
-    'arrowKeys' => true,
-    'mouseDrag' => false,
-    'loop' => true,
-    'speed' => 450,
-    // 'dimensionMobile' => '',
-    // 'itemsMobile' => '1',
-    // 'dimensionDesktop' => '',
-    // 'itemsDesktop' => '1',
-    // 'autoplayText' => [
-    //   '0' => 'start',
-    //   '1' => 'stop',
-    // ],
-    // 'controlsText' => [
-    //   '0' => 'prev',
-    //   '1' => 'next',
-    // ],
-    // 'responsive' => [
-    //   '0' => [
-    //     'items' => 1,
-    //   ],
-    // ],
-  ];
-  $vars['slider_settings'] = json::encode($settings);
 
   return $filepath;
 }
