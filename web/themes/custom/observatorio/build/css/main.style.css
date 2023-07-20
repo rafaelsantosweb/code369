@@ -11313,11 +11313,19 @@ body .block--observatorio-primary-local-tasks a {
   color: black;
 }
 body #hero-banners {
+  display: flex;
   left: 0;
   right: 0;
-  position: absolute;
-  max-height: 550px;
+  position: relative;
   overflow: hidden;
+}
+body #hero-banners .tns-nav {
+  position: absolute;
+  top: 70%;
+  right: 50%;
+}
+body #hero-banners .my-slider {
+  display: inline-flex;
 }
 body #hero-banners .hero-wrapper.dark {
   color: #000000;
@@ -11326,6 +11334,7 @@ body #hero-banners .hero-wrapper.bright {
   color: #ffffff;
 }
 body #hero-banners .hero-banner {
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -11333,17 +11342,18 @@ body #hero-banners .hero-banner {
   z-index: 10;
 }
 body #hero-banners .hero-banner img {
-  height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  max-height: 730px;
+  min-height: 320px;
 }
 body #hero-banners .hero-banner .field {
   position: relative;
   z-index: 1;
 }
 body #hero-banners img.faixa {
-  bottom: -17px;
+  bottom: -5%;
   left: 0;
   position: absolute;
   width: 100%;
@@ -11353,10 +11363,12 @@ body .paragraph--type--hero-banner {
   padding: 0;
 }
 body .paragraph--type--hero-banner .hero-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
   position: absolute;
-  padding: 0 20%;
-  top: 190px;
+  top: 37%;
   width: 100%;
 }
 body .paragraph--type--hero-banner .field--name-field-title {
@@ -11381,7 +11393,7 @@ body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link,
 body .paragraph--type--hero-banner .button {
   border: 1px solid #003bd1;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #003bd1;
   display: inline-block;
   font-size: 11px;
@@ -11392,35 +11404,27 @@ body .paragraph--type--hero-banner .button {
   transition: all 0.3s ease-in-out;
   border-color: #ffffff;
 }
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
+body .paragraph--type--hero-banner .button a {
+  display: block;
+  text-decoration: none;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a::after,
+body .paragraph--type--hero-banner .button a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 20px;
+  position: relative;
+}
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover,
 body .paragraph--type--hero-banner .button:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover::after,
 body .paragraph--type--hero-banner .button:hover::after {
   color: #000000;
-}
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
-body .paragraph--type--hero-banner .button a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 1rem;
-}
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover,
-body .paragraph--type--hero-banner .button a:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover::after,
-body .paragraph--type--hero-banner .button a:hover::after {
-  color: #000000;
-}
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link::after,
-body .paragraph--type--hero-banner .button::after {
-  content: ">";
-  display: inline-block;
-  font-size: 14px;
-  margin: 5px 8px 0;
 }
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
 body .paragraph--type--hero-banner .button a {
@@ -11433,8 +11437,14 @@ body .paragraph--type--hero-banner .button::after {
 body main {
   font-weight: 400;
 }
-body main .page__content {
-  margin-top: 485px;
+body main .page__header {
+  position: absolute;
+  top: 32px;
+  width: 100%;
+}
+body main .page__header .header_container {
+  display: flex;
+  width: 100%;
 }
 body main .paragraph {
   clear: both;

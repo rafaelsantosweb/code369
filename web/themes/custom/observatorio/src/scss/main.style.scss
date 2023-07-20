@@ -84,11 +84,21 @@ body {
 
   // big hero image
   #hero-banners {
+    display: flex;
     left: 0;
     right: 0;
-    position: absolute;
-    max-height: 550px;
+    position: relative;
     overflow: hidden;
+
+    .tns-nav{
+      position: absolute;
+      top: 70%;
+      right: 50%;
+    }
+
+    .my-slider{
+      display: inline-flex;
+    }
 
     // Special classes used by the theme for the hero banner image, if dark or bright
     .hero-wrapper.dark {
@@ -100,6 +110,7 @@ body {
     }
 
     .hero-banner {
+      height: 100%;
       top: 0;
       left: 0;
       right: 0;
@@ -107,9 +118,10 @@ body {
       z-index: 10;
 
       img {
-        height: 550px;
         object-fit: cover;
         width: 100%;
+        max-height: 730px;
+        min-height: 320px
       }
 
       .field {
@@ -119,7 +131,7 @@ body {
     }
 
     img.faixa {
-      bottom: -17px;
+      bottom: -5%;
       left: 0;
       position: absolute;
       width: 100%;
@@ -131,10 +143,12 @@ body {
     padding: 0;
 
     .hero-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       margin: 0 auto;
       position: absolute;
-      padding: 0 20%;
-      top: 190px;
+      top: 37%;
       width: 100%;
     }
 
@@ -189,10 +203,16 @@ body {
   main {
     font-weight: 400;
 
-    .page__content {
-      margin-top: 485px;
-    }
+    .page__header{
+      position: absolute;
+      top: 32px;
+      width: 100%;
 
+      .header_container{
+        display: flex;
+        width: 100%;
+      }
+    }
     .paragraph {
       clear: both;
       display: flex;
