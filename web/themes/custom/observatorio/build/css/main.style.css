@@ -11823,6 +11823,47 @@ body main .block--tagclouds-block-categoria span .tagclouds.level1 {
 body.teaser {
   overflow: hidden;
 }
+body .modal {
+  background-color: rgba(16, 16, 16, 0.5019607843);
+}
+body .modal .modal-header {
+  border-bottom: none;
+}
+body .modal .modal-content {
+  border: 5px solid #d6d6d6;
+  border-radius: 50px;
+  text-align: center;
+}
+body .modal .modal-body {
+  padding: 2rem 3rem;
+}
+body .modal h2, body .modal .h2 {
+  font-size: 24px;
+  white-space: nowrap;
+}
+body .modal p {
+  padding: 4px 0;
+}
+body .modal label {
+  display: none;
+}
+body .modal .input-text {
+  background-color: #979797;
+}
+body .modal button {
+  background-color: transparent;
+  border: none;
+  color: #AEAEAE;
+}
+body .modal .btn {
+  width: 100%;
+}
+body .modal #signup {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-style: italic;
+}
 
 #teaser {
   background-color: rgba(204, 204, 204, 0.7333333333);

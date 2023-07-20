@@ -110,3 +110,31 @@
   {% endif %}
 
 </div>
+
+<div id="authenticatedModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Observatório Firjan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X Fechar</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Conteúdo exclusivo para associado Firjan.</h2>
+        <p class='info'>
+          Para acessar, insira seu E-mail e Senha (os mesmos da Plataforma do Associado)
+        </p>
+
+        {# embed the user login form #}
+        {{ user_login }}
+
+        <span id='signup'>Ainda não é associado? Associe-se aqui.</span>
+      </div>
+      {# <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> #}
+    </div>
+  </div>
+</div>

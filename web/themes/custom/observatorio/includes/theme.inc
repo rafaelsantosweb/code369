@@ -117,6 +117,10 @@ function observatorio_preprocess_page(&$vars) {
   if ($user->id() < 1 && $node?->hasField('field_teaser') && $node?->field_teaser->value) {
     $vars['teaser'] = 1;
   }
+  else {
+    $vars['user_login'] = \Drupal::formBuilder()->getForm('Drupal\user\Form\UserLoginForm');
+  }
+
 }
 
 /**
@@ -127,11 +131,10 @@ function observatorio_preprocess_page(&$vars) {
 function nested_content($entity, &$vars) {
   $filepath = '';
   // Check if its a node with field_content, or a paragraph with the other 2.
-  if (method_exists($entity, 'hasField')) {
+  if ($entity && method_exists($entity, 'hasField')) {
     if ($entity->hasField('field_content')) {
       return nested_content($entity->field_content, $vars);
-    }
-    elseif ($entity->hasField('field_hero_banners')) {
+    } elseif ($entity->hasField('field_hero_banners')) {
       return nested_content($entity->field_hero_banners, $vars);
     }
   }
