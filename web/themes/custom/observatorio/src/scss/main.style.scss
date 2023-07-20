@@ -559,6 +559,58 @@ body {
   &.teaser {
     overflow: hidden;
   }
+
+  .modal {
+    background-color: #10101080;
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-content {
+      border: 5px solid #d6d6d6;
+      border-radius: 50px;
+      text-align: center;
+    }
+
+    .modal-body {
+      padding: 2rem 3rem;
+    }
+
+    h2 {
+      font-size: 24px;
+      white-space: nowrap;
+    }
+
+    p {
+      padding: 4px 0;
+    }
+
+    label {
+      display: none;
+    }
+
+    .input-text {
+      background-color: #979797;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #AEAEAE;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    #signup {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
 }
 
 #teaser {
