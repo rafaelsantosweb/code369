@@ -12,8 +12,12 @@ start:
 
 update: composeri deploy compile
 
-composeri:
+install:
 	@cp -n .env.example .env || true
+	@lando start
+	@make composeri
+
+composeri:
 	@lando composer install
 
 composeru:
@@ -59,6 +63,8 @@ sql:
 	@lando dr sqlc
 ws:
 	@lando dr ws
+wt:
+	@lando dr wt
 wd:
 	@lando dr wd-del all --yes
 updb:
