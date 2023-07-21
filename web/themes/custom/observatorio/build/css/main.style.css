@@ -11858,7 +11858,7 @@ body .modal button {
 body .modal .btn {
   width: 100%;
 }
-body .modal #signup {
+body .modal span {
   display: inline-block;
   margin-top: 1rem;
   font-size: 14px;

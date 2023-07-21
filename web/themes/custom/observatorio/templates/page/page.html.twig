@@ -15,7 +15,16 @@
       {% for hero in heros %}
         <div class='hero-banner paragraph--type--hero-banner'>
         {% if hero.img %}
-          <img src='{{ file_url(hero.img.src.fileuri) }}' class="hero-img" />
+
+          {% set imagestyle = {
+            '#theme': 'image_style',
+            '#style_name': 'hero_banner',
+            '#uri': hero.img.src.fileuri,
+            '#alt': hero.img.alt,
+            '#attributes': { class: 'hero-img' },
+          } %}
+          {{ imagestyle }}
+
         {% elseif default_hero.img %}
           <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
         {% endif %}
@@ -30,7 +39,7 @@
         </div>
       {% endfor %}
     </div>
-    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' alt='{{ hero.img.alt }}' />
+    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
 
   {% embed '@radix/navbar/navbar.twig' with {
@@ -129,12 +138,13 @@
         {# embed the user login form #}
         {{ user_login }}
 
-        <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
       </div>
-      {# <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div> #}
+      <div class="modal-footer">
+        <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
+        <span id='forgot'><a href='/user/password'>Esqueci minha senha.</a></span>
+        {# <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> #}
+      </div>
     </div>
   </div>
 </div>
