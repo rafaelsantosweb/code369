@@ -99,8 +99,8 @@ body {
     .tns-nav {
       position: absolute;
       top: 70%;
-      right: 50%;
-    }
+      width: 100%;
+   }
 
     .my-slider {
       display: inline-flex;
@@ -197,6 +197,7 @@ body {
       border-color: $white;
 
       a {
+        padding: 5px 16px;
         color: $white;
       }
 

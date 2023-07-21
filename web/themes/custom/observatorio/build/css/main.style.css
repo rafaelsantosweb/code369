@@ -11028,6 +11028,7 @@ body#inteligencia .views-row .button {
 body#inteligencia .views-row .button a {
   display: block;
   text-decoration: none;
+  border-radius: 5px;
 }
 body#inteligencia .views-row .button a::after {
   content: ">";
@@ -11036,11 +11037,11 @@ body#inteligencia .views-row .button a::after {
   margin-left: 20px;
   position: relative;
 }
-body#inteligencia .views-row .button:hover {
+body#inteligencia .views-row .button a:hover {
   color: #000000;
   background-color: #ffffff;
 }
-body#inteligencia .views-row .button:hover::after {
+body#inteligencia .views-row .button a:hover::after {
   color: #000000;
 }
 body#inteligencia .views-row .views-field-title {
@@ -11415,6 +11416,15 @@ body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name
 body .paragraph--type--hero-banner .button a {
   display: block;
   text-decoration: none;
+  border-radius: 5px;
+}
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a::after,
+body .paragraph--type--hero-banner .button a::after {
+  content: ">";
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 20px;
+  position: relative;
 }
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a::after,
 body .paragraph--type--hero-banner .button a::after {
@@ -11435,6 +11445,7 @@ body .paragraph--type--hero-banner .button:hover::after {
 }
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
 body .paragraph--type--hero-banner .button a {
+  padding: 5px 16px;
   color: #ffffff;
 }
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link::after,
@@ -11494,6 +11505,7 @@ body main .field--name-field-paragraph-cta .button a,
 body main .field--name-field-paragraph-cta .field--name-field-link a {
   display: block;
   text-decoration: none;
+  border-radius: 5px;
 }
 body main .field--name-field-paragraph-cta .button a::after,
 body main .field--name-field-paragraph-cta .field--name-field-link a::after {
@@ -11503,13 +11515,13 @@ body main .field--name-field-paragraph-cta .field--name-field-link a::after {
   margin-left: 20px;
   position: relative;
 }
-body main .field--name-field-paragraph-cta .button:hover,
-body main .field--name-field-paragraph-cta .field--name-field-link:hover {
+body main .field--name-field-paragraph-cta .button a:hover,
+body main .field--name-field-paragraph-cta .field--name-field-link a:hover {
   color: #000000;
   background-color: #ffffff;
 }
-body main .field--name-field-paragraph-cta .button:hover::after,
-body main .field--name-field-paragraph-cta .field--name-field-link:hover::after {
+body main .field--name-field-paragraph-cta .button a:hover::after,
+body main .field--name-field-paragraph-cta .field--name-field-link a:hover::after {
   color: #000000;
 }
 body main .field--name-field-paragraph-cta .button a,
@@ -11607,6 +11619,7 @@ body main .paragraph--type--destaques .button {
 body main .paragraph--type--destaques .button a {
   display: block;
   text-decoration: none;
+  border-radius: 5px;
 }
 body main .paragraph--type--destaques .button a::after {
   content: ">";
@@ -11615,11 +11628,11 @@ body main .paragraph--type--destaques .button a::after {
   margin-left: 20px;
   position: relative;
 }
-body main .paragraph--type--destaques .button:hover {
+body main .paragraph--type--destaques .button a:hover {
   color: #000000;
   background-color: #ffffff;
 }
-body main .paragraph--type--destaques .button:hover::after {
+body main .paragraph--type--destaques .button a:hover::after {
   color: #000000;
 }
 body main .paragraph--type--destaques .button a {
