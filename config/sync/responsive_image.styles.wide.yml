@@ -1,0 +1,16 @@
+uuid: c5140604-5338-4252-824b-11c43e5f173b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - image.style.wide
+id: wide
+label: Wide
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: wide
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: wide

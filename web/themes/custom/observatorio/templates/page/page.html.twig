@@ -5,9 +5,7 @@
  * Template for the main page.
  */
 #}
-{% set page_classes = [
-  'py-5',
-]|merge(page_utility_classes ? page_utility_classes : []) %}
+{% set page_classes = []|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
   <div id='hero-banners'>
@@ -15,7 +13,16 @@
       {% for hero in heros %}
         <div class='hero-banner paragraph--type--hero-banner'>
         {% if hero.img %}
-          <img src='{{ file_url(hero.img.src.fileuri) }}' class="hero-img" />
+
+          {% set imagestyle = {
+            '#theme': 'image_style',
+            '#style_name': 'hero_banner',
+            '#uri': hero.img.src.fileuri,
+            '#alt': hero.img.alt,
+            '#attributes': { class: 'hero-img' },
+          } %}
+          {{ imagestyle }}
+
         {% elseif default_hero.img %}
           <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
         {% endif %}
@@ -30,7 +37,7 @@
         </div>
       {% endfor %}
     </div>
-    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' alt='{{ hero.img.alt }}' />
+    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
 
   {% embed '@radix/navbar/navbar.twig' with {
@@ -67,7 +74,7 @@
 
     {% if page.header %}
       <header class="page__header mb-3">
-        <div class="container">
+        <div class="container header_container">
           {{ page.header }}
         </div>
       </header>
@@ -109,4 +116,33 @@
   </div>
   {% endif %}
 
+</div>
+
+<div id="authenticatedModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Observatório Firjan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X Fechar</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Conteúdo exclusivo para associado Firjan.</h2>
+        <p class='info'>
+          Para acessar, insira seu E-mail e Senha (os mesmos da Plataforma do Associado)
+        </p>
+
+        {# embed the user login form #}
+        {{ user_login }}
+
+      </div>
+      <div class="modal-footer">
+        <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
+        <span id='forgot'><a href='/user/password'>Esqueci minha senha.</a></span>
+        {# <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> #}
+      </div>
+    </div>
+  </div>
 </div>
