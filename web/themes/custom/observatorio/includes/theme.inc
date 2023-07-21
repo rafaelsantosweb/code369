@@ -130,38 +130,40 @@ function observatorio_preprocess_page(&$vars) {
  */
 function nested_content($entity, &$vars) {
   $filepath = '';
-  // Check if its a node with field_content, or a paragraph with the other 2.
-  if ($entity && method_exists($entity, 'hasField')) {
-    if ($entity->hasField('field_content')) {
-      return nested_content($entity->field_content, $vars);
-    } elseif ($entity->hasField('field_hero_banners')) {
-      return nested_content($entity->field_hero_banners, $vars);
-    }
-  }
-
-  // We have the desired paragraph, get its image(s).
-  foreach ($entity as $item) {
-    $paragraph = $item->entity;
-    if ($paragraph->bundle() == 'hero_slider') {
-      nested_content($paragraph, $vars);
-    }
-    if ($paragraph->bundle() == 'hero_banner') {
-      $hero['title'] = $paragraph->field_title->value;
-      $hero['body'] = $paragraph->field_body->value;
-      $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
-      $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
-
-      if ($cta = $paragraph->field_paragraph_cta->entity) {
-        $hero['cta']['title'] = $cta->field_link?->title;
-        $hero['cta']['url'] = Url::fromUri($cta->field_link?->uri);
+  if ($entity) {
+    // Check if its a node with field_content, or a paragraph with the other 2.
+    if (method_exists($entity, 'hasField')) {
+      if ($entity->hasField('field_content')) {
+        return nested_content($entity->field_content, $vars);
+      } elseif ($entity->hasField('field_hero_banners')) {
+        return nested_content($entity->field_hero_banners, $vars);
       }
+    }
 
-      $filepath = $img?->getFileUri();
-      $filepath = \Drupal::service('file_system')->realpath($filepath);
-      $hero['filepath'] = $filepath;
-      // Call our custom function to get the brightness of the image.
-      $hero['class'] = image_brightness($filepath);
-      $vars['heros'][] = $hero;
+    // We have the desired paragraph, get its image(s).
+    foreach ($entity as $item) {
+      $paragraph = $item->entity;
+      if ($paragraph->bundle() == 'hero_slider') {
+        nested_content($paragraph, $vars);
+      }
+      if ($paragraph->bundle() == 'hero_banner') {
+        $hero['title'] = $paragraph->field_title->value;
+        $hero['body'] = $paragraph->field_body->value;
+        $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
+        $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
+
+        if ($cta = $paragraph->field_paragraph_cta->entity) {
+          $hero['cta']['title'] = $cta->field_link?->title;
+          $hero['cta']['url'] = Url::fromUri($cta->field_link?->uri);
+        }
+
+        $filepath = $img?->getFileUri();
+        $filepath = \Drupal::service('file_system')->realpath($filepath);
+        $hero['filepath'] = $filepath;
+        // Call our custom function to get the brightness of the image.
+        $hero['class'] = image_brightness($filepath);
+        $vars['heros'][] = $hero;
+      }
     }
   }
 
