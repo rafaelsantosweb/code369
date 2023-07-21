@@ -463,6 +463,10 @@ body {
 
     .block--tagclouds-block-categoria {
       text-align: center;
+      display: flex;
+      @media (max-width: 990px){
+        flex-direction: column-reverse;
+      }
 
       h2 {
         font-size: 22px;
@@ -480,25 +484,54 @@ body {
           background: url('../../images/tagcloud-arrow.svg') no-repeat center $white;
           display: block;
           position: relative;
-          padding: 0 1.5rem;
+          padding: 0 1rem;
           height: 20px;
           left: 45%;
           top: 3.1rem;
           width: 20px;
-        }
 
+          /* Larger Resolutions */
+          /*@media (max-width: 990px){
+            left: 45%;
+            top: 4.5rem;
+          }*/
+
+          /* Tablet or iPad */
+          @media (max-width: 990px){
+            left: 45%;
+            top: 3.5rem;
+          }
+      
+          /* Mobile (iOS Focus) */
+          @media (max-width: 454px){
+            left: 45%;
+            top: 4.5rem;
+          }
+        }
+      
         &::after {
           content: '';
           display: block;
-          margin-top: 1.5rem;
+          margin: 1.7rem auto 2rem;
+          width: 82%;
           border-bottom: 1px solid $gray-300;
         }
       }
 
-      div.block-left,
-      div.block-right {
-        display: inline-block;
-        width: 49%;
+      div.block-left{
+        width: 50%;
+        @media (max-width: 990px){
+          max-width: 80%;
+          flex-direction: column;
+        }
+      }
+
+      div.block.right{
+        width: 100%;
+        flex-direction: column;
+        @media (max-width: 990px){
+          width: 90%;
+        }       
       }
 
       span {
