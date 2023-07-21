@@ -14,6 +14,10 @@ body {
 
   .page {
     position: relative;
+
+    .navbar{
+      position: absolute;
+    }
   }
 
   .block--system-branding {
@@ -22,6 +26,8 @@ body {
   }
 
   .block--navegacaoprincipal {
+    width: 60%;
+    top: 18px;
 
     ul.nav {
       background-color: $white;
@@ -131,7 +137,7 @@ body {
     }
 
     img.faixa {
-      bottom: -5%;
+      bottom: -1%;
       left: 0;
       position: absolute;
       width: 100%;
@@ -211,6 +217,13 @@ body {
       .header_container {
         display: flex;
         width: 100%;
+        justify-content: space-between;
+
+        .me-2{
+          height: 5vw;
+          width: 100%;
+          min-height: 45px;
+        }
       }
     }
 

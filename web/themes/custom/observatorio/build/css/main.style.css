@@ -11264,9 +11264,16 @@ body {
 body .page {
   position: relative;
 }
+body .page .navbar {
+  position: absolute;
+}
 body .block--system-branding {
   float: left;
   z-index: 99;
+}
+body .block--navegacaoprincipal {
+  width: 60%;
+  top: 18px;
 }
 body .block--navegacaoprincipal ul.nav {
   background-color: #ffffff;
@@ -11353,7 +11360,7 @@ body #hero-banners .hero-banner .field {
   z-index: 1;
 }
 body #hero-banners img.faixa {
-  bottom: -5%;
+  bottom: -1%;
   left: 0;
   position: absolute;
   width: 100%;
@@ -11445,6 +11452,12 @@ body main .page__header {
 body main .page__header .header_container {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+}
+body main .page__header .header_container .me-2 {
+  height: 5vw;
+  width: 100%;
+  min-height: 45px;
 }
 body main .paragraph {
   clear: both;
