@@ -5,9 +5,7 @@
  * Template for the main page.
  */
 #}
-{% set page_classes = [
-  'py-5',
-]|merge(page_utility_classes ? page_utility_classes : []) %}
+{% set page_classes = []|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
   <div id='hero-banners'>
