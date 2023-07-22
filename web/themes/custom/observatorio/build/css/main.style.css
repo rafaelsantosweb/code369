@@ -11276,6 +11276,11 @@ body .block--navegacaoprincipal {
   width: 60%;
   top: 18px;
 }
+@media (max-width: 990px) {
+  body .block--navegacaoprincipal {
+    display: none;
+  }
+}
 body .block--navegacaoprincipal ul.nav {
   background-color: #ffffff;
   flex-direction: row;
@@ -11326,11 +11331,14 @@ body #hero-banners {
   right: 0;
   position: relative;
   overflow: hidden;
+  /* max-height: 690px;
+  min-height: 320px; */
 }
 body #hero-banners .tns-nav {
   position: absolute;
-  top: 70%;
-  right: 50%;
+  top: 84%;
+  width: 100%;
+  z-index: 100;
 }
 body #hero-banners .my-slider {
   display: inline-flex;
@@ -11353,8 +11361,8 @@ body #hero-banners .hero-banner img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-height: 730px;
-  min-height: 320px;
+  max-height: 650px; /* Sets the maximum size of the hero banner div */
+  min-height: 340px; /* Sets the minimum size of the hero banner div */
 }
 body #hero-banners .hero-banner .field {
   position: relative;
@@ -11374,9 +11382,20 @@ body .paragraph--type--hero-banner .hero-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin-top: 2%;
   position: absolute;
-  top: 37%;
+  top: 30%;
+  width: 100%;
+}
+body .paragraph--type--hero-banner .hero-wrapper .field--name-field-title {
+  font-size: clamp(1.5em, 1em + 2vw, 3.5em);
+  line-height: 1.1 !important;
+  text-align: center;
+  width: 80%;
+}
+body .paragraph--type--hero-banner .hero-wrapper .field--name-field-body {
+  padding: 0 12px;
+  font-size: clamp(0.5em, 1em + 0.1vw, 3.5em);
   width: 100%;
 }
 body .paragraph--type--hero-banner .field--name-field-title {
@@ -11426,21 +11445,13 @@ body .paragraph--type--hero-banner .button a::after {
   margin-left: 20px;
   position: relative;
 }
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a::after,
-body .paragraph--type--hero-banner .button a::after {
-  content: ">";
-  display: inline-block;
-  font-size: 11px;
-  margin-left: 20px;
-  position: relative;
-}
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover,
-body .paragraph--type--hero-banner .button:hover {
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover,
+body .paragraph--type--hero-banner .button a:hover {
   color: #000000;
   background-color: #ffffff;
 }
-body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link:hover::after,
-body .paragraph--type--hero-banner .button:hover::after {
+body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a:hover::after,
+body .paragraph--type--hero-banner .button a:hover::after {
   color: #000000;
 }
 body .paragraph--type--hero-banner .field--name-field-paragraph-cta .field--name-field-link a,
