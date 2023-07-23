@@ -1,0 +1,163 @@
+// custom mobile
+@media (max-width: 980px) {
+
+  .paragraph--type--hero-banner .field--name-field-title {
+    font-size: 26px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .paragraph--type--hero-banner .field--name-field-body {
+    min-width: 90%;
+  }
+
+  body main .paragraph_block {
+    max-height: auto;
+    margin-bottom: 1em;
+    min-height: 350px;
+    padding: 0 !important; 
+  }
+ 
+   body main .paragraph--type--image-text {
+    text-align: center;
+     padding: 1rem 0;
+  }
+
+  .paragraph--type--destaques {
+    display: block;
+    padding: 0 !important;
+  }
+
+  .block--tagclouds-block-categoria img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .paragraph--type--image-text {
+    padding: 1rem 0 !important;
+  }
+
+  .paragraph--type--destaques .views-view-grid .views-row {
+    width: 100%; 
+  }
+
+  body main .paragraph {
+    display: inline !important; 
+  }
+
+  .paragraph_left {
+    min-width: 100%;
+    display: inline;
+    padding: 10px; 
+  }
+
+  .paragraph_right .field--name-field-body h2  {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .paragraph_right {
+    min-width: 100%;
+    display: inline;
+    padding: 10px; 
+  }
+
+  .pilares .views-col .col-1 {
+    min-width: 100%;
+    margin: 1rem 1rem 1rem 0 !important;
+  }
+
+  .pilares .view-content .views-row .views-col {
+    min-width: 100%;
+    margin-bottom: 1.5em !important;
+    margin: 1rem 1rem 1rem 0 !important;
+  }
+
+  .block--tagclouds-block-categoria .block-left {
+    min-width: 88%;
+  }
+
+  .paragraph--type--destaques .view-content .tns-item .views-field-field-image {
+    margin-right: 31px;
+    height: 100%;
+    display: contents;
+    padding-top: 10px;
+  }
+
+  .paragraph--type--destaques {
+    padding: 10px;
+    .field--type-string,
+    .field--type-text-long p {
+      align-items: center;
+      display: flex;
+      padding: 1em;
+    }
+  }
+
+  .paragraph--type--destaques .field--type-text-long p  {
+    padding: 5px 5px 5px 5px !important;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+
+  .block--webform .paragraph_block fieldset .form-item {
+    text-align: center;
+    float: inline-start; 
+    max-width: 200px;
+    padding: 0 5px;
+  }
+
+  body main .paragraph_block fieldset #edit-description {
+    font-size: 17px !important;
+    line-height: 35px;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .paragraph_block fieldset .form-item img {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .paragraph_block fieldset .form-item input {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .fieldset-wrapper #edit-im-icon {
+    margin-left: 30%;
+    width: 100px;
+  }
+
+  footer.page__footer .block.block--system-menu {
+    min-width: 100%; 
+    text-align: center;
+  }
+  
+  .footer.page__footer .block {
+    padding-right: 0;
+  }
+ 
+  footer.page__footer form input[type=search] {
+    font-style: italic;
+    font-size: 13px;
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px 30px 20px 60px
+  }
+
+  footer.page__footer {
+    text-align: center;
+    min-width: 100%;
+  }
+
+  body main .paragraph_block .form-item-aceito-os-termos {
+       top: auto !important; 
+       justify-content: flex-start !important;
+  }
+
+  .block--footer-searchbox .js-form-submit {
+    display: none;
+  }
+
+}
