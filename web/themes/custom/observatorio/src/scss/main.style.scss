@@ -29,6 +29,10 @@ body {
     width: 60%;
     top: 18px;
 
+    @media(max-width: 990px){
+      display: none;
+    }
+
     ul.nav {
       background-color: $white;
       flex-direction: row;
@@ -95,11 +99,15 @@ body {
     right: 0;
     position: relative;
     overflow: hidden;
+    /* max-height: 690px;
+    min-height: 320px; */
+
 
     .tns-nav {
       position: absolute;
-      top: 70%;
+      top: 84%;
       width: 100%;
+      z-index: 100;
    }
 
     .my-slider {
@@ -126,8 +134,8 @@ body {
       img {
         object-fit: cover;
         width: 100%;
-        max-height: 730px;
-        min-height: 320px
+        max-height: 650px; /* Sets the maximum size of the hero banner div */
+        min-height: 340px; /* Sets the minimum size of the hero banner div */
       }
 
       .field {
@@ -152,10 +160,23 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin: 0 auto;
+      margin-top: 2%;
       position: absolute;
-      top: 37%;
+      top: 30%;
       width: 100%;
+
+      .field--name-field-title{
+        font-size: clamp(1.5em, 1em + 2vw, 3.5em);
+        line-height: 1.1 !important;
+        text-align: center;
+        width: 80%;
+      }
+      
+      .field--name-field-body{
+        padding: 0 12px;
+        font-size: clamp(0.5em, 1em + 0.10vw, 3.5em);
+        width: 100%;
+      }
     }
 
     .field--name-field-title {
