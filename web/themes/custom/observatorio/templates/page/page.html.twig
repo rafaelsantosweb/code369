@@ -8,8 +8,10 @@
 {% set page_classes = []|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
+
+  {% block banner %}
   <div id='hero-banners'>
-    <div id='the-banners' class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}'>
+    <div id='the-banners' {% if heros|length > 1 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
       {% for hero in heros %}
         <div class='hero-banner paragraph--type--hero-banner'>
         {% if hero.img %}
@@ -23,10 +25,11 @@
           } %}
           {{ imagestyle }}
 
-        {% elseif default_hero.img %}
-          <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img" />
+        {% elseif default_hero_img %}
+          <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img default-img" />
         {% endif %}
 
+          {% if hero.title %}
           <div class='hero-wrapper {{ hero.class }}'>
             <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
             <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
@@ -34,12 +37,35 @@
               <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
             </div>
           </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
     <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
+  {% endblock %}
 
+  {% block head_top %}
+    {% if page.head_top %}
+      <div id="page__head-top">
+        <div class="container">
+          {{ page.head_top }}
+        </div>
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {% block head_bottom %}
+    {% if page.head_bottom %}
+      <div id="page__head-bottom">
+        <div class="container">
+          {{ page.head_bottom }}
+        </div>
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {#
   {% embed '@radix/navbar/navbar.twig' with {
     container: 'fixed',
     color: 'light',
@@ -68,6 +94,7 @@
       {% endif %}
     {% endblock %}
   {% endembed %}
+  #}
 
   <main{{ content_attributes.addClass(page_classes) }}>
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}

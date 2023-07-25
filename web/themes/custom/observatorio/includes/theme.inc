@@ -60,14 +60,14 @@ function observatorio_preprocess(&$vars, $hook) {
 
 function observatorio_preprocess_page(&$vars) {
   // get the current theme folder using D10 api
-  $theme_path = \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
+  $theme_path = '/' . \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
   $node = \Drupal::routeMatch()->getParameter('node');
   if (!key_exists('heros', $vars)) {
     $filepath = nested_content($node, $vars);
     // Add a default light blue image as background if none is set from the content.
     if (!key_exists('heros', $vars)) {
-      $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
-      $vars['heros'][]['class'] = image_brightness($filepath);
+      $filepath = $vars['default_hero_img'] = '/images/light-blue-bg.png';
+      $vars['heros'][] = ['class' => $theme_path . image_brightness($filepath)];
     }
 
     $settings = [

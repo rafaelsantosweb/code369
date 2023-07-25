@@ -1,81 +1,103 @@
-body#inteligencia {
-  background-color: $grey-100;
+body.node-type--detail {
 
-  .view {
-    color: $black;
+  div {
+    // border: 1px solid pink;
   }
 
-  .view-header {
-    margin-bottom: 2rem;
-    text-align: center;
+  #page__head-bottom {
+    position: absolute;
+    top: 12rem;
+    width: 100%;
+    z-index: 10;
   }
 
-  .views-row {
-    background-color: $white;
-    border-radius: 20px;
-    float: left;
-    margin: 40px;
-    height: 336px;
-    padding: 35px 40px;
-    width: 490px;
+  h1.page-title {
+    color: $white;
+  }
 
-    .button {
-      @include button;
+  #hero-banners .hero-banner {
+    height: 350px;
+  }
+
+  &#inteligencia {
+    background-color: $grey-100;
+
+    .view {
+      color: $black;
     }
 
-    .views-field-title {
-      margin-bottom: .5rem;
-      font-weight: bold;
-
-      a {
-        color: $black;
-        text-decoration: none;
-      }
+    .view-header {
+      margin-bottom: 2rem;
+      text-align: center;
     }
 
-    .views-field-field-image {
+    .views-row {
+      background-color: $white;
+      border-radius: 20px;
       float: left;
+      margin: 30px;
+      height: 336px;
+      padding: 35px 40px;
+      width: 490px;
 
-      img {
-        width: 100%;
-        padding-right: .5rem;
+      .button {
+        @include button;
+      }
+
+      .views-field-title {
+        margin-bottom: .5rem;
+        font-weight: bold;
+
+        a {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+
+      .views-field-field-image {
+        float: left;
+
+        img {
+          width: 100%;
+          padding-right: .5rem;
+        }
       }
     }
+
   }
 
-}
+  .paragraph_iframe .paragraph {
+    display: flex;
+    flex-direction: column;
 
-.paragraph_iframe .paragraph {
-  display: flex;
-  flex-direction: column;
+    .field--name-field-title {
+      border-top: 1px solid $grey-75;
+      border-bottom: 1px solid $grey-75;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 31px;
+      margin: 0 auto 1.5rem;
+      padding: 0 0 1.5rem;
+      text-align: center;
+      width: 100%;
 
-  .field--name-field-title {
-    border-top: 1px solid $grey-75;
-    border-bottom: 1px solid $grey-75;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 31px;
-    margin: 0 auto 1.5rem;
-    padding: 0 0 1.5rem;
-    text-align: center;
-    width: 100%;
-
-    &::before {
-      content: '';
-      background: url('../../images/target.svg') no-repeat;
-      display: inline-block;
-      height: 52px;
-      left: -2rem;
-      position: relative;
-      top: 16px;
-      width: 50px;
+      &::before {
+        content: '';
+        background: url('../../images/target.svg') no-repeat;
+        display: inline-block;
+        height: 52px;
+        left: -2rem;
+        position: relative;
+        top: 16px;
+        width: 50px;
+      }
     }
-  }
 
-  // PowerBI
-  iframe.embed {
-    background-color: $gray-200;
-    height: 738px;
-    width: 100%;
+    // PowerBI
+    iframe.embed {
+      background-color: $gray-200;
+      height: 738px;
+      width: 100%;
+    }
   }
 }
