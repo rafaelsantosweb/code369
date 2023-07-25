@@ -20,10 +20,6 @@ conditions:
     bundles:
       detail: detail
 reactions:
-  page_title:
-    id: page_title
-    page_title: ''
-    saved: false
   blocks:
     id: blocks
     uuid: eae0a9f9-19ed-43fb-a6d8-5b6da352800d
@@ -34,7 +30,7 @@ reactions:
         label: 'Título da página'
         provider: core
         label_display: '0'
-        region: navbar_branding
+        region: navbar_left
         weight: '0'
         custom_id: page_title_block
         theme: observatorio
@@ -43,6 +39,21 @@ reactions:
         context_id: internas
         context_mapping: {  }
         third_party_settings: {  }
-    include_default_blocks: 0
+      4f537c71-f143-48a6-b036-659805ec9706:
+        uuid: 4f537c71-f143-48a6-b036-659805ec9706
+        id: page_title_block
+        label: 'Título da página'
+        provider: core
+        label_display: '0'
+        region: head_bottom
+        weight: '0'
+        custom_id: page_title_block
+        theme: observatorio
+        css_class: ''
+        unique: 0
+        context_id: internas
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
     saved: false
 weight: 0
