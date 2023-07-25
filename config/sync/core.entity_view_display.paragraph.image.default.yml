@@ -1,0 +1,14 @@
+uuid: 5dc8eda9-68d8-4066-b4be-f285e0018cf9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_image
+    - paragraphs.paragraphs_type.image
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content: {  }
+hidden:
+  field_image: true

@@ -15,7 +15,7 @@ body {
   .page {
     position: relative;
 
-    .navbar{
+    .navbar {
       position: absolute;
     }
   }
@@ -29,7 +29,7 @@ body {
     width: 60%;
     top: 18px;
 
-    @media(max-width: 990px){
+    @media(max-width: 990px) {
       display: none;
     }
 
@@ -108,7 +108,7 @@ body {
       top: 84%;
       width: 100%;
       z-index: 100;
-   }
+    }
 
     .my-slider {
       display: inline-flex;
@@ -134,8 +134,10 @@ body {
       img {
         object-fit: cover;
         width: 100%;
-        max-height: 650px; /* Sets the maximum size of the hero banner div */
-        min-height: 340px; /* Sets the minimum size of the hero banner div */
+        max-height: 650px;
+        /* Sets the maximum size of the hero banner div */
+        min-height: 340px;
+        /* Sets the minimum size of the hero banner div */
       }
 
       .field {
@@ -165,14 +167,14 @@ body {
       top: 30%;
       width: 100%;
 
-      .field--name-field-title{
+      .field--name-field-title {
         font-size: clamp(1.5em, 1em + 2vw, 3.5em);
         line-height: 1.1 !important;
         text-align: center;
         width: 80%;
       }
-      
-      .field--name-field-body{
+
+      .field--name-field-body {
         padding: 0 12px;
         font-size: clamp(0.5em, 1em + 0.10vw, 3.5em);
         width: 100%;
@@ -241,7 +243,7 @@ body {
         width: 100%;
         justify-content: space-between;
 
-        .me-2{
+        .me-2 {
           height: 5vw;
           width: 100%;
           min-height: 45px;
@@ -443,16 +445,25 @@ body {
 
       .view-content {
         display: flex;
+        width: 100%;
 
-        .views-row .views-col {
+        .views-infinite-scroll-content-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        .views-row {
           background-color: $white;
           border-radius: 10px;
           box-shadow: 0px 3px 1px $blue-50;
-          margin: 0 1rem;
-          min-height: 426px;
+          margin: 1rem;
+          height: 336px;
           padding: 10px;
           text-align: center;
-          width: 370px !important;
+          width: 31%;
+          // width:370px !important;
+          // width: calc(100%/3);
 
           .field--name-field-image {
             background-color: orange;
@@ -520,7 +531,8 @@ body {
     .block--tagclouds-block-categoria {
       text-align: center;
       display: flex;
-      @media (max-width: 990px){
+
+      @media (max-width: 990px) {
         flex-direction: column-reverse;
       }
 
@@ -553,18 +565,18 @@ body {
           }*/
 
           /* Tablet or iPad */
-          @media (max-width: 990px){
+          @media (max-width: 990px) {
             left: 45%;
             top: 3.5rem;
           }
-      
+
           /* Mobile (iOS Focus) */
-          @media (max-width: 454px){
+          @media (max-width: 454px) {
             left: 45%;
             top: 4.5rem;
           }
         }
-      
+
         &::after {
           content: '';
           display: block;
@@ -574,20 +586,22 @@ body {
         }
       }
 
-      div.block-left{
+      div.block-left {
         width: 50%;
-        @media (max-width: 990px){
+
+        @media (max-width: 990px) {
           max-width: 80%;
           flex-direction: column;
         }
       }
 
-      div.block.right{
+      div.block.right {
         width: 100%;
         flex-direction: column;
-        @media (max-width: 990px){
+
+        @media (max-width: 990px) {
           width: 90%;
-        }       
+        }
       }
 
       span {
