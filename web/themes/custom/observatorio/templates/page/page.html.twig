@@ -29,15 +29,21 @@
           <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img default-img" />
         {% endif %}
 
-          {% if hero.title %}
+        {% if hero.title or hero.body %}
           <div class='hero-wrapper {{ hero.class }}'>
-            <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
-            <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
-            <div class="field field--name-field-link field--type-link field__item button">
-              <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
-            </div>
+            {% if hero.title %}
+              <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
+            {% endif %}
+            {% if hero.body %}
+              <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
+            {% endif %}
+            {% if hero.cta %}
+              <div class="field field--name-field-link field--type-link field__item button">
+                <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
+              </div>
+            {% endif %}
           </div>
-          {% endif %}
+        {% endif %}
         </div>
       {% endfor %}
     </div>

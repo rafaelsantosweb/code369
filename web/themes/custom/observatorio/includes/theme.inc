@@ -65,7 +65,7 @@ function observatorio_preprocess_page(&$vars) {
   if (!key_exists('heros', $vars)) {
     $filepath = nested_content($node, $vars);
     // Add a default light blue image as background if none is set from the content.
-    if (!key_exists('heros', $vars)) {
+    if (!key_exists('heros', $vars) || !key_exists('img', $vars['heros'][0])) {
       $filepath = $vars['default_hero_img'] = '/images/light-blue-bg.png';
       $vars['heros'][] = ['class' => $theme_path . image_brightness($filepath)];
     }
@@ -149,8 +149,12 @@ function nested_content($entity, &$vars) {
       if ($paragraph->bundle() == 'hero_banner') {
         $hero['title'] = $paragraph->field_title->value;
         $hero['body'] = $paragraph->field_body->value;
-        $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
-        $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
+
+        $img = null;
+        if ($paragraph->field_image->entity && $paragraph->field_image->entity->field_media_image) {
+          $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
+          $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
+        }
 
         if ($cta = $paragraph->field_paragraph_cta->entity) {
           $hero['cta']['title'] = $cta->field_link?->title;
