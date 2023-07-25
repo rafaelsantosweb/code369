@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.page.field_access
     - field.field.node.page.field_category
     - field.field.node.page.field_content
+    - field.field.node.page.field_metatags
     - node.type.page
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.page.default
 targetEntityType: node
@@ -24,6 +26,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
