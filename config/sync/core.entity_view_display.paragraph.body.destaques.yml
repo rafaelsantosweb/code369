@@ -1,0 +1,17 @@
+uuid: a19629a5-cb78-4889-8b2d-379c5cef33e2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.destaques
+    - field.field.paragraph.body.field_body_resume
+    - field.field.paragraph.body.field_restrito
+    - paragraphs.paragraphs_type.body
+id: paragraph.body.destaques
+targetEntityType: paragraph
+bundle: body
+mode: destaques
+content: {  }
+hidden:
+  field_body_resume: true
+  field_restrito: true

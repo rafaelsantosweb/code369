@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.attachments.field_file
+    - field.field.paragraph.attachments.field_restrito
     - paragraphs.paragraphs_type.attachments
   module:
     - file
@@ -20,4 +21,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_restrito: true

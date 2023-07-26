@@ -1,0 +1,10 @@
+uuid: d9130b63-346a-4862-8ced-c3238ef2af26
+langcode: pt-br
+status: true
+dependencies: {  }
+id: body
+label: 'Corpo de texto'
+icon_uuid: null
+icon_default: null
+description: 'Um campo html com opção de restringir'
+behavior_plugins: {  }
