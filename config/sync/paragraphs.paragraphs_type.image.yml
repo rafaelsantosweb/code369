@@ -1,0 +1,10 @@
+uuid: c181e87c-a489-4f01-b826-7aff14b52f62
+langcode: pt-br
+status: true
+dependencies: {  }
+id: image
+label: Imagem
+icon_uuid: null
+icon_default: null
+description: 'Permite adicionar uma imagem, usada nas listagens'
+behavior_plugins: {  }

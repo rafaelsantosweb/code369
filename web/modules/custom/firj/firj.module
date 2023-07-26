@@ -16,4 +16,22 @@
       ],
     ];
   }
+
+  if (str_contains($form_id, 'node')) {
+    // Views que queremos listar para os usuários.
+    $keep_items = ['destaques', 'publicacoes'];
+
+    if (isset($form['field_content']))
+    foreach ($form['field_content']['widget'] as $key => &$content) {
+      if (is_numeric($key)) {
+        if (isset($content['subform']) && $view = &$content['subform']['field_view']) {
+          if ($options = &$view['widget'][0]['target_id']['#options']) {
+            $options = array_filter($options, function ($key) use ($keep_items) {
+              return in_array($key, $keep_items);
+            }, ARRAY_FILTER_USE_KEY);
+          }
+        }
+      }
+    }
+  }
 }

@@ -60,14 +60,14 @@ function observatorio_preprocess(&$vars, $hook) {
 
 function observatorio_preprocess_page(&$vars) {
   // get the current theme folder using D10 api
-  $theme_path = \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
+  $theme_path = '/' . \Drupal::service('theme.initialization')->getActiveThemeByName('observatorio')->getPath();
   $node = \Drupal::routeMatch()->getParameter('node');
   if (!key_exists('heros', $vars)) {
     $filepath = nested_content($node, $vars);
     // Add a default light blue image as background if none is set from the content.
-    if (!key_exists('heros', $vars)) {
-      $filepath = $theme_path . $vars['default_hero_img'] = '/images/light-blue-bg.png';
-      $vars['heros'][]['class'] = image_brightness($filepath);
+    if (!key_exists('heros', $vars) || !key_exists('img', $vars['heros'][0])) {
+      $filepath = $vars['default_hero_img'] = '/images/light-blue-bg.png';
+      $vars['heros'][] = ['class' => $theme_path . image_brightness($filepath)];
     }
 
     $settings = [
@@ -149,8 +149,12 @@ function nested_content($entity, &$vars) {
       if ($paragraph->bundle() == 'hero_banner') {
         $hero['title'] = $paragraph->field_title->value;
         $hero['body'] = $paragraph->field_body->value;
-        $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
-        $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
+
+        $img = null;
+        if ($paragraph->field_image->entity && $paragraph->field_image->entity->field_media_image) {
+          $hero['img']['src'] = $img = $paragraph->field_image->entity->field_media_image->entity;
+          $hero['img']['alt'] = $paragraph->field_image->entity->field_media_image->alt;
+        }
 
         if ($cta = $paragraph->field_paragraph_cta->entity) {
           $hero['cta']['title'] = $cta->field_link?->title;

@@ -11,9 +11,9 @@ base theme: radix
 'interface translation server pattern': 'themes/custom/observatorio/translations/%language.po'
 
 regions:
-  navbar_branding: Navbar branding
-  navbar_left: Navbar left
-  navbar_right: Navbar right
+  head_top: Head top
+  head_bottom: Head bottom
+  banner: Banner
   header: Header
   content: Content
   page_bottom: Page bottom

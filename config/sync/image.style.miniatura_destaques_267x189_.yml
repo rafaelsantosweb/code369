@@ -1,0 +1,15 @@
+uuid: 95b81216-3461-4ee0-8b8b-bbcb79585dfd
+langcode: pt-br
+status: true
+dependencies: {  }
+name: miniatura_destaques_267x189_
+label: 'Miniatura Destaques (267x189)'
+effects:
+  ef7f93fc-7ac5-4e6d-8759-d47f730a9534:
+    uuid: ef7f93fc-7ac5-4e6d-8759-d47f730a9534
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 189
+      height: 267
+      anchor: center-center

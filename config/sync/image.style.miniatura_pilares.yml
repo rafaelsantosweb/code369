@@ -1,0 +1,15 @@
+uuid: 254cf41f-1139-4189-81f8-b787e4859c73
+langcode: pt-br
+status: true
+dependencies: {  }
+name: miniatura_pilares
+label: 'Miniatura Pilares (110x104)'
+effects:
+  ca75b1ff-e21f-459a-94bf-57d8ca6b04b1:
+    uuid: ca75b1ff-e21f-459a-94bf-57d8ca6b04b1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 110
+      height: 104
+      anchor: center-center

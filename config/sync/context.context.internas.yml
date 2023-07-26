@@ -1,0 +1,59 @@
+uuid: d05a8ad4-d78a-4855-8614-b2d9a54de92f
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+label: Internas
+name: internas
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 39947c85-a592-4361-99c0-357245757d79
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      detail: detail
+reactions:
+  blocks:
+    id: blocks
+    uuid: eae0a9f9-19ed-43fb-a6d8-5b6da352800d
+    blocks:
+      caa54a27-a903-4290-a8cc-3fda3c0e2b2f:
+        uuid: caa54a27-a903-4290-a8cc-3fda3c0e2b2f
+        id: page_title_block
+        label: 'Título da página'
+        provider: core
+        label_display: '0'
+        region: navbar_left
+        weight: '0'
+        custom_id: page_title_block
+        theme: observatorio
+        css_class: ''
+        unique: 0
+        context_id: internas
+        context_mapping: {  }
+        third_party_settings: {  }
+      4f537c71-f143-48a6-b036-659805ec9706:
+        uuid: 4f537c71-f143-48a6-b036-659805ec9706
+        id: page_title_block
+        label: 'Título da página'
+        provider: core
+        label_display: '0'
+        region: head_bottom
+        weight: '0'
+        custom_id: page_title_block
+        theme: observatorio
+        css_class: ''
+        unique: 0
+        context_id: internas
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

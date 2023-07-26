@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_access
     - field.field.node.page.field_category
     - field.field.node.page.field_content
+    - field.field.node.page.field_metatags
     - node.type.page
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_access: true
   field_category: true
   field_content: true
+  field_metatags: true
   langcode: true
