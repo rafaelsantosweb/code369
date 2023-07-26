@@ -610,52 +610,124 @@ body {
   .modal {
     background-color: #10101080;
 
-    .modal-header {
-      border-bottom: none;
+    /* Forgot Password and Text Footer stylization */
+    a {
+      text-decoration: none;
+      color: #444444;
+      font-style: italic;
     }
 
     .modal-content {
       border: 5px solid #d6d6d6;
       border-radius: 50px;
       text-align: center;
-    }
 
-    .modal-body {
-      padding: 2rem 3rem;
-    }
+      .modal-header {
+        border-bottom: none;
 
-    h2 {
-      font-size: 24px;
-      white-space: nowrap;
-    }
+        /* Logo Firjan Default */
+        img {
+          padding: 10px 20px;
+        }
 
-    p {
-      padding: 4px 0;
-    }
+        /* Close Button */
+        button {
+          background-color: transparent;
+          border: none;
+          color: #AEAEAE;
+        }
+        span {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
 
-    label {
-      display: none;
-    }
+      .modal-body {
+        padding: 2rem 3rem;
+        
+        /* Main title */
+        h2 {
+          font-size: 24px;
+          color: #444444;
+          text-transform: uppercase;
+          margin-top: 1.2rem;
+        }
 
-    .input-text {
-      background-color: #979797;
-    }
+        /*  Subtitle */
+        p {
+          color: #444444;
+          padding: 4px 195px;
+          @media  (max-width: 990px) {
+            padding: 4px 18px;
+          }
+        }
 
-    button {
-      background-color: transparent;
-      border: none;
-      color: #AEAEAE;
-    }
+        /* Form */
+        #user-login-form { 
+          width: 66%;
+          margin: 0 auto 0;
+        }
 
-    .btn {
-      width: 100%;
-    }
+        /* Label Forms */
+        .text-muted{
+          display: none;
+        }
+        .form-text{
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        .form-control{
+          font-size: 11px;
+          font-style: italic;
+          background-color: #d7d7d7;
+          border: 1px solid #979797;
+        }
+        label {
+          display: none;
+        }
 
-    span {
-      display: inline-block;
-      margin-top: 1rem;
-      font-size: 14px;
-      font-style: italic;
+        /* Access Button */
+        .btn {
+          font-size: 11px;
+          width: 100%;
+          margin-top: 2rem;
+        }
+
+        /* Forgot Password Button */
+        span{
+          display: flex;
+          justify-content: end;
+          position: relative;
+          width: 83%;
+          bottom: 4rem;
+          font-size: 12px;
+          font-style: italic;
+        }
+      }
+
+      .modal-footer {
+        border-top: none;
+        flex-direction: column;
+        
+        /* Associate Button Spacing */
+        span {
+          font-size: 14px;
+          font-weight: bold;
+          color: #444444;
+          margin-bottom: 1rem;
+
+          a {
+            font-weight: bold;
+          }
+        }
+
+        /* Lock Image Alignment */
+        img {
+          width: 65px;
+          height: 65px;
+          align-self: end;
+        }
+      }
     }
   }
 }

@@ -11838,44 +11838,112 @@ body.teaser {
 }
 body .modal {
   background-color: rgba(16, 16, 16, 0.5019607843);
+  /* Forgot Password and Text Footer stylization */
 }
-body .modal .modal-header {
-  border-bottom: none;
+body .modal a {
+  text-decoration: none;
+  color: #444444;
+  font-style: italic;
 }
 body .modal .modal-content {
   border: 5px solid #d6d6d6;
   border-radius: 50px;
   text-align: center;
 }
-body .modal .modal-body {
-  padding: 2rem 3rem;
+body .modal .modal-content .modal-header {
+  border-bottom: none;
+  /* Logo Firjan Default */
+  /* Close Button */
 }
-body .modal h2, body .modal .h2 {
-  font-size: 24px;
-  white-space: nowrap;
+body .modal .modal-content .modal-header img {
+  padding: 10px 20px;
 }
-body .modal p {
-  padding: 4px 0;
-}
-body .modal label {
-  display: none;
-}
-body .modal .input-text {
-  background-color: #979797;
-}
-body .modal button {
+body .modal .modal-content .modal-header button {
   background-color: transparent;
   border: none;
   color: #AEAEAE;
 }
-body .modal .btn {
-  width: 100%;
-}
-body .modal span {
+body .modal .modal-content .modal-header span {
   display: inline-block;
-  margin-top: 1rem;
   font-size: 14px;
+}
+body .modal .modal-content .modal-body {
+  padding: 2rem 3rem;
+  /* Main title */
+  /*  Subtitle */
+  /* Form */
+  /* Label Forms */
+  /* Access Button */
+  /* Forgot Password Button */
+}
+body .modal .modal-content .modal-body h2, body .modal .modal-content .modal-body .h2 {
+  font-size: 24px;
+  color: #444444;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+}
+body .modal .modal-content .modal-body p {
+  color: #444444;
+  padding: 4px 195px;
+}
+@media (max-width: 990px) {
+  body .modal .modal-content .modal-body p {
+    padding: 4px 18px;
+  }
+}
+body .modal .modal-content .modal-body #user-login-form {
+  width: 66%;
+  margin: 0 auto 0;
+}
+body .modal .modal-content .modal-body .text-muted {
+  display: none;
+}
+body .modal .modal-content .modal-body .form-text {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+body .modal .modal-content .modal-body .form-control {
+  font-size: 11px;
   font-style: italic;
+  background-color: #d7d7d7;
+  border: 1px solid #979797;
+}
+body .modal .modal-content .modal-body label {
+  display: none;
+}
+body .modal .modal-content .modal-body .btn {
+  font-size: 11px;
+  width: 100%;
+  margin-top: 2rem;
+}
+body .modal .modal-content .modal-body span {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 83%;
+  bottom: 4rem;
+  font-size: 12px;
+  font-style: italic;
+}
+body .modal .modal-content .modal-footer {
+  border-top: none;
+  flex-direction: column;
+  /* Associate Button Spacing */
+  /* Lock Image Alignment */
+}
+body .modal .modal-content .modal-footer span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 1rem;
+}
+body .modal .modal-content .modal-footer span a {
+  font-weight: bold;
+}
+body .modal .modal-content .modal-footer img {
+  width: 65px;
+  height: 65px;
+  align-self: end;
 }
 
 #teaser {

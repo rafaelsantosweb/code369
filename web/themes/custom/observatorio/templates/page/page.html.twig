@@ -124,24 +124,26 @@
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Observatório Firjan</h5>
+        <img src='{{ base_path ~ directory }}/images/logo_firjan_default.svg'/>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">X Fechar</span>
         </button>
       </div>
       <div class="modal-body">
-        <h2>Conteúdo exclusivo para associado Firjan.</h2>
+        <img src='{{ base_path ~ directory }}/images/generic_user_profile.svg'/>
+        <h2>Conteúdo exclusivo para associado Firjan</h2>
         <p class='info'>
           Para acessar, insira seu E-mail e Senha (os mesmos da Plataforma do Associado)
         </p>
 
         {# embed the user login form #}
         {{ user_login }}
+        <span id='forgot'><a href='/user/password'>Esqueci minha senha.</a></span>
 
       </div>
       <div class="modal-footer">
-        <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
-        <span id='forgot'><a href='/user/password'>Esqueci minha senha.</a></span>
+      <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
+        <img src='{{ base_path ~ directory }}/images/lock_icon.svg'/>        
         {# <button type="button" class="btn btn-primary">Save changes</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> #}
       </div>
