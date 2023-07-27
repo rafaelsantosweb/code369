@@ -1,0 +1,24 @@
+uuid: 4029fe54-e391-4052-bf2e-99f8884b28ba
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.body.field_body_resume
+    - field.field.paragraph.body.field_restrito
+    - paragraphs.paragraphs_type.body
+  module:
+    - text
+id: paragraph.body.default
+targetEntityType: paragraph
+bundle: body
+mode: default
+content:
+  field_body_resume:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_restrito: true

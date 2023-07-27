@@ -1,0 +1,23 @@
+uuid: 14edd7d4-d750-46c1-8536-3c2040dbf221
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_restrito
+    - paragraphs.paragraphs_type.iframe
+id: paragraph.iframe.field_restrito
+field_name: field_restrito
+entity_type: paragraph
+bundle: iframe
+label: Restrito
+description: 'Conteudo restrito para usuários autenticados.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

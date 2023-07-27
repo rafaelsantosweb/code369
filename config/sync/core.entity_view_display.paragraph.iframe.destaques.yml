@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.destaques
     - field.field.paragraph.iframe.field_iframe
+    - field.field.paragraph.iframe.field_restrito
     - field.field.paragraph.iframe.field_title
     - paragraphs.paragraphs_type.iframe
 id: paragraph.iframe.destaques
@@ -22,3 +23,4 @@ content:
     region: content
 hidden:
   field_iframe: true
+  field_restrito: true

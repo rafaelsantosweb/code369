@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.iframe.field_iframe
+    - field.field.paragraph.iframe.field_restrito
     - field.field.paragraph.iframe.field_title
     - paragraphs.paragraphs_type.iframe
   module:
@@ -15,11 +16,18 @@ mode: default
 content:
   field_iframe:
     type: link_default
-    weight: 1
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_restrito:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_title:
     type: string_textfield

@@ -1,24 +1,27 @@
-uuid: a54b6252-507d-4a47-be9b-38d027b0d61c
+uuid: 5c7abd0a-97be-4235-82ac-f173f01c81da
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.field.paragraph.attachments.field_file
-    - field.field.paragraph.attachments.field_restrito
-    - paragraphs.paragraphs_type.attachments
+    - field.field.paragraph.body.field_body_resume
+    - field.field.paragraph.body.field_restrito
+    - paragraphs.paragraphs_type.body
   module:
-    - file
-id: paragraph.attachments.default
+    - text
+id: paragraph.body.default
 targetEntityType: paragraph
-bundle: attachments
+bundle: body
 mode: default
 content:
-  field_file:
-    type: file_generic
+  field_body_resume:
+    type: text_textarea_with_summary
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   field_restrito:
     type: boolean_checkbox

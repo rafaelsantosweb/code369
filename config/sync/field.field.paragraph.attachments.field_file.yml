@@ -13,7 +13,7 @@ entity_type: paragraph
 bundle: attachments
 label: Arquivo
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -22,6 +22,6 @@ settings:
   handler_settings: {  }
   file_directory: 'attachments/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'txt pdf doc docx xls xlsx rtf csv'
-  max_filesize: ''
+  max_filesize: '5 mb'
   description_field: true
 field_type: file

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.iframe.field_iframe
+    - field.field.paragraph.iframe.field_restrito
     - field.field.paragraph.iframe.field_title
     - paragraphs.paragraphs_type.iframe
   module:
@@ -33,4 +34,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_restrito: true
