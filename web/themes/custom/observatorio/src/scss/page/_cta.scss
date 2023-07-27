@@ -1,3 +1,26 @@
-body .text {
-  font-size: 12px ;
+body {
+  .text {
+    // font-size: 16px;
+  }
+
+  &.node-type--detail {
+    .button {
+      @include button;
+      font-size: 16px;
+      font-weight: bold;
+
+      &.btn {
+        background: linear-gradient(0deg, rgba(0, 59, 209, 0), rgba(0, 59, 209, 0)), linear-gradient(0deg, #0E65E5, #0E65E5);
+        border: 1px solid #003BD1;
+
+        a {
+          color: $white;
+        }
+      }
+
+      &.btn-lg {
+        width: 100%;
+      }
+    }
+  }
 }
