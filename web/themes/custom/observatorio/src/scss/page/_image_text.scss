@@ -4,8 +4,9 @@
 
  .paragraph_left,
  .paragraph_right {
-   float: left;
    width: 50%;
+   display: table-cell;
+   vertical-align: top;
  }
 
  .field--name-field-image {
@@ -42,4 +43,14 @@
    }
  }
  
+}
+
+// custom mobile
+@media (max-width: 980px) {
+
+  .paragraph_left, .paragraph_right {
+    width: 100%;
+    display: block !important;
+  }
+
 }
