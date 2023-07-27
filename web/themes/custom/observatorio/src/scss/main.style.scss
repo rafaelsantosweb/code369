@@ -277,12 +277,6 @@ body {
           top: 3.1rem;
           width: 20px;
 
-          /* Larger Resolutions */
-          /*@media (max-width: 990px){
-            left: 45%;
-            top: 4.5rem;
-          }*/
-
           /* Tablet or iPad */
           @media (max-width: 990px) {
             left: 45%;
@@ -506,4 +500,5 @@ body {
     top: 15%;
     width: 30%;
   }
+
 }
