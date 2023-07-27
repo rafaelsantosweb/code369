@@ -1,0 +1,91 @@
+.paragraph--type--destaques {
+ display: block;
+ color: $grey-300;
+ padding: 80px;
+ background: url('../../images/binary.svg') no-repeat 0 -210px;
+ background-color: $gray-200;
+
+ .field--type-string,
+ .field--type-text-long p {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding: 0 15%;
+   text-align: center;
+ }
+
+ .field--name-field-title {
+   font-size: 22px;
+   line-height: 27px;
+   font-weight: 600;
+ }
+
+ .field--name-field-body {
+   font-size: 15px;
+   line-height: 19px;
+ }
+
+ .button {
+   @include button;
+
+   a {
+     display: inline-flex;
+     width: 7rem;
+     height: 2rem;
+     justify-content: center;
+     align-items: center;
+   }
+ }
+
+ .view-content {
+   #tns1 {
+     display: flex;
+   }
+
+   .tns-nav {
+     button {
+       background: $white;
+       border: 1px solid #f7f7f7;
+       box-shadow: 0px 1px 2px rgba(0, 0, 0, 25%);
+
+       &.tns-nav-active {
+         background-color: $blue-50;
+         border: 2px solid $white;
+       }
+     }
+   }
+
+   .tns-item {
+     background-color: $white;
+     border-radius: 20px;
+     margin: 0 20px;
+     padding: 35px 40px;
+
+     min-width: 490px;
+     flex: 1;
+
+     .views-field-field-image {
+       float: left;
+       margin-right: 30px;
+       height: 100%;
+     }
+
+     .views-field-field-title {
+       font-size: 18px;
+       font-weight: 700;
+       line-height: 22px;
+       padding-bottom: .5rem;
+     }
+
+     .views-field-field-body {
+       font-size: 16px;
+       line-height: 21px;
+       padding-bottom: .5rem;
+
+       p {
+         text-align: justify;
+       }
+     }
+   }
+  }
+ }

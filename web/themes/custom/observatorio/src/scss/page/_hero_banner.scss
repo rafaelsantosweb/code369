@@ -1,0 +1,134 @@
+
+  // big hero image
+  #hero-banners {
+   left: 0;
+   right: 0;
+   position: relative;
+   overflow: hidden;
+
+   .tns-nav {
+     position: absolute;
+     top: 84%;
+     width: 100%;
+     z-index: 100;
+   }
+
+   .my-slider {
+     display: inline-flex;
+   }
+
+   // Special classes used by the theme for the hero banner image, if dark or bright
+   .hero-wrapper.dark {
+     color: $black;
+   }
+
+   .hero-wrapper.bright {
+     color: $white;
+   }
+
+   .hero-banner {
+     height: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     position: relative;
+     z-index: 10;
+
+     img {
+       object-fit: cover;
+       width: 100%;
+       max-height: 650px;
+       /* Sets the maximum size of the hero banner div */
+       min-height: 340px;
+       /* Sets the minimum size of the hero banner div */
+     }
+
+     .field {
+       position: relative;
+       z-index: 1;
+     }
+   }
+
+   img.faixa {
+     bottom: -1%;
+     left: 0;
+     position: absolute;
+     width: 100%;
+   }
+ }
+
+ .paragraph--type--hero-banner {
+   display: block;
+   padding: 0;
+
+   .hero-wrapper {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 2%;
+     position: absolute;
+     top: 30%;
+     width: 100%;
+
+     .field--name-field-title {
+       font-size: clamp(1.5em, 1em + 2vw, 3.5em);
+       line-height: 1.1 !important;
+       text-align: center;
+       width: 80%;
+     }
+
+     .field--name-field-body {
+       padding: 0 12px;
+       font-size: clamp(0.5em, 1em + 0.10vw, 3.5em);
+       width: 100%;
+     }
+   }
+
+   .field--name-field-title {
+     font-size: 50px;
+     line-height: 62px;
+     // padding: 1rem 0;
+   }
+
+   .field--name-field-body {
+     font-size: 18px;
+     line-height: 30px;
+     margin: 0 auto;
+     text-align: center;
+     width: 70%;
+   }
+
+   .field--name-field-image {
+     display: none;
+     // left: 0;
+     // right: 0;
+     // position: absolute;
+     // z-index: -1;
+
+     // img {
+     //   object-fit: cover;
+     //   width: 100%;
+     // }
+   }
+
+   .field--name-field-paragraph-cta .field--name-field-link {
+     border-color: $white;
+     display: flex;
+     justify-content: center;
+   }
+
+   .field--name-field-paragraph-cta .field--name-field-link,
+   .button {
+     @include button;
+     border-color: $white;
+
+     a {
+       padding: 5px 16px;
+       color: $white;
+     }
+
+     &::after {
+       color: $white;
+     }
+   }
+ }
