@@ -27,11 +27,11 @@ body {
 
   .block--navegacaoprincipal {
     width: 60%;
-    top: 18px;
+    /* top: 18px; */
 
-    @media(max-width: 990px) {
-      display: none;
-    }
+  /*   @media(max-width: 990px) {
+    display: none;
+    } */
 
     ul.nav {
       background-color: $white;
