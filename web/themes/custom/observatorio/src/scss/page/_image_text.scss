@@ -5,12 +5,10 @@
   &.text_image {
     display: flex;
     flex-direction: row-reverse;
-    position: relative;
-    top: -10rem;
+    margin-top: -10rem;
 
     .paragraph_left {
-      position: relative;
-      top: -10rem;
+      margin-top: -10rem;
       z-index: 10;
     }
   }
