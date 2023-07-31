@@ -1,54 +1,68 @@
 .paragraph--type--image-text {
- color: #444444;
- padding: 5rem 0;
+  color: #444444;
+  padding: 5rem 0;
 
- .paragraph_left,
- .paragraph_right {
-   width: 50%;
-   display: table-cell;
-   vertical-align: top;
- }
+  &.text_image {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -10rem;
 
- .field--name-field-image {
-   width: 50%;
-   float: left;
+    .paragraph_left {
+      position: relative;
+      top: -10rem;
+      z-index: 10;
+    }
+  }
 
-   img {
-     width: 100%;
-     padding: 0 .3rem;
-   }
- }
+  .paragraph_left,
+  .paragraph_right {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+  }
 
- .field--name-field-text {
-   font-size: 18px;
-   line-height: 30px;
- }
+  .field--name-field-image {
+    width: 50%;
+    float: left;
 
- .field--name-field-title {
-   font-weight: 600;
-   font-size: 16px;
-   line-height: 20px;
- }
+    img {
+      width: 100%;
+      padding: 0 .3rem;
+    }
+  }
 
- .field--name-field-body {
-   h2 {
-     font-size: 28px;
-     line-height: 35px;
-     margin: 1.5rem 0;
-   }
+  .field--name-field-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-   h3 {
-     font-size: 24px;
-     line-height: 35px;
-   }
- }
- 
+  .field--name-field-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .field--name-field-body {
+    h2 {
+      font-size: 28px;
+      line-height: 35px;
+      margin: 1.5rem 0;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
 }
 
 // custom mobile
 @media (max-width: 980px) {
 
-  .paragraph_left, .paragraph_right {
+  .paragraph_left,
+  .paragraph_right {
     width: 100%;
     display: block !important;
   }

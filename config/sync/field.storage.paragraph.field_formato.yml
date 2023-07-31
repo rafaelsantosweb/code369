@@ -1,0 +1,27 @@
+uuid: d3200fe4-b757-4d26-bdb9-4d9a2a9e88a9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_formato
+field_name: field_formato
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image_text
+      label: 'Imagem e Texto'
+    -
+      value: text_image
+      label: 'Texto e Imagem'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

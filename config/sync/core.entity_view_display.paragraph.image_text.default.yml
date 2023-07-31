@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image_text.field_body
+    - field.field.paragraph.image_text.field_formato
     - field.field.paragraph.image_text.field_image
     - field.field.paragraph.image_text.field_paragraph_cta
     - field.field.paragraph.image_text.field_title
@@ -49,4 +50,5 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-hidden: {  }
+hidden:
+  field_formato: true

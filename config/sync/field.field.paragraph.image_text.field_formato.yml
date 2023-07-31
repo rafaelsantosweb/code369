@@ -1,0 +1,23 @@
+uuid: 8526ef6a-7347-45c9-ab4c-c97a660daa3b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formato
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - options
+id: paragraph.image_text.field_formato
+field_name: field_formato
+entity_type: paragraph
+bundle: image_text
+label: Formato
+description: 'Escolha qual o formato que o componente será apresentado na página.'
+required: true
+translatable: false
+default_value:
+  -
+    value: image_text
+default_value_callback: ''
+settings: {  }
+field_type: list_string

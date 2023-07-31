@@ -49,5 +49,11 @@ function observatorio_preprocess_paragraph(&$vars) {
       // dump($content);
       $content = array_diff_key($content, array_flip($remove));
     }
+    //* *********************** conteudos restritos *//
+
+    elseif ($paragraph->hasField('field_formato')) {
+      // Injecta a escolha do campo formato como classe no parágrafo.
+      $vars['attributes']['class'][] = $paragraph->field_formato->value;
+    }
   }
 }
