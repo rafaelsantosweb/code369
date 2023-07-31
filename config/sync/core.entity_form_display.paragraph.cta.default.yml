@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.cta.field_link
+    - field.field.paragraph.cta.field_restrito
     - paragraphs.paragraphs_type.cta
   module:
     - link
@@ -19,6 +20,13 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_restrito:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
 hidden:
   created: true

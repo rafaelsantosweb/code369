@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.cta.field_link
+    - field.field.paragraph.cta.field_restrito
     - paragraphs.paragraphs_type.cta
   module:
     - link
@@ -24,4 +25,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_restrito: true
