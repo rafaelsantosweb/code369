@@ -1,11 +1,20 @@
+.paragraph_image_text{
+  background-color: #F2F2F2;
+}
+
 .paragraph--type--image-text {
- color: #444444;
- padding: 5rem 0;
+  color: #444444;
+  padding: 5rem 0;
+  overflow: auto;
 
  .paragraph_left,
  .paragraph_right {
    float: left;
    width: 50%;
+
+  .field--name-field-paragraph-cta{
+    justify-content: flex-start !important;
+  }
  }
 
  .field--name-field-image {
