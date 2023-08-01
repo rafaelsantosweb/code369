@@ -35,15 +35,18 @@
 
   .paragraph--type--image-text {
     padding: 1rem 0 !important;
+    display: flex !important;
+    flex-direction: column-reverse;
+    text-align: start !important;
   }
 
   .paragraph--type--destaques .views-view-grid .views-row {
     width: 100%; 
   }
 
-  body main .paragraph {
+  /* body main .paragraph {
     display: inline !important; 
-  }
+  } */
 
   .paragraph_left {
     min-width: 100%;
@@ -51,15 +54,22 @@
     padding: 10px; 
   }
 
-  .paragraph_right .field--name-field-body h2  {
-    font-size: 25px;
-    text-align: center;
-  }
-
   .paragraph_right {
     min-width: 100%;
     display: inline;
-    padding: 10px; 
+    padding: 0.5rem 3rem; 
+    
+    .field--name-field-body h2  {
+      font-size: 20px !important;
+      line-height: 25px !important;
+      /* text-align: center; */
+      text-align: start;
+    }
+    .field--name-field-body p {
+      font-size: 13px;
+      font-weight: 400;
+    }
+
   }
 
   .pilares .views-col .col-1 {
