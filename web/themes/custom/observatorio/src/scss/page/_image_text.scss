@@ -1,4 +1,4 @@
-.paragraph_image_text{
+.paragraph_image_text {
   background-color: #F2F2F2;
 }
 
@@ -7,15 +7,10 @@
   padding: 5rem 0;
   overflow: auto;
 
- .paragraph_left,
- .paragraph_right {
-   float: left;
-   width: 50%;
-
-  .field--name-field-paragraph-cta{
-    justify-content: flex-start !important;
-  }
- }
+  &.text_image {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -10rem;
 
     .paragraph_left {
       margin-top: -10rem;
@@ -25,45 +20,59 @@
 
   .paragraph_left,
   .paragraph_right {
-    width: 50%;
-    display: table-cell;
-    vertical-align: top;
-  }
-
-  .field--name-field-image {
-    width: 50%;
     float: left;
+    width: 50%;
 
-    img {
-      width: 100%;
-      padding: 0 .3rem;
+    .field--name-field-paragraph-cta {
+      justify-content: flex-start !important;
     }
   }
 
-  .field--name-field-text {
-    font-size: 18px;
-    line-height: 30px;
+  .paragraph_left {
+    margin-top: -10rem;
+    z-index: 10;
+  }
+}
+
+.paragraph_left,
+.paragraph_right {
+  width: 50%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.field--name-field-image {
+  width: 50%;
+  float: left;
+
+  img {
+    width: 100%;
+    padding: 0 .3rem;
+  }
+}
+
+.field--name-field-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.field--name-field-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.field--name-field-body {
+  h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin: 1.5rem 0;
   }
 
-  .field--name-field-title {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+  h3 {
+    font-size: 24px;
+    line-height: 35px;
   }
-
-  .field--name-field-body {
-    h2 {
-      font-size: 28px;
-      line-height: 35px;
-      margin: 1.5rem 0;
-    }
-
-    h3 {
-      font-size: 24px;
-      line-height: 35px;
-    }
-  }
-
 }
 
 // custom mobile
