@@ -10,6 +10,9 @@
 <div class="page">
 
   {% block banner %}
+
+  {{ attach_library('tiny_slider/tiny_slider') }}
+
   <div id='hero-banners'>
     <div id='the-banners' {% if heros|length > 1 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
       {% for hero in heros %}
@@ -174,7 +177,7 @@
       </div>
       <div class="modal-footer">
       <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
-        <img src='{{ base_path ~ directory }}/images/lock_icon.svg'/>        
+        <img src='{{ base_path ~ directory }}/images/lock_icon.svg'/>
         {# <button type="button" class="btn btn-primary">Save changes</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> #}
       </div>
