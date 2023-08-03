@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.destaques.field_body
+    - field.field.paragraph.destaques.field_pilares
     - field.field.paragraph.destaques.field_title
     - field.field.paragraph.destaques.field_view
     - paragraphs.paragraphs_type.destaques
@@ -21,6 +22,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_pilares:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_title:
     type: string

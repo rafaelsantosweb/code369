@@ -1,0 +1,31 @@
+uuid: 195d0fb2-1ad9-4041-8c4e-74884740a497
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_revision_delete
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_revision_delete:
+    amount:
+      status: false
+      settings:
+        amount: 0
+    created:
+      status: false
+      settings:
+        age: 1
+    drafts:
+      status: false
+      settings:
+        age: 1
+name: Estudos
+type: estudos
+description: 'Páginas de Estudos e Publicações'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

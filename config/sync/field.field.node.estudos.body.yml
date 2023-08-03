@@ -1,0 +1,24 @@
+uuid: 138b8eb8-7402-4489-8c41-28d0717bc6ae
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.estudos
+  module:
+    - text
+id: node.estudos.body
+field_name: body
+entity_type: node
+bundle: estudos
+label: Chamada
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,29 @@
+uuid: 08f1860d-48f0-4bc7-b2bf-a3b537797bef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.estudos
+    - taxonomy.vocabulary.categoria
+id: node.estudos.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: estudos
+label: Categoria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria: categoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categoria
+field_type: entity_reference

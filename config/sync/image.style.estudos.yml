@@ -1,0 +1,14 @@
+uuid: b65a399d-5210-4adf-893e-65e1e23e3845
+langcode: pt-br
+status: true
+dependencies: {  }
+name: estudos
+label: Estudos
+effects:
+  e16aa979-6afa-470d-b387-95a1567a3f61:
+    uuid: e16aa979-6afa-470d-b387-95a1567a3f61
+    id: image_resize
+    weight: 1
+    data:
+      width: 150
+      height: 212

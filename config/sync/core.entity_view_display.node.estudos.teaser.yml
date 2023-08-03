@@ -1,0 +1,41 @@
+uuid: 3a576226-7bb2-4587-8b89-7a2cc802e9c7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.estudos.body
+    - field.field.node.estudos.field_access
+    - field.field.node.estudos.field_categoria
+    - field.field.node.estudos.field_content
+    - field.field.node.estudos.field_imagem
+    - field.field.node.estudos.field_metatags
+    - node.type.estudos
+  module:
+    - text
+    - user
+id: node.estudos.teaser
+targetEntityType: node
+bundle: estudos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_access: true
+  field_categoria: true
+  field_content: true
+  field_imagem: true
+  field_metatags: true
+  langcode: true

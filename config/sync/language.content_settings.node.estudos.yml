@@ -1,0 +1,11 @@
+uuid: d6a58fe8-e9a4-4659-9eb7-6fd8610d2da9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.estudos
+id: node.estudos
+target_entity_type_id: node
+target_bundle: estudos
+default_langcode: site_default
+language_alterable: false

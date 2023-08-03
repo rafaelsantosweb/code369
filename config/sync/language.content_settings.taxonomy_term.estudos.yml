@@ -1,0 +1,11 @@
+uuid: c0fc6e6a-ea35-43ae-9fc2-bda87dacdc38
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estudos
+id: taxonomy_term.estudos
+target_entity_type_id: taxonomy_term
+target_bundle: estudos
+default_langcode: site_default
+language_alterable: false

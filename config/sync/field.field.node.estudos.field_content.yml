@@ -1,0 +1,64 @@
+uuid: ac9e3523-289a-4167-9e1d-369ad619dd86
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.estudos
+    - paragraphs.paragraphs_type.slide
+  module:
+    - entity_reference_revisions
+id: node.estudos.field_content
+field_name: field_content
+entity_type: node
+bundle: estudos
+label: Conteúdo
+description: 'Os módulos para compor o conteúdo da página'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    negate: 1
+    target_bundles_drag_drop:
+      attachments:
+        weight: 9
+        enabled: false
+      block:
+        weight: 10
+        enabled: false
+      body:
+        weight: 15
+        enabled: false
+      cta:
+        weight: 11
+        enabled: false
+      destaques:
+        weight: 12
+        enabled: false
+      hero_banner:
+        weight: 2
+        enabled: false
+      hero_slider:
+        weight: 19
+        enabled: false
+      iframe:
+        weight: 20
+        enabled: false
+      image:
+        weight: 21
+        enabled: false
+      image_text:
+        weight: 14
+        enabled: false
+      slide:
+        weight: 15
+        enabled: true
+      views:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

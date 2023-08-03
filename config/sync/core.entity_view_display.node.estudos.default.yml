@@ -1,0 +1,41 @@
+uuid: 1a733745-5cd6-4a04-8182-f641c44ae6de
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.estudos.body
+    - field.field.node.estudos.field_access
+    - field.field.node.estudos.field_categoria
+    - field.field.node.estudos.field_content
+    - field.field.node.estudos.field_imagem
+    - field.field.node.estudos.field_metatags
+    - node.type.estudos
+  module:
+    - entity_reference_revisions
+    - user
+id: node.estudos.default
+targetEntityType: node
+bundle: estudos
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_access: true
+  field_categoria: true
+  field_imagem: true
+  field_metatags: true
+  langcode: true

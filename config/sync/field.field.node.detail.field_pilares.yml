@@ -1,0 +1,21 @@
+uuid: 8bf2520d-9cd3-4456-b952-6742bbba2d2c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pilares
+    - node.type.detail
+id: node.detail.field_pilares
+field_name: field_pilares
+entity_type: node
+bundle: detail
+label: Pilares
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

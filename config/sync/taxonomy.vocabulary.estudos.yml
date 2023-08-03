@@ -1,0 +1,8 @@
+uuid: d2f615fc-e169-471b-86c5-13f146253c93
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Estudos
+vid: estudos
+description: ''
+weight: 0

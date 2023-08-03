@@ -9,8 +9,8 @@ definitions:
     expanded: false
     weight: -47
   user__logout:
-    weight: -45
+    enabled: false
     menu_name: main
     parent: ''
     expanded: false
-    enabled: true
+    weight: -45

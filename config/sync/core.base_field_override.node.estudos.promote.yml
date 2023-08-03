@@ -1,0 +1,22 @@
+uuid: a8906013-17ee-4eb6-97be-11e837a70e56
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.estudos
+id: node.estudos.promote
+field_name: promote
+entity_type: node
+bundle: estudos
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean
