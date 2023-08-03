@@ -1,6 +1,68 @@
 // custom mobile
 @media (max-width: 980px) {
 
+
+
+  footer.page__footer .container {
+    padding: 10px 0 !important;
+  }
+  
+  footer.page__footer {
+    text-align: center;
+  }
+  /* Footer Links */
+  
+  footer.page__footer .block.block--system-menu {
+    min-width: 100%;
+    margin: 2em auto 1em;
+    padding: 0 !important;
+    ::after {
+      width: 65px !important;
+      margin: 20px auto 15px !important;
+    }
+  
+  }
+  
+  /* Footer Logos */
+  footer.page__footer .block.block--marcas {
+    padding: 0 !important;
+    p {
+      display: none;
+    }
+  }
+  
+  /* Footer Input */
+  footer.page__footer form input[type=search] {
+    font-style: italic;
+    font-size: 13px;
+    width: 65%;
+    margin: 1em auto;
+  }
+  
+  /* Footer Searchbox */
+  footer.page__footer .block.block--footer-searchbox {
+    margin: 0.5em 0 2em;
+    padding: 0 !important;
+    h2 {
+      display: none;
+    }
+  }
+  
+  /* Footer Socials */
+  footer.page__footer .block.block--redessociais {
+    padding: 0 !important;
+    p > a > img {
+      margin: 0.5em 0.5em !important;
+    }
+    ::after {
+      display: none;
+    }
+  
+  }
+
+
+footer.page__footer .container {
+
   .paragraph--type--hero-banner .field--name-field-title {
     font-size: 26px;
     line-height: 20px;
@@ -293,59 +355,9 @@ body {
   // }
 }
 
-footer.page__footer .container {
-  padding: 10px 0 !important;
-}
 
-footer.page__footer {
-  text-align: center;
-}
 
-/* Footer Links */
-footer.page__footer .block.block--system-menu {
-  min-width: 100%;
-  margin: 2em auto 1em;
-  padding: 0 !important;
-  ::after {
-    width: 65px !important;
-    margin: 20px auto 15px !important;
-  }
 
-}
 
-/* Footer Logos */
-footer.page__footer .block.block--marcas {
-  padding: 0 !important;
-  p {
-    display: none;
-  }
-}
 
-/* Footer Input */
-footer.page__footer form input[type=search] {
-  font-style: italic;
-  font-size: 13px;
-  width: 65%;
-  margin: 1em auto;
-}
 
-/* Footer Searchbox */
-footer.page__footer .block.block--footer-searchbox {
-  margin: 0.5em 0 2em;
-  padding: 0 !important;
-  h2 {
-    display: none;
-  }
-}
-
-/* Footer Socials */
-footer.page__footer .block.block--redessociais {
-  padding: 0 !important;
-  p > a > img {
-    margin: 0.5em 0.5em !important;
-  }
-  ::after {
-    display: none;
-  }
-
-}
