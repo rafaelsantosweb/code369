@@ -26,27 +26,31 @@ body {
   }
 
   .block--navegacaoprincipal {
-    width: 60%;
-    /* top: 18px; */
+    // width: 60%;
+    // top: 18px;
 
-  /*   @media(max-width: 990px) {
-    display: none;
-    } */
+    @media (max-width: 990px) {
+      display: none;
+    }
 
     ul.nav {
       background-color: $white;
       flex-direction: row;
       justify-content: flex-end;
-      right: 10%;
-      position: absolute;
+      // right: 10%;
+      // position: absolute;
       z-index: 10;
+      padding: 0;
+      margin: 0;
+      height: 52px;
+      align-items: center;
 
       li {
         // flexbox side by side
         // align-items: center;
         // justify-content: center;
         display: inline;
-        padding: 0 .5rem;
+        padding: 0 0.9rem;
 
         a {
           color: $black;
@@ -55,6 +59,7 @@ body {
     }
   }
 
+/*
   #search-block-form {
     text-align: right;
 
@@ -71,6 +76,7 @@ body {
       display: block;
     }
   }
+*/
 
   // Altera as abas para ficarem fixas no fim da tela
   .block--observatorio-primary-local-tasks {
@@ -166,6 +172,13 @@ body {
       .view-content {
         display: flex;
         width: 100%;
+        gap: 40px;
+        @media (max-width: 990px) {
+          flex-wrap: wrap;
+          padding-bottom: 1rem;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
 
         .views-infinite-scroll-content-wrapper {
           display: flex;
@@ -177,20 +190,60 @@ body {
           background-color: $white;
           border-radius: 10px;
           box-shadow: 0px 3px 1px $blue-50;
-          margin: 1rem;
-          height: 336px;
-          padding: 10px;
+          padding: 39px 56px 26px;
           text-align: center;
-          width: 31%;
+          flex: 0 0 33.3333%;
+          width: 33.3333%;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
 
-          .field--name-field-image {
-            background-color: orange;
+          @media (max-width: 990px) {
+            width: 100%;
+            flex: 0 0 100%;
+            & + .views-row {
+              margin-top: 1rem;
+            }
           }
 
+          .views-field-field-image {
+            margin-bottom: 19px;
+            img {
+              width: 100%;
+              max-width: 110px;
+              height: auto;
+            }
+          }
+
+          .views-field-field-title {
+            color: #444;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            margin-bottom: 11px;
+          }
+
+          .views-field-field-body {
+            margin-bottom: 15px;
+            p {
+              color: #444;
+              text-align: center;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin: 0;
+              & + p {
+                margin-top: 1rem;
+              }
+            }
+          }
         }
       }
     }
 
+    
      .front .paragraph_block {
       background-color: $blue-500;
       color: $white;

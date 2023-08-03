@@ -3082,6 +3082,20 @@ __webpack_require__.r(__webpack_exports__);
   });
 })(jQuery);
 
+// jquery mobile
+(function ($) {
+  var $headerMobileToggleContainer = document.createElement('div');
+  var $headerMobileToggle = document.createElement('div');
+  $($headerMobileToggleContainer).addClass('header-mobile-toggle-container');
+  $($headerMobileToggle).addClass('header-mobile-toggle');
+  $($headerMobileToggleContainer).append($headerMobileToggle);
+  $('header.page__header').append($headerMobileToggleContainer);
+  $($headerMobileToggleContainer).on('click', function (e) {
+    $('body').toggleClass('header-mobile-open');
+  });
+  $('header ul.nav').append("<li class=\"nav-item show-mobile search-button\">\n<a href=\"/search/node\" class=\"nav-link\" data-drupal-link-system-path=\"/search/node\">Buscar</a>\n</li>");
+})(jQuery);
+
 /***/ }),
 
 /***/ "./node_modules/bootstrap/js/dist/alert.js":
