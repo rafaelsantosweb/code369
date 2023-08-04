@@ -97,8 +97,6 @@ body.node-type--detail {
   }
 }
 
-
-
 .node-type--detail, .node-type--estudos {
 
   .block--navegacaoprincipal ul.nav {
@@ -113,7 +111,12 @@ body.node-type--detail {
   }
 
   .block--navegacaoprincipal ul.nav li a {
-    color: #fff !important;
+    color: #fff;
+  }
+
+  .paragraph_right .field--name-field-title {
+    color: #fff;
+    margin-bottom: 20px;
   }
 
 }
