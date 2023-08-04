@@ -236,7 +236,6 @@ body {
           display: flex;
           justify-content: flex-end;
           flex-direction: column;
-          margin-bottom: 20px;
 
           @media (max-width: 990px) {
             width: 100%;
@@ -675,6 +674,10 @@ body {
 
 
 
+
+
+
+
 .header-mobile-toggle-container {
   display: none;
   cursor: pointer;
@@ -770,7 +773,6 @@ body {
   margin-top: 22px;
 }  
 
-
 .view-content .views-row {
   background-color: #ffffff;
   border-radius: 10px;
@@ -784,7 +786,6 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-
 
 .node-type--estudos #hero-banners .hero-banner img {
   -o-object-fit: cover;
