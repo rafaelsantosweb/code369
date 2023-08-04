@@ -37,10 +37,36 @@
    }
  }
 
+ 
+ 
  .view-content {
    #tns1 {
      display: flex;
    }
+   
+   .views-row:hover{
+      transition: 500ms;
+      background-color: #0E65E5;
+      
+      p{
+        color: white !important
+      }
+      .views-field-field-title{
+        color: white !important
+      }
+
+      .button{
+        border-color: #f7f7f7;
+        
+        > a{
+          color: #f7f7f7;
+        }
+        a:hover{
+          color: black;
+          background-color: white;
+        }
+      }
+    }
 
    .tns-nav {
      button {
