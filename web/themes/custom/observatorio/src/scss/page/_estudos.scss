@@ -17,7 +17,9 @@
       width: 100%;
     }
 
+    /* Row - White Card Box Style */
     .views-row {
+      background-color: white;
       border-radius: 6px;
       padding: 30px 25px 26px;
       flex: 0 0 33.3333%;
@@ -47,6 +49,12 @@
         text-align: left;
       }
 
+      /* Row - Card Content Alignment (a & p) */
+      .views-field-title, p {
+        width: 45%;
+        float: right;
+      }
+
       .views-field-body {
        color: #444;
        text-align: left;
@@ -64,10 +72,6 @@
        align-items: center;
        font-size: 13px;
      }      
-
-
-
     }
   }
 }
-

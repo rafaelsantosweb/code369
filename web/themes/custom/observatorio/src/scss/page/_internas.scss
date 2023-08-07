@@ -61,6 +61,48 @@ body.node-type--detail {
     }
   }
 
+  .block--navegacaoprincipal ul.nav {
+    background-color: transparent !important;
+
+    li > a {
+      color: white !important;
+    }
+  }
+
+  .paragraph--type--image-text.text_image {
+    margin-top: -14rem;
+
+    .paragraph_left {
+      position: relative;
+      top: -25px;
+    }
+
+    .paragraph_right {
+      .field--name-field-title {
+        padding: 1rem 0.25rem 4rem !important;
+      }
+    }
+  }
+
+  .paragraph--type--destaques {
+    .field--name-field-title {
+      padding: 0.5rem 0.25rem !important;
+    }
+
+    .viewsreference--view-title {
+      display: none;
+    }
+
+    .page-title {
+      display: none;
+    }
+  }
+
+  .field--name-field-pilares {
+    display: none;
+  }
+
+
   .paragraph_iframe .paragraph {
     display: flex;
     flex-direction: column;
