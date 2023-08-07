@@ -96,3 +96,31 @@ body.node-type--detail {
     }
   }
 }
+
+.node-type--detail, .node-type--estudos {
+
+  .block--navegacaoprincipal ul.nav {
+      background-color: transparent !important;
+      flex-direction: row;
+      justify-content: flex-end;
+      z-index: 11;
+      padding: 0;
+      margin: 0;
+      height: 52px;
+      align-items: center;
+  }
+
+  .block--navegacaoprincipal ul.nav li a {
+    color: #fff;
+  }
+
+  .paragraph_right .field--name-field-title {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+}
+
+.paragraph--type--image-text .field--name-field-body {
+  margin-bottom: 1.5em;
+}

@@ -32,21 +32,22 @@ import { Toast, Tooltip } from './_bootstrap';
 } )( jQuery );
 
 
-// jquery mobile
+// jquery block
 ( function ( $ ) {
 
-const $headerMobileToggleContainer = document.createElement('div');
-const $headerMobileToggle = document.createElement('div');
-$($headerMobileToggleContainer).addClass('header-mobile-toggle-container');
-$($headerMobileToggle).addClass('header-mobile-toggle');
-$($headerMobileToggleContainer).append($headerMobileToggle);
-$('header.page__header').append($headerMobileToggleContainer);
 
-$($headerMobileToggleContainer).on('click', function(e) {
-			$('body').toggleClass('header-mobile-open');
-});
+  const $headerMobileToggleContainer = document.createElement('div');
+  const $headerMobileToggle = document.createElement('div');
+  $($headerMobileToggleContainer).addClass('header-mobile-toggle-container');
+  $($headerMobileToggle).addClass('header-mobile-toggle');
+	$($headerMobileToggleContainer).append($headerMobileToggle);
+	$('header.page__header').append($headerMobileToggleContainer);
 
-$('header ul.nav').append(`<li class="nav-item show-mobile search-button">
-<a href="/search/node" class="nav-link" data-drupal-link-system-path="/search/node">Buscar</a>
+  $($headerMobileToggleContainer).on('click', function(e) {
+    $('body').toggleClass('header-mobile-open');
+  });
+
+  $('header ul.nav').append(`<li class="nav-item show-mobile search-button">
+  <a href="/search/node" class="nav-link" data-drupal-link-system-path="/search/node">Buscar</a>
 </li>`);
 } )( jQuery );

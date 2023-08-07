@@ -1,0 +1,21 @@
+uuid: 11cf58a8-b5b7-4b0d-8b4c-ea2ed7772cba
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destaque
+    - node.type.estudos
+id: node.estudos.field_destaque
+field_name: field_destaque
+entity_type: node
+bundle: estudos
+label: Destaque
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

@@ -10,19 +10,22 @@
    align-items: center;
    display: flex;
    flex-direction: column;
-   padding: 0 15%;
+   padding: 0 29%;
    text-align: center;
+   line-height: 1.7em;
  }
 
  .field--name-field-title {
-   font-size: 22px;
+  font-family: "Averta", sans-serif;
+  font-size: 22px;
    line-height: 27px;
    font-weight: 600;
  }
 
  .field--name-field-body {
    font-size: 15px;
-   line-height: 19px;
+   line-height: 10px;
+   margin-bottom: 20px
  }
 
  .button {
@@ -30,10 +33,11 @@
 
    a {
      display: inline-flex;
-     width: 7rem;
-     height: 2rem;
+     width: 9rem;
+     height: 0;
      justify-content: center;
      align-items: center;
+     font-size: 13px;
    }
  }
 
@@ -69,9 +73,11 @@
     }
 
    .tns-nav {
-     button {
+    .views-field-view-node, 
+    button {
        background: $white;
        border: 1px solid #f7f7f7;
+       margin-top: 50px;
        box-shadow: 0px 1px 2px rgba(0, 0, 0, 25%);
 
        &.tns-nav-active {
@@ -83,33 +89,66 @@
 
    .tns-item {
      background-color: $white;
-     border-radius: 20px;
+     border-radius: 12px;
      margin: 0 20px;
      padding: 35px 40px;
-
      min-width: 490px;
      flex: 1;
 
-     .views-field-field-image {
+     .views-field-field-imagem,
+     .views-field-field-image .field-content {
        float: left;
        margin-right: 30px;
        height: 100%;
+       font-family: "Averta", sans-serif;
      }
-
+     
+     .views-field-title,
      .views-field-field-title {
        font-size: 18px;
-       font-weight: 700;
+       font-weight: 600;
        line-height: 22px;
        padding-bottom: .5rem;
-     }
+       font-family: "Averta", sans-serif;
+      }
 
+     .views-field-view-node {
+      border: 1px solid #003bd1;
+      border-radius: 5px;
+      color: #003bd1;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      margin: 1rem 0;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      width: 110px;
+      height: 34px;
+      padding: 5;
+      & a {
+      color: #003bd1;
+      font-weight: 600;
+      font-size: 11px;
+      line-height:30px;
+      text-decoration: none;
+      padding: 8px 11px 5px;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      flex: 1;
+      align-self: flex-end;
+    }
+    }
+
+    .views-field-body,
      .views-field-field-body {
        font-size: 16px;
        line-height: 21px;
        padding-bottom: .5rem;
+       font-family: "Averta", sans-serif;
 
        p {
-         text-align: justify;
+         text-align: left;
        }
      }
    }

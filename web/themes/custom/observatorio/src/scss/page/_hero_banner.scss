@@ -63,16 +63,18 @@
      display: flex;
      align-items: center;
      flex-direction: column;
-     margin-top: 2%;
      position: absolute;
-     top: 30%;
+     top: 40%;
      width: 100%;
 
      .field--name-field-title {
-       font-size: clamp(1.5em, 1em + 2vw, 3.5em);
+       font-size: clamp(1.5em, 1em + 2vw, 3.2em);
        line-height: 1.1;
        text-align: center;
        width: 80%;
+       font-family: 'Averta';
+       font-weight: 100;
+       margin-bottom: 10px;
      }
 
      .field--name-field-image {
@@ -84,6 +86,9 @@
        font-size: clamp(0.5em, 1em + 0.10vw, 3.5em);
        width: 800px;
        text-align: center;
+       line-height: 1.8em;
+       font-family: 'Averta';
+       margin-bottom: 5px;
      }
    }
 
@@ -114,6 +119,10 @@
 
   #hero-banners .field--name-field-body {
     width: 100%;
+  }
+
+  .hero-wrapper {
+    top: 30% !important;
   }
 
 }  

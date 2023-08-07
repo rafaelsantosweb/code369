@@ -19,7 +19,7 @@
 
   if (str_contains($form_id, 'node')) {
     // Views que queremos listar para os usuários.
-    $keep_items = ['destaques', 'publicacoes'];
+    $keep_items = ['destaques', 'publicacoes', 'estudos'];
 
     if (isset($form['field_content']))
     foreach ($form['field_content']['widget'] as $key => &$content) {

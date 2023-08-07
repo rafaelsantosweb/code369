@@ -10,8 +10,8 @@ _core:
   default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
 id: observatorio_messages
 theme: observatorio
-region: head_top
-weight: -7
+region: copyright
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

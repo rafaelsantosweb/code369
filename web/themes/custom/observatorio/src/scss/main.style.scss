@@ -1,16 +1,16 @@
 // Bootstrap
 // -----------------------------------------------------------------------------
-@import 'bootstrap';
+@import "bootstrap";
 
 // Parent Drupal related components
 // -----------------------------------------------------------------------------
-@import '../components/offcanvas/offcanvas';
+@import "../components/offcanvas/offcanvas";
 
 // Include any custom stylesheets here
 // -----------------------------------------------------------------------------
 body {
   color: $black;
-  font-family: 'Averta', sans-serif;
+  font-family: "Averta", sans-serif;
 
   .page {
     position: relative;
@@ -21,8 +21,9 @@ body {
   }
 
   .block--system-branding {
-    float: left;
+    // float: left;
     z-index: 99;
+    margin-right: auto;
   }
 
   .block--navegacaoprincipal {
@@ -59,24 +60,35 @@ body {
     }
   }
 
-/*
   #search-block-form {
+    @media (max-width: 990px) {
+      display: none;
+    }
     text-align: right;
 
     > div {
       float: left;
     }
 
-    input[type='search'] {
+    input[type="search"] {
       display: none;
       width: 95%;
     }
 
-    &:hover input[type='search'] {
-      display: block;
+    input[type="submit"] {
+      border-radius: 0;
+      border: 0;
+      width: 44px;
+      height: 52px;
+      font-size: 0;
+      background: url(../../images/icon-search.png) center no-repeat #fff;
+      background-size: 18px;
     }
+
+    // &:hover input[type='search'] {
+    //   display: block;
+    // }
   }
-*/
 
   // Altera as abas para ficarem fixas no fim da tela
   .block--observatorio-primary-local-tasks {
@@ -100,16 +112,17 @@ body {
 
   main {
     font-weight: 400;
+    margin: 40px 0 40px 0;
 
     .page__header {
       position: absolute;
-      top: 32px;
+      top: 50px;
       width: 100%;
 
       .header_container {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        //justify-content: flex-end;
 
         .me-2 {
           height: 5vw;
@@ -130,7 +143,7 @@ body {
     }
 
     .field .field {
-      padding: .5rem .25rem;
+      padding: 0.5rem 0.25rem;
     }
 
     .field--name-field-paragraph-cta {
@@ -190,13 +203,14 @@ body {
           background-color: $white;
           border-radius: 10px;
           box-shadow: 0px 3px 1px $blue-50;
-          padding: 39px 56px 26px;
+          padding: 39px 35px 26px;
           text-align: center;
           flex: 0 0 33.3333%;
           width: 33.3333%;
           display: flex;
           justify-content: flex-end;
           flex-direction: column;
+          margin-bottom: 20px;
 
           @media (max-width: 990px) {
             width: 100%;
@@ -243,15 +257,46 @@ body {
       }
     }
     
-     .paragraph_block {
+    .front .paragraph_block {
       background-color: $blue-500;
-      color: $white;
-      max-height: 175px;
-      padding: 40px 5rem;
+      & + .paragraph_destaques {
+        background-color: $gray-200;
+      }
+      .field {
+        padding: 0;
+      }
+
+      form.webform-submission-contact-form {
+        background-color: $blue-500;
+        color: $white;
+        padding: 20px 5rem;
+        position: relative;
+      }
 
       fieldset {
+        margin: 0 !important;
         legend {
           display: none;
+        }
+
+        .fieldset-wrapper {
+          display: flex;
+          align-items: center;
+          @media (max-width: 990px) {
+            flex-direction: column;
+            align-items: center;
+            #edit-im-icon {
+              margin: 0;
+            }
+            .form-actions input,
+            .form-item input {
+              max-width: 240px;
+              width: 240px;
+            }
+            .form-actions input {
+              margin-top: 41px;
+            }
+          }
         }
 
         #edit-description {
@@ -259,6 +304,7 @@ body {
           font-size: 20px;
           line-height: 25px;
           margin: 0 40px;
+          margin-right: auto;
         }
 
         .form-actions,
@@ -275,18 +321,35 @@ body {
         .form-actions input {
           width: 110px;
         }
-
       }
 
       .form-check {
+        position: absolute;
+        top: auto;
+        bottom: 20px;
+        right: 5rem;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        position: relative;
-        top: -4rem;
+        margin-bottom: 0;
+        min-height: auto;
+        padding: 0;
+
+        @media (max-width: 990px) {
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 77px;
+          label {
+            display: flex;
+            align-items: center;
+          }
+        }
 
         input {
           margin-right: 5px;
+          margin-left: 0;
+          margin-top: 0;
         }
 
         label {
@@ -294,6 +357,19 @@ body {
           font-weight: 300;
           font-size: 11px;
           line-height: 22px;
+          color: #fff;
+          font-size: 11px;
+          font-style: italic;
+          font-weight: 300;
+          line-height: 0px;
+          a {
+            color: #fff;
+            font-size: 11px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 0;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -301,6 +377,7 @@ body {
     .block--tagclouds-block-categoria {
       text-align: center;
       display: flex;
+      margin-top: 3.5em;
 
       @media (max-width: 990px) {
         flex-direction: column-reverse;
@@ -310,6 +387,7 @@ body {
         font-size: 22px;
         font-weight: 600;
         line-height: 27px;
+        margin-top: 25px;
       }
 
       h3 {
@@ -318,8 +396,9 @@ body {
         line-height: 18.5px;
 
         &::before {
-          content: '';
-          background: url('../../images/tagcloud-arrow.svg') no-repeat center $white;
+          content: "";
+          background: url("../../images/tagcloud-arrow.svg") no-repeat center
+            $white;
           display: block;
           position: relative;
           padding: 0 1rem;
@@ -342,7 +421,7 @@ body {
         }
 
         &::after {
-          content: '';
+          content: "";
           display: block;
           margin: 1.7rem auto 2rem;
           width: 82%;
@@ -434,7 +513,7 @@ body {
         button {
           background-color: transparent;
           border: none;
-          color: #AEAEAE;
+          color: #aeaeae;
         }
         span {
           display: inline-block;
@@ -444,7 +523,7 @@ body {
 
       .modal-body {
         padding: 2rem 3rem;
-        
+
         /* Main title */
         h2 {
           font-size: 24px;
@@ -457,26 +536,26 @@ body {
         p {
           color: #444444;
           padding: 4px 195px;
-          @media  (max-width: 990px) {
+          @media (max-width: 990px) {
             padding: 4px 18px;
           }
         }
 
         /* Form */
-        #user-login-form { 
+        #user-login-form {
           width: 66%;
           margin: 0 auto 0;
         }
 
         /* Label Forms */
-        .text-muted{
+        .text-muted {
           display: none;
         }
-        .form-text{
+        .form-text {
           margin-top: 0.5rem;
           margin-bottom: 0.5rem;
         }
-        .form-control{
+        .form-control {
           font-size: 11px;
           font-style: italic;
           background-color: #d7d7d7;
@@ -494,7 +573,7 @@ body {
         }
 
         /* Forgot Password Button */
-        span{
+        span {
           display: flex;
           justify-content: end;
           position: relative;
@@ -508,7 +587,7 @@ body {
       .modal-footer {
         border-top: none;
         flex-direction: column;
-        
+
         /* Associate Button Spacing */
         span {
           font-size: 14px;
@@ -551,5 +630,136 @@ body {
     top: 15%;
     width: 30%;
   }
+}
 
+.header-mobile-toggle-container {
+  display: none;
+  cursor: pointer;
+  @media (max-width: 990px) {
+    position: absolute;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    top: 0;
+    right: 15px;
+    border-radius: 3px;
+  }
+}
+.header-mobile-toggle {
+  display: none;
+  cursor: pointer;
+  @media (max-width: 990px) {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: $white;
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $white;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+      bottom: -10px;
+    }
+  }
+}
+
+body {
+  ul.nav {
+    li.show-mobile {
+      display: none;
+      @media (max-width: 990px) {
+        display: block;
+      }
+    }
+  }
+  &.header-mobile-open {
+    @media (max-width: 990px) {
+      .block--navegacaoprincipal {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 210;
+        ul.nav {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          li + li {
+            margin-top: 1.5rem;
+          }
+        }
+      }
+      .header-mobile-toggle-container {
+        z-index: 220;
+        .header-mobile-toggle {
+          &:before {
+            background-color: #444444;
+            transform: rotate(45deg);
+            top: 0;
+          }
+          &:after {
+            background-color: #444444;
+            transform: rotate(-45deg);
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-block-form {
+  margin-top: 22px;
+}  
+
+/*
+.view-content .views-row {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 1px #3F75FF;
+  padding: 39px 56px 26px;
+  text-align: center;
+  flex: 0 0 33.3333%;
+  width: 33.3333%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 40px;
+}
+*/
+.node-type--estudos #hero-banners .hero-banner img,
+.node-type--estudos #hero-banners .hero-banner img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  max-height: 350px !important;
+}
+
+.view-destaques .tns-outer .tns-nav {
+  margin-top: 4em;
+}
+
+.view-destaques .tns-outer .tns-nav > [aria-controls] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
 }

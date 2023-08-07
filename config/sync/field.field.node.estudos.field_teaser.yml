@@ -1,0 +1,21 @@
+uuid: 92b09cd9-175f-4de5-8a56-2ae8304e7107
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.estudos
+id: node.estudos.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: estudos
+label: Teaser
+description: 'Apresenta apenas algumas linhas do artigo para usuários anônimos.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

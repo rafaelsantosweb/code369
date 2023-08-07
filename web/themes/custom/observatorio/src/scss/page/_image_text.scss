@@ -1,5 +1,6 @@
 .paragraph_image_text {
   background-color: #F2F2F2;
+  margin-top: -2.5em;
 }
 
 .paragraph--type--image-text {
@@ -22,6 +23,7 @@
   .paragraph_right {
     float: left;
     width: 50%;
+    z-index: 999;
 
     .field--name-field-paragraph-cta {
       justify-content: flex-start !important;
@@ -29,8 +31,8 @@
   }
 
   .paragraph_left {
-    margin-top: -10rem;
     z-index: 10;
+    text-align: center;
   }
 }
 
@@ -57,9 +59,10 @@
 }
 
 .field--name-field-title {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 15px;
   line-height: 20px;
+  font-weight: 600;
 }
 
 .field--name-field-body {
@@ -75,7 +78,6 @@
   }
 }
 
-// custom mobile
 @media (max-width: 980px) {
 
   .paragraph_left,

@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.destaques
     - field.field.paragraph.destaques.field_body
-    - field.field.paragraph.destaques.field_pilares
     - field.field.paragraph.destaques.field_title
     - field.field.paragraph.destaques.field_view
     - paragraphs.paragraphs_type.destaques
@@ -37,5 +36,4 @@ content:
     weight: 0
     region: content
 hidden:
-  field_pilares: true
   field_view: true
