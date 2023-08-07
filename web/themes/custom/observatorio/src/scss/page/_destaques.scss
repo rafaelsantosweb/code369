@@ -34,7 +34,7 @@
    a {
      display: inline-flex;
      width: 9rem;
-     height: 0;
+     height: 39px;
      justify-content: center;
      align-items: center;
      font-size: 13px;
@@ -48,6 +48,10 @@
      display: flex;
    }
    
+   .views-row .button .field{
+      padding: 0;
+   }
+
    .views-row:hover{
       transition: 500ms;
       background-color: #0E65E5;
@@ -62,13 +66,22 @@
       .button{
         border-color: #f7f7f7;
         
-        > a{
-          color: #f7f7f7;
+        .paragraph--type--cta{
+          
+          .field{
+            padding: 0;
+          }
+
+          a {
+            color: #f7f7f7;
+          }
+
+          a:hover{
+            background-color: white;
+            color: black;
+          }
         }
-        a:hover{
-          color: black;
-          background-color: white;
-        }
+          
       }
     }
 
