@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.estudos.body
     - field.field.node.estudos.field_access
+    - field.field.node.estudos.field_area
     - field.field.node.estudos.field_categoria
     - field.field.node.estudos.field_content
     - field.field.node.estudos.field_destaque
@@ -20,6 +21,14 @@ targetEntityType: node
 bundle: estudos
 mode: default
 content:
+  field_area:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_content:
     type: entity_reference_revisions_entity_view
     label: hidden

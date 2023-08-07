@@ -1,0 +1,58 @@
+uuid: 33a6901f-9e20-4b6f-a354-08121a4345d9
+langcode: pt-br
+status: true
+dependencies: {  }
+name: estudos_prospectiva_filtros
+label: 'Tabs Estudos - Prospectiva e Tendência - Filtros'
+component: 'blocktabs:tabs-basic'
+tabs:
+  f4ab57ae-d359-43d9-8498-ec2111981f8c:
+    id: views_tab
+    title: TODOS
+    data:
+      view_name: estudos
+      view_display: block_5
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 1
+    uuid: f4ab57ae-d359-43d9-8498-ec2111981f8c
+  b209d44a-0aa0-4a2e-89f7-04a0c2c5d0e9:
+    id: views_tab
+    title: 'MACROTÊNCIA DE FUTUROS'
+    data:
+      view_name: estudos
+      view_display: block_3
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 2
+    uuid: b209d44a-0aa0-4a2e-89f7-04a0c2c5d0e9
+  556dfbdb-5274-4517-808c-9211e0d62571:
+    id: views_tab
+    title: 'AMBIENTAÇÃO E NEGÓCIOS'
+    data:
+      view_name: estudos
+      view_display: block_7
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 3
+    uuid: 556dfbdb-5274-4517-808c-9211e0d62571
+  99718a6c-06d6-4f08-b4b9-55fd7c248385:
+    id: views_tab
+    title: 'ROTAS TECNOLÓGICAS'
+    data:
+      view_name: estudos
+      view_display: block_6
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 4
+    uuid: 99718a6c-06d6-4f08-b4b9-55fd7c248385
+event: null
+style: null

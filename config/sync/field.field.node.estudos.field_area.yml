@@ -1,0 +1,29 @@
+uuid: 9d31d855-acee-462e-88df-6e1b43d1ea61
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area
+    - node.type.estudos
+    - taxonomy.vocabulary.area
+id: node.estudos.field_area
+field_name: field_area
+entity_type: node
+bundle: estudos
+label: Área
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area: area
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: aa034f7c-30fd-4c08-a14b-fb39f131c346
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - blocktabs.blocktabs.estudos_prospectiva_filtros
+  module:
+    - blocktabs
+    - system
+  theme:
+    - observatorio
+id: observatorio_blocktabstabsestudosprospectivaetendenciafiltros
+theme: observatorio
+region: content
+weight: 0
+provider: null
+plugin: 'blocktabs_block:estudos_prospectiva_filtros'
+settings:
+  id: 'blocktabs_block:estudos_prospectiva_filtros'
+  label: 'Blocktabs:Tabs Estudos - Prospectiva e Tendência - Filtros'
+  label_display: '0'
+  provider: blocktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /prospectiva-e-tendencia

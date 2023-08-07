@@ -1,7 +1,7 @@
-.node-type--detail .view-estudos {
+.node-type--detail, .view-estudos {
 
   .view-content {
-    display: flex;
+    //display: flex;
     gap: 40px;
 
     @media (max-width: 990px) {
@@ -64,10 +64,12 @@
        align-items: center;
        font-size: 13px;
      }      
-
-
-
     }
   }
 }
 
+//remove filtro duplicado page prospectiva-e-tendencia
+.node-43 .field--type-viewsreference .views-element-container {
+  //background-color: red;
+  display: none;
+}
