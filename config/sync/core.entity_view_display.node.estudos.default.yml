@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.estudos.field_destaque
     - field.field.node.estudos.field_imagem
     - field.field.node.estudos.field_metatags
+    - field.field.node.estudos.field_teaser
     - node.type.estudos
   module:
     - entity_reference_revisions
@@ -28,16 +29,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_destaque:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -47,6 +38,8 @@ hidden:
   body: true
   field_access: true
   field_categoria: true
+  field_destaque: true
   field_imagem: true
   field_metatags: true
+  field_teaser: true
   langcode: true

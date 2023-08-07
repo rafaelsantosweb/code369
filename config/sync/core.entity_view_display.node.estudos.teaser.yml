@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.estudos.field_destaque
     - field.field.node.estudos.field_imagem
     - field.field.node.estudos.field_metatags
+    - field.field.node.estudos.field_teaser
     - node.type.estudos
   module:
     - text
@@ -40,4 +41,5 @@ hidden:
   field_destaque: true
   field_imagem: true
   field_metatags: true
+  field_teaser: true
   langcode: true
