@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.estudos.field_access
     - field.field.node.estudos.field_categoria
     - field.field.node.estudos.field_content
+    - field.field.node.estudos.field_destaque
     - field.field.node.estudos.field_imagem
     - field.field.node.estudos.field_metatags
     - node.type.estudos
@@ -36,6 +37,7 @@ hidden:
   field_access: true
   field_categoria: true
   field_content: true
+  field_destaque: true
   field_imagem: true
   field_metatags: true
   langcode: true

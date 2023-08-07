@@ -116,7 +116,7 @@ body {
 
     .page__header {
       position: absolute;
-      top: 32px;
+      top: 50px;
       width: 100%;
 
       .header_container {
@@ -203,7 +203,7 @@ body {
           background-color: $white;
           border-radius: 10px;
           box-shadow: 0px 3px 1px $blue-50;
-          padding: 39px 56px 26px;
+          padding: 39px 35px 26px;
           text-align: center;
           flex: 0 0 33.3333%;
           width: 33.3333%;
@@ -367,7 +367,7 @@ body {
             font-size: 11px;
             font-style: italic;
             font-weight: 300;
-            line-height: 0px;
+            line-height: 0;
             text-decoration: underline;
           }
         }
@@ -377,6 +377,7 @@ body {
     .block--tagclouds-block-categoria {
       text-align: center;
       display: flex;
+      margin-top: 3.5em;
 
       @media (max-width: 990px) {
         flex-direction: column-reverse;
@@ -386,6 +387,7 @@ body {
         font-size: 22px;
         font-weight: 600;
         line-height: 27px;
+        margin-top: 25px;
       }
 
       h3 {
@@ -725,6 +727,7 @@ body {
   margin-top: 22px;
 }  
 
+/*
 .view-content .views-row {
   background-color: #ffffff;
   border-radius: 10px;
@@ -738,7 +741,8 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-
+*/
+.node-type--estudos #hero-banners .hero-banner img,
 .node-type--estudos #hero-banners .hero-banner img {
   -o-object-fit: cover;
   object-fit: cover;
@@ -746,6 +750,16 @@ body {
   max-height: 350px !important;
 }
 
-.path-frontpage .card {
-  --bs-card-bg: #fff !important;
+.view-destaques .tns-outer .tns-nav {
+  margin-top: 4em;
+}
+
+.view-destaques .tns-outer .tns-nav > [aria-controls] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
 }

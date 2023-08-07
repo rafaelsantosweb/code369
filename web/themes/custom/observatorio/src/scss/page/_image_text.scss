@@ -1,5 +1,6 @@
 .paragraph_image_text {
   background-color: #F2F2F2;
+  margin-top: -2.5em;
 }
 
 .paragraph--type--image-text {
@@ -30,8 +31,8 @@
   }
 
   .paragraph_left {
-    margin-top: -10rem;
     z-index: 10;
+    text-align: center;
   }
 }
 
@@ -58,9 +59,10 @@
 }
 
 .field--name-field-title {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 15px;
   line-height: 20px;
+  font-weight: 600;
 }
 
 .field--name-field-body {

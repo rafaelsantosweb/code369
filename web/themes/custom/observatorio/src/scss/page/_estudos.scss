@@ -1,0 +1,73 @@
+.node-type--detail .view-estudos {
+
+  .view-content {
+    display: flex;
+    gap: 40px;
+
+    @media (max-width: 990px) {
+      flex-wrap: wrap;
+      padding-bottom: 1rem;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .views-infinite-scroll-content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .views-row {
+      border-radius: 6px;
+      padding: 30px 25px 26px;
+      flex: 0 0 33.3333%;
+      width: 33.3333%;
+      display: block;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      @media (max-width: 990px) {
+        width: 100%;
+        flex: 0 0 100%;
+        & + .views-row {
+          margin-top: 1rem;
+        }
+      }
+
+      .views-field-field-imagem {
+        float: left;
+        margin-right: 15px;
+      }
+
+      .views-field-title {
+        color: #444;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 11px;
+        text-align: left;
+      }
+
+      .views-field-body {
+       color: #444;
+       text-align: left;
+       font-size: 15px;
+       font-weight: 400;
+       line-height: normal;
+       margin: 0;
+      }
+
+      .button a {
+       display: inline-flex;
+       width: 9rem;
+       height: 37px;
+       justify-content: center;
+       align-items: center;
+       font-size: 13px;
+     }      
+
+
+
+    }
+  }
+}
+
