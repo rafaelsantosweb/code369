@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.estudos.body
     - field.field.node.estudos.field_access
+    - field.field.node.estudos.field_area
     - field.field.node.estudos.field_categoria
     - field.field.node.estudos.field_content
     - field.field.node.estudos.field_destaque
@@ -36,6 +37,7 @@ content:
     region: content
 hidden:
   field_access: true
+  field_area: true
   field_categoria: true
   field_content: true
   field_destaque: true

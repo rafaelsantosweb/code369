@@ -9,6 +9,8 @@ module:
   block: 0
   block_content: 0
   block_field: 0
+  blocktabs: 0
+  blocktabs_bootstrap: 0
   breakpoint: 0
   ckeditor5: 0
   components: 0
@@ -70,8 +72,10 @@ module:
   robotstxt: 0
   schema_metatag: 0
   schema_organization: 0
+  sdc: 0
   search: 0
   seckit: 0
+  serialization: 0
   system: 0
   tagclouds: 0
   taxonomy: 0

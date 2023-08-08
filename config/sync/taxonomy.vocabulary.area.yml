@@ -1,0 +1,8 @@
+uuid: 3b0851f5-844c-49b9-94cd-305aee8d08ea
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Área
+vid: area
+description: ''
+weight: 0

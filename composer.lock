@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "634964e8f3392d01785d2c0fbe489720",
+    "content-hash": "dda5f1795f5e90c19e2f0ef9768e22ba",
     "packages": [
         {
             "name": "arthurkirkosa/guzzle-description-loader",
@@ -1745,6 +1745,50 @@
             }
         },
         {
+            "name": "drupal/blocktabs",
+            "version": "2.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/blocktabs.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blocktabs-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "beceded23b5f8406efe4d20fe38477e3ed3930e2"
+            },
+            "require": {
+                "drupal/core": "^10.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1687226261",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "g089h515r806",
+                    "homepage": "https://www.drupal.org/user/174740"
+                }
+            ],
+            "description": "Block Tabs.",
+            "homepage": "https://www.drupal.org/project/blocktabs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/blocktabs"
+            }
+        },
+        {
             "name": "drupal/components",
             "version": "3.0.0-beta3",
             "source": {
@@ -2915,6 +2959,120 @@
             }
         },
         {
+            "name": "drupal/ebt_core",
+            "version": "1.4.11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ebt_core.git",
+                "reference": "1.4.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ebt_core-1.4.11.zip",
+                "reference": "1.4.11",
+                "shasum": "f2f16de0a20a595f7fcd857f34d53b08d7ed474c"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "drupal/field_group": "^3.0",
+                "drupal/media_library_form_element": "^2.0",
+                "levmyshkin/jquery-colorpicker": "^1.0",
+                "levmyshkin/jquery-mb-ytplayer": "^3.3.10",
+                "levmyshkin/parallaxjs": "^1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.4.11",
+                    "datestamp": "1686139069",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "levmyshkin",
+                    "homepage": "https://www.drupal.org/user/1079574"
+                },
+                {
+                    "name": "Narine_Tsaturyan",
+                    "homepage": "https://www.drupal.org/user/3723666"
+                }
+            ],
+            "description": "Extra Block Types (EBT): Core",
+            "homepage": "http://drupal.org/project/ebt_core",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/ebt_core",
+                "issues": "https://www.drupal.org/project/issues/ebt_core"
+            }
+        },
+        {
+            "name": "drupal/ebt_tabs",
+            "version": "1.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ebt_tabs.git",
+                "reference": "1.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ebt_tabs-1.4.5.zip",
+                "reference": "1.4.5",
+                "shasum": "24ef2f76dc10f70238aa5e27d48d27b622598b07"
+            },
+            "require": {
+                "drupal/block_field": "^1.0",
+                "drupal/core": "^9.3 || ^10",
+                "drupal/ebt_core": "^1.4",
+                "drupal/jquery_ui_tabs": "^2.0",
+                "drupal/paragraphs": "^1.0",
+                "drupal/viewsreference": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.4.5",
+                    "datestamp": "1686118118",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "levmyshkin",
+                    "homepage": "https://www.drupal.org/user/1079574"
+                },
+                {
+                    "name": "Narine_Tsaturyan",
+                    "homepage": "https://www.drupal.org/user/3723666"
+                }
+            ],
+            "description": "Extra Block Types (EBT): Tabs",
+            "homepage": "http://drupal.org/project/ebt_tabs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/ebt_tabs",
+                "issues": "https://www.drupal.org/project/issues/ebt_tabs"
+            }
+        },
+        {
             "name": "drupal/entity_reference_revisions",
             "version": "1.10.0",
             "source": {
@@ -3024,6 +3182,67 @@
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
                 "source": "https://git.drupalcode.org/project/environment_indicator"
+            }
+        },
+        {
+            "name": "drupal/field_group",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "80b937e1a11f8b29c69d853fc4bf798c057c6f94"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.4",
+                    "datestamp": "1667241979",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
             }
         },
         {
@@ -3436,6 +3655,59 @@
             }
         },
         {
+            "name": "drupal/jquery_ui_tabs",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_tabs.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_tabs-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "ec1bf4effc78ca92a6f0a912ee0c4b037f850b98"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10",
+                "drupal/jquery_ui": "^1.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1670948528",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Tabs library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_tabs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_tabs"
+            }
+        },
+        {
             "name": "drupal/mask",
             "version": "2.0.0-alpha3",
             "source": {
@@ -3481,6 +3753,80 @@
             "homepage": "https://www.drupal.org/project/mask",
             "support": {
                 "source": "https://git.drupalcode.org/project/mask"
+            }
+        },
+        {
+            "name": "drupal/media_library_form_element",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_library_form_element.git",
+                "reference": "2.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_library_form_element-2.0.6.zip",
+                "reference": "2.0.6",
+                "shasum": "91363cbea0d1895fbf0fbb9640d70fee47775111"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "require-dev": {
+                "drupal/webform": "6.2.x-dev@dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.6",
+                    "datestamp": "1674069446",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kim Kennof",
+                    "homepage": "https://www.drupal.org/u/nightlife2008",
+                    "email": "kim.kennof@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "AUSY, a randstad company",
+                    "homepage": "https://www.ausy.be",
+                    "email": "info@ausy.be",
+                    "role": "Sponsor"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "nightlife2008",
+                    "homepage": "https://www.drupal.org/user/333515"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                }
+            ],
+            "description": "This module provides a Media Library Form API element to be used in all sorts of forms.",
+            "homepage": "https://www.drupal.org/project/media_library_form_element",
+            "keywords": [
+                "Drupal",
+                "Form API",
+                "Media",
+                "Media Library"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_library_form_element",
+                "issues": "https://www.drupal.org/project/issues/media_library_form_element"
             }
         },
         {
@@ -6514,6 +6860,100 @@
                 }
             ],
             "time": "2021-11-16T10:29:06+00:00"
+        },
+        {
+            "name": "levmyshkin/jquery-colorpicker",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/jquery_colorpicker.git",
+                "reference": "45f9ac11079b73885186ce73b531f0bba1812c7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/jquery_colorpicker/zipball/45f9ac11079b73885186ce73b531f0bba1812c7f",
+                "reference": "45f9ac11079b73885186ce73b531f0bba1812c7f",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT or GPL-1.0)"
+            ],
+            "description": "The jQuery Colorpicker JS/CSS library. Fork from jaypan/jquery_colorpicker.",
+            "homepage": "https://www.eyecon.ro/colorpicker/",
+            "keywords": [
+                "EBT",
+                "colorpicker",
+                "drupal",
+                "jquery"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/jquery_colorpicker/tree/1.0.2"
+            },
+            "time": "2021-12-01T11:34:35+00:00"
+        },
+        {
+            "name": "levmyshkin/jquery-mb-ytplayer",
+            "version": "3.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/jquery.mb.YTPlayer.git",
+                "reference": "037f9d56dc2efb986e4ea89609d7edf2aa0ff438"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/jquery.mb.YTPlayer/zipball/037f9d56dc2efb986e4ea89609d7edf2aa0ff438",
+                "reference": "037f9d56dc2efb986e4ea89609d7edf2aa0ff438",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT)"
+            ],
+            "description": "jquery.mb.YTPlayer plugin as drupal-library. Fork from https://github.com/pupunzi/jquery.mb.YTPlayer.",
+            "homepage": "https://pupunzi.com/#mb.components/mb.YTPlayer/YTPlayer.html",
+            "keywords": [
+                "EBT",
+                "drupal",
+                "jquery.mb.YTPlayer"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/jquery.mb.YTPlayer/tree/3.3.10"
+            },
+            "time": "2021-12-24T14:45:07+00:00"
+        },
+        {
+            "name": "levmyshkin/parallaxjs",
+            "version": "v1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/parallax.js.git",
+                "reference": "bed64e1ad39cabe1130505010f5aaaeb50d4cf86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/parallax.js/zipball/bed64e1ad39cabe1130505010f5aaaeb50d4cf86",
+                "reference": "bed64e1ad39cabe1130505010f5aaaeb50d4cf86",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT)"
+            ],
+            "description": "Parallax.js pluging as drupal-library. Fork from pixelcog/parallax.js.",
+            "homepage": "https://pixelcog.github.io/parallax.js/",
+            "keywords": [
+                "EBT",
+                "drupal",
+                "parallax.js"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/parallax.js/tree/v1.5.1"
+            },
+            "time": "2021-12-12T14:41:01+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -11015,6 +11455,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/block_field": 5,
+        "drupal/blocktabs": 15,
         "drupal/components": 10,
         "drupal/config_ignore": 10,
         "drupal/context": 5,

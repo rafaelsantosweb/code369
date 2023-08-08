@@ -1,0 +1,11 @@
+uuid: eb1015e7-6786-4cd2-99ae-d32e236f606e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area
+id: taxonomy_term.area
+target_entity_type_id: taxonomy_term
+target_bundle: area
+default_langcode: site_default
+language_alterable: false
