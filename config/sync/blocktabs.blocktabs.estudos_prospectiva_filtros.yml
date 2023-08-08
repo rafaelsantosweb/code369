@@ -15,7 +15,7 @@ tabs:
       view_arg: ''
       display_tab: false
       check_access: false
-      tab_css_id: ''
+      tab_css_id: container
     weight: 1
     uuid: f4ab57ae-d359-43d9-8498-ec2111981f8c
   b209d44a-0aa0-4a2e-89f7-04a0c2c5d0e9:
