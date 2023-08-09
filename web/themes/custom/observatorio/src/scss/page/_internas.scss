@@ -1,5 +1,9 @@
 body.node-type--detail {
 
+  main {
+    margin-bottom: 0 !important;
+  }
+
   #page__head-bottom {
     position: absolute;
     top: 12rem;
@@ -69,8 +73,13 @@ body.node-type--detail {
     }
   }
 
+  .paragraph_image_text {
+    background-color: #fff;
+  }
+
   .paragraph--type--image-text.text_image {
     margin-top: -14rem;
+    padding: 5rem 0 0 0;
 
     .paragraph_left {
       position: relative;
@@ -142,14 +151,14 @@ body.node-type--detail {
 .node-type--detail, .node-type--estudos {
 
   .block--navegacaoprincipal ul.nav {
-      background-color: transparent !important;
-      flex-direction: row;
-      justify-content: flex-end;
-      z-index: 11;
-      padding: 0;
-      margin: 0;
-      height: 52px;
-      align-items: center;
+    background-color: transparent !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 11;
+    padding: 0;
+    margin: 0;
+    height: 52px;
+    align-items: center;
   }
 
   .block--navegacaoprincipal ul.nav li a {

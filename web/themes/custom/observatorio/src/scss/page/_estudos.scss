@@ -33,8 +33,6 @@
       background-color: white;
       border-radius: 6px;
       padding: 30px 25px 26px;
-      /* flex: 0 0 33.3333%;
-      width: 33.3333%; */
       flex-basis: calc(33.33% - 20px);
       display: block;
       justify-content: flex-end;
@@ -49,18 +47,14 @@
         }
       }
 
-      /* .views-field-field-imagem {
+      .views-field-field-imagem {
         float: left;
-        margin-right: 15px;
-
-        .img-fluid {
-          max-width: 95% !important;
-        }
-      } */
+        width: 49%
+      }
 
       .views-field-title {
         color: #444;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 600;
         margin-bottom: 11px;
         text-align: left;
@@ -69,14 +63,14 @@
       /* Row - Card Content Alignment (a & p) */
       .views-field-title,
       .views-field-view-node-button, p {
-        width: 65%;
+        width: 45%;
         float: right;
       }
 
       .views-field-body {
        color: #444;
        text-align: left;
-       font-size: 14px;
+       font-size: 11px;
        font-weight: 400;
        line-height: normal;
        margin: 0;
