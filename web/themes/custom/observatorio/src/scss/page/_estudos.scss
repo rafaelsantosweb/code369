@@ -1,9 +1,19 @@
+.node-37 {
+  .paragraph_destaques {
+    &::before {
+      content: '';
+      background-image: url('/themes/custom/observatorio/images/banner_shape_cinza.png');
+      display: inline-block;
+      position: relative;
+      top: 10px;
+      height: 165px;
+      width: 100%;
+    }
+  }
+}
+
 .node-type--detail, .view-estudos {
-
   .view-content {
-    //display: flex;
-    gap: 40px;
-
     @media (max-width: 990px) {
       flex-wrap: wrap;
       padding-bottom: 1rem;
@@ -21,9 +31,10 @@
     .views-row {
       background-color: white;
       border-radius: 6px;
-      padding: 30px 25px 26px;
-      flex: 0 0 33.3333%;
-      width: 33.3333%;
+      padding: 30px 25px 25px;
+      margin: 0 50px 10px 0;
+      /* flex: 0 0 33.3333%; */
+      width: 33%;
       display: block;
       justify-content: flex-end;
       flex-direction: column;
@@ -31,15 +42,20 @@
       @media (max-width: 990px) {
         width: 100%;
         flex: 0 0 100%;
+
         & + .views-row {
           margin-top: 1rem;
         }
       }
 
-      .views-field-field-imagem {
+      /* .views-field-field-imagem {
         float: left;
         margin-right: 15px;
-      }
+
+        .img-fluid {
+          max-width: 95% !important;
+        }
+      } */
 
       .views-field-title {
         color: #444;
@@ -50,15 +66,16 @@
       }
 
       /* Row - Card Content Alignment (a & p) */
-      .views-field-title, p {
-        width: 45%;
+      .views-field-title,
+      .views-field-view-node-button, p {
+        width: 65%;
         float: right;
       }
 
       .views-field-body {
        color: #444;
        text-align: left;
-       font-size: 15px;
+       font-size: 14px;
        font-weight: 400;
        line-height: normal;
        margin: 0;
@@ -66,12 +83,17 @@
 
       .button a {
        display: inline-flex;
-       width: 9rem;
-       height: 37px;
+       width: 5rem;
+       height: 25px;
        justify-content: center;
        align-items: center;
-       font-size: 13px;
-     }      
+       font-size: 10px;
+       padding: 0 !important;
+
+        ::after {
+          margin-left: 10px !important;
+        }
+      }
     }
   }
 }
