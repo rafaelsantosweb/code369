@@ -1,9 +1,19 @@
 //remove filtro duplicado page prospectiva-e-tendencia
 
-.page .node-43 .paragraph--type--destaques {
+.page .node-37 .paragraph--type--destaques,
+.page .node-43 .paragraph--type--destaques,
+.page .node-44 .paragraph--type--destaques
+{
   background-color: #F0F0F0;
   padding: 10px 0 0 0;
   background-image:none !important;
+}
+.node-37 .field--type-viewsreference .views-element-container,
+.node-43 .field--type-viewsreference .views-element-container,
+.node-44 .field--type-viewsreference .views-element-container {
+  display: none;
+  margin-left: auto;
+  font-family: "Averta", sans-serif;
 }
 
 .estudos .view-header {
@@ -13,13 +23,6 @@
 #blocktabs-estudos_prospectiva_filtros {
   background-color: #F0F0F0;
   margin-top: 0;
-}
-
-.node-43 .field--type-viewsreference .views-element-container {
-  background-color: blue;
-  display: none;
-  margin-left: auto;
-  font-family: "Averta", sans-serif;
 }
 
 .blocktabs {
@@ -104,9 +107,4 @@
     display: inline-block;
   }
 
-}
-
-
-.pagina-do-daniel  {
-  background-color: aqua;
 }

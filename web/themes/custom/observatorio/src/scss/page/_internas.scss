@@ -166,3 +166,18 @@ body.node-type--detail {
 .paragraph--type--image-text .field--name-field-body {
   margin-bottom: 1.5em;
 }
+
+.front .dropdown-menu {
+  background-color: #ffffff;
+}  
+
+.node-type--detail .dropdown-menu,
+.node-type--estudos .dropdown-menu a:hover  {
+  background-color: transparent !important;
+}  
+
+.node-type--detail .block--navegacaoprincipal ul.nav li a:hover {
+  color: #fff;
+  background-color: #0E5FD8 !important;
+  border-radius: 6px;
+}
