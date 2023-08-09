@@ -59,7 +59,30 @@ body {
       }
     }
   }
+  
+  .views-field-nid{
+  .button {
+    padding: 6px 15px;
+    font-size: 11px !important;
 
+    &::after {
+      content: '>';
+      display: inline-block;
+      font-size: 11px;
+      margin-left: 20px;
+      position: relative;
+    }
+
+    &:hover {
+      color: $black;
+      background-color: $white;
+
+      &::after {
+        color: $black;
+      }
+    }
+  }
+ }
   #search-block-form {
     @media (max-width: 990px) {
       display: none;

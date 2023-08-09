@@ -24,6 +24,7 @@
     .views-infinite-scroll-content-wrapper {
       display: flex;
       flex-wrap: wrap;
+      gap: 2%;
       width: 100%;
     }
 
@@ -31,10 +32,10 @@
     .views-row {
       background-color: white;
       border-radius: 6px;
-      padding: 30px 25px 25px;
-      margin: 0 50px 10px 0;
-      /* flex: 0 0 33.3333%; */
-      width: 33%;
+      padding: 30px 25px 26px;
+      /* flex: 0 0 33.3333%;
+      width: 33.3333%; */
+      flex-basis: calc(33.33% - 20px);
       display: block;
       justify-content: flex-end;
       flex-direction: column;
