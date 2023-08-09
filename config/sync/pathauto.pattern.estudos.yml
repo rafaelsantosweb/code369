@@ -1,0 +1,22 @@
+uuid: 9862b8aa-13aa-44e4-90fc-fcb7fd03f1da
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: estudos
+label: Estudos
+type: 'canonical_entities:node'
+pattern: 'estudo/[node:title]'
+selection_criteria:
+  4423b5f1-a2b3-4248-92aa-551651a22365:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4423b5f1-a2b3-4248-92aa-551651a22365
+    context_mapping:
+      node: node
+    bundles:
+      estudos: estudos
+selection_logic: and
+weight: -5
+relationships: {  }

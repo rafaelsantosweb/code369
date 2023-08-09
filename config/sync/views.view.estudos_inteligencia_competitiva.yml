@@ -11,9 +11,9 @@ dependencies:
     - taxonomy.vocabulary.area
     - taxonomy.vocabulary.categoria
   content:
-    - 'taxonomy_term:area:2ca31076-0566-42e9-8355-fc549bf45dd4'
-    - 'taxonomy_term:area:bd20096e-b702-4334-98ca-f64b55a39412'
-    - 'taxonomy_term:area:cd5ea2f3-cc38-45f4-9d38-f594e3a78c21'
+    - 'taxonomy_term:area:0c7fe080-f67b-4ba4-92e9-fb89b194f205'
+    - 'taxonomy_term:area:952fbf6d-e85d-4d83-b8f6-eec6dfd0b91a'
+    - 'taxonomy_term:area:ef6cd58a-bcc1-4cbd-9931-371def9a18fe'
     - 'taxonomy_term:categoria:14aaf09c-90b8-4650-ac82-f729bd31bc50'
     - 'taxonomy_term:categoria:35eb29e4-86a5-402d-8ddc-44f6914d596b'
   module:
@@ -1294,9 +1294,9 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            19: 19
-            18: 18
-            17: 17
+            12: 12
+            13: 13
+            14: 14
           group: 1
           exposed: false
           expose:
