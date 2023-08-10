@@ -208,7 +208,9 @@ body {
       .view-content {
         display: flex;
         width: 100%;
-        gap: 40px;
+        gap: 95px;
+        justify-content: center;
+
         @media (max-width: 990px) {
           flex-wrap: wrap;
           padding-bottom: 1rem;
@@ -226,14 +228,14 @@ body {
           background-color: $white;
           border-radius: 10px;
           box-shadow: 0px 3px 1px $blue-50;
-          padding: 39px 35px 26px;
+          padding: 40px 35px 25px;
           text-align: center;
-          flex: 0 0 33.3333%;
-          width: 33.3333%;
+          flex: 0 0 28.3333%;
+          /* width: 33.3333% */;
           display: flex;
           justify-content: flex-end;
           flex-direction: column;
-          margin-bottom: 20px;
+          /* margin-bottom: 20px; */
 
           @media (max-width: 990px) {
             width: 100%;
@@ -266,7 +268,7 @@ body {
             p {
               color: #444;
               text-align: center;
-              font-size: 15px;
+              font-size: clamp(.9em, .5em + .4vw, 3em);
               font-style: normal;
               font-weight: 400;
               line-height: normal;
@@ -274,6 +276,16 @@ body {
               & + p {
                 margin-top: 1rem;
               }
+            }
+          }
+
+          .button{
+            margin: 0 !important;
+
+            a{
+              width: 8rem !important;
+              height: 35px !important;
+              font-size: 11px;
             }
           }
         }
