@@ -21,7 +21,6 @@
 }
 
 #blocktabs-estudos_prospectiva_filtros {
-  background-color: #F0F0F0;
   margin-top: 0;
 }
 
@@ -108,4 +107,17 @@
     display: inline-block;
   }
 
+}
+
+body.node-type--detail, body.node-type--estudos 
+.block .block--observatorio-blocktabstabsestudosprospectivaetendenciafiltros {
+  background: #e9e9e9;
+}
+
+.node-type--detail .view-content .views-row, .view-estudos .view-content .views-row {
+  margin-bottom: 1.8em;
+}
+
+.node-type--detail .paragraph--type--destaques {
+  padding: 20px 20px 30px 20px;
 }
