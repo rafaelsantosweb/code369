@@ -21,14 +21,6 @@ targetEntityType: node
 bundle: estudos
 mode: default
 content:
-  field_area:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_content:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -46,6 +38,7 @@ content:
 hidden:
   body: true
   field_access: true
+  field_area: true
   field_categoria: true
   field_destaque: true
   field_imagem: true

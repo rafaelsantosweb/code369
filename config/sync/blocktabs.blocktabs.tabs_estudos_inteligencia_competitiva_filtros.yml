@@ -1,0 +1,58 @@
+uuid: 8214eeec-2f4e-4d90-8cd4-87a09e347b90
+langcode: pt-br
+status: true
+dependencies: {  }
+name: tabs_estudos_inteligencia_competitiva_filtros
+label: 'Tabs Estudos - Inteligencia Competitiva - Filtros'
+component: 'blocktabs:tabs-basic'
+tabs:
+  64c474d4-f14e-4d51-8a79-68e0b4cb5e45:
+    id: views_tab
+    title: Todos
+    data:
+      view_name: estudos_inteligencia_competitiva
+      view_display: block_5
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 1
+    uuid: 64c474d4-f14e-4d51-8a79-68e0b4cb5e45
+  7df332ce-bbd8-4186-bffe-9d90e403f55d:
+    id: views_tab
+    title: 'Sub 1'
+    data:
+      view_name: estudos_inteligencia_competitiva
+      view_display: block_6
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 2
+    uuid: 7df332ce-bbd8-4186-bffe-9d90e403f55d
+  8c87f143-5fe1-4f80-a996-1caae9f4f5de:
+    id: views_tab
+    title: 'Sub 2'
+    data:
+      view_name: estudos_inteligencia_competitiva
+      view_display: block_7
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 3
+    uuid: 8c87f143-5fe1-4f80-a996-1caae9f4f5de
+  0d1ef285-7897-498b-a9a1-c1750015b722:
+    id: views_tab
+    title: 'Sub 3'
+    data:
+      view_name: estudos_inteligencia_competitiva
+      view_display: block_3
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 4
+    uuid: 0d1ef285-7897-498b-a9a1-c1750015b722
+event: null
+style: null

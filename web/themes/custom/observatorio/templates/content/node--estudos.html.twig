@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Template for a forum node in full display mode.
+ */
+#}
+{% include "@radix/content/node.twig" %}
+  {% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      <img  src="{{ url('<front>') }}{{file_url(node.field_imagem.entity.fileuri)}}" width="400px" alt="{{ node.field_imagem.alt }}" />
+      </div>
+      <div class="col">
+        <h1>{{ node.label }}</h1>
+            {{ node.body.value|t }}
+        <br>
+        <div class="button-acessar-estudo">
+          Acessar os dados do estudo
+        </div>
+        <br>
+        Gostou do Contéudo ? Compartilhe nosso estudo  
+      </div>
+
+    </div>
+  </div>
+  {% endblock %}
