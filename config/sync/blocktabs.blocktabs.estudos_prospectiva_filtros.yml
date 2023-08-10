@@ -10,7 +10,7 @@ tabs:
     id: views_tab
     title: TODOS
     data:
-      view_name: estudos
+      view_name: page_tabs_prospetiva_e_tendencia
       view_display: block_5
       view_arg: ''
       display_tab: false
@@ -22,7 +22,7 @@ tabs:
     id: views_tab
     title: 'MACROTÊNCIA DE FUTUROS'
     data:
-      view_name: estudos
+      view_name: page_tabs_prospetiva_e_tendencia
       view_display: block_3
       view_arg: ''
       display_tab: false
@@ -34,7 +34,7 @@ tabs:
     id: views_tab
     title: 'AMBIENTAÇÃO E NEGÓCIOS'
     data:
-      view_name: estudos
+      view_name: page_tabs_prospetiva_e_tendencia
       view_display: block_7
       view_arg: ''
       display_tab: false
@@ -46,7 +46,7 @@ tabs:
     id: views_tab
     title: 'ROTAS TECNOLÓGICAS'
     data:
-      view_name: estudos
+      view_name: page_tabs_prospetiva_e_tendencia
       view_display: block_6
       view_arg: ''
       display_tab: false

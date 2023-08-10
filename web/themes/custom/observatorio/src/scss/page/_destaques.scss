@@ -1,61 +1,57 @@
 .paragraph--type--destaques {
- display: block;
- color: $grey-300;
- padding: 80px;
- background: url('../../images/binary.svg') no-repeat 0 -210px;
- background-color: $gray-200;
+  display: block;
+  color: $grey-300;
+  padding: 20px 20px 150px 20px;
+  background: url('../../images/binary.svg') no-repeat 0 210px;
+  background-color: #f0f0f0;
 
- .field--type-string,
- .field--type-text-long p {
-   align-items: center;
-   display: flex;
-   flex-direction: column;
-   padding: 0 29%;
-   text-align: center;
-   line-height: 1.7em;
- }
+  .field--type-string,
+  .field--type-text-long p {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 29%;
+    text-align: center;
+    line-height: 1.7em;
+  }
 
- .field--name-field-title {
-  font-family: "Averta", sans-serif;
-  font-size: 22px;
-   line-height: 27px;
-   font-weight: 600;
- }
+  .field--name-field-title {
+    font-family: "Averta", sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+  }
 
- .field--name-field-body {
-   font-size: 15px;
-   line-height: 10px;
-   margin-bottom: 20px
- }
+  .field--name-field-body {
+    font-size: 15px;
+    line-height: 10px;
+    margin-bottom: 20px
+  }
  
- .button {
+  .button {
    @include button;
+   margin: 0 0 1rem 1rem !important;
 
-   a {
-     display: inline-flex;
-     width: 9rem;
-     height: 39px;
-     justify-content: center;
-     align-items: center;
-     font-size: 13px;
-   }
- }
+    a {
+      display: inline-flex;
+      width: 9rem;
+      height: 41px;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+    }
+  }
 
- 
- 
- .view-content {
-   #tns1 {
-     display: flex;
-   }
-   
-   .views-row .button .field{
+  .view-content {
+    #tns1 {
+      display: flex;
+    }
+    .views-row .button .field{
       padding: 0;
-   }
-
+     }
    .views-row:hover{
-      transition: 500ms;
+    transition: 500ms;
       background-color: #0E65E5;
-      
       
       p{
         color: white !important
@@ -63,109 +59,104 @@
       .views-field-field-title{
         color: white !important
       }
-
       .button{
         border-color: #f7f7f7;
-        
         .paragraph--type--cta{
-          
           .field{
             padding: 0;
           }
-
           a {
             color: #f7f7f7;
           }
-
           a:hover{
             background-color: white;
             color: black;
           }
         }
-          
       }
     }
 
-   .tns-nav {
-    .views-field-view-node, 
-    button {
-       background: $white;
-       border: 1px solid #f7f7f7;
-       margin-top: 50px;
-       box-shadow: 0px 1px 2px rgba(0, 0, 0, 25%);
+    .tns-nav {
+      .views-field-view-node, 
+      button {
+        background: $white;
+        border: 1px solid #f7f7f7;
+        margin-top: 50px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 25%);
 
-       &.tns-nav-active {
-         background-color: $blue-50;
-         border: 2px solid $white;
-       }
-     }
-   }
-
-   .tns-item {
-     background-color: $white;
-     border-radius: 12px;
-     margin: 0 20px;
-     padding: 35px 40px;
-     min-width: 490px;
-     flex: 1;
-
-     .views-field-field-imagem,
-     .views-field-field-image .field-content {
-       float: left;
-       margin-right: 30px;
-       height: 100%;
-       font-family: "Averta", sans-serif;
-     }
-     
-     .views-field-title,
-     .views-field-field-title {
-       font-size: 18px;
-       font-weight: 600;
-       line-height: 22px;
-       padding-bottom: .5rem;
-       font-family: "Averta", sans-serif;
+        &.tns-nav-active {
+          background-color: $blue-50;
+          border: 2px solid $white;
+        }
       }
+    }
 
-     .views-field-view-node {
-      border: 1px solid #003bd1;
-      border-radius: 5px;
-      color: #003bd1;
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      margin: 1rem 0;
-      text-align: center;
-      transition: all 0.3s ease-in-out;
-      width: 110px;
-      height: 34px;
-      padding: 5;
-      & a {
-      color: #003bd1;
-      font-weight: 600;
-      font-size: 11px;
-      line-height:30px;
-      text-decoration: none;
-      padding: 8px 11px 5px;
-      height: 100%;
-      width: 100%;
-      text-align: center;
+    .tns-item {
+      background-color: $white;
+      border-radius: 12px;
+      margin: 0 20px;
+      padding: 35px 40px;
+      min-width: 490px;
       flex: 1;
-      align-self: flex-end;
-    }
-    }
 
-    .views-field-body,
-     .views-field-field-body {
-       font-size: 16px;
-       line-height: 21px;
-       padding-bottom: .5rem;
-       font-family: "Averta", sans-serif;
+      .views-field-field-imagem,
+      .views-field-field-image .field-content {
+        float: left;
+        margin-right: 30px;
+        height: 100%;
+        font-family: "Averta", sans-serif;
+      }
+     
+      .views-field-title,
+      .views-field-field-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        padding-bottom: .5rem;
+        font-family: "Averta", sans-serif;
+      }
 
-       p {
-         text-align: left;
-       }
-     }
-   }
-  }
-  
- }
+      .views-field-view-node {
+        border: 1px solid #003bd1;
+        border-radius: 5px;
+        color: #003bd1;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        margin: 1rem 0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        width: 110px;
+        height: 34px;
+        padding: 5;
+        
+        & a {
+          color: #003bd1;
+          font-weight: 600;
+          font-size: 11px;
+          line-height:30px;
+          text-decoration: none;
+          padding: 8px 11px 5px;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          flex: 1;
+          align-self: flex-end;
+        } 
+      }
+
+      .views-field-body,
+      .views-field-field-body {
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: .5rem;
+        font-family: "Averta", sans-serif;
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }  
+}
+/* teste */

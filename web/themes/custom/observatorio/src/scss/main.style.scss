@@ -20,12 +20,12 @@ body {
     }
   }
 
-  .block--system-branding, .block--definicaodemarcadosite {
+  .block--system-branding {
     // float: left;
     z-index: 99;
     margin-right: auto;
   }
-  
+
   .block--navegacaoprincipal {
     // width: 60%;
     // top: 18px;
@@ -33,7 +33,7 @@ body {
     @media (max-width: 990px) {
       display: none;
     }
-    
+
     ul.nav {
       background-color: $white;
       flex-direction: row;
@@ -136,7 +136,6 @@ body {
 
   main {
     font-weight: 400;
-    margin: 40px 0 40px 0;
 
     .page__header {
       position: absolute;
@@ -147,11 +146,6 @@ body {
         display: flex;
         width: 100%;
         //justify-content: flex-end;
-
-        .search-block-form {
-          align-self: center;  
-          margin-top: 0;
-        } 
 
         .me-2 {
           height: 5vw;
@@ -752,10 +746,10 @@ body {
   }
 }
 
-/* .search-block-form {
-  margin-top: 22px;  
+.search-block-form {
+  margin-top: 22px;
 }  
- */
+
 /*
 .view-content .views-row {
   background-color: #ffffff;

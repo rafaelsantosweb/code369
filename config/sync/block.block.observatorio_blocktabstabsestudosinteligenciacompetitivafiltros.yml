@@ -1,0 +1,27 @@
+uuid: 4474677c-f77b-4616-ac0a-48dc94b56034
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - blocktabs.blocktabs.tabs_estudos_inteligencia_competitiva_filtros
+  module:
+    - blocktabs
+    - system
+  theme:
+    - observatorio
+id: observatorio_blocktabstabsestudosinteligenciacompetitivafiltros
+theme: observatorio
+region: content
+weight: -5
+provider: null
+plugin: 'blocktabs_block:tabs_estudos_inteligencia_competitiva_filtros'
+settings:
+  id: 'blocktabs_block:tabs_estudos_inteligencia_competitiva_filtros'
+  label: 'Blocktabs:Tabs Estudos - Inteligencia Competitiva - Filtros'
+  label_display: '0'
+  provider: blocktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/44
