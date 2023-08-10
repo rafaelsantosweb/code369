@@ -744,10 +744,9 @@ body {
     }
   }
 }
-
-.search-block-form {
-  margin-top: 22px;
-}  
+  .search-block-form {
+      align-self: center;
+  }
 
 /*
 .view-content .views-row {
@@ -784,4 +783,10 @@ body {
   border-radius: 50%;
   background: #ddd;
   border: 0;
+}
+
+.block--system-branding, 
+.block--definicaodemarcadosite {
+  z-index: 99;
+  margin-right: auto;
 }
