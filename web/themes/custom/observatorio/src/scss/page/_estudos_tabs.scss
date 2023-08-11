@@ -16,8 +16,16 @@
   font-family: "Averta", sans-serif;
 }
 
-.estudos .view-header {
-  margin: 2em 0 2em 0;
+/* Remoção de Filtro da Página de Inteligência em Dados */
+.node-37 
+.blocktabs{
+  ul.blocktabs-tabs{
+    display: none !important;
+  }
+  .view-header {
+    margin: 2em 0 2em 0;
+    display: none;
+  }
 }
 
 #blocktabs-estudos_prospectiva_filtros {
@@ -26,12 +34,13 @@
 
 .blocktabs {
   text-align: center;
-  background-color: transparent;
+  background-color: #F0F0F0 !important;
   margin-left: auto;
   border: 0 !important;
   font-family: "Averta", sans-serif;
-  margin: 20px;
-  padding: 0 !important ;
+  /* margin: 20px; */
+  padding: 0 0 150px 0 !important;
+  background: url('../../images/binary.svg') no-repeat 0 210px;
 }
 
 .blocktabs ul.blocktabs-tabs{
