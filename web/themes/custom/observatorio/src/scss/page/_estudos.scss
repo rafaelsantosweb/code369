@@ -1,17 +1,3 @@
-.node-37 {
-  .paragraph_destaques {
-    &::before {
-      content: '';
-      background-image: url('/themes/custom/observatorio/images/banner_shape_cinza.png');
-      display: inline-block;
-      position: relative;
-      top: 10px;
-      height: 165px;
-      width: 100%;
-    }
-  }
-}
-
 .node-type--detail, .view-estudos {
   .view-content {
     @media (max-width: 990px) {
@@ -28,12 +14,13 @@
       width: 100%;
     }
 
-    /* Row - White Card Box Style */
+    /* White Card Box Style */
     .views-row {
       background-color: white;
       border-radius: 6px;
-      padding: 30px 25px 26px;
+      padding: 30px 25px;
       flex-basis: calc(33.33% - 20px);
+      margin: 1em 0;
       display: block;
       justify-content: flex-end;
       flex-direction: column;
@@ -47,9 +34,24 @@
         }
       }
 
+      /* Image Espacing */
       .views-field-field-imagem {
         float: left;
         width: 49%
+      }
+
+      /* Card Content Alignment (a & p) */
+      .views-field-title,
+      .views-field-view-node-button, p {
+        width: 45%;
+        float: right;
+      }
+
+      /* Button Espacing */
+      .views-field-nid a {
+        padding: 5px 20px;
+        margin: 1rem 0 0 1rem !important;
+        float: left;
       }
 
       .views-field-title {
@@ -58,13 +60,6 @@
         font-weight: 600;
         margin-bottom: 11px;
         text-align: left;
-      }
-
-      /* Row - Card Content Alignment (a & p) */
-      .views-field-title,
-      .views-field-view-node-button, p {
-        width: 45%;
-        float: right;
       }
 
       .views-field-body {

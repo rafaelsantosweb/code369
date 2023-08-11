@@ -1,8 +1,24 @@
+/* Efeito curvo do bloco de estudos internos */
+.node-37, .node-43, .node-44{
+  .paragraph_destaques {
+    &::before {
+      content: '';
+      background-image: url('/themes/custom/observatorio/images/banner_shape_cinza.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: relative;
+      top: 15px;
+      height: 165px;
+      width: 100%;
+    }
+  }
+}
+
 .paragraph--type--destaques {
   display: block;
   color: $grey-300;
-  padding: 20px 20px 150px 20px;
-  background: url('../../images/binary.svg') no-repeat 0 210px;
+  padding: 20px;
   background-color: #f0f0f0;
 
   .field--type-string,
@@ -30,7 +46,6 @@
  
   .button {
    @include button;
-   margin: 0 0 1rem 1rem !important;
 
     a {
       display: inline-flex;
