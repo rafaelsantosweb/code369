@@ -3,6 +3,7 @@ langcode: pt-br
 status: true
 dependencies:
   module:
+    - node
     - system
   theme:
     - observatorio
@@ -10,8 +11,8 @@ _core:
   default_config_hash: NjcxOBrPOiK5-38t56DwFBDVY4yer7YSlbRWXFuHe7A
 id: observatorio_breadcrumbs
 theme: observatorio
-region: header
-weight: -4
+region: content
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -19,4 +20,13 @@ settings:
   label: Breadcrumbs
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      detail: detail
+      estudos: estudos
+      page: page
