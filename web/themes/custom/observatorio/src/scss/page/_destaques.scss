@@ -1,5 +1,7 @@
 /* Efeito curvo do bloco de estudos internos */
-.node-37, .node-43, .node-44{
+.node-37,
+.node-43,
+.node-44 {
   .paragraph_destaques {
     &::before {
       content: '';
@@ -12,6 +14,37 @@
       height: 165px;
       width: 100%;
     }
+  }
+  .paragraph_destaques:nth-child(2){
+    .field--name-field-view::after{
+      display: none;
+    }
+  }
+}
+
+.node-type--page {
+  .paragraph_destaques:nth-child(2) {
+    padding-bottom: 50px;
+
+    .paragraph--type--destaques {
+      background-color: white;
+
+      .field--name-field-view::after {
+        background-position: bottom;
+        height: 20%;
+        width: 37%;
+        right: 0;
+        left: auto;
+        bottom: 712px;
+        transform: scale(-1);
+        z-index: 0;
+      }
+    }
+  }
+
+  .paragraph_block{
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -43,9 +76,9 @@
     line-height: 10px;
     margin-bottom: 20px
   }
- 
+
   .button {
-   @include button;
+    @include button;
 
     a {
       display: inline-flex;
@@ -61,29 +94,36 @@
     #tns1 {
       display: flex;
     }
-    .views-row .button .field{
+
+    .views-row .button .field {
       padding: 0;
-     }
-   .views-row:hover{
-    transition: 500ms;
+    }
+
+    .views-row:hover {
+      transition: 500ms;
       background-color: #0E65E5;
-      
-      p{
+
+      p {
         color: white !important
       }
-      .views-field-field-title{
+
+      .views-field-field-title {
         color: white !important
       }
-      .button{
+
+      .button {
         border-color: #f7f7f7;
-        .paragraph--type--cta{
-          .field{
+
+        .paragraph--type--cta {
+          .field {
             padding: 0;
           }
+
           a {
             color: #f7f7f7;
           }
-          a:hover{
+
+          a:hover {
             background-color: white;
             color: black;
           }
@@ -92,7 +132,8 @@
     }
 
     .tns-nav {
-      .views-field-view-node, 
+
+      .views-field-view-node,
       button {
         background: $white;
         border: 1px solid #f7f7f7;
@@ -121,7 +162,7 @@
         height: 100%;
         font-family: "Averta", sans-serif;
       }
-     
+
       .views-field-title,
       .views-field-field-title {
         font-size: 18px;
@@ -144,12 +185,12 @@
         width: 110px;
         height: 34px;
         padding: 5;
-        
+
         & a {
           color: #003bd1;
           font-weight: 600;
           font-size: 11px;
-          line-height:30px;
+          line-height: 30px;
           text-decoration: none;
           padding: 8px 11px 5px;
           height: 100%;
@@ -157,7 +198,7 @@
           text-align: center;
           flex: 1;
           align-self: flex-end;
-        } 
+        }
       }
 
       .views-field-body,
@@ -172,6 +213,26 @@
         }
       }
     }
-  }  
+  }
+  .field--name-field-view{
+
+    &::after{
+      content: '';
+      background-image: url('/themes/custom/observatorio/images/binary.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: -449px;
+      position: absolute;
+      height: 35%;
+      width: 37%;
+      left: -4px;
+      bottom: -88px;
+      z-index: 0;
+    }    
+
+    .views-element-container{
+      z-index: 2;
+    }
+  }
 }
 /* teste */
