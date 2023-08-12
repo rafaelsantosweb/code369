@@ -7,12 +7,12 @@ dependencies:
 id: estudos
 label: Estudos
 type: 'canonical_entities:node'
-pattern: 'estudo/[node:title]'
+pattern: '[node:field_categoria]/[node:title]'
 selection_criteria:
-  4423b5f1-a2b3-4248-92aa-551651a22365:
+  fa254c5e-3f33-4825-94f7-251ba4a7fc2c:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4423b5f1-a2b3-4248-92aa-551651a22365
+    uuid: fa254c5e-3f33-4825-94f7-251ba4a7fc2c
     context_mapping:
       node: node
     bundles:

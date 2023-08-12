@@ -6,7 +6,7 @@ body.node-type--detail, body.node-type--estudos {
 
   #page__head-bottom {
     position: absolute;
-    top: 12rem;
+    top: 13.5rem;
     width: 100%;
     z-index: 10;
   }
@@ -83,12 +83,15 @@ body.node-type--detail, body.node-type--estudos {
 
     .paragraph_left {
       position: relative;
-      top: -25px;
+      top: -65px;
     }
 
     .paragraph_right {
       .field--name-field-title {
-        padding: 3rem 0.25rem 4rem !important;
+        padding: 0.5em 0.25rem 4rem !important;
+        font-weight: 100;
+        font-family: "Averta", sans-serif;
+        font-size: 15px;
       }
     }
   }
@@ -174,5 +177,6 @@ body.node-type--detail, body.node-type--estudos {
 
 .paragraph--type--image-text .field--name-field-body {
   margin-bottom: 1.5em;
+  margin-top: 3.7em;
 }
 /* teste */
