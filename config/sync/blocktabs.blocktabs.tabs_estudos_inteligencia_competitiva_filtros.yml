@@ -8,7 +8,7 @@ component: 'blocktabs:tabs-basic'
 tabs:
   64c474d4-f14e-4d51-8a79-68e0b4cb5e45:
     id: views_tab
-    title: Todos
+    title: TODOS
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_5
@@ -20,10 +20,10 @@ tabs:
     uuid: 64c474d4-f14e-4d51-8a79-68e0b4cb5e45
   7df332ce-bbd8-4186-bffe-9d90e403f55d:
     id: views_tab
-    title: 'Sub 1'
+    title: 'FILTRO IC 1'
     data:
       view_name: estudos_inteligencia_competitiva
-      view_display: block_6
+      view_display: block_3
       view_arg: ''
       display_tab: false
       check_access: false
@@ -32,10 +32,10 @@ tabs:
     uuid: 7df332ce-bbd8-4186-bffe-9d90e403f55d
   8c87f143-5fe1-4f80-a996-1caae9f4f5de:
     id: views_tab
-    title: 'Sub 2'
+    title: 'FILTRO IC 2'
     data:
       view_name: estudos_inteligencia_competitiva
-      view_display: block_7
+      view_display: block_1
       view_arg: ''
       display_tab: false
       check_access: false
@@ -44,15 +44,39 @@ tabs:
     uuid: 8c87f143-5fe1-4f80-a996-1caae9f4f5de
   0d1ef285-7897-498b-a9a1-c1750015b722:
     id: views_tab
-    title: 'Sub 3'
+    title: 'FILTRO IC 3'
     data:
       view_name: estudos_inteligencia_competitiva
-      view_display: block_3
+      view_display: block_2
       view_arg: ''
       display_tab: false
       check_access: false
       tab_css_id: ''
     weight: 4
     uuid: 0d1ef285-7897-498b-a9a1-c1750015b722
+  75d6005d-4161-4725-bd61-63daaaf37af9:
+    id: views_tab
+    title: 'FILTRO IC 4'
+    data:
+      view_name: estudos_inteligencia_competitiva
+      view_display: block_4
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 5
+    uuid: 75d6005d-4161-4725-bd61-63daaaf37af9
+  2d7b7eb5-b94c-4e5a-885b-288b308e0bb2:
+    id: views_tab
+    title: 'FILTRO IC 5'
+    data:
+      view_name: estudos_inteligencia_competitiva
+      view_display: block_7
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 6
+    uuid: 2d7b7eb5-b94c-4e5a-885b-288b308e0bb2
 event: null
 style: null

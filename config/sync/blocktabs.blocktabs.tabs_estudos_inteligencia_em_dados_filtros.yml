@@ -8,7 +8,7 @@ component: 'blocktabs:tabs-basic'
 tabs:
   8d2707bf-d6c7-4503-87ed-941582a2cedf:
     id: views_tab
-    title: Todos
+    title: TODOS
     data:
       view_name: estudos_inteligencia_em_dados
       view_display: block_5
@@ -16,23 +16,11 @@ tabs:
       display_tab: false
       check_access: false
       tab_css_id: ''
-    weight: 1
+    weight: -50
     uuid: 8d2707bf-d6c7-4503-87ed-941582a2cedf
   c0e10cfa-6f45-4c73-8622-c951878efdde:
     id: views_tab
-    title: 'Sub 1'
-    data:
-      view_name: estudos_inteligencia_em_dados
-      view_display: block_6
-      view_arg: ''
-      display_tab: false
-      check_access: false
-      tab_css_id: ''
-    weight: 2
-    uuid: c0e10cfa-6f45-4c73-8622-c951878efdde
-  a9ca8e77-1d48-4617-87eb-d8b55deda1e2:
-    id: views_tab
-    title: 'Sub 2'
+    title: 'FILTRO ID 1'
     data:
       view_name: estudos_inteligencia_em_dados
       view_display: block_1
@@ -40,19 +28,55 @@ tabs:
       display_tab: false
       check_access: false
       tab_css_id: ''
-    weight: 3
-    uuid: a9ca8e77-1d48-4617-87eb-d8b55deda1e2
-  5b9158f4-9cbc-4fe4-b3e4-ff5baa74443f:
+    weight: -49
+    uuid: c0e10cfa-6f45-4c73-8622-c951878efdde
+  a9ca8e77-1d48-4617-87eb-d8b55deda1e2:
     id: views_tab
-    title: 'Sub 3'
+    title: 'FILTRO ID 2'
     data:
       view_name: estudos_inteligencia_em_dados
-      view_display: block_7
+      view_display: block_2
       view_arg: ''
       display_tab: false
       check_access: false
       tab_css_id: ''
-    weight: 4
+    weight: -48
+    uuid: a9ca8e77-1d48-4617-87eb-d8b55deda1e2
+  5b9158f4-9cbc-4fe4-b3e4-ff5baa74443f:
+    id: views_tab
+    title: 'FILTRO ID 3'
+    data:
+      view_name: estudos_inteligencia_em_dados
+      view_display: block_3
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: -47
     uuid: 5b9158f4-9cbc-4fe4-b3e4-ff5baa74443f
+  dd566aee-7d38-4628-a731-737cd30fd36d:
+    id: views_tab
+    title: 'FILTRO ID 5'
+    data:
+      view_name: estudos_inteligencia_em_dados
+      view_display: block_6
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: -45
+    uuid: dd566aee-7d38-4628-a731-737cd30fd36d
+  f8f9c178-a2a5-44ec-a935-915e5194fe8c:
+    id: views_tab
+    title: 'FILTRO ID 4'
+    data:
+      view_name: estudos_inteligencia_em_dados
+      view_display: block_4
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: -46
+    uuid: f8f9c178-a2a5-44ec-a935-915e5194fe8c
 event: null
 style: null

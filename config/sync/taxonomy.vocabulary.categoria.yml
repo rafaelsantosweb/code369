@@ -2,7 +2,7 @@ uuid: e5b4bea7-be67-416b-9a10-4416a4b25a4e
 langcode: pt-br
 status: true
 dependencies: {  }
-name: Categoria
+name: Pilares
 vid: categoria
-description: 'As categorias do observatório'
+description: 'Pilares do observatório'
 weight: 0

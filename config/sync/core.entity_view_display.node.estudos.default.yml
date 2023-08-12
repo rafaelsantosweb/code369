@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.estudos.field_destaque
     - field.field.node.estudos.field_imagem
     - field.field.node.estudos.field_metatags
+    - field.field.node.estudos.field_pilar_inteligencia_competi
+    - field.field.node.estudos.field_pilar_inteligencia_em_dado
     - field.field.node.estudos.field_teaser
     - node.type.estudos
   module:
@@ -29,6 +31,22 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_pilar_inteligencia_competi:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pilar_inteligencia_em_dado:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }

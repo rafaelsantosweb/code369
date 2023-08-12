@@ -10,7 +10,7 @@ id: node.estudos.field_categoria
 field_name: field_categoria
 entity_type: node
 bundle: estudos
-label: Categoria
+label: Pilares
 description: ''
 required: false
 translatable: false

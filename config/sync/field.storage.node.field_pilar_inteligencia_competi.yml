@@ -1,0 +1,20 @@
+uuid: 730a4056-a04a-4d78-a557-3d854bf71f02
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_pilar_inteligencia_competi
+field_name: field_pilar_inteligencia_competi
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

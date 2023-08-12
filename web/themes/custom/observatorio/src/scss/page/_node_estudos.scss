@@ -20,5 +20,36 @@
 }
 
 .estudos--full .block--titulodapagina {
+  //display: none;
+  background-color: blue;
+}
+
+.estudos--full .paragraph--view-mode--default {
+  display: none !important;
+}
+
+.node-type--estudos .block--titulodapagina {
   display: none;
+}
+
+.node-type--estudos .block--titulodapagina  h1 {
+  display: none;
+}
+
+.node-type--estudos .categoria-estudos {
+  color: #fff;
+  margin-right: 24%;
+  font-size: 2.5rem;
+  margin-top: 1.4em;
+  font-family: "Averta", sans-serif;
+}
+
+.node-type--estudos .categoria-estudos-descricao {
+  color: #fff;
+  margin-right:0;
+  padding-top: 1em;
+  font-size: 1.1rem;
+  margin-top: 1em;
+  font-family: "Averta", sans-serif;
+  font-weight: 100;
 }

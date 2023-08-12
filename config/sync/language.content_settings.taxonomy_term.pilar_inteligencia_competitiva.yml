@@ -1,0 +1,11 @@
+uuid: 088b1a25-a2a7-413c-8d40-826c05ab3d1c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pilar_inteligencia_competitiva
+id: taxonomy_term.pilar_inteligencia_competitiva
+target_entity_type_id: taxonomy_term
+target_bundle: pilar_inteligencia_competitiva
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: 5c26b6b4-8170-4cda-864c-37e457b5545b
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_pilar_inteligencia_em_dado
+field_name: field_pilar_inteligencia_em_dado
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -6,53 +6,77 @@ name: estudos_prospectiva_filtros
 label: 'Tabs Estudos - Prospectiva e Tendência - Filtros'
 component: 'blocktabs:tabs-basic'
 tabs:
-  f4ab57ae-d359-43d9-8498-ec2111981f8c:
+  135ab505-8ea9-48ae-9bf7-2fa8fc2ee14c:
     id: views_tab
     title: TODOS
     data:
-      view_name: page_tabs_prospetiva_e_tendencia
+      view_name: page_tabs_prospectiva_e_tendencia
       view_display: block_5
       view_arg: ''
       display_tab: false
       check_access: false
-      tab_css_id: container
-    weight: 1
-    uuid: f4ab57ae-d359-43d9-8498-ec2111981f8c
-  b209d44a-0aa0-4a2e-89f7-04a0c2c5d0e9:
+      tab_css_id: ''
+    weight: -50
+    uuid: 135ab505-8ea9-48ae-9bf7-2fa8fc2ee14c
+  7455fe22-940d-43e6-9783-b4fefdc4597a:
     id: views_tab
-    title: 'MACROTÊNCIA DE FUTUROS'
+    title: 'MACROTENDÊNCIA DE FUTUROS'
     data:
-      view_name: page_tabs_prospetiva_e_tendencia
+      view_name: page_tabs_prospectiva_e_tendencia
+      view_display: block_1
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: -49
+    uuid: 7455fe22-940d-43e6-9783-b4fefdc4597a
+  14b3aae2-b0f0-496a-adfd-3aa4d4b8cebd:
+    id: views_tab
+    title: 'AMBIENTE DE NEGÓCIOS E DE INOVAÇÃO'
+    data:
+      view_name: page_tabs_prospectiva_e_tendencia
       view_display: block_3
       view_arg: ''
       display_tab: false
       check_access: false
       tab_css_id: ''
-    weight: 2
-    uuid: b209d44a-0aa0-4a2e-89f7-04a0c2c5d0e9
-  556dfbdb-5274-4517-808c-9211e0d62571:
-    id: views_tab
-    title: 'AMBIENTAÇÃO E NEGÓCIOS'
-    data:
-      view_name: page_tabs_prospetiva_e_tendencia
-      view_display: block_7
-      view_arg: ''
-      display_tab: false
-      check_access: false
-      tab_css_id: ''
-    weight: 3
-    uuid: 556dfbdb-5274-4517-808c-9211e0d62571
-  99718a6c-06d6-4f08-b4b9-55fd7c248385:
+    weight: -48
+    uuid: 14b3aae2-b0f0-496a-adfd-3aa4d4b8cebd
+  7f0b7e1b-b784-4d4b-9a5a-48cc471d21be:
     id: views_tab
     title: 'ROTAS TECNOLÓGICAS'
     data:
-      view_name: page_tabs_prospetiva_e_tendencia
-      view_display: block_6
+      view_name: page_tabs_prospectiva_e_tendencia
+      view_display: block_2
       view_arg: ''
       display_tab: false
       check_access: false
       tab_css_id: ''
     weight: 4
-    uuid: 99718a6c-06d6-4f08-b4b9-55fd7c248385
+    uuid: 7f0b7e1b-b784-4d4b-9a5a-48cc471d21be
+  12277a32-217c-48b1-afb7-d094182f1a6f:
+    id: views_tab
+    title: 'FILTRO PT 4'
+    data:
+      view_name: page_tabs_prospectiva_e_tendencia
+      view_display: block_6
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 5
+    uuid: 12277a32-217c-48b1-afb7-d094182f1a6f
+  e1c4ec41-fdff-4b5d-9305-2c355cc81f07:
+    id: views_tab
+    title: 'FILTRO PT 5'
+    data:
+      view_name: page_tabs_prospectiva_e_tendencia
+      view_display: block_7
+      view_arg: ''
+      display_tab: false
+      check_access: false
+      tab_css_id: ''
+    weight: 6
+    uuid: e1c4ec41-fdff-4b5d-9305-2c355cc81f07
 event: null
 style: null

@@ -1,0 +1,8 @@
+uuid: 06725fd8-0e53-496f-bdea-7d4dbee8d123
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Pilar Inteligência em dados'
+vid: pilar_inteligencia_em_dados
+description: ''
+weight: 0

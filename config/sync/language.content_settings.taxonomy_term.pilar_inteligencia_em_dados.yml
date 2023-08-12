@@ -1,0 +1,11 @@
+uuid: c0a9e4b7-0cf5-41e3-876d-83742c09e15f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pilar_inteligencia_em_dados
+id: taxonomy_term.pilar_inteligencia_em_dados
+target_entity_type_id: taxonomy_term
+target_bundle: pilar_inteligencia_em_dados
+default_langcode: site_default
+language_alterable: false
