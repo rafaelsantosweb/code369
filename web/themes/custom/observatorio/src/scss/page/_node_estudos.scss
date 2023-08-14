@@ -29,3 +29,65 @@
   overflow: hidden;
 } 
 
+.node-type--estudos .container{
+  .paragraph_cta{
+    padding: 0;
+
+    .paragraph--type--cta{
+      width: auto;
+      background-color: transparent !important;
+  
+      .button-acessar-estudo{
+        @include button_estudos;
+      }
+    } 
+  }
+  .paragraph_attachments{
+    padding: 0;
+
+    .button-attachments-estudos{
+      @include button_estudos;
+      
+      a{  
+        display: flex;
+        justify-content: center;
+
+        &::before{
+          content: '';
+          background-image: url('../../images/pdf-file-3380.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 24px;
+          width: 24px;
+          flex: 2;
+          // margin-right: 40%;
+          // margin-left: 7%;
+        }
+
+        &::after{
+          display: flex;
+          // flex-grow: 3;
+          flex:2;
+        }
+      }
+
+      .file{
+        width: 100%;
+      }
+
+      .field__item{
+        display: flex;
+        align-items: center;
+
+        span:nth-child(2){
+          display: inline-flex;
+          background-color: grey;
+          height: 55px;
+          width: 18%;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
