@@ -1,17 +1,23 @@
-uuid: 3f90549e-e393-400e-bfe2-0e06aca82ff9
+uuid: d8defe9d-bf08-400c-860f-b6e9e07acf8a
 langcode: pt-br
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.destaques
     - field.field.paragraph.attachments.field_file
     - field.field.paragraph.attachments.field_restrito
     - paragraphs.paragraphs_type.attachments
   module:
     - file
-id: paragraph.attachments.default
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.attachments.destaques
 targetEntityType: paragraph
 bundle: attachments
-mode: default
+mode: destaques
 content:
   field_file:
     type: file_default
@@ -21,10 +27,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  search_api_excerpt:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   field_restrito: true
+  search_api_excerpt: true

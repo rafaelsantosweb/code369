@@ -1,8 +1,9 @@
-uuid: 1a733745-5cd6-4a04-8182-f641c44ae6de
+uuid: 3e81b67e-b735-4877-abb8-157785811f54
 langcode: pt-br
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.estudos.body
     - field.field.node.estudos.field_access
     - field.field.node.estudos.field_area
@@ -16,27 +17,17 @@ dependencies:
     - field.field.node.estudos.field_teaser
     - node.type.estudos
   module:
-    - entity_reference_revisions
     - layout_builder
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-id: node.estudos.default
+id: node.estudos.full
 targetEntityType: node
 bundle: estudos
-mode: default
+mode: full
 content:
-  field_content:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -47,6 +38,7 @@ hidden:
   field_access: true
   field_area: true
   field_categoria: true
+  field_content: true
   field_destaque: true
   field_imagem: true
   field_metatags: true

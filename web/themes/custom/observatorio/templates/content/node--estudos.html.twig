@@ -5,6 +5,8 @@
  */
 #}
 {% include "@radix/content/node.twig" %}
+{% include "@radix/field/field.twig" %}
+
   {% block content %}
   <div class="container estudos-internas">
     <div class="row">
@@ -15,13 +17,14 @@
         <h1>{{ node.label }}</h1>
             {{ node.body.value|t }}
         <br>
-        <div class="button-acessar-estudo">
-          Acessar os dados do estudo
-        </div>
-        <br>
-        Gostou do Contéudo ? Compartilhe nosso estudo  
+       
+      </div>
+    </div>
+
+      <div class="render-paragrafs-estudos">
+
+        {{ bamboo_render_field('field_content', 'node') }}
       </div>
 
-    </div>
   </div>
   {% endblock %}

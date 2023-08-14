@@ -1,4 +1,4 @@
-sort_order: 'count,desc'
+sort_order: 'title,asc'
 display_type: style
 display_node_link: true
 display_more_link: true

@@ -3,7 +3,7 @@ langcode: pt-br
 status: true
 dependencies: {  }
 id: cta
-label: CTA
+label: 'Link Externo'
 icon_uuid: null
 icon_default: null
 description: 'Call to Action'

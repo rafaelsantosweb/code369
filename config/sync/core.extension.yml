@@ -5,6 +5,8 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   backup_migrate: 0
+  bamboo_twig: 0
+  bamboo_twig_loader: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -13,6 +15,7 @@ module:
   blocktabs_bootstrap: 0
   breakpoint: 0
   ckeditor5: 0
+  comment: 0
   components: 0
   conditional_fields: 0
   config: 0

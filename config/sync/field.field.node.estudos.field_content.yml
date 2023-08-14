@@ -5,6 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.estudos
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.hero_slider
+    - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.slide
   module:
     - entity_reference_revisions
@@ -22,43 +26,47 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      image: image
+      hero_banner: hero_banner
+      block: block
       slide: slide
+      hero_slider: hero_slider
     negate: 1
     target_bundles_drag_drop:
       attachments:
-        weight: 9
+        weight: -24
         enabled: false
       block:
-        weight: 10
-        enabled: false
+        weight: -18
+        enabled: true
       body:
-        weight: 15
+        weight: -22
         enabled: false
       cta:
-        weight: 11
+        weight: -23
         enabled: false
       destaques:
-        weight: 12
+        weight: -17
         enabled: false
       hero_banner:
-        weight: 2
-        enabled: false
+        weight: -20
+        enabled: true
       hero_slider:
-        weight: 19
-        enabled: false
+        weight: -14
+        enabled: true
       iframe:
-        weight: 20
+        weight: -25
         enabled: false
       image:
-        weight: 21
-        enabled: false
+        weight: -21
+        enabled: true
       image_text:
-        weight: 14
+        weight: -19
         enabled: false
       slide:
-        weight: 15
+        weight: -16
         enabled: true
       views:
-        weight: 16
+        weight: -15
         enabled: false
 field_type: entity_reference_revisions

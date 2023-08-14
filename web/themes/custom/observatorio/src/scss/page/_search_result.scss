@@ -1,19 +1,13 @@
-.page-search {
+.search-form {
 
-  h3 {
-    text-align: center;
-  }
-  
-  #hero-banners .hero-banner img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
-    max-height: 340px;
+  margin-top: 2em;
+
+  .search-advanced {
+    display: none;
   }
 
-  .search-form {
-    margin-top: 3em;
-    margin-bottom: 3em;
+  a {
+    display: none;
   }
 
 }

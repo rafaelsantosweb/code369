@@ -20,7 +20,7 @@ tabs:
     uuid: 64c474d4-f14e-4d51-8a79-68e0b4cb5e45
   7df332ce-bbd8-4186-bffe-9d90e403f55d:
     id: views_tab
-    title: 'FILTRO IC 1'
+    title: 'ESTUDOS ECONÔMICOS E SETORIAIS'
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_3
@@ -32,7 +32,7 @@ tabs:
     uuid: 7df332ce-bbd8-4186-bffe-9d90e403f55d
   8c87f143-5fe1-4f80-a996-1caae9f4f5de:
     id: views_tab
-    title: 'FILTRO IC 2'
+    title: 'ANÁLISE CONJUNTURAL E CENÀRIOS ECONOMICOS'
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_1
@@ -44,7 +44,7 @@ tabs:
     uuid: 8c87f143-5fe1-4f80-a996-1caae9f4f5de
   0d1ef285-7897-498b-a9a1-c1750015b722:
     id: views_tab
-    title: 'FILTRO IC 3'
+    title: 'PESQUISAS SONDAGENS EMPRESARIAIS'
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_2
@@ -56,7 +56,7 @@ tabs:
     uuid: 0d1ef285-7897-498b-a9a1-c1750015b722
   75d6005d-4161-4725-bd61-63daaaf37af9:
     id: views_tab
-    title: 'FILTRO IC 4'
+    title: 'PESQUISAS TEMÁTICAS'
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_4

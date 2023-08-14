@@ -28,7 +28,7 @@ elements: |-
       '#format': html
     description:
       '#type': processed_text
-      '#text': "<p>Quer ficar por dentro das novidades?\L<br><strong>Seja o primeiro a saber.</strong></p>"
+      '#text': '<p>Quer ficar por dentro das novidades?&nbsp;<br><strong>Seja o primeiro a saber.</strong></p>'
       '#format': html
     name:
       '#type': textfield

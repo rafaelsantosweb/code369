@@ -20,7 +20,7 @@ tabs:
     uuid: 8d2707bf-d6c7-4503-87ed-941582a2cedf
   c0e10cfa-6f45-4c73-8622-c951878efdde:
     id: views_tab
-    title: 'FILTRO ID 1'
+    title: 'PLATAFORMA EM DADOS'
     data:
       view_name: estudos_inteligencia_em_dados
       view_display: block_1

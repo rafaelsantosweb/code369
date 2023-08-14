@@ -3,7 +3,7 @@ langcode: pt-br
 status: true
 dependencies: {  }
 id: image_text
-label: 'Image Text'
+label: 'Image e Texto'
 icon_uuid: null
 icon_default: null
 description: 'Apresenta uma imagem, título, descrição e CTA.'
