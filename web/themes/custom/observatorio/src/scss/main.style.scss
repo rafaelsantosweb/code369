@@ -759,9 +759,20 @@ body {
     }
   }
 }
-  .search-block-form {
-      align-self: center;
+.search-block-form {
+    align-self: center;
+    z-index: 99;
+}
+
+.node-type--estudos, .node-type--detail{
+  .search-block-form{
+    .form-submit{
+      background: url('../../images/icon-search.png') center no-repeat !important;
+      background-size: 18px !important;
+      filter: invert(1);
+    }
   }
+}
 
 /*
 .view-content .views-row {
