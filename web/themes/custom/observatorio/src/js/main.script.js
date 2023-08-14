@@ -51,3 +51,33 @@ import { Toast, Tooltip } from './_bootstrap';
   <a href="/search/node" class="nav-link" data-drupal-link-system-path="/search/node">Buscar</a>
 </li>`);
 } )( jQuery );
+
+
+//função para mover os botões da pagina de estudo para outra div
+( function ($){
+	if($('body').hasClass('node-type--estudos')){
+		document.addEventListener('DOMContentLoaded', function() {
+			
+			var newParent = document.querySelector('.estudos-internas .col:nth-child(2)');
+			
+			try {
+				var childToMove2 = $('.paragraph_attachments');
+				var botao_anexo = $('.button-attachments-estudos').find('a');
+				
+				botao_anexo.attr('target', '_blank');
+				childToMove2.appendTo(newParent);
+			} catch (error) {
+			}
+			
+			try {
+				var childToMove = $('.paragraph_cta');
+				var botao_link_externo = $('.button-acessar-estudo').find('a');
+
+				botao_link_externo.attr('target', '_blank');
+				childToMove.appendTo(newParent);
+			} catch (error) {
+			}
+			
+		})
+	}
+} )( jQuery );
