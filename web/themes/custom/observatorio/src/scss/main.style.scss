@@ -26,13 +26,13 @@ body {
     margin-right: auto;
   }
 
-  .block--navegacaoprincipal {
-    // width: 60%;
+  .block--navegacaoprincipal {      
+    // width: 60%;              /* Apagar daqui */
     // top: 18px;
 
     @media (max-width: 990px) {
       display: none;
-    }
+    }                           /* Ate aqui */
 
     ul.nav {
       background-color: $white;
@@ -675,11 +675,12 @@ body {
   @media (max-width: 990px) {
     position: absolute;
     display: flex;
-    height: 30px;
+    height: 10px;
     align-items: center;
     top: 0;
     right: 15px;
     border-radius: 3px;
+    z-index: 99;
   }
 }
 .header-mobile-toggle {

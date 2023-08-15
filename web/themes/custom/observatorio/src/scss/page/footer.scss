@@ -1,4 +1,6 @@
 footer.page__footer {
+  position: relative;
+  z-index: 1;
   background-color: $blue-500;
   color: $white;
   font-size: 18px;
@@ -82,14 +84,13 @@ footer.page__footer {
   #edit-actions--3, #edit-actions--5 {
     display: none;
   }
-
 }
 
 footer#copyright {
   background-color: $grey-50;
   color: $grey-300;
   font-weight: 400;
-  padding: 25px;
+  padding: 15px 0 5px;
   width: 100%;
   text-align: center;
 }
