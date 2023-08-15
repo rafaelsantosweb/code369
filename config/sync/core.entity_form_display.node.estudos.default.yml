@@ -162,15 +162,22 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  field_teaser:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 12
     region: content
     settings:
       display_label: true
@@ -186,7 +193,6 @@ content:
 hidden:
   created: true
   field_access: true
-  field_teaser: true
   langcode: true
   promote: true
   sticky: true

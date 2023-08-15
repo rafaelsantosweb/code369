@@ -5,29 +5,60 @@
  * Template for the main page.
  */
 #}
-
 {% set page_classes = []|merge(page_utility_classes ? page_utility_classes : []) %}
 
 <div class="page">
+
   {% block banner %}
+
+  {{ attach_library('tiny_slider/tiny_slider') }}
+
   <div id='hero-banners'>
+    <div id='the-banners' {% if heros|length > 1 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
+      {% for hero in heros %}
         <div class='hero-banner paragraph--type--hero-banner'>
+        {% if hero.img %}
+
+          {% set imagestyle = {
+            '#theme': 'image_style',
+            '#style_name': 'hero_banner',
+            '#uri': hero.img.src.fileuri,
+            '#alt': hero.img.alt,
+            '#attributes': { class: 'hero-img' },
+          } %}
+          {{ imagestyle }}
+
+        {% elseif default_hero_img %}
           <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img default-img" />
-          <div class='container hero-wrapper paragraph--type--hero-banner'>
-              <div class="page__head-bottom categoria-estudos">
-              <div class="container header_container">
-                {% set categoria_estudo = node.field_categoria.target_id %}
-                {% if categoria_estudo == "8" %}
-                    Prospetiva e Tendência
-                  {% elseif categoria_estudo == "7" %}
-                      Inteligência em dados
-                  {% elseif categoria_estudo == "6" %}
-                    Inteligência Competividade
-                {% endif %}
-                </div>
+        {% endif %}
+
+        {% if hero.title or hero.body %}
+          <div class='hero-wrapper {{ hero.class }}'>
+
+            {% set categoria_estudo = node.field_categoria.target_id %}
+            {% if categoria_estudo == "8" %}
+                Prospetiva e Tendência
+              {% elseif categoria_estudo == "7" %}
+                  Inteligência em dados
+              {% elseif categoria_estudo == "6" %}
+                Inteligência Competividade
+            {% endif %}
+
+            {% if hero.title %}
+              <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
+            {% endif %}
+            {% if hero.body %}
+              <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
+            {% endif %}
+            {% if hero.cta %}
+              <div class="field field--name-field-link field--type-link field__item button">
+                <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
               </div>
-              <div class="categoria-estudos-descricao">O Observatório Firjan é uma plataforma digital que reúne dados, tendências e propostas.</div>
+            {% endif %}
+          </div>
+        {% endif %}
         </div>
+      {% endfor %}
     </div>
     <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
