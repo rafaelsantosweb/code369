@@ -65,14 +65,6 @@ body.node-type--detail, body.node-type--estudos {
     }
   }
 
-  .block--navegacaoprincipal ul.nav {
-    background-color: transparent !important;
-
-    li > a {
-      color: white !important;
-    }
-  }
-
   .paragraph_image_text {
     background-color: #fff;
   }
@@ -152,9 +144,8 @@ body.node-type--detail, body.node-type--estudos {
 }
 
 .node-type--detail, .node-type--estudos {
-
   .block--navegacaoprincipal ul.nav {
-    background-color: transparent !important;
+    background-color: #0E65E5 !important;
     flex-direction: row;
     justify-content: flex-end;
     z-index: 11;
@@ -172,11 +163,9 @@ body.node-type--detail, body.node-type--estudos {
     color: #fff;
     margin-bottom: 20px;
   }
-
 }
 
 .paragraph--type--image-text .field--name-field-body {
   margin-bottom: 1.5em;
   margin-top: 3.7em;
 }
-/* teste */
