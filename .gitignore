@@ -50,6 +50,7 @@ web/sites/example*.php
 web/sites/development*.yml
 web/sites/*/default*.yml
 web/sites/*/default*.php
+web/libraries/*
 
 # Ignore contrib.
 web/*/contrib/
