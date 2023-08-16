@@ -207,7 +207,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: 'Prospectiva e Tendências'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -270,7 +270,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: 'Inteligência competitiva'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -333,7 +333,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: 'Inteligência em dados'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
