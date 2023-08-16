@@ -25,7 +25,7 @@
   margin-left: auto;
   border: 0 !important;
   font-family: "Averta", sans-serif;
-  padding: 0 0 150px 0 !important;
+  padding: 0 0 160px 0 !important;
 
   &::after {
     content: '';
@@ -37,7 +37,7 @@
     height: 40%;
     width: 100%;
     left: 0;
-    bottom: 180px;
+    bottom: 155px;
   }
 }
 
@@ -109,4 +109,5 @@
 
 .paragraph_left .field--name-field-media-image .field__item img {
   width: 93%;
+  margin-left: 8%;
 }
