@@ -43,6 +43,9 @@
         padding: 5px 20px;
         margin: 1rem 0 0 1rem !important;
         float: left;
+        text-decoration: none;
+        border: 1px solid #003bd1;  /* Temporary Fix */
+        border-radius: 5px;
       }
 
       .views-field-title {
@@ -93,6 +96,7 @@
 .block--block-inteligencia-dados
 {
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 .block--block-prospectiva-relacionado h2,
@@ -100,10 +104,11 @@
 .block--block-inteligencia-dados h2
  {
   font-size: 22px;
-  padding-bottom: 1em;
+  font-weight: 600;
+  padding: 6em 0 3em;
  }
 
 
  .node-type--estudos body .page {
-     background: #F2F2F2 !important;
+    background: #F2F2F2 !important;
   }
