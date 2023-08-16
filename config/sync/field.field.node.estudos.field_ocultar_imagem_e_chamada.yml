@@ -1,0 +1,21 @@
+uuid: 4802f99c-c964-4e00-9919-8c1723b00a3e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ocultar_imagem_e_chamada
+    - node.type.estudos
+id: node.estudos.field_ocultar_imagem_e_chamada
+field_name: field_ocultar_imagem_e_chamada
+entity_type: node
+bundle: estudos
+label: 'Ocultar imagem e Chamada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Sim
+  off_label: Não
+field_type: boolean

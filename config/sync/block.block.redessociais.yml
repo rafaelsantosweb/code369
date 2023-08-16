@@ -11,7 +11,7 @@ dependencies:
 id: redessociais
 theme: observatorio
 region: footer
-weight: -5
+weight: -7
 provider: null
 plugin: 'block_content:a3777b11-703f-4fb0-bf8d-a201a11fe4dd'
 settings:

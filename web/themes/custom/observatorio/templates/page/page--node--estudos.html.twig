@@ -35,6 +35,8 @@
         {% if hero.title or hero.body %}
           <div class='hero-wrapper {{ hero.class }}'>
 
+        <div class="container">
+
             {% set categoria_estudo = node.field_categoria.target_id %}
             {% if categoria_estudo == "8" %}
                 Prospetiva e Tendência
@@ -55,6 +57,7 @@
                 <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
               </div>
             {% endif %}
+          </div>
           </div>
         {% endif %}
         </div>

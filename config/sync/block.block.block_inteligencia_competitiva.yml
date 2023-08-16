@@ -1,0 +1,29 @@
+uuid: ac8d0155-24f5-4279-87f5-a06369ccec29
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.estudos_inteligencia_competitiva
+  module:
+    - system
+    - views
+  theme:
+    - observatorio
+id: block_inteligencia_competitiva
+theme: observatorio
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:estudos_inteligencia_competitiva-block_inteligencia_competitiva'
+settings:
+  id: 'views_block:estudos_inteligencia_competitiva-block_inteligencia_competitiva'
+  label: 'Confira alguns outros estudos relacionados a Inteligência Competitiva'
+  label_display: visible
+  provider: views
+  views_label: 'Confira alguns outros estudos relacionados a Inteligência Competitiva'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/inteligencia-competividade/*'

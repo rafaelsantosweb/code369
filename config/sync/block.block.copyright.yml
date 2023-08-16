@@ -11,7 +11,7 @@ dependencies:
 id: copyright
 theme: observatorio
 region: copyright
-weight: -7
+weight: -9
 provider: null
 plugin: 'block_content:530fb51f-ccdd-44a6-9007-2a2f4f661fc6'
 settings:

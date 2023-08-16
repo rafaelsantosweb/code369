@@ -1,0 +1,11 @@
+uuid: 3117fdad-38eb-4a26-b0fa-360ccb8df6b3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_estudos
+id: taxonomy_term.tags_estudos
+target_entity_type_id: taxonomy_term
+target_bundle: tags_estudos
+default_langcode: site_default
+language_alterable: false

@@ -80,7 +80,7 @@ settings:
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
-  form_submit_once: false
+  form_submit_once: true
   form_open_message: ''
   form_close_message: ''
   form_exception_message: ''
@@ -171,10 +171,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: modal
   confirmation_url: '<front>'
   confirmation_title: ''
-  confirmation_message: 'Sua mensagem foi enviada.'
+  confirmation_message: '<p>Email Cadastrado com sucesso.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

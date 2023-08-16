@@ -1,4 +1,4 @@
-.node-type--detail, .view-estudos {
+.node-type--detail, .view-estudos, .node-type--estudos {
   .view-content {
     @media (max-width: 990px) {
       flex-wrap: wrap;
@@ -78,3 +78,32 @@
     }
   }
 }
+
+/*
+.view-estudos-inteligencia-em-dados, 
+.view-page-tabs-prospectiva-e-tendencia,
+.view-estudos-inteligencia-competitiva .views-row 
+{
+  background-color: #faf7f7 !important;
+}
+*/
+
+.block--block-prospectiva-relacionado,
+.block--block-inteligencia-competitiva,
+.block--block-inteligencia-dados
+{
+  text-align: center;
+}
+
+.block--block-prospectiva-relacionado h2,
+.block--block-inteligencia-competitiva h2,
+.block--block-inteligencia-dados h2
+ {
+  font-size: 22px;
+  padding-bottom: 1em;
+ }
+
+
+ .node-type--estudos body .page {
+     background: #F2F2F2 !important;
+  }

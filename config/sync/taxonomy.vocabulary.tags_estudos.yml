@@ -1,0 +1,8 @@
+uuid: 01cae7e8-a2e3-41f0-bf01-9d4452736884
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'tags Estudos'
+vid: tags_estudos
+description: ''
+weight: 0

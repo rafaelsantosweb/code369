@@ -12,8 +12,10 @@ dependencies:
     - field.field.node.estudos.field_destaque
     - field.field.node.estudos.field_imagem
     - field.field.node.estudos.field_metatags
+    - field.field.node.estudos.field_ocultar_imagem_e_chamada
     - field.field.node.estudos.field_pilar_inteligencia_competi
     - field.field.node.estudos.field_pilar_inteligencia_em_dado
+    - field.field.node.estudos.field_tags_estudos
     - field.field.node.estudos.field_teaser
     - node.type.estudos
   module:
@@ -51,8 +53,10 @@ hidden:
   field_destaque: true
   field_imagem: true
   field_metatags: true
+  field_ocultar_imagem_e_chamada: true
   field_pilar_inteligencia_competi: true
   field_pilar_inteligencia_em_dado: true
+  field_tags_estudos: true
   field_teaser: true
   langcode: true
   layout_builder__layout: true

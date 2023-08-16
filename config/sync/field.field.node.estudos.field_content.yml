@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_content
     - node.type.estudos
     - paragraphs.paragraphs_type.block
-    - paragraphs.paragraphs_type.hero_banner
     - paragraphs.paragraphs_type.hero_slider
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.slide
@@ -27,7 +26,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      hero_banner: hero_banner
       block: block
       slide: slide
       hero_slider: hero_slider
@@ -50,7 +48,7 @@ settings:
         enabled: false
       hero_banner:
         weight: -20
-        enabled: true
+        enabled: false
       hero_slider:
         weight: -14
         enabled: true

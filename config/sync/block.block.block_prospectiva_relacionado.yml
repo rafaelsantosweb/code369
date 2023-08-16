@@ -1,0 +1,29 @@
+uuid: 758cd111-4946-4b98-bdce-9680280a01f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.page_tabs_prospectiva_e_tendencia
+  module:
+    - system
+    - views
+  theme:
+    - observatorio
+id: block_prospectiva_relacionado
+theme: observatorio
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:page_tabs_prospectiva_e_tendencia-block_prospectiva_relacionado'
+settings:
+  id: 'views_block:page_tabs_prospectiva_e_tendencia-block_prospectiva_relacionado'
+  label: 'Confira alguns outros estudos relacionados a Prospectiva e Tendências'
+  label_display: visible
+  provider: views
+  views_label: 'Confira alguns outros estudos relacionados a Prospectiva e Tendências'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/prospectiva-e-tendencias/*'

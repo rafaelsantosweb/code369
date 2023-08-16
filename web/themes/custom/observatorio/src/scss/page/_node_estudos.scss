@@ -1,93 +1,119 @@
-.node-type--estudos .block--titulodapagina {
-  display: none;
-}
-
-.node-type--estudos .block--titulodapagina  h1 {
-  display: none;
-}
-
-.node-type--estudos .categoria-estudos {
-  color: #fff;
-  margin-right: 24%;
-  font-size: 2.5rem;
-  margin-top: 1.4em;
-  font-family: "Averta", sans-serif;
-}
-
-.node-type--estudos .categoria-estudos-descricao {
-  color: #fff;
-  margin-right:0;
-  padding-top: 1em;
-  font-size: 1.1rem;
-  margin-top: 1em;
-  font-family: "Averta", sans-serif;
-  font-weight: 100;
-}
-
-.node-type--estudos main .container > .paragraph {
-  padding: 1rem 0;
-  overflow: hidden;
-} 
-
-.node-type--estudos .container{
-  .paragraph_cta{
-    padding: 0;
-
-    .paragraph--type--cta{
-      width: auto;
-      background-color: transparent !important;
-  
-      .button-acessar-estudo{
-        @include button_estudos;
-      }
-    } 
+.node-type--estudos {
+  .block--titulodapagina {
+    display: none;
   }
-  .paragraph_attachments{
-    padding: 0;
 
-    .button-attachments-estudos{
-      @include button_estudos;
-      
-      a{  
-        display: flex;
-        justify-content: center;
+  .block--titulodapagina  h1 {
+    display: none;
+  }
 
-        &::before{
-          content: '';
-          background-image: url('../../images/pdf-file-3380.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-          height: 24px;
-          width: 24px;
-          flex: 2;
-          // margin-right: 40%;
-          // margin-left: 7%;
+  .categoria-estudos {
+    color: #fff;
+    margin-right: 24%;
+    font-size: 2.5rem;
+    margin-top: 1.4em;
+    font-family: "Averta", sans-serif;
+  }
+
+  /* Title Aligment */
+  .hero-wrapper {
+    align-items: flex-start;
+    font-size: 2.5rem;
+    margin: 5rem 0 0 0;
+
+    /* Subtitle Aligment */
+    .field--name-field-body {
+      font-size: 15px;
+      padding: 0.5em 0 4rem;
+      margin-right: 4rem;
+      width: 620px;
+    }
+  }
+
+  /* General Text Aligment */
+  .paragraph_body {
+    padding-left: 0 !important;
+  }
+  .field--name-field-body-resume {
+    padding-left: 0 !important;
+  }
+
+  .categoria-estudos-descricao {
+    color: #fff;
+    margin-right:0;
+    padding-top: 1em;
+    font-size: 1.1rem;
+    margin-top: 1em;
+    font-family: "Averta", sans-serif;
+    font-weight: 100;
+  }
+
+  .container{
+    .paragraph_cta{
+      padding: 0;
+
+      .paragraph--type--cta{
+        width: auto;
+        background-color: transparent !important;
+
+        .button-acessar-estudo{
+          @include button_estudos;
         }
+      }
+    }
+    .paragraph_attachments{
+      padding: 0;
 
-        &::after{
+      .button-attachments-estudos{
+        @include button_estudos;
+
+        a{  
           display: flex;
-          // flex-grow: 3;
-          flex:2;
-        }
-      }
-
-      .file{
-        width: 100%;
-      }
-
-      .field__item{
-        display: flex;
-        align-items: center;
-
-        span:nth-child(2){
-          display: inline-flex;
-          background-color: grey;
-          height: 55px;
-          width: 18%;
-          align-items: center;
           justify-content: center;
+
+&::before{
+            content: '';
+            background-image: url('../../images/pdf-file-3380.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 24px;
+            width: 24px;
+            flex: 2;
+            // margin-right: 40%;
+            // margin-left: 7%;
+          }
+
+&::after{
+            display: flex;
+            // flex-grow: 3;
+            flex:2;
+          }
+        }
+
+        .file{
+          width: 100%;
+        }
+
+        .field__item{
+          display: flex;
+          align-items: center;
+
+          span:nth-child(2){
+            display: inline-flex;
+            background-color: grey;
+            height: 55px;
+            width: 18%;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }
   }
 }
+
+.node-type--estudos main .container > .paragraph {
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
