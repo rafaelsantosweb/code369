@@ -1,0 +1,22 @@
+uuid: 385dc9d2-fdab-4015-b9a1-b66ef58eab30
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_peso
+    - taxonomy.vocabulary.tags_estudos
+  module:
+    - weight
+id: taxonomy_term.tags_estudos.field_peso
+field_name: field_peso
+entity_type: taxonomy_term
+bundle: tags_estudos
+label: Peso
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  range: '5'
+field_type: weight

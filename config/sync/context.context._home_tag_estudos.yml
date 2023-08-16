@@ -1,0 +1,67 @@
+uuid: d9ac562d-db84-4315-bb8e-69c92e3131ef
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+    - tagclouds
+label: ' Home Tag Estudos'
+name: _home_tag_estudos
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    uuid: 4e98db41-4ee7-4a90-8d6a-0d3aeccb7df5
+    context_mapping: {  }
+    pages: '<front>'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 76b5e55d-defe-436c-8c66-a81470fc5dd2
+    blocks:
+      766841a0-abf3-41de-923c-4ecf909063eb:
+        uuid: 766841a0-abf3-41de-923c-4ecf909063eb
+        id: 'tagclouds_block:categoria'
+        label: 'Expressões que representam nosso Observatório'
+        provider: tagclouds
+        label_display: visible
+        region: page_bottom
+        custom_id: tagclouds_block_categoria
+        theme: observatorio
+        css_class: ''
+        unique: 1
+        context_id: _home_tag_estudos
+        context_mapping: {  }
+        cache:
+          max_age: 0
+          contexts: {  }
+        tags: '0'
+        vocabulary: categoria
+        third_party_settings: {  }
+      a00146bc-5266-429e-8160-44166a1746a9:
+        uuid: a00146bc-5266-429e-8160-44166a1746a9
+        id: 'tagclouds_block:categoria'
+        label: 'Expressões que representam nosso Observatório'
+        provider: tagclouds
+        label_display: visible
+        region: content
+        weight: '10'
+        custom_id: tagclouds_block_categoria
+        theme: observatorio
+        css_class: ''
+        unique: 1
+        context_id: _home_tag_estudos
+        context_mapping: {  }
+        cache:
+          max_age: 0
+          contexts: {  }
+        tags: '0'
+        vocabulary: tags_estudos
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

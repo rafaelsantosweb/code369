@@ -1,0 +1,39 @@
+uuid: 433826f8-936e-4a24-8c28-8833b63cca6f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tags_estudos.field_peso
+    - taxonomy.vocabulary.tags_estudos
+  module:
+    - weight
+id: taxonomy_term.tags_estudos.default
+targetEntityType: taxonomy_term
+bundle: tags_estudos
+mode: default
+content:
+  field_peso:
+    type: weight_selector
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

@@ -817,3 +817,10 @@ body {
   z-index: 99;
   margin-right: auto;
 }
+
+body main .block--tagclouds-block-categoria span {
+  display: flex;
+  font-size: 33px;
+  float: left;
+  margin-left: 35px;
+}

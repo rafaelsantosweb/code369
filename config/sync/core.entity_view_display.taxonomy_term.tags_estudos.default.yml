@@ -1,0 +1,32 @@
+uuid: a84abb32-642c-4875-9671-6d6f1bd1b3a0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tags_estudos.field_peso
+    - taxonomy.vocabulary.tags_estudos
+  module:
+    - text
+id: taxonomy_term.tags_estudos.default
+targetEntityType: taxonomy_term
+bundle: tags_estudos
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_peso:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

@@ -3,7 +3,7 @@ display_type: style
 display_node_link: true
 display_more_link: true
 page_amount: '50'
-levels: 6
+levels: 1
 language_separation: 0
 language_separation_radios: 0
 _core:

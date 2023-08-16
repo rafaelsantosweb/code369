@@ -30,3 +30,7 @@ visibility:
       detail: detail
       estudos: estudos
       page: page
+  request_path:
+    id: request_path
+    negate: true
+    pages: /home
