@@ -81,9 +81,10 @@ body.node-type--detail, body.node-type--estudos {
     .paragraph_right {
       .field--name-field-title {
         padding: 0.5em 0.25rem 4rem !important;
-        font-weight: 100;
+        font-weight: 400;
         font-family: "Averta", sans-serif;
-        font-size: 15px;
+        font-size: 18px;
+        line-height: 30px;
       }
     }
   }
@@ -145,7 +146,7 @@ body.node-type--detail, body.node-type--estudos {
 
 .node-type--detail, .node-type--estudos {
   .block--navegacaoprincipal ul.nav {
-    background-color: #0E65E5 !important;
+    background-color: transparent !important;
     flex-direction: row;
     justify-content: flex-end;
     z-index: 11;
@@ -166,6 +167,5 @@ body.node-type--detail, body.node-type--estudos {
 }
 
 .paragraph--type--image-text .field--name-field-body {
-  margin-bottom: 1.5em;
-  margin-top: 3.7em;
+  margin: 0.5em 0 1.5em;
 }
