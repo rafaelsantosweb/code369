@@ -327,6 +327,22 @@ display:
         - user
         - user.permissions
       tags: {  }
+  block_1:
+    id: block_1
+    display_title: 'Tags dev'
+    display_plugin: block
+    position: 1
+    display_options:
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags: {  }
   block_tags_estudos:
     id: block_tags_estudos
     display_title: Block
