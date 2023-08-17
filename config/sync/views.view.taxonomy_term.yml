@@ -265,6 +265,7 @@ display:
     display_plugin: feed
     position: 2
     display_options:
+      enabled: false
       pager:
         type: some
         options:
@@ -306,6 +307,24 @@ display:
       query:
         type: views_query
         options: {  }
+      defaults:
+        css_class: false
+        header: false
+      css_class: container
+      header:
+        entity_taxonomy_term:
+          id: entity_taxonomy_term
+          table: views
+          field: entity_taxonomy_term
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: true
+          target: '{{ raw_arguments.tid }}'
+          view_mode: full
+          tokenize: true
+          bypass_access: false
       display_extenders: {  }
       path: taxonomy/term/%
     cache_metadata:
