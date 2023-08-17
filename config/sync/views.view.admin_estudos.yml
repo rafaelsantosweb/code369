@@ -32,7 +32,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Estudos
+      title: 'Administrar Estudos'
       fields:
         node_bulk_form:
           id: node_bulk_form
