@@ -23,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 4
+    weight: 1
     region: content
     settings:
       rows: 9
@@ -33,25 +33,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_access:
-    type: options_buttons
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_category:
-    type: options_buttons
-    weight: 1
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_content:
     type: paragraphs
-    weight: 6
+    weight: 3
     region: content
     settings:
       title: Parágrafo
@@ -70,49 +58,42 @@ content:
     third_party_settings: {  }
   field_metatags:
     type: metatag_firehose
-    weight: 13
+    weight: 10
     region: content
     settings:
       sidebar: true
       use_details: true
     third_party_settings: {  }
-  field_teaser:
-    type: boolean_checkbox
-    weight: 3
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 5
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 9
+    weight: 6
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 12
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 10
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -127,7 +108,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -136,4 +117,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_access: true
+  field_category: true
   field_pilares: true
+  field_teaser: true
