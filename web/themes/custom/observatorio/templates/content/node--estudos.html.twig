@@ -11,11 +11,11 @@
     {% if node.field_ocultar_imagem_e_chamada.value == '0' %}
       <div class="row">
         <div class="col">
-        <img  src="{{ url('<front>') }}{{file_url(node.field_imagem.entity.fileuri)}}" width="550px" alt="{{ node.field_imagem.alt }}" />
+        <img  src="{{ url('<front>') }}{{file_url(node.field_imagem.entity.fileuri)}}" width="100%" alt="{{ node.field_imagem.alt }}" />
         </div>
         <div class="col">
           <h1>{{ node.label }}</h1><br>
-              {{ node.body.value|t }}
+              {{ node.body.value|raw }}
           <br>
         </div>
       </div>

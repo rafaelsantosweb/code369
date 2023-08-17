@@ -559,7 +559,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: summary
-          type: text_trimmed
+          type: text_summary_or_trimmed
           settings:
             trim_length: 200
           group_column: value

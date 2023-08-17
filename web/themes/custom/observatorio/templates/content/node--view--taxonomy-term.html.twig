@@ -6,22 +6,17 @@
 #}
 
   {% block content %}
-  <div class="container estudos-internas">
+  <div class="container taxonomy-internas">
     <div class="row">
-      <div class="col">
-      <img  src="{{ url('<front>') }}{{file_url(node.field_imagem.entity.fileuri)}}" width="550px" alt="{{ node.field_imagem.alt }}" />
-      </div>
+
       <div class="col">
         <h1>{{ node.label }}</h1>
-            {{ node.body.value|t }}
-        <br>
-       
+        <p{{ node.body.value|t }}</p>
+
+            <a href="{{url}}" class="button">Acessar Estudo</a>
+
       </div>
     </div>
-
-      <div class="render-paragrafs-estudos">
-
-      </div>
 
   </div>
   {% endblock %}
