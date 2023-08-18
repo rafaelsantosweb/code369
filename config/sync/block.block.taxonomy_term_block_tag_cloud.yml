@@ -1,0 +1,29 @@
+uuid: 80664c3b-9916-4841-8e89-2e5e204fa353
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_term
+  module:
+    - system
+    - views
+  theme:
+    - observatorio
+id: taxonomy_term_block_tag_cloud
+theme: observatorio
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:taxonomy_term-block_tag_cloud'
+settings:
+  id: 'views_block:taxonomy_term-block_tag_cloud'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

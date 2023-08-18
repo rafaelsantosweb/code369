@@ -11,7 +11,7 @@ dependencies:
 id: navegacaoprincipal
 theme: observatorio
 region: header
-weight: -6
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:
