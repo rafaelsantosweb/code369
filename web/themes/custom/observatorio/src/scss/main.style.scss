@@ -94,20 +94,20 @@ body {
       float: left;
     }
 
-    input[type="search"] {
-      display: none;
-      width: 95%;
-    }
+    // input[type="search"] {
+    //   display: none;
+    //   width: 95%;
+    // }
 
-    input[type="submit"] {
-      border-radius: 0;
-      border: 0;
-      width: 44px;
-      height: 52px;
-      font-size: 0;
-      background: url(../../images/icon-search.png) center no-repeat #fff;
-      background-size: 18px;
-    }
+    // input[type="submit"] {
+    //   border-radius: 0;
+    //   border: 0;
+    //   width: 44px;
+    //   height: 52px;
+    //   font-size: 0;
+    //   background: url(../../images/icon-search.png) center no-repeat #fff;
+    //   background-size: 18px;
+    // }
 
     // &:hover input[type='search'] {
     //   display: block;
@@ -147,6 +147,43 @@ body {
         width: 100%;
         //justify-content: flex-end;
 
+        .search-block-form {
+          
+          &:hover > form > .form-item > .form-control{
+            width: 200px;
+      
+          }
+      
+          form{
+            display: flex;
+            //height: 100%;
+            position: absolute;
+      
+            > .form-item > .form-control {
+              all: initial;
+              font-family: "Averta", sans-serif;
+              background-color: white;
+              width: 0;
+              padding: 0;
+              height: 100%;
+              transition: width 0.5s ease-in-out; 
+            }
+
+            > .form-actions > .btn{
+              all: initial;
+              height: 52px;
+              width: 35px;
+              background-image: url('../../images/icon-search.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-color: #fff;
+              background-size: 18px !important;
+              font-size: 0;
+              cursor: pointer;
+            }
+          }
+       }
+        
         .me-2 {
           height: 5vw;
           width: 100%;
@@ -763,14 +800,17 @@ body {
 .search-block-form {
     align-self: center;
     z-index: 99;
+    height: 52px;
 }
 
 .node-type--estudos, .node-type--detail{
-  .search-block-form{
-    .form-submit{
-      background: url('../../images/icon-search.png') center no-repeat !important;
-      background-size: 18px !important;
-      filter: invert(1);
+  .page__header{
+    .search-block-form{
+      .form-submit{
+        background-color: transparent !important;
+        //background-size: 18px !important;
+        filter: invert(1) !important;
+      }
     }
   }
 }

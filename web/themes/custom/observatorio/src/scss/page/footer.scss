@@ -32,6 +32,36 @@ footer.page__footer {
     &.block--footer-searchbox{
       margin: 0 2.5rem 0 0;
       align-self: auto;
+
+      form{
+        display: flex;
+
+        .form-item{
+          width: 200px;
+
+          .form-search{
+            border: 0;
+            border-radius: 8px 0px 0px 8px;
+            height: 32px;
+            width: 101%;
+          }
+        }
+
+        .form-actions{
+          display: block !important;
+
+          .form-submit{
+            background: url('../../images/icon-search.png') center no-repeat #fff;
+            background-size: 18px;
+            font-size: 0;
+            border: 0;
+            border-radius: 0px 8px 8px 0px;
+            height: 32px;
+            margin: 0;
+          }
+        }
+      }
+
     }
 
     ul li {
