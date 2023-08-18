@@ -4,6 +4,7 @@
  * Template for a forum node in full display mode.
  */
 #}
+{% include "@radix/content/node.twig" %}
 
   {% block content %}
   <div class="container estudos-internas">
@@ -30,7 +31,7 @@
     {% endif %}
 
     <div class="render-paragrafs-estudos">
-      {{ bamboo_render_field('field_content', 'node') }}
+      {#{ bamboo_render_field('field_content', 'node') }#}
     </div>
 
   </div>
