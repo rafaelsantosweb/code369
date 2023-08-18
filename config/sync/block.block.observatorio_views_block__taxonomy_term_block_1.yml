@@ -6,6 +6,7 @@ dependencies:
     - views.view.taxonomy_term
   module:
     - system
+    - user
     - views
   theme:
     - observatorio
@@ -27,3 +28,12 @@ visibility:
     id: request_path
     negate: false
     pages: '/taxonomy/term/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      admin: admin
