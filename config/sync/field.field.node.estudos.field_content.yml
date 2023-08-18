@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero_slider
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.views
   module:
     - entity_reference_revisions
 id: node.estudos.field_content
@@ -28,6 +29,7 @@ settings:
       image: image
       block: block
       slide: slide
+      views: views
       hero_slider: hero_slider
     negate: 1
     target_bundles_drag_drop:
@@ -66,5 +68,5 @@ settings:
         enabled: true
       views:
         weight: -15
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

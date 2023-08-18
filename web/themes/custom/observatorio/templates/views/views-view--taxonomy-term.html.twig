@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Template for the breadcrumb.
+ */
+#}
+
+{% include '@radix/views/views-view.twig' with {
+  breadcrumb: breadcrumb,
+  html_tag: 'div',
+  utility_classes: [
+    'container',
+  ],
+} %}
