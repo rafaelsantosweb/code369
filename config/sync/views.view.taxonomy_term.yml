@@ -268,7 +268,7 @@ display:
     display_plugin: block
     position: 3
     display_options:
-      title: Estudos
+      title: ''
       fields:
         name_1:
           id: name_1
@@ -488,16 +488,13 @@ display:
           granularity: second
       arguments: {  }
       style:
-        type: grid
+        type: grid_responsive
         options:
           grouping: {  }
-          columns: 8
-          automatic_width: true
+          columns: 12
+          cell_min_width: 300
+          grid_gutter: 10
           alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
       row:
         type: fields
         options:
