@@ -1,6 +1,5 @@
-// custom mobile
+/* Home Page Properties ------------------------------------------------ */
 @media (max-width: 980px) {
-
   /* New Menu Style and Functions */
   .block--navegacaoprincipal {
     /* Old button hidden */
@@ -10,12 +9,83 @@
     /* New button action */
     #collapse_target {
       display: unset !important;
+      background-color: #0E65E5;
     }
     /* Top Tiny Espacing */
     .navbar {
       padding-top: 0 !important;
     }
   }
+
+  body {
+    ul.nav {
+      li.show-mobile {
+        display: block !important;
+      }
+    }
+    &.header-mobile-open {
+      .block--navegacaoprincipal {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 210;
+
+        ul.nav {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          padding-top: 2rem;
+          padding-bottom: 4.5rem;
+
+          li + li {
+            margin-top: 1.5rem;
+          }
+        }
+      }
+
+      /* Menu Click Effect */
+      .header-mobile-toggle-container {
+        z-index: 220;
+        .header-mobile-toggle {
+          &:before {
+            background-color: #444444;
+            transform: rotate(45deg);
+            top: 0;
+          }
+          &:after {
+            background-color: #444444;
+            transform: rotate(-45deg);
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* .node-type--estudos {
+    #hero-banners {
+      .tns-nav {
+        padding-top: 15px;
+      }
+    }
+  } */
+
+  /* .node-type--page {
+    .paragraph--type--destaques:nth-child(2) {
+      display: none;
+    }
+  } */
+
+  /* .paragraph--type--destaques:nth-child(2) {
+    .paragraph--type--destaques {
+      .field--name-field-view::after {
+        display: none;
+      }
+    }
+  } */
 
   .paragraph--type--hero-banner .field--name-field-title {
     font-size: 26px;
@@ -29,7 +99,7 @@
 
   body main .paragraph_block {
     max-height: auto;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     min-height: 350px;
     padding: 0 !important; 
   }
@@ -41,12 +111,7 @@
 
   .paragraph--type--destaques {
     display: block;
-    padding: 35px 0 0 0 !important; /* Ajuste mobile aqui */
-  }
-
-  .block--tagclouds-block-categoria img {
-    width: 100%;
-    text-align: center;
+    padding: 35px 0 0 0 !important;
   }
 
   .paragraph--type--image-text {
@@ -67,7 +132,8 @@
   .paragraph_left {
     min-width: 100%;
     display: inline;
-    padding: 10px; 
+    padding: 10px;
+    top: -125px !important;
   }
 
   .paragraph_right {
@@ -99,10 +165,6 @@
     margin: 1rem 1rem 1rem 0 !important;
   }
 
-  .block--tagclouds-block-categoria .block-left {
-    min-width: 88%;
-  }
-
   .paragraph--type--destaques .view-content .tns-item .views-field-field-image {
     margin-right: 31px;
     height: 100%;
@@ -121,10 +183,23 @@
     }
   }
 
-  .paragraph--type--destaques .field--type-text-long p  {
-    padding: 5px 5px 5px 5px !important;
-    background-color: #fff;
-    border-radius: 6px;
+  .paragraph--type--destaques {
+    .field--type-text-long p  {
+      padding: 5px 5px 5px 5px !important;
+      background-color: transparent;
+      border-radius: 6px;
+    }
+
+    /* Binary Image Properties */
+    .field--name-field-view::after {
+      background-size: contain;
+      background-position: bottom;
+      transform: scaleX(-1);
+      height: 30%;
+      width: 100%;
+      left: 0;
+      bottom: -30px;
+    }
   }
 
   .block--webform .paragraph_block fieldset .form-item {
@@ -161,71 +236,108 @@
     justify-content: flex-start !important;
   }
 
-  footer.page__footer .container {
-    padding: 10px 0 !important;
+  /* Home - Tag Clouds --------------------------*/
+  .block--tagclouds-block-categoria {
+    .block-left {
+      min-width: 90%;
+      width: 180px !important;
+
+      img {
+        width: 100%;
+        text-align: center;
+        margin: 15% 5% 20%;
+      }
+    }
+
+    span {
+      font-size: 20px !important;
+      position: relative;
+      left: 18%;
+      float: inline-start !important;
+      margin: 0 5px 0 !important;
+      width: 31% !important;
+    }
   }
 
+  /* Home - Footer ----------------------------- */
   footer.page__footer {
     text-align: center;
-  }
 
-  /* Footer Links */
-  footer.page__footer .block.block--system-menu {
-    min-width: 100%;
-    margin: 2em auto 1em;
-    padding: 0 !important;
+    .container {
+      padding: 10px 0 !important;
+    }
 
-    ::after {
-      width: 65px !important;
-      margin: 20px auto 15px !important;
+    /* Footer Links */
+    .block.block--system-menu {
+      min-width: 100%;
+      margin: 2em auto 1em;
+      padding: 0 !important;
+  
+      ::after {
+        width: 65px !important;
+        margin: 20px auto 15px !important;
+      }
+    }
+
+    /* Footer Logos */
+    .block.block--marcas {
+      padding: 0 !important;
+  
+      p {
+        display: none;
+      }
+    }
+
+    /* Footer Input */
+    form input[type=search] {
+      font-style: italic;
+      font-size: 13px;
+      width: 65%;
+      margin: 1em auto;
+    }
+
+    /* Footer Searchbox */
+    .block {
+      &.block--footer-searchbox {
+        margin: 0.5em 0 2em;
+        padding: 0 !important;
+    
+        h2 {
+          display: none;
+        }
+    
+        .js-form-submit {
+          display: block !important;
+        }
+    
+        .form-actions {
+          .form-submit {
+            margin: 13px 0 0 0 !important;
+          }
+        }
+
+        .js-form-submit {
+          display: none;
+        }
+      }
+    }
+
+    /* Footer Socials */
+    .block.block--redessociais {
+      padding: 0 !important;
+  
+      p > a > img {
+        margin: 0.5em 0.5em !important;
+      }
+  
+      ::after {
+        display: none;
+      }
     }
   }
 
-  /* Footer Logos */
-  footer.page__footer .block.block--marcas {
-    padding: 0 !important;
 
-    p {
-      display: none;
-    }
-  }
-
-  /* Footer Input */
-  footer.page__footer form input[type=search] {
-    font-style: italic;
-    font-size: 13px;
-    width: 65%;
-    margin: 1em auto;
-  }
-
-  /* Footer Searchbox */
-  footer.page__footer .block.block--footer-searchbox {
-    margin: 0.5em 0 2em;
-    padding: 0 !important;
-
-    h2 {
-      display: none;
-    }
-  }
-
-  /* Footer Socials */
-  footer.page__footer .block.block--redessociais {
-    padding: 0 !important;
-
-    p > a > img {
-      margin: 0.5em 0.5em !important;
-    }
-
-    ::after {
-      display: none;
-    }
-  }
-
-  .block--footer-searchbox .js-form-submit {
-    display: none;
-  }
-
-  /* Pagina interna - Estudos */
+  /* Internal Page Properties ------------------------------------------ */
   .node-37, .node-43, .node-44 {
     .block--observatorio-breadcrumbs {
       display: none;
@@ -239,6 +351,8 @@
 
       .field--name-field-body {
         margin-top: 0 !important;
+        position: relative;
+        top: -70px;
       }
 
       /* Description Espacing */
@@ -247,12 +361,18 @@
         padding-left: 1.5rem;
 
         .field--name-field-title {
-          margin-top: 2.5rem;
-          padding-bottom: 0.25em !important; /* Review internas.scss with Rafael */
+          margin-top: 1.5rem !important;
+          padding-bottom: 0.25em !important;
 
           .field__item {
             padding-bottom: 0.25em !important;
           }
+        }
+      }
+
+      .paragraph_left {
+        .field--name-field-media-image .field__item img {
+          margin: 25px 0 0 0 !important;
         }
       }
     }
@@ -272,7 +392,7 @@
     }
   }
 
-  /* Menu Scroll  - Under Definition - Review estudos_tabs.scss with Rafael */
+  /* Menu Scroll  - Under Definition */
   .blocktabs ul.blocktabs-tabs {
     display: block ruby !important;
     overflow-y: hidden;
@@ -282,8 +402,12 @@
     font-family: "Averta", sans-serif;
   }
 
-  /* Card Espacing */
+  
   .node-type--detail, .view-estudos {
+    #page__head-bottom {
+      top: 10rem !important;
+    }
+
     .view-content {
       padding: 0 0.5rem !important;
 
@@ -309,12 +433,12 @@
     h1.page-title {
       margin-left: 1rem;
     }
-  }
-
-  .paragraph_right {
-    .field--name-field-title {
-      width: 100%;
+    
+    .paragraph_right {
+      .field--name-field-title {
+        width: 100%;
+      }
     }
-  }
-
+  }  
 }
+
