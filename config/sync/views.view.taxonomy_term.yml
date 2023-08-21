@@ -492,7 +492,7 @@ display:
         options:
           grouping: {  }
           columns: 9
-          cell_min_width: 200
+          cell_min_width: 190
           grid_gutter: 10
           alignment: horizontal
       row:

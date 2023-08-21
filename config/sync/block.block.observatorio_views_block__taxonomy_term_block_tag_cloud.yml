@@ -1,4 +1,4 @@
-uuid: 80664c3b-9916-4841-8e89-2e5e204fa353
+uuid: 53ced99c-c76b-44fa-b79c-20db44876e02
 langcode: pt-br
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - views
   theme:
     - observatorio
-id: taxonomy_term_block_tag_cloud
+id: observatorio_views_block__taxonomy_term_block_tag_cloud
 theme: observatorio
 region: content
 weight: -11
