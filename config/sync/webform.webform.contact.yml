@@ -174,7 +174,7 @@ settings:
   confirmation_type: modal
   confirmation_url: '<front>'
   confirmation_title: ''
-  confirmation_message: '<p>Email Cadastrado com sucesso.</p>'
+  confirmation_message: 'Sua mensagem foi enviada.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

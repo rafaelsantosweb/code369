@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - filter.format.html
     - node.type.estudos
   module:
     - text
@@ -15,10 +16,15 @@ label: Chamada
 description: ''
 required: true
 translatable: true
-default_value: {  }
+default_value:
+  -
+    value: ''
+    summary: 'Máximo 400 carateres'
+    format: html
 default_value_callback: ''
 settings:
   display_summary: true
   required_summary: true
-  allowed_formats: {  }
+  allowed_formats:
+    - html
 field_type: text_with_summary

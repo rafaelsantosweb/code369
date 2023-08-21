@@ -416,7 +416,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href='/taxonomy/term/{{ tid }}'>{{ name_1 }}</a> "
+            text: "<a href='/taxonomy/term/{{ tid }}' class='button'>{{ name_1 }}</a> "
             make_link: false
             path: ''
             absolute: false
@@ -581,7 +581,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: 'Tags Estudos'
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_content
     - node.type.estudos
     - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.destaques
     - paragraphs.paragraphs_type.hero_slider
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.slide
@@ -28,40 +29,41 @@ settings:
     target_bundles:
       image: image
       block: block
+      destaques: destaques
       slide: slide
       views: views
       hero_slider: hero_slider
     negate: 1
     target_bundles_drag_drop:
       attachments:
-        weight: -24
+        weight: -22
         enabled: false
       block:
         weight: -18
         enabled: true
       body:
-        weight: -22
+        weight: -20
         enabled: false
       cta:
-        weight: -23
+        weight: -21
         enabled: false
       destaques:
         weight: -17
-        enabled: false
+        enabled: true
       hero_banner:
-        weight: -20
+        weight: -25
         enabled: false
       hero_slider:
         weight: -14
         enabled: true
       iframe:
-        weight: -25
+        weight: -23
         enabled: false
       image:
-        weight: -21
+        weight: -19
         enabled: true
       image_text:
-        weight: -19
+        weight: -24
         enabled: false
       slide:
         weight: -16

@@ -14,7 +14,9 @@ module:
   blocktabs: 0
   blocktabs_bootstrap: 0
   breakpoint: 0
+  ckeditor: 0
   ckeditor5: 0
+  colorbutton: 0
   comment: 0
   components: 0
   conditional_fields: 0
@@ -62,6 +64,7 @@ module:
   options: 0
   page_attributes: 0
   page_cache: 0
+  panelbutton: 0
   paragraphs_collapsible: 0
   paragraphs_limits: 0
   path: 0

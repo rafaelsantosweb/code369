@@ -1,12 +1,12 @@
-uuid: 93a8ffe8-bd9d-4f34-8c23-fb1c93d3f804
+uuid: 05c8e2fc-8ef6-4e4d-8b34-f46defc9304e
 langcode: pt-br
-status: true
+status: false
 dependencies:
   config:
-    - filter.format.html
+    - filter.format.html_full
   module:
     - ckeditor
-format: html
+format: html_full
 editor: ckeditor
 settings:
   toolbar:
@@ -15,13 +15,17 @@ settings:
         -
           name: Formatação
           items:
+            - Styles
             - Bold
             - Italic
             - Underline
             - Strike
+        -
+          name: alinhamento
+          items:
             - JustifyLeft
-            - JustifyRight
             - JustifyCenter
+            - JustifyRight
             - JustifyBlock
         -
           name: Links
@@ -33,22 +37,26 @@ settings:
           items:
             - BulletedList
             - NumberedList
-            - HorizontalRule
         -
           name: Mídia
           items:
+            - Table
             - Blockquote
-            - DrupalImage
             - DrupalMediaLibrary
+            - DrupalImage
+        -
+          name: font
+          items:
+            - TextColor
+            - BGColor
         -
           name: Ferramentas
           items:
             - Source
-            - Table
-            - TextColor
-            - BGColor
             - Maximize
   plugins:
+    stylescombo:
+      styles: ''
     colorbutton:
       colors: ''
 image_upload:
