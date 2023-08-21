@@ -50,7 +50,10 @@ web/sites/example*.php
 web/sites/development*.yml
 web/sites/*/default*.yml
 web/sites/*/default*.php
-web/libraries/*
+
+web/libraries/jquery-colorpicker/*
+web/libraries/tiny-slider/*
+web/libraries/parallaxjs/*
 
 # Ignore contrib.
 web/*/contrib/
