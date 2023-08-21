@@ -491,8 +491,8 @@ display:
         type: grid_responsive
         options:
           grouping: {  }
-          columns: 12
-          cell_min_width: 300
+          columns: 9
+          cell_min_width: 200
           grid_gutter: 10
           alignment: horizontal
       row:

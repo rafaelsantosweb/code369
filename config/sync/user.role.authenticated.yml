@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.html
+    - filter.format.html_completo
     - filter.format.webform_default
     - taxonomy.vocabulary.acesso
   module:
@@ -25,5 +26,6 @@ permissions:
   - 'delete terms in acesso'
   - 'edit terms in acesso'
   - 'use text format html'
+  - 'use text format html_completo'
   - 'use text format webform_default'
   - 'view media'
