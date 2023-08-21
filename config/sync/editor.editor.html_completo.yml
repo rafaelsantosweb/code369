@@ -1,6 +1,6 @@
 uuid: 6917eb5a-1a27-4fca-a5b5-3553ed63f730
 langcode: pt-br
-status: true
+status: false
 dependencies:
   config:
     - filter.format.html_completo
