@@ -1,0 +1,93 @@
+uuid: ca4468e0-1231-454a-88ea-4790cba22588
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.detail
+    - node.type.estudos
+    - node.type.page
+    - taxonomy.vocabulary.area
+    - taxonomy.vocabulary.categoria
+    - taxonomy.vocabulary.estudos
+    - taxonomy.vocabulary.pilar_inteligencia_competitiva
+    - taxonomy.vocabulary.pilar_inteligencia_em_dados
+    - taxonomy.vocabulary.tags_estudos
+  module:
+    - blocktabs
+    - contact
+    - contextual
+    - file
+    - media
+    - metatag
+    - node
+    - quick_node_clone
+    - search
+    - system
+    - taxonomy
+    - toolbar
+id: gestao_de_estudos
+label: 'Gestão de Estudos'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer blocktabs'
+  - 'administer media'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'clone detail content'
+  - 'clone estudos content'
+  - 'clone page content'
+  - 'create detail content'
+  - 'create estudos content'
+  - 'create image media'
+  - 'create page content'
+  - 'create terms in area'
+  - 'create terms in categoria'
+  - 'create terms in estudos'
+  - 'create terms in pilar_inteligencia_competitiva'
+  - 'create terms in pilar_inteligencia_em_dados'
+  - 'create terms in tags_estudos'
+  - 'delete any estudos content'
+  - 'delete any file'
+  - 'delete any image media'
+  - 'delete own detail content'
+  - 'delete own estudos content'
+  - 'delete own image media'
+  - 'delete terms in area'
+  - 'delete terms in categoria'
+  - 'delete terms in estudos'
+  - 'delete terms in pilar_inteligencia_competitiva'
+  - 'delete terms in pilar_inteligencia_em_dados'
+  - 'delete terms in tags_estudos'
+  - 'edit any detail content'
+  - 'edit any estudos content'
+  - 'edit any image media'
+  - 'edit own estudos content'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit terms in area'
+  - 'edit terms in categoria'
+  - 'edit terms in estudos'
+  - 'edit terms in pilar_inteligencia_competitiva'
+  - 'edit terms in pilar_inteligencia_em_dados'
+  - 'edit terms in tags_estudos'
+  - 'revert all revisions'
+  - 'revert detail revisions'
+  - 'revert estudos revisions'
+  - 'revert page revisions'
+  - 'search content'
+  - 'view all revisions'
+  - 'view detail revisions'
+  - 'view estudos revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

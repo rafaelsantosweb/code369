@@ -1,0 +1,14 @@
+uuid: 273ac233-3563-43d3-a670-2a5f14f52c7d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.gestao_de_estudos
+  module:
+    - user
+id: user_add_role_action.gestao_de_estudos
+label: 'Adiciona o papel Gestão de Estudos para o(s) usuário(s) selecionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestao_de_estudos

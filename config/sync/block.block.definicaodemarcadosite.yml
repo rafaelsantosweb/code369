@@ -9,7 +9,7 @@ dependencies:
 id: definicaodemarcadosite
 theme: observatorio
 region: header
-weight: -7
+weight: -12
 provider: null
 plugin: system_branding_block
 settings:

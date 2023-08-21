@@ -1,21 +1,29 @@
-.taxonomy-internas {
+.tag-cloud-terms {
+  margin-top: 2em;
+  margin-bottom: 2em;
 
-  h1 {
-    margin-bottom: 20px;
-  }
-   
-  p {
-    margin-bottom: 1em;
-  }
+    .field-content {
+      padding: 10px;
+    }
+  
+    .views-view-responsive-grid--horizontal {
+      text-align: center;
+    }
 
-  .page-title {
-    margin-bottom: 1em;
-    margin-top: 2em;
+}
+
+
+.view-taxonomy-term .page-title {
+  margin-bottom: 1em;
+}
+
+// custom mobile
+@media (max-width: 980px) {
+
+  .taxonomy-internas .col-1 {
+      width: 100%;
+      margin-bottom: 1em;
   }
 
 }
     
-.view-taxonomy-term .page-title {
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
