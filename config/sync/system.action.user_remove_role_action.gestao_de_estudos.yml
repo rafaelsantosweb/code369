@@ -1,0 +1,14 @@
+uuid: b00983ce-26ec-4e61-b94b-e4c4944a98dc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.gestao_de_estudos
+  module:
+    - user
+id: user_remove_role_action.gestao_de_estudos
+label: 'Remover o papel Gestão de Estudos dos usuários selecionados'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestao_de_estudos
