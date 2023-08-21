@@ -56,17 +56,17 @@
   border: none !important;
   background: none !important;
   font-family: "Averta", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: $grey-300;
 }
 
 .blocktabs ul.blocktabs-tabs li a {
-  padding: 0.5em 4em !important;
-	text-decoration: none;
+  padding: 0.4em 0.9em !important;
+  text-decoration: none;
   border: 0 !important;
-  color: $grey-300;
+  color: #444444;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 0.8em;
 }
 
 .blocktabs ul.blocktabs-tabs li.active {
@@ -115,3 +115,20 @@
 .tabs-cloud .view-content {
   margin-top: 2em;
 } 
+
+
+@media (max-width: 980px) {
+
+  .blocktabs ul.blocktabs-tabs {
+    display: inline-block !important;
+    background: #e9e9e9;
+    font-weight: bold;
+    padding-left: 0.2em;
+    padding-bottom: 0;
+  }
+
+  .blocktabs ul.blocktabs-tabs li {
+    padding-bottom: 10px !important;
+  }
+
+}
