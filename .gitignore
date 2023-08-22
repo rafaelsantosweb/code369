@@ -54,6 +54,7 @@ web/sites/*/default*.php
 web/libraries/jquery-colorpicker/*
 web/libraries/tiny-slider/*
 web/libraries/parallaxjs/*
+web/libraries/jquery-mb-ytplayer/*
 
 # Ignore contrib.
 web/*/contrib/
