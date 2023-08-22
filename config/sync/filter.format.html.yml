@@ -17,7 +17,7 @@ filters:
     status: false
     weight: -47
     settings:
-      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <strong> <em> <u> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <img src alt height width data-entity-uuid data-entity-type data-caption data-align> <s> <span> <drupal-media data-entity-type data-entity-uuid alt data-caption data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title>'
+      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <strong> <em> <u> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <img src alt height width data-entity-uuid data-entity-type data-caption data-align> <s> <span> <drupal-media data-entity-type data-entity-uuid alt data-caption data-view-mode data-align title> <h1> <pre>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_url:
@@ -44,23 +44,11 @@ filters:
         media_library: media_library
       allowed_media_types:
         image: image
-  filter_align:
-    id: filter_align
-    provider: filter
-    status: true
-    weight: -50
-    settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: false
     weight: -45
-    settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: false
-    weight: -43
     settings: {  }
   filter_html_escape:
     id: filter_html_escape
@@ -85,4 +73,16 @@ filters:
     provider: filter
     status: false
     weight: -44
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -43
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: -50
     settings: {  }

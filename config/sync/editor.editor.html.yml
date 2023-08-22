@@ -15,10 +15,13 @@ settings:
         -
           name: Formatação
           items:
+            - Format
             - Bold
             - Italic
             - Underline
             - Strike
+            - TextColor
+            - BGColor
             - JustifyLeft
             - JustifyRight
             - JustifyCenter
@@ -34,20 +37,16 @@ settings:
             - BulletedList
             - NumberedList
             - HorizontalRule
+            - Table
         -
           name: Mídia
           items:
-            - Blockquote
             - DrupalImage
             - DrupalMediaLibrary
         -
           name: Ferramentas
           items:
             - Source
-            - Table
-            - TextColor
-            - BGColor
-            - Maximize
   plugins:
     colorbutton:
       colors: ''
