@@ -36,10 +36,11 @@
     {{ title_suffix }}
 
     <h3>Clique nas tags e acesse os estudos relacionados a cada uma.</h3>
-
+    <div class="tags">
     {% block content %}
       {{ content }}
     {% endblock %}
+    </div>
   </div>
 
 {% if html_tag %}

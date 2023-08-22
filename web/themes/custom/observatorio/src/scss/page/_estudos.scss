@@ -1,4 +1,6 @@
-.node-type--detail, .view-estudos, .node-type--estudos {
+.node-type--detail,
+.view-estudos,
+.node-type--estudos {
   .view-content {
     @media (max-width: 990px) {
       flex-wrap: wrap;
@@ -34,19 +36,11 @@
 
       /* Card Content Alignment (a & p) */
       .views-field-title,
-      .views-field-view-node-button, p {
+      .views-field-body,
+      .views-field-nid {
         width: 45%;
         float: right;
-      }
-
-      /* Button Espacing */
-      .views-field-nid a {
-        padding: 5px 20px;
-        margin: 1rem 0 0 1rem !important;
-        float: left;
-        text-decoration: none;
-        border: 1px solid #003bd1;  /* Temporary Fix */
-        border-radius: 5px;
+        text-align: start !important;
       }
 
       .views-field-title {
@@ -58,22 +52,22 @@
       }
 
       .views-field-body {
-       color: #444;
-       text-align: left;
-       font-size: 11px;
-       font-weight: 400;
-       line-height: normal;
-       margin: 0;
+        color: #444;
+        text-align: left;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
       }
 
       .button a {
-       display: inline-flex;
-       width: 5rem;
-       height: 25px;
-       justify-content: center;
-       align-items: center;
-       font-size: 10px;
-       padding: 0 !important;
+        display: inline-flex;
+        width: 5rem;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        padding: 0 !important;
 
         ::after {
           margin-left: 10px !important;
@@ -94,22 +88,20 @@
 
 .block--block-prospectiva-relacionado,
 .block--block-inteligencia-competitiva,
-.block--block-inteligencia-dados
-{
+.block--block-inteligencia-dados {
   text-align: center;
   background-color: #f2f2f2;
 }
 
 .block--block-prospectiva-relacionado h2,
 .block--block-inteligencia-competitiva h2,
-.block--block-inteligencia-dados h2
- {
+.block--block-inteligencia-dados h2 {
   font-size: 22px;
   font-weight: 600;
   padding: 6em 0 3em;
- }
+}
 
 
- .node-type--estudos body .page {
-    background: #F2F2F2 !important;
-  }
+.node-type--estudos body .page {
+  background: #F2F2F2 !important;
+}
