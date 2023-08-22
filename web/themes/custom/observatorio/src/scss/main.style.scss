@@ -355,7 +355,7 @@ body {
         .fieldset-wrapper {
           display: flex;
           align-items: center;
-          @media (max-width: 990px) {
+          /* @media (max-width: 990px) { / Linha 180 da Mobile.scss /
             flex-direction: column;
             align-items: center;
             #edit-im-icon {
@@ -369,7 +369,7 @@ body {
             .form-actions input {
               margin-top: 41px;
             }
-          }
+          } */
         }
 
         #edit-description {
@@ -408,7 +408,7 @@ body {
         min-height: auto;
         padding: 0;
 
-        @media (max-width: 990px) {
+        /* @media (max-width: 990px) {  / Linha 225 da Mobile.scss /
           right: auto;
           left: 50%;
           transform: translateX(-50%);
@@ -417,7 +417,7 @@ body {
             display: flex;
             align-items: center;
           }
-        }
+        } */
 
         input {
           margin-right: 5px;
@@ -752,49 +752,11 @@ body {
   ul.nav {
     li.show-mobile {
       display: none;
-      /* @media (max-width: 990px) {
+      @media (max-width: 990px) {
         display: block;
-      } */
+      }
     }
   }
-  /* &.header-mobile-open {
-    @media (max-width: 990px) {
-      .block--navegacaoprincipal {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 210;
-        ul.nav {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          height: auto;
-          padding-top: 2rem;
-          padding-bottom: 2rem;
-          li + li {
-            margin-top: 1.5rem;
-          }
-        }
-      }
-      .header-mobile-toggle-container {
-        z-index: 220;
-        .header-mobile-toggle {
-          &:before {
-            background-color: #444444;
-            transform: rotate(45deg);
-            top: 0;
-          }
-          &:after {
-            background-color: #444444;
-            transform: rotate(-45deg);
-            bottom: 0;
-          }
-        }
-      }
-    }
-  } */
 }
 
 .search-block-form {
@@ -858,15 +820,21 @@ body {
   margin-right: auto;
 }
 
-body main .block--tagclouds-block-categoria span {
-  display: block;
-  font-size: 30px;
-  float: inline-end;
-  margin: 0 -65px 0;
-  width: 61.5%;
-  text-align: justify;
+body main .block--tagclouds-block-categoria {
+  .tags {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    grid-column-gap: 10px;
+  }
 
-  a {
-    text-decoration: none;
+  span {
+    justify-content: end;
+    font-size: 22px;
+    a {
+      text-decoration: none;
+    }
+    &:nth-child(2n) {
+      justify-content: start;
+    }
   }
 }
