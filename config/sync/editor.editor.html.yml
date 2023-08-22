@@ -42,14 +42,18 @@ settings:
           name: Mídia
           items:
             - DrupalImage
-            - DrupalMediaLibrary
         -
           name: Ferramentas
           items:
             - Source
   plugins:
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
     colorbutton:
       colors: ''
+    editoradvancedimage:
+      default_class: ''
 image_upload:
   status: true
   scheme: public
