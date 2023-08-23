@@ -63,7 +63,7 @@
     /* Home Page Properties ---------------------------------------------------------- */
     /* Home - Hero Banner ------------------------ */
     .paragraph--type--hero-banner {
-      .hero-banner img {
+      .hero-img {
         min-height: 400px;
       }
 
@@ -144,7 +144,7 @@
         height: 30%;
         width: 100%;
         left: 0;
-        bottom: -30px;
+        bottom: -10px;
       }
 
       .views-view-grid .views-row {
@@ -333,6 +333,12 @@
           display: none;
         }
       }
+
+      /* Bootstrap Fix */
+      .footer_image {
+        max-width: 200px;
+        align-self: center;
+      }
     }
   }
 
@@ -418,6 +424,11 @@
     }
 
     .blocktabs {
+      &::after {
+        background-size: cover;
+        height: 50%;
+        bottom: 0;
+      }
 
       /* Card Box */
       .view-content {
