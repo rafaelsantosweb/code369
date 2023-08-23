@@ -464,10 +464,38 @@
     font-family: "Averta", sans-serif;
   } */
 
-  /* .view-estudos {
+  .node-type--estudos {
+    /* Header - Banner (Hero Banner) ------------------ */
+    .paragraph--type--hero-banner {
+      .hero-img {
+        height: 100%;
+      }
+    }
+
+    /* Page Title ------------------------------------- */
+    #page__head-bottom {
+      top: 10rem !important;
+
+      h1.page-title {
+        margin-left: 1rem;
+      }
+    }
+
+    .block--block-prospectiva-relacionado h2 {
+      padding: 3em 0 1.5em;
+    }
+
+    /* Card Box */
     .view-content {
       padding: 0 0.5rem !important;
 
+      .views-infinite-scroll-content-wrapper {
+        flex-wrap: nowrap !important;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+
+      /* Card Style */
       .views-row {
         border-radius: 15px !important;
         width: 100%;
@@ -476,12 +504,15 @@
         &+.views-row {
           margin-top: 1rem;
         }
-        
+
+        /* Card Button */
         .views-field-nid a {
           padding: 1px 10px !important;
           border-radius: 8px !important;
+          border: 1px solid #003bd1;
+          text-decoration: none;
         }
       }
     }
-  } */
+  }
 }
