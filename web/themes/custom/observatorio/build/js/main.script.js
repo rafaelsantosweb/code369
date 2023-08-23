@@ -3117,6 +3117,17 @@ __webpack_require__.r(__webpack_exports__);
   }
 })(jQuery);
 
+//função nav tab
+
+(function ($) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var texto_titulo = $('.page-title').text().replace(/\s+/g, ' ').trim();
+    $('.tabs-cloud .field-content > a:nth-child(2)').filter(function () {
+      return $(this).text().replace(/\s+/g, ' ').trim() === texto_titulo;
+    }).addClass('is_active');
+  });
+})(jQuery);
+
 /***/ }),
 
 /***/ "./node_modules/bootstrap/js/dist/alert.js":

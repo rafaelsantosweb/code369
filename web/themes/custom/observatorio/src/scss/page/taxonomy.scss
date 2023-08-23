@@ -1,29 +1,130 @@
-.tag-cloud-terms {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.taxonomy_term{
+  .block--observatorio-views-block--taxonomy-term-block-tag-cloud{
+    padding: 33px 0px;
+    //padding: 32px;
+    background-color: #fafafa;
+    .view-taxonomy-term { 
+      .view-content{
+        margin-top: 0;
+    
+        .views-view-responsive-grid{
+          align-items: end;
+          .field-content{
+            .is_active{
+              color: #0E65E5 !important;
+      
+              &::after{
+                background-color: #0E65E5 !important;
+              }
+            }
+      
+            a:nth-child(2){
+              color: black;
+              text-decoration: none;
+              font-weight: 600;
+              padding: 9px 12px;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+      
+              &::after{
+                content: '';
+                background-color: #c2c2c2;
+                border-radius: 12px;
+                width: 100%;
+                height: 8px;
+                margin-top: 8px;
+      
+              }
+      
+              &:hover{
+                color: #0E65E5;
+      
+                &::after{
+                  background-color: #0E65E5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
+  
+  .block--observatorio-content{
+    background-color: #f2f2f2;
+    padding: 16px 0px;
 
-    .field-content {
-      padding: 10px;
+    .page-title {
+      margin-bottom: 2em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      &::before{
+        content: "";
+        background-color: #0E65E5;
+        display: inline-block;
+        position: absolute;
+        width: 306px;
+        height: 20px;
+        left: -313px;
+      }
+    }
+    .taxonomy-internas{
+      .col-10{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: space-around;
+  
+        h1{
+          font-size: 1rem;
+          font-weight: 700;
+        }
+      }
+  
+      .button-acessar-estudo{
+        margin-top: 7px;
+
+        a{
+          text-decoration: none;
+          border: 1px solid var(--bs-link-hover-color);
+          border-radius: 4px;
+          padding: 5px 15px;
+          font-size: .8rem;
+
+          &:hover{
+            background-color: white;
+          }
+        }
+      }
+    }
+    nav{
+      display: none;
+    }
+  }
+  
+  .tag-cloud-terms {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  
+      .field-content {
+        padding: 10px;
+      }
+    
+      .views-view-responsive-grid--horizontal {
+        text-align: center;
+      }
+  
+  }
+    // custom mobile
+  @media (max-width: 980px) {
+    
+    .taxonomy-internas .col-1 {
+        width: 100%;
+        margin-bottom: 1em;
     }
   
-    .views-view-responsive-grid--horizontal {
-      text-align: center;
-    }
-
-}
-
-
-.view-taxonomy-term .page-title {
-  margin-bottom: 1em;
-}
-
-// custom mobile
-@media (max-width: 980px) {
-
-  .taxonomy-internas .col-1 {
-      width: 100%;
-      margin-bottom: 1em;
   }
-
 }
-    

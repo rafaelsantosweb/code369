@@ -81,3 +81,17 @@ import { Toast, Tooltip } from './_bootstrap';
 		})
 	}
 } )( jQuery );
+
+
+//função nav tab
+
+(function ($) {
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var texto_titulo = $('.page-title').text().replace(/\s+/g, ' ').trim();
+
+		$('.tabs-cloud .field-content > a:nth-child(2)').filter(function(){
+			return $(this).text().replace(/\s+/g, ' ').trim() === texto_titulo;
+		}).addClass('is_active');
+
+	})
+}) (jQuery);
