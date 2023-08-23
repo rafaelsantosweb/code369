@@ -150,10 +150,10 @@ body {
         .search-block-form {
           
           &:hover > form > .form-item > .form-control{
-            width: 200px;
+            height: 100%;
       
           }
-      
+          
           form{
             display: flex;
             //height: 100%;
@@ -161,12 +161,19 @@ body {
       
             > .form-item > .form-control {
               all: initial;
+              position: absolute;
               font-family: "Averta", sans-serif;
               background-color: white;
-              width: 0;
-              padding: 0;
-              height: 100%;
-              transition: width 0.5s ease-in-out; 
+              width: 583px;
+              padding: 0% 9% 0% 5%;
+              height: 0;
+              top: 52px;
+              right: 0.02vw;
+              transition: height 0.5s ease-in-out;
+
+              &:focus{
+                height: 100%;
+              }
             }
 
             > .form-actions > .btn{
