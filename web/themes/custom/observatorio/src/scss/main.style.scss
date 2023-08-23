@@ -843,5 +843,12 @@ body main .block--tagclouds-block-categoria {
     &:nth-child(2n) {
       justify-content: start;
     }
+
+    .tagclouds {
+      padding: 0;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
