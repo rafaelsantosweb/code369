@@ -60,6 +60,15 @@
       }
     }
 
+    /* Removing icon from nav menu */
+    .block--navegacaoprincipal {
+      .navbar {
+        .toggler-busca {
+          display: none;
+        }
+      }
+    }
+
     /* Home Page Properties ---------------------------------------------------------- */
     /* Home - Hero Banner ------------------------ */
     .paragraph--type--hero-banner {
@@ -464,7 +473,9 @@
     font-family: "Averta", sans-serif;
   } */
 
+  /* Internal Estudos Pages Properties ----------------------------------------------- */
   .node-type--estudos {
+
     /* Header - Banner (Hero Banner) ------------------ */
     .paragraph--type--hero-banner {
       .hero-img {
