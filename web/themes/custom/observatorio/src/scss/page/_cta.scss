@@ -3,7 +3,8 @@ body {
     // font-size: 16px;
   }
 
-  &.node-type--detail {
+  &.node-type--detail,
+  &.node-type--estudos {
     .button {
       @include button;
       font-size: 16px;

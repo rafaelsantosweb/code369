@@ -3,7 +3,7 @@
     display: none;
   }
 
-  .block--titulodapagina  h1 {
+  .block--titulodapagina h1 {
     display: none;
   }
 
@@ -37,13 +37,14 @@
   .paragraph_body {
     padding-left: 0 !important;
   }
+
   .field--name-field-body-resume {
     padding-left: 0 !important;
   }
 
   .categoria-estudos-descricao {
     color: #fff;
-    margin-right:0;
+    margin-right: 0;
     padding-top: 1em;
     font-size: 1.1rem;
     margin-top: 1em;
@@ -51,30 +52,39 @@
     font-weight: 100;
   }
 
-  .container{
-    .paragraph_cta{
+  .block--block-prospectiva-relacionado {
+    .view-content {
+      .views-infinite-scroll-content-wrapper {
+        padding-bottom: 6em;
+      }
+    }
+  }
+
+  .container {
+    .paragraph_cta {
       padding: 0;
 
-      .paragraph--type--cta{
+      .paragraph--type--cta {
         width: auto;
         background-color: transparent !important;
 
-        .button-acessar-estudo{
+        .button-acessar-estudo {
           @include button_estudos;
         }
       }
     }
-    .paragraph_attachments{
+
+    .paragraph_attachments {
       padding: 0;
 
-      .button-attachments-estudos{
+      .button-attachments-estudos {
         @include button_estudos;
 
-        a{  
+        a {
           display: flex;
           justify-content: center;
 
-&::before{
+          &::before {
             content: '';
             background-image: url('../../images/pdf-file-3380.svg');
             background-repeat: no-repeat;
@@ -86,22 +96,22 @@
             // margin-left: 7%;
           }
 
-&::after{
+          &::after {
             display: flex;
             // flex-grow: 3;
-            flex:2;
+            flex: 2;
           }
         }
 
-        .file{
+        .file {
           width: 100%;
         }
 
-        .field__item{
+        .field__item {
           display: flex;
           align-items: center;
 
-          span:nth-child(2){
+          span:nth-child(2) {
             display: inline-flex;
             background-color: grey;
             height: 55px;
@@ -115,8 +125,7 @@
   }
 }
 
-.node-type--estudos main .container > .paragraph {
+.node-type--estudos main .container>.paragraph {
   padding: 1rem 0;
   overflow: hidden;
 }
-
