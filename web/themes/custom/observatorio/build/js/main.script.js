@@ -3148,14 +3148,6 @@ __webpack_require__.r(__webpack_exports__);
       barra_de_busca.val('');
       icon_busca.toggleClass('mostrando');
     });
-
-    // barra_de_navegacao.click( function (){
-    // 	if(form_da_barra_de_busca.css('display') === 'block'){
-    // 		form_da_barra_de_busca.slideToggle(100);
-    // 		icon_busca.toggleClass('mostrando');
-    // 	}
-    // });
-
     $(document).on('click', function (event) {
       // Verifica se o clique foi fora da div
       if (!$(event.target).closest(form_da_barra_de_busca).length && !$(event.target).is(icon_busca) && form_da_barra_de_busca.css('display') === 'block') {
