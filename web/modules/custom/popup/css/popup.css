@@ -1,0 +1,30 @@
+/*
+
+<ol>
+	<li>
+        <a class="use-ajax" 
+            data-dialog-options="{&quot;width&quot;:400}" 
+            data-dialog-type="modal" 
+            href="/node/1">
+            First  displayed in modal dialog.
+        </a>
+    </li>
+	<li>
+        <a class="use-ajax" 
+            data-dialog-options="{&quot;width&quot;:400}" 
+            data-dialog-type="dialog" 
+            href="/node/1">Second displayed in non modal dialog.
+        </a>
+    </li>
+	<li>
+        <a class="edit-button use-ajax" 
+            data-dialog-options="{&quot;width&quot;:400}" 
+            data-dialog-renderer="off_canvas" 
+            data-dialog-type="dialog" 
+            href="/node/1">
+            Third  displayed in a nice off canvas dialog.
+        </a>
+    </li>
+</ol>
+
+*/

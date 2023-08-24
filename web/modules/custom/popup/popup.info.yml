@@ -1,0 +1,5 @@
+type: module
+name: FIRJ Popup
+description: 'popup module'
+package: FIRJ
+core_version_requirement: ^9.5 || ^10
