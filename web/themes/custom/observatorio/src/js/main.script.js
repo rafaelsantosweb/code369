@@ -124,12 +124,6 @@ import { Toast, Tooltip } from './_bootstrap';
 			icon_busca.toggleClass('mostrando');
 		});
 		
-		// barra_de_navegacao.click( function (){
-		// 	if(form_da_barra_de_busca.css('display') === 'block'){
-		// 		form_da_barra_de_busca.slideToggle(100);
-		// 		icon_busca.toggleClass('mostrando');
-		// 	}
-		// });
 
 		$(document).on('click', function(event) {
 			// Verifica se o clique foi fora da div
