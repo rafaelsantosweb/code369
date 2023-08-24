@@ -95,3 +95,49 @@ import { Toast, Tooltip } from './_bootstrap';
 
 	})
 }) (jQuery);
+
+//Função para mover o bloco div do form de busca para o bloco de navegação principal
+
+( function ($){
+	
+	document.addEventListener('DOMContentLoaded', function() {
+		
+		var newParent = document.querySelector('header > .header_container > .block--navegacaoprincipal');
+		
+		try {
+			var childToMove = $('header > .header_container > .block--formulariodebusca');
+			childToMove.appendTo(newParent);
+
+		} catch (error) {
+			console.log("Não foi encontrado a div Filho ")
+		}
+
+
+		var barra_de_navegacao = $('header > .header_container > .block--navegacaoprincipal > nav > .navbar-collapse')
+		var icon_busca = $('header > .header_container > .block--navegacaoprincipal  #icon-busca');
+		var form_da_barra_de_busca = $('header > .header_container > .block--navegacaoprincipal > .block--formulariodebusca');
+		var barra_de_busca = $('header > .header_container > .block--navegacaoprincipal > .block--formulariodebusca > form > .form-item > input');
+
+		icon_busca.click( function () {
+			form_da_barra_de_busca.slideToggle(300);
+			barra_de_busca.val('');
+			icon_busca.toggleClass('mostrando');
+		});
+		
+		// barra_de_navegacao.click( function (){
+		// 	if(form_da_barra_de_busca.css('display') === 'block'){
+		// 		form_da_barra_de_busca.slideToggle(100);
+		// 		icon_busca.toggleClass('mostrando');
+		// 	}
+		// });
+
+		$(document).on('click', function(event) {
+			// Verifica se o clique foi fora da div
+			if (!$(event.target).closest(form_da_barra_de_busca).length && !$(event.target).is(icon_busca) && (form_da_barra_de_busca.css('display') === 'block')) {
+				$(form_da_barra_de_busca).slideToggle(200);
+				icon_busca.toggleClass('mostrando');
+			}
+		});
+	})
+	
+} )( jQuery );
