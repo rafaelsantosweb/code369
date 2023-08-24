@@ -1,12 +1,12 @@
 <?php
 
-function popup_preprocess_node__page(array &$variables) : void {
+  function popup_preprocess_node__page(array &$variables) : void {
 
-  $isAdminRoute = \Drupal::service('router.admin_context')->isAdminRoute();
-  $isAnonymousUser = \Drupal::currentUser()->isAnonymous();
+    $isAdminRoute = \Drupal::service('router.admin_context')->isAdminRoute();
+    $isAnonymousUser = \Drupal::currentUser()->isAnonymous();
 
-  if ($isAnonymousUser && !$isAdminRoute) {
-    $page['#attached']['library'][] = 'popup/popup';
-  }  
+    if ($isAnonymousUser && !$isAdminRoute) {
+      $page['#attached']['library'][] = 'popup/popup';
+    }  
 
-}
+  }

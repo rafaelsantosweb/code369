@@ -1,5 +1,5 @@
 type: module
-name: FIRJ Popup
+name: FIRJ Popup open
 description: 'popup module'
 package: FIRJ
 core_version_requirement: ^9.5 || ^10

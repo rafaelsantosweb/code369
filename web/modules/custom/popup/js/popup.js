@@ -1,4 +1,3 @@
-
 var ajaxSettings = {
 	url: '/node/49',
 	dialogType: 'modal',
