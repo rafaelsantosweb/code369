@@ -49,7 +49,7 @@ elements: |-
       '#title': 'Botões de envio'
   aceito_os_termos:
     '#type': checkbox
-    '#title': 'Li e aceito os <a target=_blank href=/termos-condicoes>Termos e Condições</a>'
+    '#title': 'Li e aceito os <a class="use-ajax" data-dialog-options="{&quot;width&quot;:600}" data-dialog-type="modal" href="/node/49"> Termos e Condições</a>'
     '#required': true
   subject:
     '#type': textfield
