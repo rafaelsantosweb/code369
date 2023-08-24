@@ -31,7 +31,8 @@
       .views-field-field-imagem {
         float: left;
         width: 49%;
-        height: 150% /* Temporary Fix */
+        height: 150%
+          /* Temporary Fix */
       }
 
       /* Card Content Alignment (a & p) */
@@ -60,17 +61,21 @@
         margin: 0;
       }
 
-      .button a {
-        display: inline-flex;
-        width: 5rem;
-        height: 25px;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-        padding: 0 !important;
+      .button {
+        margin: 1rem 0 0;
 
-        ::after {
-          margin-left: 10px !important;
+        a {
+          display: inline-flex;
+          width: 5rem;
+          height: 25px;
+          justify-content: center;
+          align-items: center;
+          font-size: 10px;
+          padding: 0 !important;
+
+          ::after {
+            margin-left: 10px !important;
+          }
         }
       }
     }
