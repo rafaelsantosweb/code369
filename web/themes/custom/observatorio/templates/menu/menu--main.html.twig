@@ -5,12 +5,9 @@
 #}
 
 
-<nav class="navbar navbar-dark navbar-expand-lg position-relative d-flex justify-content-end h-100">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_target">
-    <span class="navbar-toggler-icon"></span>
-   
-  </button>
+<nav class="navbar navbar-dark navbar-expand-lg position-relative d-flex justify-content-end">
   <div class="collapse navbar-collapse" id="collapse_target">
    {% include '@radix/nav/nav.twig' with {utility_classes: ['navbar-nav',],} %}
   </div>
+  <div class="toggler-busca" id="icon-busca"></div>
 </nav>

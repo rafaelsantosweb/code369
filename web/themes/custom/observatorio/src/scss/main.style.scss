@@ -147,49 +147,71 @@ body {
         width: 100%;
         //justify-content: flex-end;
 
-        .search-block-form {
-          
-          &:hover > form > .form-item > .form-control{
-            height: 100%;
-      
-          }
-          
-          form{
-            display: flex;
-            //height: 100%;
-            position: absolute;
-      
-            > .form-item > .form-control {
-              all: initial;
-              position: absolute;
-              font-family: "Averta", sans-serif;
-              background-color: white;
-              width: 583px;
-              padding: 0% 9% 0% 10%;
-              height: 0;
-              top: 52px;
-              right: 0.02vw;
-              transition: height 0.5s ease-in-out;
+        .block--navegacaoprincipal{
 
-              &:focus{
-                height: 100%;
-              }
-            }
+          nav{
+            padding-bottom: 0;
 
-            > .form-actions > .btn{
-              all: initial;
+            .toggler-busca{
               height: 52px;
               width: 35px;
               background-image: url('../../images/icon-search.png');
               background-repeat: no-repeat;
               background-position: center;
               background-color: #fff;
-              background-size: 18px !important;
-              font-size: 0;
+              background-size: 18px;
               cursor: pointer;
+              z-index: 99;
+            }
+            
+            .toggler-busca.mostrando{
+              background-image: url('../../images/letterx.png');
+              background-size: 16px;
             }
           }
-       }
+
+          .search-block-form {
+            
+            display: none;
+            width: 100%;
+            z-index: 99;
+            height: 54px;
+            background-color: #f5f6f7;
+
+            form{
+              display: flex;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              gap: 25px;
+        
+              > .form-item {
+                width: 100%;
+
+                .form-control {
+                  all: initial;
+                  font-family: "Averta", sans-serif;
+                  width: 100%;
+                  height: 100%;
+                  padding: 0% 0% 0% 5%;
+                  transition: height 0.5s ease-in-out;
+                }
+              }
+  
+              > .form-actions > .btn{
+                all: initial;
+                height: 100%;
+                width: 35px;
+                background-image: url('../../images/icon-search.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 18px !important;
+                font-size: 0;
+                cursor: pointer;
+              }
+            }
+         }
+        }
         
         .me-2 {
           height: 5vw;
@@ -766,19 +788,14 @@ body {
   }
 }
 
-.search-block-form {
-    align-self: center;
-    z-index: 99;
-    height: 52px;
-}
-
 .node-type--estudos, .node-type--detail{
   .page__header{
-    .search-block-form{
-      .form-submit{
-        background-color: transparent !important;
-        //background-size: 18px !important;
-        filter: invert(1) !important;
+    .block--navegacaoprincipal{
+      nav{
+        .toggler-busca{
+          background-color: transparent !important;
+          filter: invert(1) !important;
+        }
       }
     }
   }
