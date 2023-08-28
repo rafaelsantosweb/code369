@@ -1124,13 +1124,13 @@ display:
       display_extenders: {  }
       path: admin/estudos
       menu:
-        type: none
+        type: tab
         title: 'Adicionar Estudo'
         description: ''
         weight: -10
         expanded: true
-        menu_name: admin
-        parent: ''
+        menu_name: admin-estudos
+        parent: 'menu_link_content:0e066c77-3fbe-4b7e-a25b-e088f7f3d2c8'
         context: '0'
       tab_options:
         type: normal

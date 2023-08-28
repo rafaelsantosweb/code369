@@ -41,7 +41,6 @@ permissions:
   - 'access toolbar'
   - 'administer blocktabs'
   - 'administer media'
-  - 'administer menu'
   - 'administer meta tags'
   - 'administer nodes'
   - 'administer taxonomy'

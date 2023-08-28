@@ -1,0 +1,8 @@
+uuid: 5073831c-cda5-4c5e-9e0c-e0425b706dcd
+langcode: pt-br
+status: true
+dependencies: {  }
+id: admin-estudos
+label: 'admin estudos'
+description: ''
+locked: false
