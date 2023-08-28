@@ -3131,28 +3131,29 @@ __webpack_require__.r(__webpack_exports__);
 //Função para mover o bloco div do form de busca para o bloco de navegação principal
 
 (function ($) {
-  document.addEventListener('DOMContentLoaded', function () {
-    var newParent = document.querySelector('header > .header_container > .block--navegacaoprincipal');
+  $(function () {
+    var header = $('header > .header_container > .block--navegacaoprincipal');
     try {
       var childToMove = $('header > .header_container > .block--formulariodebusca');
-      childToMove.appendTo(newParent);
+      childToMove.appendTo(header);
     } catch (error) {
       console.log("Não foi encontrado a div Filho ");
     }
-    var barra_de_navegacao = $('header > .header_container > .block--navegacaoprincipal > nav > .navbar-collapse');
-    var icon_busca = $('header > .header_container > .block--navegacaoprincipal  #icon-busca');
-    var form_da_barra_de_busca = $('header > .header_container > .block--navegacaoprincipal > .block--formulariodebusca');
-    var barra_de_busca = $('header > .header_container > .block--navegacaoprincipal > .block--formulariodebusca > form > .form-item > input');
-    icon_busca.click(function () {
-      form_da_barra_de_busca.slideToggle(300);
-      barra_de_busca.val('');
-      icon_busca.toggleClass('mostrando');
+    var iconBusca = header.find('#icon-busca');
+    var formBarraBusca = header.find('.block--formulariodebusca');
+    var inputBarraBusca = formBarraBusca.find('form > .form-item > input');
+    function toggleBarraBusca() {
+      formBarraBusca.slideToggle(200);
+      iconBusca.toggleClass('mostrando');
+      inputBarraBusca.val('');
+    }
+    iconBusca.on('click', function () {
+      toggleBarraBusca();
     });
     $(document).on('click', function (event) {
       // Verifica se o clique foi fora da div
-      if (!$(event.target).closest(form_da_barra_de_busca).length && !$(event.target).is(icon_busca) && form_da_barra_de_busca.css('display') === 'block') {
-        $(form_da_barra_de_busca).slideToggle(200);
-        icon_busca.toggleClass('mostrando');
+      if (!$(event.target).closest(formBarraBusca).length && !$(event.target).is(iconBusca) && formBarraBusca.css('display') === 'block') {
+        toggleBarraBusca();
       }
     });
   });
