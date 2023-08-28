@@ -1,0 +1,33 @@
+uuid: 7bdbd8b5-df46-46d5-b8a0-edf6f577d0f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.admin-estudos
+  module:
+    - system
+    - user
+  theme:
+    - claro
+id: claro_adminestudos
+theme: claro
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:admin-estudos'
+settings:
+  id: 'system_menu_block:admin-estudos'
+  label: 'admin estudos'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      gestao_de_estudos: gestao_de_estudos
