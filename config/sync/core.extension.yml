@@ -3,6 +3,7 @@ _core:
 langcode: pt-br
 module:
   admin_toolbar: 0
+  admin_toolbar_search: 0
   admin_toolbar_tools: 0
   backup_migrate: 0
   bamboo_twig: 0
