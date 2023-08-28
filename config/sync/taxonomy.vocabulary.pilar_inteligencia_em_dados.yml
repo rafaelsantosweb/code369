@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'Pilar Inteligência em dados'
 vid: pilar_inteligencia_em_dados
 description: ''
-weight: 0
+weight: -7

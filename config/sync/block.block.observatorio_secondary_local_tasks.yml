@@ -9,7 +9,7 @@ _core:
 id: observatorio_secondary_local_tasks
 theme: observatorio
 region: header
-weight: -8
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

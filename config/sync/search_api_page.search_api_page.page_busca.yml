@@ -1,0 +1,22 @@
+uuid: 65e4ab00-5a00-4a6f-aa49-52a3ff17a734
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - search_api.index.busca
+id: page_busca
+label: 'Page busca'
+path: busca
+clean_url: true
+show_all_when_no_keys: false
+index: busca
+limit: 12
+searched_fields:
+  body: body
+  field_body: field_body
+  field_body_resume: field_body_resume
+  title: title
+style: search_results
+view_mode_configuration: {  }
+show_search_form: true
+parse_mode: direct

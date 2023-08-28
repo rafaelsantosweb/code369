@@ -1,0 +1,55 @@
+node_search:
+  path: busca
+  search: true
+  advanced:
+    visibility: true
+    collapsible: true
+    collapsed: true
+    criteria:
+      or: or
+      phrase: phrase
+      negative: negative
+    types:
+      detail: detail
+      estudos: estudos
+      page: page
+    languages:
+      pt-br: pt-br
+      und: und
+      zxx: zxx
+  info:
+    type: type
+    user: user
+    date: date
+    comment: comment
+  filter:
+    position: disabled
+    label: 'Filter the results'
+    any: '- Qualquer -'
+conteudo:
+  path: buscar
+  search: 1
+  advanced:
+    visibility: 1
+    collapsible: 1
+    collapsed: 1
+    criteria:
+      or: or
+      phrase: phrase
+      negative: negative
+    types:
+      estudos: estudos
+      detail: 0
+      page: 0
+    languages:
+      pt-br: pt-br
+      und: und
+      zxx: zxx
+  info:
+    type: type
+    user: 0
+    date: 0
+  filter:
+    position: above
+    label: 'Filter the results'
+    any: '- Qualquer -'

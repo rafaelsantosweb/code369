@@ -1,0 +1,214 @@
+uuid: 0679863f-7644-4a39-9c6e-bf1dd57be161
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_imagem
+    - field.storage.node.field_tags_estudos
+    - field.storage.paragraph.field_body
+    - field.storage.paragraph.field_body_resume
+    - field.storage.paragraph.field_title
+    - search_api.server.database
+  module:
+    - node
+    - path_alias
+    - taxonomy
+    - search_api
+    - paragraphs
+id: busca
+name: busca
+description: ''
+read_only: false
+field_settings:
+  alias:
+    label: 'Apelido de URL'
+    datasource_id: 'entity:path_alias'
+    property_path: alias
+    type: string
+    dependencies:
+      module:
+        - path_alias
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  entity_type:
+    label: 'Tipo de entidade'
+    property_path: search_api_entity_type
+    type: string
+  field_body:
+    label: Corpo
+    datasource_id: 'entity:paragraph'
+    property_path: field_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_body
+  field_body_resume:
+    label: 'Corpo de texto e resumo'
+    datasource_id: 'entity:paragraph'
+    property_path: field_body_resume
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_body_resume
+  field_imagem:
+    label: Imagem
+    datasource_id: 'entity:node'
+    property_path: field_imagem
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_imagem
+  field_tags_estudos:
+    label: 'Tags Estudos'
+    datasource_id: 'entity:node'
+    property_path: field_tags_estudos
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags_estudos
+  field_title:
+    label: Título
+    datasource_id: 'entity:paragraph'
+    property_path: field_title
+    type: string
+    dependencies:
+      config:
+        - field.storage.paragraph.field_title
+  name:
+    label: Nome
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: string
+    dependencies:
+      module:
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  status_1:
+    label: Publicado
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Título
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:paragraph':
+    bundles:
+      default: true
+      selected:
+        - attachments
+        - hero_banner
+        - hero_slider
+        - iframe
+        - image
+        - slide
+    languages:
+      default: true
+      selected: {  }
+  'entity:path_alias': {  }
+  'entity:search_api_task': {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected:
+        - acesso
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_type: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: false
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: never
+    highlight_partial: true
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: true
+    fields:
+      - alias
+      - body
+      - entity_type
+      - field_body
+      - field_body_resume
+      - field_title
+      - name
+      - title
+      - url
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 500
+  index_directly: true
+  track_changes_in_references: false
+server: database

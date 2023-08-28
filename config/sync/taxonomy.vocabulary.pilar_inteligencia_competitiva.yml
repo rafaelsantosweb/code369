@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'Pilar Inteligência competitiva'
 vid: pilar_inteligencia_competitiva
 description: ''
-weight: 0
+weight: -5

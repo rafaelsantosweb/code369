@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "456b781da533eae7ddcab63e971c39b7",
+    "content-hash": "f844994e5585d35af97c0a7dc36a4244",
     "packages": [
         {
             "name": "arthurkirkosa/guzzle-description-loader",
@@ -2882,6 +2882,76 @@
             }
         },
         {
+            "name": "drupal/custom_search",
+            "version": "1.0.0-beta9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/custom_search.git",
+                "reference": "8.x-1.0-beta9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/custom_search-8.x-1.0-beta9.zip",
+                "reference": "8.x-1.0-beta9",
+                "shasum": "9b8b556db85d528d660875f7f5badcf16379d61f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta9",
+                    "datestamp": "1679409683",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jérôme Danthinne",
+                    "homepage": "https://www.drupal.org/u/jdanthinne",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/u/mario-steinitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/user/2536014"
+                },
+                {
+                    "name": "rajeshwari10",
+                    "homepage": "https://www.drupal.org/user/3270754"
+                },
+                {
+                    "name": "rooby",
+                    "homepage": "https://www.drupal.org/user/350381"
+                },
+                {
+                    "name": "suzymasri",
+                    "homepage": "https://www.drupal.org/user/2428842"
+                }
+            ],
+            "description": "This module alters the default search box in many ways.",
+            "homepage": "https://www.drupal.org/project/custom_search",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/custom_search",
+                "issues": "https://www.drupal.org/project/issues/custom_search"
+            }
+        },
+        {
             "name": "drupal/devel",
             "version": "5.1.2",
             "source": {
@@ -2946,6 +3016,58 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/dialogs",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dialogs.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dialogs-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "f8d5c4681655928f2fb190d58a8920127e5a17b7"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 ||^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1675896178",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "anruether",
+                    "homepage": "https://www.drupal.org/user/894458"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "heliogabal",
+                    "homepage": "https://www.drupal.org/user/998658"
+                }
+            ],
+            "description": "Provides to open links in dialogs by adding magic query strings.",
+            "homepage": "https://www.drupal.org/project/dialogs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/dialogs"
             }
         },
         {
@@ -5448,6 +5570,71 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/search_api",
                 "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_page",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api_page.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_page-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "e1788adeb1441eac238728f34759d0336507a1e0"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10",
+                "drupal/search_api": "^1.25"
+            },
+            "require-dev": {
+                "drupal/facets": "2.0.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1669229286",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/1142202/committers"
+                },
+                {
+                    "name": "drunken monkey",
+                    "homepage": "https://www.drupal.org/user/205582"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Create search pages using Search API indexes.",
+            "homepage": "https://www.drupal.org/project/search_api_page",
+            "support": {
+                "source": "http://git.drupal.org/project/search_api_page.git",
+                "issues": "https://www.drupal.org/project/issues/search_api_page",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
             }
         },
@@ -12156,6 +12343,7 @@
         "drupal/conditional_fields": 15,
         "drupal/config_ignore": 10,
         "drupal/context": 5,
+        "drupal/custom_search": 10,
         "drupal/mask": 15,
         "drupal/node_revision_delete": 15,
         "drupal/paragraphs_limits": 15,

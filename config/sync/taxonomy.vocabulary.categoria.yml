@@ -5,4 +5,4 @@ dependencies: {  }
 name: Pilares
 vid: categoria
 description: 'Pilares do observatório'
-weight: 0
+weight: -9

@@ -1,0 +1,14 @@
+uuid: 19854567-2385-4d30-890f-020d57a5effa
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: database
+name: database
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: partial

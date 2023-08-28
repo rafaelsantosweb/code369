@@ -23,6 +23,7 @@ dependencies:
     - node
     - quick_node_clone
     - search
+    - search_api_page
     - system
     - taxonomy
     - toolbar
@@ -63,15 +64,12 @@ permissions:
   - 'delete own detail content'
   - 'delete own estudos content'
   - 'delete own image media'
-  - 'delete terms in area'
-  - 'delete terms in categoria'
   - 'delete terms in estudos'
-  - 'delete terms in pilar_inteligencia_competitiva'
-  - 'delete terms in pilar_inteligencia_em_dados'
-  - 'delete terms in tags_estudos'
   - 'edit any detail content'
   - 'edit any estudos content'
   - 'edit any image media'
+  - 'edit any page content'
+  - 'edit own detail content'
   - 'edit own estudos content'
   - 'edit own image media'
   - 'edit own page content'
@@ -90,4 +88,6 @@ permissions:
   - 'view detail revisions'
   - 'view estudos revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view search api pages'
   - 'view the administration theme'

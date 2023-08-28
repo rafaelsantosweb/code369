@@ -1,0 +1,1314 @@
+uuid: fc23fba8-182d-4d5e-84f9-6a8e2be91848
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_categoria
+    - field.storage.node.field_imagem
+    - field.storage.node.field_tags_estudos
+    - field.storage.paragraph.field_body
+    - field.storage.paragraph.field_title
+    - image.style.estudos
+    - search_api.index.busca
+  module:
+    - image
+    - search_api
+    - text
+id: search_api
+label: 'Search API'
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_busca
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: busca
+      fields:
+        field_title_2:
+          id: field_title_2
+          table: search_api_index_busca
+          field: field_title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: true
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_body_1:
+          id: field_body_1
+          table: search_api_index_busca
+          field: field_body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        body:
+          id: body
+          table: search_api_index_busca
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: summary
+          type: text_trimmed
+          settings:
+            trim_length: 800
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: true
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: Redefinir
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Nenhum resultado encontrado'
+            format: html
+          tokenize: false
+      sorts: {  }
+      arguments: {  }
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_busca
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: or
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: search_api_fulltext_op
+            label: 'Fulltext search'
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              admin: '0'
+              gestao_de_estudos: '0'
+            expose_fields: false
+            placeholder: ''
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: direct
+          min_length: null
+          fields:
+            - body
+            - field_body
+            - field_body_resume
+            - field_title
+            - title
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+      query:
+        type: search_api_query
+        options:
+          bypass_access: false
+          skip_access: true
+          preserve_facet_query_args: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.paragraph.field_body'
+        - 'config:field.storage.paragraph.field_title'
+        - 'config:search_api.index.busca'
+        - 'search_api_list:busca'
+  block_search_api:
+    id: block_search_api
+    display_title: 'Search Block'
+    display_plugin: block
+    position: 2
+    display_options:
+      title: ''
+      fields:
+        search_api_datasource:
+          id: search_api_datasource
+          table: search_api_index_busca
+          field: search_api_datasource
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+        search_api_url:
+          id: search_api_url
+          table: search_api_index_busca
+          field: search_api_url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
+        field_categoria:
+          id: field_categoria
+          table: search_api_datasource_busca_entity_node
+          field: field_categoria
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              acesso:
+                display_method: label
+              area:
+                display_method: label
+              categoria:
+                display_method: label
+              estudos:
+                display_method: label
+              pilar_inteligencia_competitiva:
+                display_method: label
+              pilar_inteligencia_em_dados:
+                display_method: label
+              tags_estudos:
+                display_method: label
+                view_mode: default
+        field_tags_estudos_1:
+          id: field_tags_estudos_1
+          table: search_api_index_busca
+          field: field_tags_estudos
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              acesso:
+                display_method: label
+              area:
+                display_method: label
+              categoria:
+                display_method: label
+              estudos:
+                display_method: label
+              pilar_inteligencia_competitiva:
+                display_method: label
+              pilar_inteligencia_em_dados:
+                display_method: label
+              tags_estudos:
+                display_method: label
+                view_mode: default
+        title_1:
+          id: title_1
+          table: search_api_index_busca
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: true
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        type:
+          id: type
+          table: search_api_datasource_busca_entity_node
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              node_type:
+                display_method: label
+        field_imagem:
+          id: field_imagem
+          table: search_api_index_busca
+          field: field_imagem
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: content
+            image_style: estudos
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        body:
+          id: body
+          table: search_api_index_busca
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: format
+          type: text_trimmed
+          settings:
+            trim_length: 600
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: true
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        id:
+          id: id
+          table: search_api_datasource_busca_entity_path_alias
+          field: id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: path_alias
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_numeric
+          fallback_options:
+            set_precision: false
+            precision: 0
+            decimal: .
+            separator: ','
+            format_plural: false
+            format_plural_string: !!binary MQNAY291bnQ=
+            prefix: ''
+            suffix: ''
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            format_plural_values:
+              - '1'
+              - '@count'
+        field_body:
+          id: field_body
+          table: search_api_index_busca
+          field: field_body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% if type == 'Estudos' %}\r\n\r\n<div class='imagem'>{{ field_imagem }} </div>\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n<div class='tag'>{{ field_tags_estudos_1 }}</div>\r\n\r\n{% elseif type == 'Página básica' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n\r\n{% elseif type == 'Detalhe' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n\r\n{% endif %}\r\n\r\n\r\n\r\n\r\n\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: input_required
+        options:
+          submit_button: Buscar
+          reset_button: false
+          reset_button_label: Redefinir
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: false
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+          text_input_required: ''
+          text_input_required_format: html
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_busca
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: key
+            label: Busca
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              admin: '0'
+              gestao_de_estudos: '0'
+            expose_fields: false
+            placeholder: ''
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: direct
+          min_length: null
+          fields:
+            - body
+            - field_body
+            - field_body_resume
+            - title
+        status_1:
+          id: status_1
+          table: search_api_index_busca
+          field: status_1
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        nid:
+          id: nid
+          table: search_api_index_busca
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_numeric
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: '30'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        exposed_form: false
+        fields: false
+        filters: false
+        filter_groups: false
+      css_class: search-content
+      display_description: ''
+      exposed_block: false
+      display_extenders: {  }
+      block_description: 'search block'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_categoria'
+        - 'config:field.storage.node.field_imagem'
+        - 'config:field.storage.node.field_tags_estudos'
+        - 'config:field.storage.paragraph.field_body'
+        - 'config:search_api.index.busca'
+        - 'search_api_list:busca'
