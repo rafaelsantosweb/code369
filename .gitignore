@@ -76,3 +76,4 @@ web/themes/custom/*/build/**/*.css*
 # MacOS
 .DS_Store
 /.editorconfig
+
