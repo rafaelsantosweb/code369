@@ -1,4 +1,4 @@
-body.node-type--detail, body.node-type--estudos {
+body.node-type--detail, body.node-type--estudos, .taxonomy_term {
 
   main {
     margin-bottom: 0 !important;
@@ -146,7 +146,7 @@ body.node-type--detail, body.node-type--estudos {
   }
 }
 
-.node-type--detail, .node-type--estudos {
+.node-type--detail, .node-type--estudos, .taxonomy_term {
   .block--navegacaoprincipal ul.nav {
     background-color: transparent !important;
     flex-direction: row;

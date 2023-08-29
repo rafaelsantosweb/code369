@@ -14,10 +14,11 @@
   {{ attach_library('tiny_slider/tiny_slider') }}
 
   <div id='hero-banners'>
+
     <div id='the-banners' {% if heros|length > 1 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
-      {% for hero in heros %}
+      {#% for hero in heros %#}
         <div class='hero-banner paragraph--type--hero-banner'>
-        {% if hero.img %}
+        {#% if hero.img %#}
 
           {% set imagestyle = {
             '#theme': 'image_style',
@@ -28,28 +29,28 @@
           } %}
           {{ imagestyle }}
 
-        {% elseif default_hero_img %}
-          <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img default-img" />
-        {% endif %}
+        {#% elseif default_hero_img %#}
+          <img class="hero-img img-fluid" src="/sites/default/files/styles/hero_banner/public/2023-08/novo-modelo.png?itok=qDuP_yns" width="1920" height="800" alt="img" loading="lazy">
+        {#% endif %#}
 
-        {% if hero.title or hero.body %}
-          <div class='hero-wrapper {{ hero.class }}'>
-            {% if hero.title %}
-              <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
-            {% endif %}
-            {% if hero.body %}
-              <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
-            {% endif %}
-            {% if hero.cta %}
-              <div class="field field--name-field-link field--type-link field__item button">
-                <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
+        {#% if hero.title or hero.body %#}
+         <div class='container hero-wrapper {{ hero.class }}'><br><br><br>
+            {#% if hero.title %#}
+             <h1 class="page-title">O Observatório</h1>
+            {#% endif %#}
+            {#% if hero.body %#}
+              <div class="paragraph_right">
+              {#{ hero.body|raw }#}
+              <span style="color: #ffffff;">O Observatório Firjan é uma plataforma digital que reúne dados, tendências e propostas</span>
               </div>
-            {% endif %}
+            {#% endif %#}
+
           </div>
-        {% endif %}
+        {#% endif %#}
         </div>
-      {% endfor %}
+      {#% endfor %#}
     </div>
+
     <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
   {% endblock %}
