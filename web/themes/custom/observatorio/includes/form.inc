@@ -16,7 +16,7 @@ use Drupal\Core\Form\FormStateInterface;
 function observatorio_form_search_block_form_alter(&$form, $form_state) {
     
     $form['keys']['#placeholder'] = 'Quais estudos você está buscando?';
-    $form['#action'] = '/busca?search_api_fulltext=';
+    $form['#action'] = '/busca?search_api_fulltext';
 
 }
 
