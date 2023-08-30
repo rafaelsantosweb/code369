@@ -114,10 +114,12 @@
           span:nth-child(2) {
             display: inline-flex;
             background-color: grey;
+            font-size: 15px;
             height: 55px;
             width: 18%;
             align-items: center;
             justify-content: center;
+            text-align: center;
           }
         }
       }
