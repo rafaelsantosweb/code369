@@ -3142,6 +3142,10 @@ __webpack_require__.r(__webpack_exports__);
     var iconBusca = header.find('#icon-busca');
     var formBarraBusca = header.find('.block--formulariodebusca');
     var inputBarraBusca = formBarraBusca.find('form > .form-item > input');
+
+    //inputBarraBusca.attr('data-drupal-selector', 'edit_search_api_fulltext');
+    var barraDeBusca = $('form').find('.form-search');
+    barraDeBusca.attr('name', 'search_api_fulltext');
     function toggleBarraBusca() {
       formBarraBusca.slideToggle(200);
       iconBusca.toggleClass('mostrando');
