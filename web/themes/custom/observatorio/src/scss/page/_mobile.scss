@@ -43,6 +43,8 @@
       /* Menu Click Effect */
       .header-mobile-toggle-container {
         z-index: 220;
+        position: fixed;
+        top: 5.5%;
 
         .header-mobile-toggle {
           &:before {
@@ -73,7 +75,7 @@
     /* Home - Hero Banner ------------------------ */
     .paragraph--type--hero-banner {
       .hero-img {
-        min-height: 400px;
+        min-height: 430px;
       }
 
       .hero-wrapper {
@@ -259,7 +261,7 @@
       }
 
       span {
-        font-size: 17px !important;
+        font-size: 15px !important;
 
         a {
           padding: 0 !important;
@@ -434,8 +436,8 @@
 
     .blocktabs {
       &::after {
-        background-size: cover;
-        height: 50%;
+        background-size: contain;
+        height: 20%;
         bottom: 0;
       }
 
@@ -488,7 +490,28 @@
       top: 10rem !important;
 
       h1.page-title {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+      }
+    }
+
+    .block--observatorio-content {
+      .estudos-internas {
+        .row {
+          flex-direction: column;
+
+          .col img {
+            margin: 0 1.5rem 1.5rem;
+          }
+
+          .col:nth-child(2) {
+            margin-left: 1.5rem;
+            width: 90%;
+          }
+        }
+
+        .paragraph--type--body {
+          margin-left: 1.5rem;
+        }
       }
     }
 
