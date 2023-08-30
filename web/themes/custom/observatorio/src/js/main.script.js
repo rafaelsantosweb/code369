@@ -116,6 +116,10 @@ import { Toast, Tooltip } from './_bootstrap';
 		const formBarraBusca = header.find('.block--formulariodebusca');
 		const inputBarraBusca = formBarraBusca.find('form > .form-item > input');
 
+		//inputBarraBusca.attr('data-drupal-selector', 'edit_search_api_fulltext');
+		const barraDeBusca = $('form').find('.form-search');
+		barraDeBusca.attr('name', 'search_api_fulltext');
+
 		function toggleBarraBusca() {
 			formBarraBusca.slideToggle(200);
 			iconBusca.toggleClass('mostrando');
