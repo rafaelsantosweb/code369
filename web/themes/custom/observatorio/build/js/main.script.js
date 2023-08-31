@@ -3120,11 +3120,15 @@ __webpack_require__.r(__webpack_exports__);
 //função nav tab
 
 (function ($) {
-  document.addEventListener('DOMContentLoaded', function () {
-    var texto_titulo = $('.page-title').text().replace(/\s+/g, ' ').trim();
-    $('.tabs-cloud .field-content > a:nth-child(2)').filter(function () {
-      return $(this).text().replace(/\s+/g, ' ').trim() === texto_titulo;
-    }).addClass('is_active');
+  $(function () {
+    var texto_titulo = $('.block--observatorio-content .container > .page-title').text().replace(/\s+/g, ' ').trim();
+    try {
+      $('.tabs-cloud .field-content > a:nth-child(2)').filter(function () {
+        return $(this).text().replace(/\s+/g, ' ').trim() === texto_titulo;
+      }).addClass('is_active');
+    } catch (error) {
+      console.log('não foi encontrado o filho');
+    }
   });
 })(jQuery);
 
@@ -3143,7 +3147,7 @@ __webpack_require__.r(__webpack_exports__);
     var formBarraBusca = header.find('.block--formulariodebusca');
     var inputBarraBusca = formBarraBusca.find('form > .form-item > input');
 
-    //inputBarraBusca.attr('data-drupal-selector', 'edit_search_api_fulltext');
+    //mudar attribute name da barra de input das paginas
     var barraDeBusca = $('form').find('.form-search');
     barraDeBusca.attr('name', 'search_api_fulltext');
     function toggleBarraBusca() {
