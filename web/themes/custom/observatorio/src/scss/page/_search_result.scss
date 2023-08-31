@@ -31,44 +31,80 @@
   display: none;
 }
 
-.search-content > .view-content{
-  .views-row > .views-field-nothing > .field-content {
-    display: grid;
-    grid-template-columns: 15% 50%;
-    grid-template-rows: 214px;
-    overflow: hidden;
+.search-content {
+  > .view-filters{
+    margin-bottom: 50px;
 
-    a{
-      text-decoration: none;
-    }
+    > form{
+      display: flex;
+      align-items: end;
 
-    .image img{
-      width: 100%;
-      height: 100%;
-    }
+      input{
+        border: 0;
+        border-bottom: 1px solid grey;
+        border-radius: 0;
 
-    .title{
-      grid-column: 2;
-      grid-row: 1;
-      font-size: 1.6rem;
+        &:focus{
+          box-shadow: none;
+        }
 
-      a{
-        font-weight: bold;
-        color: #182C5F;
+        &.btn{
+          height: 39px;
+          width: 35px;
+          background-image: url('../../images/icon-search.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #fff;
+          background-size: 18px;
+          font-size: 0;
+        }
+
+      }
+
+      label{
+        display: none;
       }
     }
-
-    .body{
-      grid-column: 2;
-      grid-row: 1;
-      margin-top: 12%;
-      z-index: 99;
-    }
-
-    .tag{
-      grid-column: 2;
-      grid-row: 1;
-      margin-top: 6%;
+  }
+  > .view-content{
+    .views-row > .views-field-nothing > .field-content {
+      display: grid;
+      grid-template-columns: 15% 50%;
+      grid-template-rows: 214px;
+      overflow: hidden;
+  
+      a{
+        text-decoration: none;
+      }
+  
+      .image img{
+        width: 100%;
+        height: 100%;
+      }
+  
+      .title{
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 1.6rem;
+  
+        a{
+          font-weight: bold;
+          color: #182C5F;
+        }
+      }
+  
+      .body{
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 12%;
+        z-index: 99;
+      }
+  
+      .tag{
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 6%;
+      }
     }
   }
 }
