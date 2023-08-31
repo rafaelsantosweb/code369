@@ -15,13 +15,15 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function observatorio_form_search_block_form_alter(&$form, $form_state) {
     
-    $form['keys']['#placeholder'] = 'Quais estudos você está buscando?';
+    $form['search_api_fulltext']['#placeholder'] = 'Quais estudos você está buscando?';
     $form['#action'] = '/busca?search_api_fulltext';
 
 }
 
 function observatorio_form_user_login_form_alter(&$form, $form_state) {
+
   $form['name']['#placeholder'] = 'E-mail';
   $form['pass']['#placeholder'] = 'Senha';
   $form['actions']['submit']['#value'] = t('Acessar >');
+
 }
