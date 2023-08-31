@@ -14,7 +14,7 @@
   {{ attach_library('tiny_slider/tiny_slider') }}
 
   <div id='hero-banners'>
-    <div id='the-banners' {% if heros|length > 1 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
+    <div id='the-banners' {% if heros|length > 5 %} class=' tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
       {% for hero in heros %}
         <div class='hero-banner paragraph--type--hero-banner'>
         {% if hero.img %}
@@ -29,22 +29,16 @@
           {{ imagestyle }}
 
         {% elseif default_hero_img %}
+          <img src="{{ file_url(node.field_categoria.entity.field_hero_banner_default.entity.uri.value) }}" 
+          alt="{{ node.field_categoria.entity.field_hero_banner_default.entity.alt.value }}" />
           <img src='{{ base_path ~ directory }}{{ default_hero_img }}' class="hero-img default-img" />
         {% endif %}
 
-        {% if hero.title or hero.body %}
-          <div class='hero-wrapper {{ hero.class }}'>
+          <div class='hero-wrapper bright'>
 
         <div class="container">
 
-            {% set categoria_estudo = node.field_categoria.target_id %}
-            {% if categoria_estudo == "8" %}
-                Prospetiva e Tendência
-              {% elseif categoria_estudo == "7" %}
-                  Inteligência em dados
-              {% elseif categoria_estudo == "6" %}
-                Inteligência Competividade
-            {% endif %}
+                {{ node.field_categoria.entity.field_titulo.value }}
 
             {% if hero.title %}
               <div class="field field--name-field-title field--type-string field__item">{{ hero.title }}</div>
@@ -52,6 +46,11 @@
             {% if hero.body %}
               <div class="field field--name-field-body field--type-long field__item">{{ hero.body|raw }}</div>
             {% endif %}
+
+            <div class="estudos-body">
+              {{ node.field_categoria.entity.field_descricao.value|raw }}
+            </div>  
+
             {% if hero.cta %}
               <div class="field field--name-field-link field--type-link field__item button">
                 <a href='{{ hero.cta.url }}'>{{ hero.cta.title }}</a>
@@ -59,11 +58,10 @@
             {% endif %}
           </div>
           </div>
-        {% endif %}
+
         </div>
       {% endfor %}
     </div>
-    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
   {% endblock %}
 
@@ -86,37 +84,6 @@
       </div>
     {% endif %}
   {% endblock %}
-
-  {#
-  {% embed '@radix/navbar/navbar.twig' with {
-    container: 'fixed',
-    color: 'light',
-    utility_classes: ['bg-light-off'],
-  } %}
-
-    {% block branding %}
-      {% if page.navbar_branding %}
-        {{ page.navbar_branding }}
-      {% endif %}
-    {% endblock %}
-
-    {% block left %}
-      {% if page.navbar_left %}
-        <div class="me-auto">
-          {{ page.navbar_left }}
-        </div>
-      {% endif %}
-    {% endblock %}
-
-    {% block right %}
-      {% if page.navbar_right %}
-	<div class="ms-auto">
-	  {{ page.navbar_right }}
-	</div>
-      {% endif %}
-    {% endblock %}
-  {% endembed %}
-  #}
 
   <main{{ content_attributes.addClass(page_classes) }}>
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -158,43 +125,4 @@
     </footer>
   {% endif %}
 
-  {% if teaser %}
-  <div id="teaser" class="wrapper">
-    <div class="container content">
-      Apenas usuários autenticados podem ler todo o conteúdo desta página.
-    </div>
-  </div>
-  {% endif %}
-
-</div>
-
-<div id="authenticatedModal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <img src='{{ base_path ~ directory }}/images/logo_firjan_default.svg'/>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X Fechar</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src='{{ base_path ~ directory }}/images/generic_user_profile.svg'/>
-        <h2>Conteúdo exclusivo para associado Firjan</h2>
-        <p class='info'>
-          Para acessar, insira seu E-mail e Senha (os mesmos da Plataforma do Associado)
-        </p>
-
-        {# embed the user login form #}
-        {{ user_login }}
-        <span id='forgot'><a href='/user/password'>Esqueci minha senha.</a></span>
-
-      </div>
-      <div class="modal-footer">
-      <span id='signup'>Ainda não é associado? <a href='/user'>Associe-se aqui.</a></span>
-        <img src='{{ base_path ~ directory }}/images/lock_icon.svg'/>
-        {# <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> #}
-      </div>
-    </div>
-  </div>
 </div>

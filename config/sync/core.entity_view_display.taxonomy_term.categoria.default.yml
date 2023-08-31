@@ -1,0 +1,21 @@
+uuid: a81aab88-859d-4507-a4e0-0c62a1543c98
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categoria.field_descricao
+    - field.field.taxonomy_term.categoria.field_hero_banner_default
+    - field.field.taxonomy_term.categoria.field_titulo
+    - taxonomy.vocabulary.categoria
+id: taxonomy_term.categoria.default
+targetEntityType: taxonomy_term
+bundle: categoria
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_descricao: true
+  field_hero_banner_default: true
+  field_titulo: true
+  langcode: true
+  search_api_excerpt: true

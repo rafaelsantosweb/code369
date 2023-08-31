@@ -1,20 +1,20 @@
-uuid: b68b4879-d63f-4e64-8610-af284e61c0d7
+uuid: e19e6aeb-80e9-49b8-9872-c0b108678d32
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_image
-    - media.type.image
+    - field.storage.taxonomy_term.field_hero_banner_default
+    - taxonomy.vocabulary.categoria
   module:
     - image
-id: media.image.field_media_image
-field_name: field_media_image
-entity_type: media
-bundle: image
-label: Imagem
+id: taxonomy_term.categoria.field_hero_banner_default
+field_name: field_hero_banner_default
+entity_type: taxonomy_term
+bundle: categoria
+label: 'Hero Banner Padrão'
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -30,9 +30,9 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 9076b45d-9d91-4b0c-959a-a30ce425a66d
+    uuid: ''
     alt: ''
     title: ''
-    width: 1894
-    height: 350
+    width: null
+    height: null
 field_type: image

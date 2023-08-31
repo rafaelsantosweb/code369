@@ -1,0 +1,30 @@
+uuid: 58e79413-e431-4f8a-90b5-8cae321e92f3
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - taxonomy
+id: taxonomy_term.field_hero_banner_default
+field_name: field_hero_banner_default
+entity_type: taxonomy_term
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: f69c11fd-6bd4-4b57-a0ba-e7a7fd096e30
+    alt: 'texto alternativo'
+    title: 'Titulo default'
+    width: 1894
+    height: 350
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

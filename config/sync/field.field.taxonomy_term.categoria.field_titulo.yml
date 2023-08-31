@@ -1,0 +1,19 @@
+uuid: 68e90f87-326e-4701-a0ef-529838da12e4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_titulo
+    - taxonomy.vocabulary.categoria
+id: taxonomy_term.categoria.field_titulo
+field_name: field_titulo
+entity_type: taxonomy_term
+bundle: categoria
+label: 'Titulo Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
