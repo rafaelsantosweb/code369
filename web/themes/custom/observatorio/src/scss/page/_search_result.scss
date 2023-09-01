@@ -68,8 +68,8 @@
   }
   > .view-content{
     .views-row > .views-field-nothing > .field-content {
-      display: grid;
-      grid-template-columns: 15% 50%;
+      //display: grid;
+      grid-template-columns: 0 50%;
       grid-template-rows: 214px;
       overflow: hidden;
   
@@ -77,11 +77,10 @@
         text-decoration: none;
       }
   
-      .image img{
-        width: 100%;
-        height: 100%;
-      }
-  
+      .field__label {
+        display: none;
+      } 
+
       .title{
         grid-column: 2;
         grid-row: 1;
@@ -96,7 +95,7 @@
       .body{
         grid-column: 2;
         grid-row: 1;
-        margin-top: 12%;
+       // margin-top: 12%;
         z-index: 99;
       }
   
@@ -104,7 +103,7 @@
         font-size: .8em;
         grid-column: 2;
         grid-row: 1;
-        margin-top: 6%;
+        margin-top: 15px;
       }
     }
   }

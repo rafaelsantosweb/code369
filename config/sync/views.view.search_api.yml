@@ -909,7 +909,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: format
+          click_sort_column: value
           type: text_trimmed
           settings:
             trim_length: 600
@@ -1094,7 +1094,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if type == 'Estudos' %}\r\n\r\n<div class='imagem'>{{ field_imagem }} </div>\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n<div class='tag'>{{ field_tags_estudos_1 }}</div>\r\n\r\n{% elseif type == 'Página básica' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n\r\n{% elseif type == 'Detalhe' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n\r\n{% endif %}\r\n\r\n\r\n\r\n\r\n\r\n"
+            text: "{% if type == 'Estudos' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n<div class='tag'>{{ field_tags_estudos_1 }}</div>\r\n\r\n{% elseif type == 'Página básica' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n\r\n{% elseif type == 'Detalhe' %}\r\n\r\n<div class='title'>{{ title_1 }}</div>\r\n<div class='body'>{{ body }} </div>\r\n\r\n{% endif %}\r\n<hr><br>\r\n\r\n\r\n\r\n\r\n\r\n"
             make_link: false
             path: ''
             absolute: false
