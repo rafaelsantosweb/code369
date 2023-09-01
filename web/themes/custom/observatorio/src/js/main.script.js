@@ -120,8 +120,8 @@ import { Toast, Tooltip } from './_bootstrap';
 		const inputBarraBusca = formBarraBusca.find('form > .form-item > input');
 
 		//mudar attribute name da barra de input das paginas
-		const barraDeBusca = $('form').find('.form-search');
-		barraDeBusca.attr('name', 'search_api_fulltext');
+		// const barraDeBusca = $('form').find('.form-search');
+		// barraDeBusca.attr('name', 'search_api_fulltext');
 
 		function toggleBarraBusca() {
 			formBarraBusca.slideToggle(200);
@@ -131,6 +131,7 @@ import { Toast, Tooltip } from './_bootstrap';
 
 		iconBusca.on('click', function () {
 			toggleBarraBusca();
+			inputBarraBusca.focus();
 		});
 		
 

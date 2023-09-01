@@ -3148,8 +3148,9 @@ __webpack_require__.r(__webpack_exports__);
     var inputBarraBusca = formBarraBusca.find('form > .form-item > input');
 
     //mudar attribute name da barra de input das paginas
-    var barraDeBusca = $('form').find('.form-search');
-    barraDeBusca.attr('name', 'search_api_fulltext');
+    // const barraDeBusca = $('form').find('.form-search');
+    // barraDeBusca.attr('name', 'search_api_fulltext');
+
     function toggleBarraBusca() {
       formBarraBusca.slideToggle(200);
       iconBusca.toggleClass('mostrando');
@@ -3157,6 +3158,7 @@ __webpack_require__.r(__webpack_exports__);
     }
     iconBusca.on('click', function () {
       toggleBarraBusca();
+      inputBarraBusca.focus();
     });
     $(document).on('click', function (event) {
       // Verifica se o clique foi fora da div
