@@ -12,7 +12,7 @@ dependencies:
 id: block_inteligencia_competitiva
 theme: observatorio
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: 'views_block:estudos_inteligencia_competitiva-block_inteligencia_competitiva'
 settings:

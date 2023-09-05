@@ -10,7 +10,7 @@ id: node.estudos.field_pilar_inteligencia_em_dado
 field_name: field_pilar_inteligencia_em_dado
 entity_type: node
 bundle: estudos
-label: 'Inteligência em dados'
+label: 'Inteligência de dados'
 description: ''
 required: false
 translatable: false

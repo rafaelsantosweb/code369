@@ -1,0 +1,27 @@
+uuid: c56168a9-e4ea-465e-a691-b5d06cd20d03
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - blocktabs.blocktabs.tabs_estudos_inteligencia_de_dados_filtros
+  module:
+    - blocktabs
+    - system
+  theme:
+    - observatorio
+id: observatorio_blocktabstabsestudosinteligenciadedadosfiltros
+theme: observatorio
+region: content
+weight: -4
+provider: null
+plugin: 'blocktabs_block:tabs_estudos_inteligencia_de_dados_filtros'
+settings:
+  id: 'blocktabs_block:tabs_estudos_inteligencia_de_dados_filtros'
+  label: 'Blocktabs:Tabs Estudos - Inteligencia de Dados - Filtros'
+  label_display: '0'
+  provider: blocktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/37

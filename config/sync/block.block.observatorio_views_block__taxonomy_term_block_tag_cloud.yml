@@ -12,7 +12,7 @@ dependencies:
 id: observatorio_views_block__taxonomy_term_block_tag_cloud
 theme: observatorio
 region: content
-weight: -11
+weight: -10
 provider: null
 plugin: 'views_block:taxonomy_term-block_tag_cloud'
 settings:

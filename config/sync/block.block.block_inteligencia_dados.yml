@@ -12,7 +12,7 @@ dependencies:
 id: block_inteligencia_dados
 theme: observatorio
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: 'views_block:estudos_inteligencia_em_dados-block_inteligencia_dados'
 settings:
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/inteligencia-em-dados/*'
+    pages: '/inteligencia-de-dados/*'

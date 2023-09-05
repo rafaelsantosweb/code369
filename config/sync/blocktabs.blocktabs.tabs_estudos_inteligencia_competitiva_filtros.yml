@@ -32,7 +32,7 @@ tabs:
     uuid: 7df332ce-bbd8-4186-bffe-9d90e403f55d
   8c87f143-5fe1-4f80-a996-1caae9f4f5de:
     id: views_tab
-    title: 'ANÁLISE CONJUNTURAL E CENÀRIOS ECONOMICOS'
+    title: 'ANÁLISE CONJUNTURAL E CENÁRIOS ECONÔMICOS'
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_1
@@ -44,7 +44,7 @@ tabs:
     uuid: 8c87f143-5fe1-4f80-a996-1caae9f4f5de
   0d1ef285-7897-498b-a9a1-c1750015b722:
     id: views_tab
-    title: 'PESQUISAS SONDAGENS EMPRESARIAIS'
+    title: 'PESQUISAS E SONDAGENS EMPRESARIAIS'
     data:
       view_name: estudos_inteligencia_competitiva
       view_display: block_2

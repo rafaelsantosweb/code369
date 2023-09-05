@@ -12,11 +12,7 @@ dependencies:
     - taxonomy.vocabulary.pilar_inteligencia_em_dados
   content:
     - 'taxonomy_term:categoria:14aaf09c-90b8-4650-ac82-f729bd31bc50'
-    - 'taxonomy_term:pilar_inteligencia_em_dados:4283477c-8fb1-4e2e-8038-16fb107cda40'
-    - 'taxonomy_term:pilar_inteligencia_em_dados:82b6df67-a86d-418b-b998-e982b7a714c7'
     - 'taxonomy_term:pilar_inteligencia_em_dados:b8c5dbc2-ed8d-41ab-94be-e28bf80d2c85'
-    - 'taxonomy_term:pilar_inteligencia_em_dados:c840ee71-3a40-4d72-9bfe-f1479f01f594'
-    - 'taxonomy_term:pilar_inteligencia_em_dados:e92fdedc-f6f4-4589-ba4a-09c4d60c85fd'
   module:
     - image
     - node
@@ -25,7 +21,7 @@ dependencies:
     - user
     - views_infinite_scroll
 id: estudos_inteligencia_em_dados
-label: 'Page Tabs - Inteligência em Dados'
+label: 'Page Tabs - Inteligência de Dados'
 module: views
 description: ''
 tag: ''
