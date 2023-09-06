@@ -874,3 +874,15 @@ body main .block--tagclouds-block-categoria {
     }
   }
 }
+
+
+
+body main .container > .paragraph {
+  padding: 0 0 !important;
+  overflow: hidden;
+}
+
+.field--name-field-body-resume img {
+  margin-right: 15px;
+  padding-bottom: 10px;
+}
