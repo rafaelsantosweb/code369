@@ -34,8 +34,10 @@
         {#% endif %#}
 
         {#% if hero.title or hero.body %#}
-         <div class='container hero-wrapper {{ hero.class }}'><br><br><br>
+         <div class='hero-wrapper {{ hero.class }}'><br><br><br>
             {#% if hero.title %#}
+
+        <div class="container">
              <h1 class="page-title">O Observatório</h1>
             {#% endif %#}
             {#% if hero.body %#}
@@ -44,8 +46,8 @@
               <span style="color: #ffffff;">O Observatório Firjan é uma plataforma digital que reúne dados, tendências e propostas</span>
               </div>
             {#% endif %#}
-
           </div>
+        </div>
         {#% endif %#}
         </div>
       {#% endfor %#}
