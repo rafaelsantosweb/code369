@@ -120,10 +120,11 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
       font-size: 25px;
       font-weight: 600;
       line-height: 31px;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto -20px;
       padding: 0 0 1.5rem;
       text-align: center;
       width: 100%;
+      margin-top: 30px;
 
       &::before {
         content: '';
