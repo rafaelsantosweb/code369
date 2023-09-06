@@ -14,7 +14,7 @@
   {{ attach_library('tiny_slider/tiny_slider') }}
 
   <div id='hero-banners'>
-    <div id='the-banners' {% if heros|length != 0 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
+    <div id='the-banners' {% if heros|length > 1 %} class='my-slider tiny-slider-wrapper' data-settings='{{ slider_settings }}' {% endif %}>
       {% for hero in heros %}
         <div class='hero-banner paragraph--type--hero-banner'>
         {% if hero.img %}
