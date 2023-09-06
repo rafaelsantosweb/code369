@@ -1,0 +1,31 @@
+uuid: b1055076-fc91-4813-b368-e03927023bcb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.page_top_clolud.field_chamada
+    - taxonomy.vocabulary.page_top_clolud
+  module:
+    - text
+id: taxonomy_term.page_top_clolud.default
+targetEntityType: taxonomy_term
+bundle: page_top_clolud
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_chamada:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: a6802e2d-bb26-4008-b376-e43782386587
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_chamada
+    - taxonomy.vocabulary.page_top_clolud
+id: taxonomy_term.page_top_clolud.field_chamada
+field_name: field_chamada
+entity_type: taxonomy_term
+bundle: page_top_clolud
+label: chamada
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
