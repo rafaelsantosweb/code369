@@ -16,7 +16,6 @@ dependencies:
     - 'taxonomy_term:pilar_inteligencia_competitiva:51d7b45f-670d-45b0-baca-521cef3326cc'
     - 'taxonomy_term:pilar_inteligencia_competitiva:954de52a-b783-4177-9a73-1cdf66b51804'
     - 'taxonomy_term:pilar_inteligencia_competitiva:a24a800b-9f6f-45b7-a87e-59f646af84c5'
-    - 'taxonomy_term:pilar_inteligencia_competitiva:e7e6c554-c52e-4ccc-a21e-76e855cb38fa'
   module:
     - image
     - node
@@ -365,6 +364,7 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: 'pilares container'
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }

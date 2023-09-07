@@ -10,9 +10,7 @@ dependencies:
     - taxonomy.vocabulary.area
     - taxonomy.vocabulary.categoria
   content:
-    - 'taxonomy_term:area:0c7fe080-f67b-4ba4-92e9-fb89b194f205'
     - 'taxonomy_term:area:952fbf6d-e85d-4d83-b8f6-eec6dfd0b91a'
-    - 'taxonomy_term:area:b7df564f-8d52-455c-a917-4b4ce7067e57'
     - 'taxonomy_term:area:d8cf05df-eb64-4128-809f-3fca3e529be5'
     - 'taxonomy_term:area:ef6cd58a-bcc1-4cbd-9931-371def9a18fe'
     - 'taxonomy_term:categoria:14aaf09c-90b8-4650-ac82-f729bd31bc50'
@@ -866,6 +864,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -875,6 +874,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }
@@ -1377,6 +1377,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -1386,6 +1387,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }
@@ -1888,6 +1890,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -1897,6 +1900,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }
@@ -2403,6 +2407,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -2412,6 +2417,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }
@@ -2914,6 +2920,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -2923,6 +2930,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }
@@ -3425,6 +3433,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -3434,6 +3443,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }

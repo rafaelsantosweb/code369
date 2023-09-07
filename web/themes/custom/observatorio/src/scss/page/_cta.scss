@@ -7,7 +7,7 @@ body {
   &.node-type--estudos {
     .button {
       @include button;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
 
       &.btn {
@@ -24,4 +24,19 @@ body {
       }
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+pager__item ::marker {
+  unicode-bidi: none;
+  list-style: none !important;
+  list-style-type: none !important;
 }
