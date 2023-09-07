@@ -9,7 +9,7 @@ id: taxonomy_term.categoria.field_descricao
 field_name: field_descricao
 entity_type: taxonomy_term
 bundle: categoria
-label: Descricao
+label: 'Descricao topo'
 description: ''
 required: false
 translatable: false

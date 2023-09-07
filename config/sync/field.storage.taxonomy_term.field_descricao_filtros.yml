@@ -1,0 +1,19 @@
+uuid: e70b7bce-257f-4cfa-8bc4-94bab91acb20
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_descricao_filtros
+field_name: field_descricao_filtros
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

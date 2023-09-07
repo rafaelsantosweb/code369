@@ -1,4 +1,4 @@
-uuid: 53ced99c-c76b-44fa-b79c-20db44876e02
+uuid: 68dbb52e-ad0e-4759-9637-a735986ef62d
 langcode: pt-br
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - observatorio
-id: observatorio_views_block__taxonomy_term_block_tag_cloud
+id: observatorio_views_block__taxonomy_term_block_3
 theme: observatorio
 region: content
-weight: -11
+weight: -6
 provider: null
-plugin: 'views_block:taxonomy_term-block_tag_cloud'
+plugin: 'views_block:taxonomy_term-block_3'
 settings:
-  id: 'views_block:taxonomy_term-block_tag_cloud'
+  id: 'views_block:taxonomy_term-block_3'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/taxonomy/term/*'
+    pages: /inteligencia-competitiva

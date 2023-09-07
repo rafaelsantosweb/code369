@@ -14,6 +14,7 @@
       flex-wrap: wrap;
       gap: 2%;
       width: 100%;
+      padding-top: 2.5em;
     }
 
     /* White Card Box Style */
@@ -106,7 +107,55 @@
   padding: 6em 0 3em;
 }
 
-
 .node-type--estudos body .page {
   background: #F2F2F2 !important;
+}
+
+.descricao-filtros-tabs {
+  background-color: transparent;
+  font-size: 12px;
+  position: absolute;
+  margin-top: 1.1em;
+  width: 1024px;
+  z-index: 999;
+  margin-left: 17%;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+
+  .descricao-filtros-tabs {
+    //  font-size: 12px;
+    //  margin-top: 1.2em !important;
+    //  width: 100% !important;
+    //  margin-left: 0 !important;
+    display: none;
+  }
+
+  .views-infinite-scroll-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 100%;
+    padding-top: 0 !important;
+  }
+
+}
+
+.node--37 .paragraph--type--destaques .field--name-field-body {
+  font-size: 13px;
+  line-height: 18.54px;
+  margin-bottom: 20px;
+}
+
+.node--43 .paragraph--type--destaques .field--name-field-body {
+  font-size: 13px;
+  line-height: 18.54px;
+  margin-bottom: 20px;
+}
+
+.node--44 .paragraph--type--destaques .field--name-field-body {
+  font-size: 13px;
+  line-height: 18.54px;
+  margin-bottom: 20px;
 }

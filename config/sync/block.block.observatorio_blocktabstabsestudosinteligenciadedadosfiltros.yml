@@ -12,7 +12,7 @@ dependencies:
 id: observatorio_blocktabstabsestudosinteligenciadedadosfiltros
 theme: observatorio
 region: content
-weight: -4
+weight: -2
 provider: null
 plugin: 'blocktabs_block:tabs_estudos_inteligencia_de_dados_filtros'
 settings:

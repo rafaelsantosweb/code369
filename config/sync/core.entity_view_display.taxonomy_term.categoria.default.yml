@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categoria.field_descricao
+    - field.field.taxonomy_term.categoria.field_descricao_filtros
     - field.field.taxonomy_term.categoria.field_hero_banner_default
     - field.field.taxonomy_term.categoria.field_titulo
     - taxonomy.vocabulary.categoria
@@ -15,6 +16,7 @@ content: {  }
 hidden:
   description: true
   field_descricao: true
+  field_descricao_filtros: true
   field_hero_banner_default: true
   field_titulo: true
   langcode: true

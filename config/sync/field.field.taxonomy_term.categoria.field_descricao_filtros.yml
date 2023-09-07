@@ -1,0 +1,24 @@
+uuid: 5dbd3601-0d5e-4d4a-b4ca-7bcded63202d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_descricao_filtros
+    - filter.format.html
+    - taxonomy.vocabulary.categoria
+  module:
+    - text
+id: taxonomy_term.categoria.field_descricao_filtros
+field_name: field_descricao_filtros
+entity_type: taxonomy_term
+bundle: categoria
+label: 'Descrição Filtros'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+field_type: text_long

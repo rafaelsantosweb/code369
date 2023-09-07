@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categoria.field_descricao
+    - field.field.taxonomy_term.categoria.field_descricao_filtros
     - field.field.taxonomy_term.categoria.field_hero_banner_default
     - field.field.taxonomy_term.categoria.field_titulo
     - image.style.thumbnail
     - taxonomy.vocabulary.categoria
   module:
     - image
+    - text
 id: taxonomy_term.categoria.default
 targetEntityType: taxonomy_term
 bundle: categoria
@@ -17,7 +19,15 @@ mode: default
 content:
   field_descricao:
     type: string_textarea
-    weight: 3
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_descricao_filtros:
+    type: text_textarea
+    weight: 5
     region: content
     settings:
       rows: 5
@@ -25,7 +35,7 @@ content:
     third_party_settings: {  }
   field_hero_banner_default:
     type: image_image
-    weight: 1
+    weight: 2
     region: content
     settings:
       progress_indicator: throbber
@@ -33,7 +43,7 @@ content:
     third_party_settings: {  }
   field_titulo:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -41,14 +51,14 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 5
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -56,7 +66,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 4
+    weight: 6
     region: content
     settings:
       display_label: true

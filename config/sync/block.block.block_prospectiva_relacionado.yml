@@ -12,7 +12,7 @@ dependencies:
 id: block_prospectiva_relacionado
 theme: observatorio
 region: content
-weight: -3
+weight: -1
 provider: null
 plugin: 'views_block:page_tabs_prospectiva_e_tendencia-block_prospectiva_relacionado'
 settings:
