@@ -81,11 +81,11 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
     .paragraph_right {
       .field--name-field-title {
         padding: 0 0.25rem 7rem !important;
-        margin-top: -25px;
-        font-weight: 400;
+        margin-top: 7px;
+        font-weight: 100;
         font-family: "Averta", sans-serif;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: normal;
         width: 115%; /* 756px Figma */
       }
     }
@@ -171,4 +171,5 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
 
 .paragraph--type--image-text .field--name-field-body {
   margin: 0.5em 0 1.5em;
+  line-height: 1.8em;
 }
