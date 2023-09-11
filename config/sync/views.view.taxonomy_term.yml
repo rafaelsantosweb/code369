@@ -269,669 +269,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
-    display_title: 'descricao filtro inteligencia dados'
-    display_plugin: block
-    position: 4
-    display_options:
-      title: ''
-      fields:
-        field_descricao_filtros:
-          id: field_descricao_filtros
-          table: taxonomy_term__field_descricao_filtros
-          field: field_descricao_filtros
-          relationship: field_categoria
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: format
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 1
-      sorts: {  }
-      arguments: {  }
-      filters:
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-          operator: in
-          value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        tid_raw:
-          id: tid_raw
-          table: taxonomy_term_field_data
-          field: tid_raw
-          relationship: field_categoria
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          plugin_id: numeric
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: '7'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      defaults:
-        title: false
-        css_class: false
-        pager: false
-        style: false
-        row: false
-        relationships: false
-        fields: false
-        sorts: false
-        arguments: false
-        filters: false
-        filter_groups: false
-        header: false
-      relationships:
-        field_categoria:
-          id: field_categoria
-          table: node__field_categoria
-          field: field_categoria
-          relationship: none
-          group_type: group
-          admin_label: 'field_categoria: Estudos Termo de taxonomia'
-          plugin_id: standard
-          required: false
-      css_class: 'margin-descricao descricao_filtros_tabs'
-      display_description: ''
-      header: {  }
-      display_extenders: {  }
-      block_description: 'descricao filtro inteligencia dados'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.taxonomy_term.field_descricao_filtros'
-  block_2:
-    id: block_2
-    display_title: 'descricao filtro prospectiva'
-    display_plugin: block
-    position: 4
-    display_options:
-      title: ''
-      fields:
-        field_descricao_filtros:
-          id: field_descricao_filtros
-          table: taxonomy_term__field_descricao_filtros
-          field: field_descricao_filtros
-          relationship: field_categoria
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: format
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 1
-      sorts: {  }
-      arguments: {  }
-      filters:
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-          operator: in
-          value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        tid_raw:
-          id: tid_raw
-          table: taxonomy_term_field_data
-          field: tid_raw
-          relationship: field_categoria
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          plugin_id: numeric
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: '8'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: tid_raw_op
-            label: 'ID do termo'
-            description: ''
-            use_operator: false
-            operator: tid_raw_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: tid_raw
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              admin: '0'
-              gestao_de_estudos: '0'
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      defaults:
-        title: false
-        css_class: false
-        pager: false
-        style: false
-        row: false
-        relationships: false
-        fields: false
-        sorts: false
-        arguments: false
-        filters: false
-        filter_groups: false
-        header: false
-      relationships:
-        field_categoria:
-          id: field_categoria
-          table: node__field_categoria
-          field: field_categoria
-          relationship: none
-          group_type: group
-          admin_label: 'field_categoria: Estudos Termo de taxonomia'
-          plugin_id: standard
-          required: false
-      css_class: 'margin-descricao descricao_filtros_tabs'
-      display_description: ''
-      header: {  }
-      display_extenders: {  }
-      block_description: 'descricao filtro prospectiva'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.taxonomy_term.field_descricao_filtros'
-  block_3:
-    id: block_3
-    display_title: 'descricao filtro inteligencia competitiva'
-    display_plugin: block
-    position: 4
-    display_options:
-      title: ''
-      fields:
-        field_descricao_filtros:
-          id: field_descricao_filtros
-          table: taxonomy_term__field_descricao_filtros
-          field: field_descricao_filtros
-          relationship: field_categoria
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: format
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 1
-      sorts: {  }
-      arguments: {  }
-      filters:
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-          operator: in
-          value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        tid_raw:
-          id: tid_raw
-          table: taxonomy_term_field_data
-          field: tid_raw
-          relationship: field_categoria
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          plugin_id: numeric
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: '6'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: tid_raw_op
-            label: 'ID do termo'
-            description: ''
-            use_operator: false
-            operator: tid_raw_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: tid_raw
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              admin: '0'
-              gestao_de_estudos: '0'
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      defaults:
-        title: false
-        css_class: false
-        pager: false
-        style: false
-        row: false
-        relationships: false
-        fields: false
-        sorts: false
-        arguments: false
-        filters: false
-        filter_groups: false
-        header: false
-      relationships:
-        field_categoria:
-          id: field_categoria
-          table: node__field_categoria
-          field: field_categoria
-          relationship: none
-          group_type: group
-          admin_label: 'field_categoria: Estudos Termo de taxonomia'
-          plugin_id: standard
-          required: false
-      css_class: 'margin-descricao descricao_filtros_tabs'
-      display_description: ''
-      header: {  }
-      display_extenders: {  }
-      block_description: 'descricao filtro inteligencia competitiva'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.taxonomy_term.field_descricao_filtros'
   block_tag_cloud:
     id: block_tag_cloud
     display_title: 'Tags Cloud termos Taxonomy '
@@ -1210,6 +547,2429 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  descricao_ic_analise_conjuntural:
+    id: descricao_ic_analise_conjuntural
+    display_title: 'descricao filtro IC - Estudos Economicos'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '21'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_pilar_inteligencia_competi:
+          id: field_pilar_inteligencia_competi
+          table: node__field_pilar_inteligencia_competi
+          field: field_pilar_inteligencia_competi
+          relationship: none
+          group_type: group
+          admin_label: 'field_pilar_inteligencia_competi: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro IC - Estudos Economicos'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_ic_analise_pesquisas_tematicas:
+    id: descricao_ic_analise_pesquisas_tematicas
+    display_title: 'descricao filtro IC - Pesquisa Temáticas'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '23'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_pilar_inteligencia_competi:
+          id: field_pilar_inteligencia_competi
+          table: node__field_pilar_inteligencia_competi
+          field: field_pilar_inteligencia_competi
+          relationship: none
+          group_type: group
+          admin_label: 'field_pilar_inteligencia_competi: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro IC - Pesquisa temáticas'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_ic_estudos_economicos:
+    id: descricao_ic_estudos_economicos
+    display_title: 'descricao filtro IC - Estudos Economicos'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '20'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_pilar_inteligencia_competi:
+          id: field_pilar_inteligencia_competi
+          table: node__field_pilar_inteligencia_competi
+          field: field_pilar_inteligencia_competi
+          relationship: none
+          group_type: group
+          admin_label: 'field_pilar_inteligencia_competi: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro IC - Estudos Economicos'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_ic_pesquisas_sondagens:
+    id: descricao_ic_pesquisas_sondagens
+    display_title: 'descricao filtro IC - Pesquisa Sondagens'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_pilar_inteligencia_competi
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '22'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_pilar_inteligencia_competi:
+          id: field_pilar_inteligencia_competi
+          table: node__field_pilar_inteligencia_competi
+          field: field_pilar_inteligencia_competi
+          relationship: none
+          group_type: group
+          admin_label: 'field_pilar_inteligencia_competi: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro IC - Pesquisa Sondagens'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_ic_todos:
+    id: descricao_ic_todos
+    display_title: 'descricao filtro IC TODOS'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        field_descricao_filtros:
+          id: field_descricao_filtros
+          table: taxonomy_term__field_descricao_filtros
+          field: field_descricao_filtros
+          relationship: field_categoria
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_categoria
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '6'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_categoria:
+          id: field_categoria
+          table: node__field_categoria
+          field: field_categoria
+          relationship: none
+          group_type: group
+          admin_label: 'field_categoria: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro IC - Todos'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.taxonomy_term.field_descricao_filtros'
+  descricao_id_plataforma_de_dados:
+    id: descricao_id_plataforma_de_dados
+    display_title: 'descricao filtro ID - Plataforma de dados'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_pilar_inteligencia_em_dado
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_pilar_inteligencia_em_dado
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '16'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_pilar_inteligencia_em_dado:
+          id: field_pilar_inteligencia_em_dado
+          table: node__field_pilar_inteligencia_em_dado
+          field: field_pilar_inteligencia_em_dado
+          relationship: none
+          group_type: group
+          admin_label: 'field_pilar_inteligencia_em_dado: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro ID - Plataforma de dados'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_id_todos:
+    id: descricao_id_todos
+    display_title: 'descricao filtro ID TODOS'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        field_descricao_filtros:
+          id: field_descricao_filtros
+          table: taxonomy_term__field_descricao_filtros
+          field: field_descricao_filtros
+          relationship: field_categoria
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_categoria
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '7'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_categoria:
+          id: field_categoria
+          table: node__field_categoria
+          field: field_categoria
+          relationship: none
+          group_type: group
+          admin_label: 'field_categoria: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro ID - Todos'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.taxonomy_term.field_descricao_filtros'
+  descricao_pt_ambiente:
+    id: descricao_pt_ambiente
+    display_title: 'descricao filtro PT - Ambiente'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_area
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_area
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '14'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: tid_raw_op
+            label: 'ID do termo'
+            description: ''
+            use_operator: false
+            operator: tid_raw_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: tid_raw
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              admin: '0'
+              gestao_de_estudos: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_area:
+          id: field_area
+          table: node__field_area
+          field: field_area
+          relationship: none
+          group_type: group
+          admin_label: 'field_area: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro PT - Macrotendencia'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_pt_macrotendencias:
+    id: descricao_pt_macrotendencias
+    display_title: 'descricao filtro PT - Macrotendencia'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_area
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_area
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '13'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_area:
+          id: field_area
+          table: node__field_area
+          field: field_area
+          relationship: none
+          group_type: group
+          admin_label: 'field_area: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro PT - Macrotendencia'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_pt_rotas:
+    id: descricao_pt_rotas
+    display_title: 'descricao filtro PT - Ambiente'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: field_area
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_area
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '15'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: tid_raw_op
+            label: 'ID do termo'
+            description: ''
+            use_operator: false
+            operator: tid_raw_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: tid_raw
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              admin: '0'
+              gestao_de_estudos: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_area:
+          id: field_area
+          table: node__field_area
+          field: field_area
+          relationship: none
+          group_type: group
+          admin_label: 'field_area: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro PT - Rotas'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  descricao_pt_todos:
+    id: descricao_pt_todos
+    display_title: 'descricao filtro PT TODOS'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      fields:
+        field_descricao_filtros:
+          id: field_descricao_filtros
+          table: taxonomy_term__field_descricao_filtros
+          field: field_descricao_filtros
+          relationship: field_categoria
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts: {  }
+      arguments: {  }
+      filters:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid_raw:
+          id: tid_raw
+          table: taxonomy_term_field_data
+          field: tid_raw
+          relationship: field_categoria
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '8'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_categoria:
+          id: field_categoria
+          table: node__field_categoria
+          field: field_categoria
+          relationship: none
+          group_type: group
+          admin_label: 'field_categoria: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: true
+      css_class: filtro_descricao_estudos
+      display_description: ''
+      header: {  }
+      display_extenders: {  }
+      block_description: 'descricao filtro PT - Todos'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.taxonomy_term.field_descricao_filtros'
   feed_1:
     id: feed_1
     display_title: Feed

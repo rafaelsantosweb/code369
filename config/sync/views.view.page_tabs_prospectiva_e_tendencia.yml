@@ -9,6 +9,7 @@ dependencies:
     - node.type.estudos
     - taxonomy.vocabulary.area
     - taxonomy.vocabulary.categoria
+    - views.view.taxonomy_term
   content:
     - 'taxonomy_term:area:952fbf6d-e85d-4d83-b8f6-eec6dfd0b91a'
     - 'taxonomy_term:area:d8cf05df-eb64-4128-809f-3fca3e529be5'
@@ -876,7 +877,18 @@ display:
       css_class: 'estudos container'
       use_ajax: true
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_pt_macrotendencias'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1389,7 +1401,18 @@ display:
       css_class: 'estudos container'
       use_ajax: true
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_pt_rotas'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1902,7 +1925,18 @@ display:
       css_class: 'estudos container'
       use_ajax: true
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_pt_ambiente'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -2419,7 +2453,18 @@ display:
       css_class: 'estudos container'
       use_ajax: true
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_pt_todos'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

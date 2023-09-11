@@ -31,7 +31,7 @@
     content: '';
     background: url('../../images/binary.svg') no-repeat 0 210px;
     background-size: contain;
-    position: absolute;
+    //position: absolute;
     z-index: 0;
     transform: scaleX(-1);
     height: 40%;
@@ -47,7 +47,7 @@
   font-weight:bold;
   justify-content: center;
   font-family: "Averta", sans-serif;
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
   margin-top: -2em;
 }
 
@@ -131,4 +131,8 @@
     padding-bottom: 10px !important;
   }
 
+}
+
+.filtro-descricao-estudos .view-content p {
+  font-size: 13px;
 }

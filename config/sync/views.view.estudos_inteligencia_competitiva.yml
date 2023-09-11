@@ -9,6 +9,7 @@ dependencies:
     - node.type.estudos
     - taxonomy.vocabulary.categoria
     - taxonomy.vocabulary.pilar_inteligencia_competitiva
+    - views.view.taxonomy_term
   content:
     - 'taxonomy_term:categoria:14aaf09c-90b8-4650-ac82-f729bd31bc50'
     - 'taxonomy_term:categoria:35eb29e4-86a5-402d-8ddc-44f6914d596b'
@@ -878,7 +879,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_ic_analise_conjuntural'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1391,7 +1403,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_ic_pesquisas_sondagens'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1904,7 +1927,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_ic_estudos_economicos'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -2417,7 +2451,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_ic_analise_pesquisas_tematicas'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -2934,7 +2979,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_ic_todos'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

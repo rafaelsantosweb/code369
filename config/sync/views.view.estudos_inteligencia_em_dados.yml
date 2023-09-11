@@ -10,6 +10,7 @@ dependencies:
     - node.type.estudos
     - taxonomy.vocabulary.categoria
     - taxonomy.vocabulary.pilar_inteligencia_em_dados
+    - views.view.taxonomy_term
   content:
     - 'taxonomy_term:categoria:14aaf09c-90b8-4650-ac82-f729bd31bc50'
     - 'taxonomy_term:pilar_inteligencia_em_dados:b8c5dbc2-ed8d-41ab-94be-e28bf80d2c85'
@@ -986,7 +987,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_id_plataforma_de_dados'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -3286,7 +3298,18 @@ display:
         header: false
       css_class: 'estudos container'
       display_description: ''
-      header: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'taxonomy_term:descricao_id_todos'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
