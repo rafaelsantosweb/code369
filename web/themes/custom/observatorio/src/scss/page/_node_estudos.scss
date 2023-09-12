@@ -58,6 +58,16 @@
         padding-bottom: 6em;
       }
     }
+
+    .js-pager__items {
+      .pager__item {
+        a.button {
+          border: 1px solid white !important;
+          color: white !important;
+          background-color: #003bd1 !important;
+        }
+      }
+    }
   }
 
   .container {
