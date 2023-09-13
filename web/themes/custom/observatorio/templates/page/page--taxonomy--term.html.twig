@@ -29,19 +29,15 @@
           } %}
           {{ imagestyle }}
 
-        {#% elseif default_hero_img %#}
-          <img class="hero-img img-fluid" src="/sites/default/files/styles/hero_banner/public/2023-08/novo-modelo.png?itok=qDuP_yns" width="1920" height="800" alt="img" loading="lazy">
-        {#% endif %#}
-
-         <div class='container hero-wrapper {{ hero.class }}'><br><br><br>
+         <img class="hero-img img-fluid" src="/sites/default/files/styles/hero_banner/public/2023-08/novo-modelo.png?itok=qDuP_yns" width="1920" height="800" alt="img" loading="lazy">
+         <div class='hero-wrapper {{ hero.class }}'><br><br><br>
+          <div class='hero-wrapper bright'><br>
           {{ drupal_view('header_chamadas', 'block_1') }}
         </div>
-        </div>
-      {#% endfor %#}
     </div>
-
-    <img class='faixa' src='{{ base_path ~ directory }}/images/banner_shape_cinza.png' />
   </div>
+  </div>
+
   {% endblock %}
 
   {% block head_top %}
@@ -63,37 +59,6 @@
       </div>
     {% endif %}
   {% endblock %}
-
-  {#
-  {% embed '@radix/navbar/navbar.twig' with {
-    container: 'fixed',
-    color: 'light',
-    utility_classes: ['bg-light-off'],
-  } %}
-
-    {% block branding %}
-      {% if page.navbar_branding %}
-        {{ page.navbar_branding }}
-      {% endif %}
-    {% endblock %}
-
-    {% block left %}
-      {% if page.navbar_left %}
-        <div class="me-auto">
-          {{ page.navbar_left }}
-        </div>
-      {% endif %}
-    {% endblock %}
-
-    {% block right %}
-      {% if page.navbar_right %}
-	<div class="ms-auto">
-	  {{ page.navbar_right }}
-	</div>
-      {% endif %}
-    {% endblock %}
-  {% endembed %}
-  #}
 
   <main{{ content_attributes.addClass(page_classes) }}>
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}

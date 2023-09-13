@@ -10,7 +10,6 @@ dependencies:
     - taxonomy
     - text
     - user
-    - views_infinite_scroll
 _core:
   default_config_hash: YKgw0f77GEmCu6_6Om9Mbig0mON9JdfVuMxTtd0WQaI
 id: taxonomy_term
@@ -3017,27 +3016,9 @@ display:
     position: 1
     display_options:
       pager:
-        type: infinite_scroll
+        type: none
         options:
           offset: 0
-          items_per_page: 9
-          total_pages: 0
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Itens por página'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todos -'
-            offset: false
-            offset_label: Deslocamento
-          views_infinite_scroll:
-            button_text: 'Carregar Mais'
-            automatically_load_content: false
-            initially_load_all_pages: false
       query:
         type: views_query
         options: {  }
@@ -3070,7 +3051,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
