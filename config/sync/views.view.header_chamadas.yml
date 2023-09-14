@@ -192,7 +192,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: span
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
@@ -217,7 +217,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "        <div class=\"container\">\r\n             <h1 class=\"page-title\">{{ name }}</h1>\r\n            <div class=\"paragraph_right\">\r\n                  <span style=\"color: #ffffff;\">{{ field_chamada }}  {{ edit_taxonomy_term }}</span>\r\n            </div>\r\n      </div>"
+            text: "             <h1 class=\"page-title\">{{ name }}</h1>\r\n            <div class=\"paragraph_right\">\r\n                  <span style=\"color: #ffffff;\">{{ field_chamada }}  {{ edit_taxonomy_term }}</span>\r\n            </div>"
             make_link: false
             path: ''
             absolute: false
@@ -249,7 +249,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
