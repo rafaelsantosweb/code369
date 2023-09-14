@@ -3019,6 +3019,48 @@ display:
         type: none
         options:
           offset: 0
+      arguments:
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          default_action: ignore
+          exception:
+            value: ''
+            title_enable: false
+            title: Tudo
+          title_enable: true
+          title: '{{ arguments.tid }}'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:taxonomy_term'
+            fail: 'not found'
+          validate_options:
+            bundles: {  }
+            access: true
+            operation: view
+            multiple: 0
+          break_phrase: false
+          add_table: false
+          require_value: false
+          reduce_duplicates: false
       query:
         type: views_query
         options: {  }
@@ -3026,7 +3068,19 @@ display:
         css_class: false
         use_ajax: false
         pager: false
+        relationships: false
+        arguments: false
         header: false
+      relationships:
+        field_categoria:
+          id: field_categoria
+          table: node__field_categoria
+          field: field_categoria
+          relationship: none
+          group_type: group
+          admin_label: 'field_categoria: Estudos Termo de taxonomia'
+          plugin_id: standard
+          required: false
       css_class: container
       use_ajax: true
       display_description: ''
