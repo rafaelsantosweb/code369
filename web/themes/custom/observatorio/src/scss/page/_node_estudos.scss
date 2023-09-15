@@ -60,12 +60,20 @@
     }
 
     .js-pager__items {
+      margin-bottom: 0 !important;
       .pager__item {
         a.button {
           border: 1px solid white !important;
           color: white !important;
           background-color: #003bd1 !important;
-        }
+          padding: 20px 30px 20px 30px;
+
+          &:hover {
+            background-color: white;
+            text-decoration: underline;
+            color: #003bd1;
+          }    
+        }        
       }
     }
   }
