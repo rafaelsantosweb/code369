@@ -9,6 +9,7 @@ dependencies:
   module:
     - file
     - filter
+    - google_analytics
     - media
     - system
     - taxonomy
@@ -23,6 +24,7 @@ permissions:
   - 'create terms in acesso'
   - 'delete own files'
   - 'delete terms in acesso'
+  - 'opt-in or out of google analytics tracking'
   - 'use text format html'
   - 'use text format webform_default'
   - 'view media'

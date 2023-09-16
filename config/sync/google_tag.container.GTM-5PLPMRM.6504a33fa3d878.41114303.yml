@@ -1,0 +1,34 @@
+uuid: 5a59f9bd-c0e1-43c7-9fbb-c57cf172ab87
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-5PLPMRM.6504a33fa3d878.41114303
+label: GTM-5PLPMRM
+weight: 0
+tag_container_ids:
+  - GTM-5PLPMRM
+advanced_settings:
+  gtm:
+    data_layer: dataLayer
+    include_classes: false
+    allowlist_classes: ''
+    blocklist_classes: ''
+    include_environment: false
+    environment_id: ''
+    environment_token: ''
+dimensions_metrics:
+  -
+    type: metric
+    name: ''
+    value: ''
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events: {  }
