@@ -3829,7 +3829,7 @@ display:
         type: infinite_scroll
         options:
           offset: 0
-          items_per_page: 9
+          items_per_page: 3
           total_pages: null
           id: 0
           tags:
@@ -3945,6 +3945,7 @@ display:
       defaults:
         title: false
         css_class: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -3954,6 +3955,7 @@ display:
         filter_groups: false
         header: false
       css_class: 'estudos container'
+      use_ajax: true
       display_description: ''
       header: {  }
       display_extenders: {  }

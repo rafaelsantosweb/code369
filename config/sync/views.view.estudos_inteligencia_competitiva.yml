@@ -4355,7 +4355,7 @@ display:
         type: infinite_scroll
         options:
           offset: 0
-          items_per_page: 9
+          items_per_page: 3
           total_pages: null
           id: 0
           tags:
