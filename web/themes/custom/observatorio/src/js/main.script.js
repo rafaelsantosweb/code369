@@ -48,7 +48,7 @@ import { Toast, Tooltip } from './_bootstrap';
   });
 
   $('header ul.nav').append(`<li class="nav-item show-mobile search-button">
-  <a href="/search/node" class="nav-link" data-drupal-link-system-path="/search/node">Buscar</a>
+  <a href="/busca" class="nav-link" data-drupal-link-system-path="/busca">Buscar</a>
 </li>`);
 } )( jQuery );
 

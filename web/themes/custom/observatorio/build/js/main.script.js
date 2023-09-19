@@ -3093,7 +3093,7 @@ __webpack_require__.r(__webpack_exports__);
   $($headerMobileToggleContainer).on('click', function (e) {
     $('body').toggleClass('header-mobile-open');
   });
-  $('header ul.nav').append("<li class=\"nav-item show-mobile search-button\">\n  <a href=\"/search/node\" class=\"nav-link\" data-drupal-link-system-path=\"/search/node\">Buscar</a>\n</li>");
+  $('header ul.nav').append("<li class=\"nav-item show-mobile search-button\">\n  <a href=\"/busca\" class=\"nav-link\" data-drupal-link-system-path=\"/busca\">Buscar</a>\n</li>");
 })(jQuery);
 
 //função para mover os botões da pagina de estudo para outra div
