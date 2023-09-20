@@ -36,10 +36,17 @@
         width: 37%;
         right: 0;
         left: auto;
-        bottom: 675px;
+        top: 850px;
+        /* bottom: 675px; */
         transform: scale(-1);
         z-index: 0;
       }
+    }
+  }
+
+  .paragraph--type--destaques {
+    .field--name-field-title {
+      margin-bottom: 10px; /* Nova sessão destaques */
     }
   }
 
