@@ -21,6 +21,7 @@
         "drupal/bamboo_twig": "^6.0",
         "drupal/block_field": "^1.0@RC",
         "drupal/blocktabs": "^2.0@alpha",
+        "drupal/captcha": "^2.0",
         "drupal/colorbutton": "^1.5",
         "drupal/components": "^3.0@beta",
         "drupal/conditional_fields": "^4.0@alpha",

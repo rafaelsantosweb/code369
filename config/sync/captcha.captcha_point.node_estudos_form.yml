@@ -1,0 +1,7 @@
+uuid: f2f94df2-8e1e-496e-b7db-be8ea1d7f9fc
+langcode: pt-br
+status: false
+dependencies: {  }
+formId: node_estudos_form
+captchaType: default
+label: node_estudos_form
