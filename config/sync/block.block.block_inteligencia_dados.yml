@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:estudos_inteligencia_em_dados-block_inteligencia_dados'
 settings:
   id: 'views_block:estudos_inteligencia_em_dados-block_inteligencia_dados'
-  label: 'Confira alguns outros estudos relacionados a Inteligência em Dados'
+  label: 'Confira alguns outros estudos relacionados a Inteligência de Dados'
   label_display: visible
   provider: views
-  views_label: 'Confira alguns outros estudos relacionados a Inteligência em Dados'
+  views_label: 'Confira alguns outros estudos relacionados a Inteligência de Dados'
   items_per_page: none
 visibility:
   request_path:
