@@ -242,27 +242,45 @@
 
 @media (max-width: 980px) {
 
-  .paragraph--type--destaques .view-content .tns-item {
-  //  min-width: 100%;
-  //  display: inline-block;
+  .front .view-estudos #tns1-iw {
+    display: grid;
   }
 
-  .front .node-type--detail .view-content, .view-estudos .view-content, .node-type--estudos .view-content {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+  .front .view-estudos #tns1-mw {
+    width: 390px;
+    margin-left: -30px;
+  }
+  
+  .front .view-estudos .views-field-title {
+    width: 370px;
   }
 
-  .front .paragraph--type--destaques .view-content .tns-item .views-field-title, .paragraph--type--destaques .view-content .tns-item .views-field-field-title {
-    font-size: 17px;
-  }
-  .front .paragraph--type--destaques .view-content .tns-item .views-field-body, .paragraph--type--destaques .view-content .tns-item .views-field-field-body {
-    padding: 0.7rem;
+  .front .view-estudos .views-field-body .field-content {
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 365px;
+    margin-right: 0;
   }
 
-  .front .paragraph--type--destaques .view-content .tns-item img {
-   // width: 100% !important;
+  .front .view-estudos .view-content .tns-item {
+    padding: 25px 5px !important;
+  }
+
+  .front .view-estudos .views-field-field-image {
+    width: 55% !important;
+  }
+
+  .front .view-estudos .paragraph--type--destaques .view-content .tns-item .views-field-field-imagem, .paragraph--type--destaques .view-content .tns-item .views-field-field-image .field-content {
+    float: left;
+    margin-right: 0!important;
+    font-family: "Averta", sans-serif;
+  }
+
+  .front .view-estudos .node-type--detail .view-content, .view-estudos .view-content, .node-type--estudos .view-content {
+    padding-left: 10px !important;;
+    padding-right: 0;
   }
 
 }
-
-
