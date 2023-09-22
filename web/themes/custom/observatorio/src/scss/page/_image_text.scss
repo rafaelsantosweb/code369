@@ -8,6 +8,7 @@
   line-height: 18.54px;
   padding: 5rem 0 1rem;
   overflow: auto;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 
   &.text_image {
     display: flex;

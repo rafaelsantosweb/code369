@@ -780,7 +780,7 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          items: '3'
+          items: ''
           margin: '1'
           nav: 1
           navPosition: bottom
@@ -795,12 +795,12 @@ display:
           controlsTextPrev: prev
           controlsTextNext: next
           arrowKeys: 1
-          mouseDrag: 0
+          mouseDrag: 1
           loop: 1
           speed: '350'
-          dimensionMobile: ''
+          dimensionMobile: '500'
           itemsMobile: '1'
-          dimensionDesktop: ''
+          dimensionDesktop: '500'
           itemsDesktop: '3'
       row:
         type: fields
