@@ -54,6 +54,14 @@
   }
 }
 
+.node-type--detail {
+  #hero-banners {
+    img.faixa {
+      display: none; /* removing gray bar from HMG - teste */
+    }
+  }
+}
+
 .paragraph--type--hero-banner {
   display: block;
   padding: 0;
