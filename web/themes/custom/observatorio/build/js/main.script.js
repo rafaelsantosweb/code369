@@ -3148,9 +3148,8 @@ __webpack_require__.r(__webpack_exports__);
     var inputBarraBusca = formBarraBusca.find('form > .form-item > input');
 
     //mudar attribute name da barra de input das paginas
-    // const barraDeBusca = $('form').find('.form-search');
-    // barraDeBusca.attr('name', 'search_api_fulltext');
-
+    var barraDeBusca = $('form').find('.form-search');
+    barraDeBusca.attr('name', 'search_api_fulltext');
     function toggleBarraBusca() {
       formBarraBusca.slideToggle(200);
       iconBusca.toggleClass('mostrando');
