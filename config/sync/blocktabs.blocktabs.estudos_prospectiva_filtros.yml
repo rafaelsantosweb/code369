@@ -20,7 +20,7 @@ tabs:
     uuid: 135ab505-8ea9-48ae-9bf7-2fa8fc2ee14c
   7455fe22-940d-43e6-9783-b4fefdc4597a:
     id: views_tab
-    title: 'MACROTENDÊNCIA DE FUTUROS'
+    title: MACROTENDÊNCIAS
     data:
       view_name: page_tabs_prospectiva_e_tendencia
       view_display: block_1
