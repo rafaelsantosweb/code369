@@ -1,6 +1,6 @@
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: 'public://favicon (1).ico'
+  mimetype: image/png
+  path: 'public://observatorio.png'
   use_default: false
 features:
   comment_user_picture: true
