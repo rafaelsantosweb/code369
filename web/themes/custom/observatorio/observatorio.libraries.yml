@@ -11,6 +11,14 @@ style:
     - core/drupal
     - core/jquery
 
+slick:
+  css:
+    base:
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {}
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
 # We create component libraries automatically, no need to be listed here
 # as long as they keep the same name for the folder,JS and CSS file
 # you may extend the libraries if necessary

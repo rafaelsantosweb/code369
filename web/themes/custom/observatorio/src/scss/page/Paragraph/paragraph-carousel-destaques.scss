@@ -1,0 +1,64 @@
+.paragraph_carrossel_destaques{
+    height: auto;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 64px 0;
+
+    .itens-carroussel{
+        width: 80%;
+        margin: auto;
+
+        @media (max-width: 980px){
+            width: 100%;
+        }
+    }
+
+    .carroussel-destaques{
+        .view-content{
+            all: initial;
+            font-family: "Averta", sans-serif;
+        }
+
+        .carroussel-content{
+            margin: 0 20px;
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+
+            .views-field-field-imagem{
+                margin-right: 12px;
+            }
+
+            .carroussel-body{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .views-field-title{
+                    margin-bottom: 11px;
+                }
+        
+                .views-field-body{
+                    font-size: 10px;
+                    margin-top: 10px;
+                }
+        
+                .views-field-nid{
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;
+        }
+    }
+    
+}

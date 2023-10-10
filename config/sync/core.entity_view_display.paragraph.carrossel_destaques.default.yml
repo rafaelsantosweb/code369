@@ -1,0 +1,25 @@
+uuid: 485f8f91-6024-4fee-aa10-7042c5621c06
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carrossel_destaques.field_view
+    - paragraphs.paragraphs_type.carrossel_destaques
+  module:
+    - viewsreference
+id: paragraph.carrossel_destaques.default
+targetEntityType: paragraph
+bundle: carrossel_destaques
+mode: default
+content:
+  field_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true
