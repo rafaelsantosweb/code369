@@ -1,0 +1,19 @@
+uuid: 03633105-3480-4370-87b8-17da599d9b27
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_corpo
+field_name: field_corpo
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

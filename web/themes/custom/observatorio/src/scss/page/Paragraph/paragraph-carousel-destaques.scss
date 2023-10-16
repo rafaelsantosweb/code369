@@ -54,11 +54,47 @@
             }
         }
 
-        .slick-dots{
+       /* Estilo básico para os dots do slider */
+        .slick-dots {
             display: flex;
             justify-content: center;
-            margin-top: 12px;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 40px;
         }
+        
+        .slick-dots li {
+            margin: 0 5px; /* Espaçamento entre os dots */
+        }
+        
+        .slick-dots button {
+            background-color: #ccc; /* Cor de fundo dos dots inativos */
+            width: 14px; /* Largura dos dots */
+            height: 14px; /* Altura dos dots */
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transição de cor de fundo */
+            font-size: 0;
+        }
+        
+        /* Estilo para o dot ativo */
+        .slick-dots .slick-active button {
+            background-color: #007bff; /* Cor de fundo do dot ativo */
+        }
+        
+        /* Adicionar animação ao clicar em um dot */
+        .slick-dots button:focus {
+            outline: none; /* Remover a borda padrão do foco */
+            transform: scale(1.2); /* Redimensionar o dot quando estiver em foco */
+        }
+        
+        /* Transição suave ao redimensionar o dot */
+        .slick-dots button:focus {
+            transition: transform 0.2s ease;
+        }
+        
     }
     
 }

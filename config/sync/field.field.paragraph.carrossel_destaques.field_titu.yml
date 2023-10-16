@@ -1,0 +1,19 @@
+uuid: 223a01e0-3104-4643-848e-3cd2e5fb5471
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titu
+    - paragraphs.paragraphs_type.carrossel_destaques
+id: paragraph.carrossel_destaques.field_titu
+field_name: field_titu
+entity_type: paragraph
+bundle: carrossel_destaques
+label: Titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

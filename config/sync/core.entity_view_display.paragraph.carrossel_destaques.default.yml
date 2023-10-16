@@ -3,15 +3,33 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - field.field.paragraph.carrossel_destaques.field_corpo
+    - field.field.paragraph.carrossel_destaques.field_titu
     - field.field.paragraph.carrossel_destaques.field_view
     - paragraphs.paragraphs_type.carrossel_destaques
   module:
+    - text
     - viewsreference
 id: paragraph.carrossel_destaques.default
 targetEntityType: paragraph
 bundle: carrossel_destaques
 mode: default
 content:
+  field_corpo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titu:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_view:
     type: viewsreference_formatter
     label: hidden

@@ -1,0 +1,24 @@
+uuid: 832e166c-dd81-4e21-b3cd-0f85ce944106
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_corpo
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.carrossel_destaques
+  module:
+    - text
+id: paragraph.carrossel_destaques.field_corpo
+field_name: field_corpo
+entity_type: paragraph
+bundle: carrossel_destaques
+label: Corpo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long
