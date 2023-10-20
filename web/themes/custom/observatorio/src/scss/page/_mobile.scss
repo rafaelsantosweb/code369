@@ -313,6 +313,43 @@
       }
     }
 
+    /* Home - Carrossel -------------------------- */
+    .paragraph_carrossel_destaques {
+      padding: 30px 0;
+
+      &::before {
+        background-position: bottom;
+        background-size: contain;
+        bottom: -10px;
+        height: 30%;
+        left: 0;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        width: 100%;
+      }
+
+      .carroussel-destaques {
+        .field--name-field-titu {
+          font-size: 21px;
+        }
+
+        .field--name-field-corpo {
+          font-size: 13px;
+          padding: 10px 0 25px;
+        }
+
+        .carroussel-content {
+          .carroussel-body {
+            .views-field-nid .button {
+              padding: 4px 8px !important;
+              font-size: 10px !important;
+              border-radius: 9px !important;
+            }
+          }
+        }
+      }
+    }
+
     /* Home - Tag Clouds ------------------------- */
     .block--tagclouds-block-categoria {
       .block-left {

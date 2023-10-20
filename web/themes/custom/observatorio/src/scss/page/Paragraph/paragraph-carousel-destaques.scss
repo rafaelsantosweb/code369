@@ -6,7 +6,21 @@
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    padding: 64px 0;
+    padding: 70px 0;
+
+    &::before {
+        content: "";
+        background-image: url(/themes/custom/observatorio/images/binary.svg);
+        background-position-y: -470px;
+        background-repeat: no-repeat;
+        background-size: cover;        
+        position: absolute;
+        left: -150px;
+        bottom: 125px;
+        height: 30%;
+        width: 40%;
+        z-index: 0;        
+    }
 
     .itens-carroussel{
         width: 80%;
@@ -18,6 +32,18 @@
     }
 
     .carroussel-destaques{
+        .field--name-field-titu {
+            text-align: center;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .field--name-field-corpo {
+            text-align: center;
+            font-size: 15px;
+            padding: 10px 585px 40px;
+        }
+
         .view-content{
             all: initial;
             font-family: "Averta", sans-serif;
@@ -40,16 +66,23 @@
                 flex-direction: column;
 
                 .views-field-title{
-                    margin-bottom: 11px;
+                    margin-bottom: 10px;
                 }
         
                 .views-field-body{
                     font-size: 10px;
-                    margin-top: 10px;
+                    margin: 10px 0;
                 }
         
                 .views-field-nid{
-                    margin-top: 12px;
+                    margin-top: 10px;
+                    height: 25px;
+
+                    a.button {
+                        border: 1px solid #003bd1;
+                        border-radius: 5px;
+                        text-decoration: none;
+                    }
                 }
             }
         }
