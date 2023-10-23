@@ -31,11 +31,15 @@
           align-items: center;
           justify-content: center;
           height: auto;
-          padding-top: 2rem;
+          padding-top: 3rem;
           padding-bottom: 4.5rem;
 
           li+li {
             margin-top: 1.5rem;
+          }
+
+          li.nav-item a.dropdown-toggle {
+            text-align: center;
           }
         }
       }
@@ -44,7 +48,7 @@
       .header-mobile-toggle-container {
         z-index: 220;
         position: fixed;
-        top: 5.5%;
+        top: 55px;
 
         .header-mobile-toggle {
           &:before {
