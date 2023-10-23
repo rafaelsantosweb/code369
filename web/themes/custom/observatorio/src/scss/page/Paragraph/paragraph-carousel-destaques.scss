@@ -1,0 +1,133 @@
+.paragraph_carrossel_destaques{
+    height: auto;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 70px 0;
+
+    &::before {
+        content: "";
+        background-image: url(/themes/custom/observatorio/images/binary.svg);
+        background-position-y: -470px;
+        background-repeat: no-repeat;
+        background-size: cover;        
+        position: absolute;
+        left: -150px;
+        bottom: 125px;
+        height: 30%;
+        width: 40%;
+        z-index: 0;        
+    }
+
+    .itens-carroussel{
+        width: 80%;
+        margin: auto;
+
+        @media (max-width: 980px){
+            width: 100%;
+        }
+    }
+
+    .carroussel-destaques{
+        .field--name-field-titu {
+            text-align: center;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .field--name-field-corpo {
+            text-align: center;
+            font-size: 15px;
+            padding: 10px 585px 40px;
+        }
+
+        .view-content{
+            all: initial;
+            font-family: "Averta", sans-serif;
+        }
+
+        .carroussel-content{
+            margin: 0 20px;
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+
+            .views-field-field-imagem{
+                margin-right: 12px;
+            }
+
+            .carroussel-body{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .views-field-title{
+                    margin-bottom: 10px;
+                }
+        
+                .views-field-body{
+                    font-size: 10px;
+                    margin: 10px 0;
+                }
+        
+                .views-field-nid{
+                    margin-top: 10px;
+                    height: 25px;
+
+                    a.button {
+                        border: 1px solid #003bd1;
+                        border-radius: 5px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+       /* Estilo básico para os dots do slider */
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 40px;
+        }
+        
+        .slick-dots li {
+            margin: 0 5px; /* Espaçamento entre os dots */
+        }
+        
+        .slick-dots button {
+            background-color: #ccc; /* Cor de fundo dos dots inativos */
+            width: 14px; /* Largura dos dots */
+            height: 14px; /* Altura dos dots */
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transição de cor de fundo */
+            font-size: 0;
+        }
+        
+        /* Estilo para o dot ativo */
+        .slick-dots .slick-active button {
+            background-color: #007bff; /* Cor de fundo do dot ativo */
+        }
+        
+        /* Adicionar animação ao clicar em um dot */
+        .slick-dots button:focus {
+            outline: none; /* Remover a borda padrão do foco */
+            transform: scale(1.2); /* Redimensionar o dot quando estiver em foco */
+        }
+        
+        /* Transição suave ao redimensionar o dot */
+        .slick-dots button:focus {
+            transition: transform 0.2s ease;
+        }
+        
+    }
+    
+}

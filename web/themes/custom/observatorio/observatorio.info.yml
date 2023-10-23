@@ -22,6 +22,7 @@ regions:
 
 libraries:
   - observatorio/style
+  - observatorio/slick
 
 ckeditor_stylesheets:
   - build/css/main.style.css

@@ -1,0 +1,10 @@
+uuid: 5f575cbb-722e-4c80-8fec-6d6ddc97bd1b
+langcode: pt-br
+status: true
+dependencies: {  }
+id: carrossel_destaques
+label: Carrossel-Destaques
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

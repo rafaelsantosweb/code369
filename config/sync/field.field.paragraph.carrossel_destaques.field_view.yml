@@ -1,0 +1,62 @@
+uuid: bff45bb5-1c68-45c1-97f6-40320a4179ec
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view
+    - paragraphs.paragraphs_type.carrossel_destaques
+  module:
+    - viewsreference
+id: paragraph.carrossel_destaques.field_view
+field_name: field_view
+entity_type: paragraph
+bundle: carrossel_destaques
+label: View_slick
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    default: default
+    page: page
+    block: block
+    feed: 0
+    embed: 0
+  preselect_views:
+    admin_estudos: 0
+    backup_termo_de_taxonomia: 0
+    block_content: 0
+    content: 0
+    content_recent: 0
+    destaques: 0
+    estudos: 0
+    estudos_inteligencia_competitiva: 0
+    estudos_inteligencia_em_dados: 0
+    files: 0
+    frontpage: 0
+    header_chamadas: 0
+    itens_carrossell_destaques: 0
+    media: 0
+    media_library: 0
+    page_tabs_prospectiva_e_tendencia: 0
+    publicacoes: 0
+    search_api: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    limit: limit
+    offset: 0
+    pager: 0
+    argument: 0
+    title: 0
+field_type: viewsreference

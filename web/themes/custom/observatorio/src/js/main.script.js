@@ -1,4 +1,5 @@
 import { Toast, Tooltip } from './_bootstrap';
+import {  } from "slick-carousel";
 
 ( function () {
 	// * Tooltip initialization, remove it if not necessary
@@ -145,3 +146,40 @@ import { Toast, Tooltip } from './_bootstrap';
 	})
 	
 } )( jQuery );
+
+(function ($) {
+	$("#carrossel-destaques").slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		dots: true,
+		arrows: false,
+		autoplay: false,
+		centerMode:false,
+		responsive:[
+			{
+			breakpoint: 768, // Quando a largura da tela for igual ou inferior a 768px (valor de exemplo)
+			settings: {
+				slidesToShow: 1, // Mostrar apenas 1 slide por vez em dispositivos móveis
+				slidesToScroll: 1,
+			}
+			}
+		]
+	});
+}) (jQuery);
+
+
+//Função para mover as div da view estudos no carroussel
+(function ($) {
+	$(document).ready(function () { 
+		
+		$(".carroussel-content").each(function() {
+			var container = $(this);
+			var destino = container.find(".carroussel-body");
+		  
+			["views-field-title", "views-field-body", "views-field-nid"].forEach(function(className) {
+			  container.find("." + className).appendTo(destino);
+			});
+		});
+	})
+}) (jQuery);

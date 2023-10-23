@@ -15,7 +15,6 @@ dependencies:
     - node
     - taxonomy
     - text
-    - tiny_slider
     - user
     - views_infinite_scroll
 id: estudos
@@ -775,35 +774,22 @@ display:
         groups:
           1: AND
       style:
-        type: tiny_slider
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          items: ''
-          margin: '1'
-          nav: 1
-          navPosition: bottom
-          autoplay: 1
-          autoplayHoverPause: 1
-          autoplayButtonOutput: 0
-          autoplayPosition: top
-          autoplayTextStart: start
-          autoplayTextStop: stop
-          controls: 0
-          controlsPosition: top
-          controlsTextPrev: prev
-          controlsTextNext: next
-          arrowKeys: 1
-          mouseDrag: 1
-          loop: 1
-          speed: '350'
-          dimensionMobile: '500'
-          itemsMobile: '1'
-          dimensionDesktop: '500'
-          itemsDesktop: '3'
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            body: body
+            view_node: view_node
+            nid: nid
+          separator: ''
+          hide_empty: false
       defaults:
         css_class: false
         pager: false

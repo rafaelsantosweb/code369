@@ -31,11 +31,15 @@
           align-items: center;
           justify-content: center;
           height: auto;
-          padding-top: 2rem;
+          padding-top: 3rem;
           padding-bottom: 4.5rem;
 
           li+li {
             margin-top: 1.5rem;
+          }
+
+          li.nav-item a.dropdown-toggle {
+            text-align: center;
           }
         }
       }
@@ -44,7 +48,7 @@
       .header-mobile-toggle-container {
         z-index: 220;
         position: fixed;
-        top: 5.5%;
+        top: 55px;
 
         .header-mobile-toggle {
           &:before {
@@ -309,6 +313,43 @@
           display: flex;
           align-items: center;
           width: 150px;
+        }
+      }
+    }
+
+    /* Home - Carrossel -------------------------- */
+    .paragraph_carrossel_destaques {
+      padding: 30px 0;
+
+      &::before {
+        background-position: bottom;
+        background-size: contain;
+        bottom: -10px;
+        height: 30%;
+        left: 0;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        width: 100%;
+      }
+
+      .carroussel-destaques {
+        .field--name-field-titu {
+          font-size: 21px;
+        }
+
+        .field--name-field-corpo {
+          font-size: 13px;
+          padding: 10px 0 25px;
+        }
+
+        .carroussel-content {
+          .carroussel-body {
+            .views-field-nid .button {
+              padding: 4px 8px !important;
+              font-size: 10px !important;
+              border-radius: 9px !important;
+            }
+          }
         }
       }
     }
