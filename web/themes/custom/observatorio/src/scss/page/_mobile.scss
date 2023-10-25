@@ -51,14 +51,15 @@
         top: 55px;
 
         .header-mobile-toggle {
+          background-color: #0E65E5;
           &:before {
-            background-color: #444444;
+            background-color: $white;
             transform: rotate(45deg);
             top: 0;
           }
 
           &:after {
-            background-color: #444444;
+            background-color: $white;
             transform: rotate(-45deg);
             bottom: 0;
           }

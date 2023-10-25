@@ -147,17 +147,6 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
 }
 
 .node-type--detail, .node-type--estudos, .taxonomy_term {
-  @media (max-width: 990px){
-    .header-mobile-toggle {
-      background-color: #0e65e5;
-      &::before {
-        background-color: #fff;
-      }
-      &::after {
-        background-color: #fff;
-      }
-    }
-  }
   .block--navegacaoprincipal ul.nav {
     background-color: transparent !important;
     flex-direction: row;
