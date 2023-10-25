@@ -50,16 +50,15 @@
         position: fixed;
         top: 55px;
 
-        .header-mobile-toggle {
-          background-color: #0E65E5;
+        .header-mobile-toggle {          
           &:before {
-            background-color: $white;
+            background-color: #444;
             transform: rotate(45deg);
             top: 0;
           }
 
           &:after {
-            background-color: $white;
+            background-color: #444;
             transform: rotate(-45deg);
             bottom: 0;
           }
@@ -652,6 +651,24 @@
           border-radius: 8px !important;
           border: 1px solid #003bd1;
           text-decoration: none;
+        }
+      }
+    }
+  }
+
+  /* Shared Components */
+  .node-type--detail,
+  .node-type--estudos,
+  .taxonomy_term {
+    &.header-mobile-open {
+      .header-mobile-toggle-container {
+        .header-mobile-toggle {
+          background-color: #0E65E5;
+
+          &:before,
+          &:after {
+            background-color: $white;
+          }
         }
       }
     }
