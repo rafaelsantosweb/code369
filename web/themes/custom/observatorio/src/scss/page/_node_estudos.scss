@@ -52,10 +52,12 @@
     font-weight: 100;
   }
 
-  .block--block-prospectiva-relacionado {
+  .block--block-inteligencia-dados,
+  .block--block-prospectiva-relacionado,
+  .block--block-inteligencia-competitiva {
     .view-content {
       .views-infinite-scroll-content-wrapper {
-        padding-bottom: 1em; /* teste */
+        padding-bottom: 1em;
       }
     }
 
