@@ -117,20 +117,20 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
     .field--name-field-title {
       border-top: 1px solid $grey-75;
       border-bottom: 1px solid $grey-75;
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 600;
       line-height: 31px;
       margin: 30px auto 5px;
       padding: 0 0 1.5rem;
       text-align: center;
-      width: 100%;
+      width: 95%;
 
       &::before {
         content: '';
         background: url('../../images/target.svg') no-repeat;
         display: inline-block;
         height: 52px;
-        left: -2rem;
+        left: -0.5rem;
         position: relative;
         top: 16px;
         width: 50px;
