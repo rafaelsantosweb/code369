@@ -1,0 +1,24 @@
+uuid: 3ab283f5-511b-47ff-a286-e881ca6959c8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data
+    - node.type.estudos
+  module:
+    - datetime
+id: node.estudos.field_data
+field_name: field_data
+entity_type: node
+bundle: estudos
+label: Data
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

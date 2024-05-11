@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.estudos.field_area
     - field.field.node.estudos.field_categoria
     - field.field.node.estudos.field_content
+    - field.field.node.estudos.field_data
     - field.field.node.estudos.field_destaque
     - field.field.node.estudos.field_imagem
     - field.field.node.estudos.field_metatags
@@ -18,6 +19,7 @@ dependencies:
     - field.field.node.estudos.field_teaser
     - node.type.estudos
   module:
+    - datetime
     - entity_reference_revisions
     - layout_builder
     - user
@@ -38,6 +40,15 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_data:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_ocultar_imagem_e_chamada:
     type: boolean
