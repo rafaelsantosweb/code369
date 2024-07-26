@@ -1,13 +1,9 @@
-# Projeto Observatório da Firjan
+# Projeto code369
 
 ## Equipe técnica
 
 | Nome | Função |
-| Alessandro Feijó | Tech Lead |
-| Rafael | Dev Sr |
-| Glaucio | Dev Jr |
-| Daniel | Dev Jr |
-
+| Rafael | Tech Lead |
 
 # Comandos Make
 

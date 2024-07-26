@@ -24,18 +24,18 @@
  * 'sites/default' will be used.
  *
  * For example, for a fictitious site installed at
- * https://www.drupal.org:8080/mysite/test/, the 'settings.php' file is searched
+ * https://www.drupal.org:8080/my-site/test/, the 'settings.php' file is searched
  * for in the following directories:
  *
- * - sites/8080.www.drupal.org.mysite.test
- * - sites/www.drupal.org.mysite.test
- * - sites/drupal.org.mysite.test
- * - sites/org.mysite.test
+ * - sites/8080.www.drupal.org.my-site.test
+ * - sites/www.drupal.org.my-site.test
+ * - sites/drupal.org.my-site.test
+ * - sites/org.my-site.test
  *
- * - sites/8080.www.drupal.org.mysite
- * - sites/www.drupal.org.mysite
- * - sites/drupal.org.mysite
- * - sites/org.mysite
+ * - sites/8080.www.drupal.org.my-site
+ * - sites/www.drupal.org.my-site
+ * - sites/drupal.org.my-site
+ * - sites/org.my-site
  *
  * - sites/8080.www.drupal.org
  * - sites/www.drupal.org
@@ -46,8 +46,8 @@
  *
  * Note that if you are installing on a non-standard port number, prefix the
  * hostname with that number. For example,
- * https://www.drupal.org:8080/mysite/test/ could be loaded from
- * sites/8080.www.drupal.org.mysite.test/.
+ * https://www.drupal.org:8080/my-site/test/ could be loaded from
+ * sites/8080.www.drupal.org.my-site.test/.
  *
  * @see example.sites.php
  * @see \Drupal\Core\DrupalKernel::getSitePath()
@@ -77,9 +77,9 @@
  *
  * @code
  * $databases['default']['default'] = [
- *   'database' => 'databasename',
- *   'username' => 'sqlusername',
- *   'password' => 'sqlpassword',
+ *   'database' => 'database_name',
+ *   'username' => 'sql_username',
+ *   'password' => 'sql_password',
  *   'host' => 'localhost',
  *   'port' => '3306',
  *   'driver' => 'mysql',
@@ -89,17 +89,6 @@
  * @endcode
  */
 $databases = [];
-$databases['default']['default'] = array (
-  'database' => getenv('MYSQL_NAME'),
-  'username' => getenv('MYSQL_USER'),
-  'password' => getenv('MYSQL_PASSWORD'),
-  'host' => getenv('MYSQL_HOST') ?? 'localhost',
-  'port' => getenv('MYSQL_PORT') ?? '3306',
-  'prefix' => '',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
 
 /**
  * Customizing database settings.
@@ -192,8 +181,8 @@ $databases['default']['default'] = array (
  *
  * WARNING: The above defaults are designed for database portability. Changing
  * them may cause unexpected behavior, including potential data loss. See
- * https://www.drupal.org/developing/api/database/configuration for more
- * information on these defaults and the potential issues.
+ * https://www.drupal.org/docs/8/api/database-api/database-configuration for
+ * more information on these defaults and the potential issues.
  *
  * More details can be found in the constructor methods for each driver:
  * - \Drupal\mysql\Driver\Database\mysql\Connection::__construct()
@@ -204,9 +193,9 @@ $databases['default']['default'] = array (
  * @code
  *   $databases['default']['default'] = [
  *     'driver' => 'pgsql',
- *     'database' => 'databasename',
- *     'username' => 'sqlusername',
- *     'password' => 'sqlpassword',
+ *     'database' => 'database_name',
+ *     'username' => 'sql_username',
+ *     'password' => 'sql_password',
  *     'host' => 'localhost',
  *     'prefix' => '',
  *   ];
@@ -216,7 +205,7 @@ $databases['default']['default'] = array (
  * @code
  *   $databases['default']['default'] = [
  *     'driver' => 'sqlite',
- *     'database' => '/path/to/databasefilename',
+ *     'database' => '/path/to/database_filename',
  *   ];
  * @endcode
  *
@@ -226,11 +215,32 @@ $databases['default']['default'] = array (
  *     'driver' => 'my_driver',
  *     'namespace' => 'Drupal\my_module\Driver\Database\my_driver',
  *     'autoload' => 'modules/my_module/src/Driver/Database/my_driver/',
- *     'database' => 'databasename',
- *     'username' => 'sqlusername',
- *     'password' => 'sqlpassword',
+ *     'database' => 'database_name',
+ *     'username' => 'sql_username',
+ *     'password' => 'sql_password',
  *     'host' => 'localhost',
  *     'prefix' => '',
+ *   ];
+ * @endcode
+ *
+ * Sample Database configuration format for a driver that is extending another
+ * database driver.
+ * @code
+ *   $databases['default']['default'] = [
+ *     'driver' => 'my_driver',
+ *     'namespace' => 'Drupal\my_module\Driver\Database\my_driver',
+ *     'autoload' => 'modules/my_module/src/Driver/Database/my_driver/',
+ *     'database' => 'database_name',
+ *     'username' => 'sql_username',
+ *     'password' => 'sql_password',
+ *     'host' => 'localhost',
+ *     'prefix' => '',
+ *     'dependencies' => [
+ *       'parent_module' => [
+ *         'namespace' => 'Drupal\parent_module',
+ *         'autoload' => 'core/modules/parent_module/src/',
+ *       ],
+ *     ],
  *   ];
  * @endcode
  */
@@ -267,7 +277,8 @@ $databases['default']['default'] = array (
  * variable has the same value on each server.
  *
  * For enhanced security, you may set this variable to the contents of a file
- * outside your document root; you should also ensure that this file is not
+ * outside your document root, and vary the value across environments (like
+ * production and development); you should also ensure that this file is not
  * stored with backups of your database.
  *
  * Example:
@@ -275,7 +286,7 @@ $databases['default']['default'] = array (
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '_BMaeX8nnzVZGjAw7Xv8irTxD3TTZxGOPq9eQzengGn7QtR9k2JQrCrja_FfjmU_1ugUfbeLpw';
+$settings['hash_salt'] = 'JYTyfj9o_MLGz9Ob5uiZBQ1p-wpUqbseTUy6XOxmSbEHp3xTR9_JtFAAcCZ8p7FUsr9jP3cYaA';
 
 /**
  * Deployment identifier.
@@ -344,14 +355,13 @@ $settings['update_free_access'] = FALSE;
  * security, or encryption benefits. In an environment where Drupal
  * is behind a reverse proxy, the real IP address of the client should
  * be determined such that the correct client IP address is available
- * to Drupal's logging, statistics, and access management systems. In
- * the most simple scenario, the proxy server will add an
- * X-Forwarded-For header to the request that contains the client IP
- * address. However, HTTP headers are vulnerable to spoofing, where a
- * malicious client could bypass restrictions by setting the
- * X-Forwarded-For header directly. Therefore, Drupal's proxy
- * configuration requires the IP addresses of all remote proxies to be
- * specified in $settings['reverse_proxy_addresses'] to work correctly.
+ * to Drupal's logging and access management systems. In the most simple
+ * scenario, the proxy server will add an X-Forwarded-For header to the request
+ * that contains the client IP address. However, HTTP headers are vulnerable to
+ * spoofing, where a malicious client could bypass restrictions by setting the
+ * X-Forwarded-For header directly. Therefore, Drupal's proxy configuration
+ * requires the IP addresses of all remote proxies to be specified in
+ * $settings['reverse_proxy_addresses'] to work correctly.
  *
  * Enable this setting to get Drupal to determine the client IP from the
  * X-Forwarded-For header. If you are unsure about this setting, do not have a
@@ -498,6 +508,15 @@ $settings['update_free_access'] = FALSE;
 # $settings['file_chmod_file'] = 0664;
 
 /**
+ * Optimized assets path:
+ *
+ * A local file system path where optimized assets will be stored. This directory
+ * must exist and be writable by Drupal. This directory must be relative to
+ * the Drupal installation directory and be accessible over the web.
+ */
+# $settings['file_assets_path'] = 'sites/default/files';
+
+/**
  * Public file base URL:
  *
  * An alternative base URL to be used for serving public files. This must
@@ -562,6 +581,23 @@ $settings['update_free_access'] = FALSE;
 # $settings['file_sa_core_2023_005_schemes'] = ['porcelain'];
 
 /**
+ * Configuration for phpinfo() admin status report.
+ *
+ * Drupal's admin UI includes a report at admin/reports/status/php which shows
+ * the output of phpinfo(). The full output can contain sensitive information
+ * so by default Drupal removes some sections.
+ *
+ * This behavior can be configured by setting this variable to a different
+ * value corresponding to the flags parameter of phpinfo().
+ *
+ * If you need to expose more information in the report - for example to debug a
+ * problem - consider doing so temporarily.
+ *
+ * @see https://www.php.net/manual/function.phpinfo.php
+ */
+# $settings['sa_core_2023_004_phpinfo_flags'] = ~ (INFO_VARIABLES | INFO_ENVIRONMENT);
+
+/**
  * Private file path:
  *
  * A local file system path where private files will be stored. This directory
@@ -574,7 +610,7 @@ $settings['update_free_access'] = FALSE;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = '../private';
+# $settings['file_private_path'] = '';
 
 /**
  * Temporary file path:
@@ -610,7 +646,7 @@ $settings['file_private_path'] = '../private';
  * any added language. (eg locale_custom_strings_de for german).
  */
 # $settings['locale_custom_strings_en'][''] = [
-#   'forum'      => 'Discussion board',
+#   'Home' => 'Front page',
 #   '@count min' => '@count minutes',
 # ];
 
@@ -735,6 +771,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  */
+# $settings['trusted_host_patterns'] = [];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -769,6 +806,16 @@ $settings['entity_update_batch_size'] = 50;
  * retained after a successful entity update process.
  */
 $settings['entity_update_backup'] = TRUE;
+
+/**
+ * State caching.
+ *
+ * State caching uses the cache collector pattern to cache all requested keys
+ * from the state API in a single cache entry, which can greatly reduce the
+ * amount of database queries. However, some sites may use state with a
+ * lot of dynamic keys which could result in a very large cache.
+ */
+$settings['state_cache'] = TRUE;
 
 /**
  * Node migration type.
@@ -840,9 +887,28 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
+# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#   include $app_root . '/' . $site_path . '/settings.local.php';
+# }
+$databases['default']['default'] = array (
+  'database' => 'drupal10',
+  'username' => 'drupal10',
+  'password' => 'drupal10',
+  'prefix' => '',
+  'host' => 'database',
+  'port' => '3306',
+  'isolation_level' => '',
+  'driver' => 'mysql',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+
+error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
+$config['system.logging']['error_level'] = 'verbose';
 
 $settings['memory_limit'] = getenv('PHP_MEMORY') ?? '256M';
 $settings['config_sync_directory'] = '../config/sync';
+
 
 if (file_exists($local = $app_root . '/' . $site_path . '/settings.local.php')) {
   include $local;

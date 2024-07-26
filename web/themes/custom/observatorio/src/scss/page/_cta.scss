@@ -1,18 +1,15 @@
 body {
-  .text {
-    // font-size: 16px;
-  }
 
   &.node-type--detail,
   &.node-type--estudos {
     .button {
       @include button;
-      font-size: 14px;
+      font-size: 11px;
       font-weight: bold;
 
       &.btn {
-        background: linear-gradient(0deg, rgba(0, 59, 209, 0), rgba(0, 59, 209, 0)), linear-gradient(0deg, #0E65E5, #0E65E5);
-        border: 1px solid #003BD1;
+        background: linear-gradient(0deg, $roxo-escuro, $roxo-medio), linear-gradient(0deg, $roxo-escuro, $roxo-escuro);
+        border: 1px solid $roxo-escuro;
 
         a {
           color: $white;
@@ -25,13 +22,6 @@ body {
     }
   }
 }
-
-
-
-
-
-
-
 
 
 

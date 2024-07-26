@@ -6,17 +6,13 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
 
   #page__head-bottom {
     position: absolute;
-    top: 13.5rem;
+    top: 100px;
     width: 100%;
     z-index: 10;
   }
 
   h1.page-title {
     color: $white;
-  }
-
-  #hero-banners .hero-banner {
-    height: 350px;
   }
 
   &#inteligencia {
@@ -86,7 +82,7 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
         font-family: "Averta", sans-serif;
         font-size: 17px;
         line-height: normal;
-        width: 115%; /* 756px Figma */
+        width: 100%; /* 756px Figma */
       }
     }
   }
@@ -170,6 +166,6 @@ body.node-type--detail, body.node-type--estudos, .taxonomy_term {
 
 .paragraph--type--image-text .field--name-field-body {
   margin: 0.5em 0 1.5em;
-  line-height: 1.8em;
+  line-height: 2.1em;
 }
 

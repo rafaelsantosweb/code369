@@ -23,7 +23,7 @@
 
         #collapse_target {
           display: unset !important;
-          background-color: #0E65E5;
+          background-color: $roxo-escuro;
         }
 
         ul.nav {
@@ -75,12 +75,10 @@
       }
     }
 
+
     /* Home Page Properties ---------------------------------------------------------- */
     /* Home - Hero Banner ------------------------ */
     .paragraph--type--hero-banner {
-      .hero-img {
-        min-height: 430px;
-      }
 
       .hero-wrapper {
         top: 30% !important;

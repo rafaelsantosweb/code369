@@ -1,5 +1,5 @@
 name: Observatorio
-description: O tema do site Observatório Firjan, baseado no Radix.
+description: O tema Code, baseado no Radix.
 screenshot: screenshot.png
 core_version_requirement: ^8.7.7 || ^9.0 || ^10
 # version: VERSION

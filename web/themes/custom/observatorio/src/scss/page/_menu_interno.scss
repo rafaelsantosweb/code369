@@ -1,6 +1,7 @@
 
 .front .dropdown-menu {
   background-color: #ffffff;
+  opacity : 2.5; 
 }  
 
 .node-type--detail .dropdown-menu,
@@ -15,6 +16,6 @@
 .node-type--estudos .block--navegacaoprincipal ul.nav li a:hover,
 .taxonomy_term .block--navegacaoprincipal ul.nav li a:hover  {
   color: #fff;
-  background-color: #0E5FD8 !important;
+  background-color: $roxo-escuro-black !important;
   border-radius: 6px;
 } 

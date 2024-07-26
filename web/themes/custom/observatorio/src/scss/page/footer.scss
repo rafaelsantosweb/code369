@@ -1,7 +1,7 @@
 footer.page__footer {
   position: relative;
   z-index: 1;
-  background-color: $blue-500;
+  background-color: $roxo-escuro;
   color: $white;
   font-size: 18px;
   line-height: 22.25px;
@@ -9,10 +9,12 @@ footer.page__footer {
   padding: 20px 0;
 
   .container {
-    background: url('../../images/circle-world-map.png') no-repeat right top;
     padding: 50px 0;
   }
 
+
+
+  
   .block {
     min-width: 20%;
     flex-direction: column;
@@ -74,7 +76,7 @@ footer.page__footer {
   a,
   a.nav-link {
     color: $white;
-    font-size: 18px;
+    font-size: 13px;
     padding: 5px 0;
 
     &:hover {
@@ -84,12 +86,12 @@ footer.page__footer {
   }
 
   h2 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 500;
 
     &:after {
       content: '';
-      border-bottom: 1px solid $blue-100;
+      border-bottom: 1px solid $roxo-escuro;
       display: block;
       margin-top: 5px;
       width: 65px;
@@ -117,11 +119,18 @@ footer.page__footer {
   }
 }
 
-footer#copyright {
-  background-color: $grey-50;
+footer #copyright {
+  background-color: $roxo-escuro;
   color: $grey-300;
   font-weight: 400;
   padding: 15px 0 5px;
   width: 100%;
   text-align: center;
+}
+
+footer .field--name-body p {
+  margin-top: 15px;
+  text-align: center;
+  color: $cinza-200;
+  font-size: 12px;
 }

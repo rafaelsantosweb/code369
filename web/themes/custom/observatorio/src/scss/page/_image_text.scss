@@ -3,9 +3,8 @@
 }
 
 .paragraph--type--image-text {
-  color: #444444;
-  font-size: 15px;
-  line-height: 18.54px;
+  font-size: 17px;
+  line-height: 20.54px;
   padding: 5rem 0 1rem;
   overflow: auto;
   overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -13,12 +12,6 @@
   &.text_image {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -10rem;
-
-    /* Apagar ----------------------------------- */
-    /* .paragraph_left {                      
-      margin-top: -10rem;
-    } */
   }
 
   .paragraph_left,
@@ -31,22 +24,15 @@
     .field--name-field-paragraph-cta {
       justify-content: flex-start !important;
     }
+
+    .field--name-field-title {
+      color: $cinza-100;
+      font-size: 14px;
+    }
+
   }
 
-  /* Apagar ------------------------------------- */
-  /* .paragraph_left {
-    margin-top: -10rem;
-    z-index: 10;
-  } */
 }
-
-/* Apagar --------------------------------------- */
-/* .paragraph_left,
-.paragraph_right {
-  width: 50%;
-  display: table-cell;
-  vertical-align: top;
-} */
 
 .field--name-field-image {
   width: 50%;
@@ -63,15 +49,6 @@
   line-height: 30px;
 }
 
-/* Apagar ----------------------------------- */
-/* .field--name-field-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 2rem !important;
-  padding-bottom: 7.5rem !important;
-} */
-
 .field--name-field-body {
   h2 {
     font-size: 28px;
@@ -83,4 +60,20 @@
     font-size: 24px;
     line-height: 35px;
   }
+
 }
+
+.paragraph_left .field--name-field-media-image .field__item img {
+  justify-content: center;
+  margin-left: 10%;
+}
+
+//MOBILE 
+
+@media (max-width: 990px) {
+
+  .paragraph_left .field--name-field-media-image .field__item img {
+    margin-left: 0;
+  }  
+
+}  

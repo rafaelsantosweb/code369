@@ -30,7 +30,6 @@
 
   &::after {
     content: '';
-    background: url('../../images/binary.svg') no-repeat 0 210px;
     background-size: contain;
     //position: absolute;
     z-index: 0;
@@ -71,14 +70,14 @@
 }
 
 .blocktabs ul.blocktabs-tabs li.active {
-  background: #0E65E5;
+  background: $roxo-escuro;
   color: $white;
   border-radius: 12px;
 }
 
 .blocktabs ul.blocktabs-tabs li.active a {
   color: $white;
-  background: #0E65E5;
+  background: $roxo-escuro;
   border-radius: 16px;
 }
 
@@ -96,14 +95,14 @@
       a.button {
         border: 1px solid white !important;
         color: white !important;
-        background-color: #003bd1 !important;
+        background-color: $roxo-escuro !important;
         padding: 20px 30px 20px 30px;
         margin-top: 2em;
 
         &:hover {
-          border: 1px solid #003bd1 !important;
+          border: 1px solid $roxo-escuro important;
           background-color: #f2f2f2 !important;
-          color: #003bd1 !important;
+          color: $roxo-escuro !important;
           text-decoration: underline;
         }    
       }        
@@ -125,11 +124,6 @@
 .node-43 .paragraph--type--destaques,
 .node-44 .paragraph--type--destaques {
   background-color: #f0f0f0;
-}
-
-.paragraph_left .field--name-field-media-image .field__item img {
-  width: 93%;
-  margin-left: 8%;
 }
 
 .tabs-cloud .view-content {

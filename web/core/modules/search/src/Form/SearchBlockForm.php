@@ -98,7 +98,7 @@ class SearchBlockForm extends FormBase {
     $form['#action'] = Url::fromRoute($route)->toString();
     $form['#method'] = 'get';
 
-    $form['search_api_fulltext'] = [
+    $form['keys'] = [
       '#type' => 'search',
       '#title' => $this->t('Search'),
       '#title_display' => 'invisible',

@@ -80,7 +80,7 @@
                     width: 98px;
 
                     a.button {
-                        border: 1px solid #003bd1;
+                        border: 1px solid $roxo-escuro;
                         border-radius: 5px;
                         text-decoration: none;
                     }
@@ -115,7 +115,7 @@
         
         /* Estilo para o dot ativo */
         .slick-dots .slick-active button {
-            background-color: #007bff; /* Cor de fundo do dot ativo */
+            background-color: #ff0015; /* Cor de fundo do dot ativo */
         }
         
         /* Adicionar animação ao clicar em um dot */

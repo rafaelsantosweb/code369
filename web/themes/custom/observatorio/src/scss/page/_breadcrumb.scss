@@ -24,7 +24,7 @@
 
 .block .block--observatorio-breadcrumbs .breadcrumb-item a:hover {
   font-size: 12px;
-  color: black;
+  color: $roxo-escuro;
   margin-bottom: 2em;
 }
 
@@ -36,5 +36,5 @@
 }
 
 .breadcrumb-item.active {
-  color: black;
+  color: $roxo-escuro;
 }
